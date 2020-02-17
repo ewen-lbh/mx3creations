@@ -72,7 +72,6 @@ const flattenProducts = (object, collection) => {
     prod = { ...prod, type: processType(v) }
     prod = { ...prod, frontCover: getProductFrontCover(prod, collection) }
     prod = { ...prod, title: `${collection.name}: ${v.name}` }
-    console.log(`products.js@67: prod=${JSON.stringify(prod)}`)
     flat.push(prod)
   })
   return flat
