@@ -8,7 +8,7 @@ section.gallery
       )
         component.item(
           :is="frontCoverHTMLElement(product.type)"
-          :src="product.frontCover"
+          :src="'https://mx3creations.com/.netlify/large-media' + product.frontCover"
           :alt="product.title"
           autoplay muted loop
         )
