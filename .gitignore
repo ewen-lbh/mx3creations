@@ -92,8 +92,5 @@ sw.*
 # Static assets
 static/products/renders
 
-# "Compiled" files
-static/products/database.json
-
 # Prepros
 prepros*.config
