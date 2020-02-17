@@ -1,3 +1,36 @@
 <template lang="pug">
-  nuxt
+  .container
+    TheNavbar#nav
+    nuxt#page
+    TheFooter#footer
 </template>
+
+<script>
+import TheNavbar from '~/components/TheNavbar.vue'
+import TheFooter from '~/components/TheFooter.vue'
+
+export default {
+  components: { TheNavbar, TheFooter }
+}
+</script>
+
+<style lang="stylus" scoped>
+body
+  display flex
+  flex-direction column
+
+#page.centered
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  min-height calc(100vh - 90px) //ref:computed:<TheNavbar>/height
+
+#page
+  padding 0 20px
+  min-height 100vh
+  background black
+
+#page .gallery
+  margin-bottom: 40px
+</style>

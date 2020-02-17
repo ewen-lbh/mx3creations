@@ -1,0 +1,6 @@
+@font-face {
+ font-family: 'Recursive b030';
+ src: url('recursive.woff2') format('woff2-variations');
+ font-weight: 300 1000;
+ font-feature-settings: "CASL" 0, "MONO" 1;
+}

@@ -1,0 +1,833 @@
+# collection-id:
+#   name:
+#   products:
+#     product-id:
+#       date:
+#       name:
+#       categories:
+#       tags:
+#       link:
+
+acf:
+  name: Association de Cause Freudienne
+  #TOADD website
+  products:
+    pub-site:
+      name: Carte d'annonce du site web de l'ACF
+      description: |
+        L'ACF-VD avait besoin de communiquer la création de leur site web,
+        j'ai donc réalisé cette carte pour qu'elle puisse être facilement
+        distribuée lors d'interventions de l'association.
+      #TOADD link
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - card
+    actualite-des-cartels-2019:
+      name: Actualité des cartels
+      front cover: 1
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+    conference-eric-zuliani:
+      name: Conférence d'Éric Zuliani
+      date: 2020
+      categories:
+        - graphism
+      tags:
+        - poster
+    conference-laurent-dupont:
+      name: Conférence de Laurent Dupont
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+    journees-preparatoires-congres-amp-2019:
+      name: Journées préparatoires au congrès de l'AMP
+      front cover: recto
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+    le-petit-chose-2019:
+      name: Le Petit Chose
+      front cover: recto
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+    preparatoires-j49:
+      name: Préparatoires aux J49
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+    semaine-interne:
+      name: Semaine interne d'étude
+      date: 2020
+      categories:
+        - graphism
+      tags:
+        - poster
+    une-femme-est-une-femme:
+      name: Une femme est une femme
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - poster
+
+appstract:
+  name: Appstract
+  by:
+  products:
+    appstract-contribution:
+      name: Contribution d'icônes à Appstract
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - iconography
+
+aven:
+  name: Aven E-Sport
+  products:
+    wallpaper:
+      name: Fond d'écran
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - banner
+        - wallpaper
+    website-mockup:
+      name: Prototypage du site web
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - user interface
+        - website mockup
+
+books:
+  name: Books
+  description: |
+    À la fin de chaque année depuis 2019, je regroupe mes
+    meilleures créations dans un livre
+  products:
+    2019:
+      type: pdf
+      name: 2019
+      date: 2019
+      categories:
+        - graphism
+      tags:
+        - book
+
+college-dalzon:
+  name: Collège de d'Alzon Vestric-et-Candiac
+  products:
+    forum-des-metiers:
+      name: Forum des métiers
+      front cover: 2020
+      categories:
+        - graphism
+      tags:
+        - poster
+    bal:
+      name: Bal
+      categories:
+        - graphism
+      tags:
+        - poster
+    journee-sante-securite:
+      name: Journée Santé & Sécurité
+      categories:
+        - graphism
+      tags:
+        - poster
+
+mx3:
+  name: Mx3
+  description: >
+    Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations,
+    notamment ma musique.
+  front covers: cover-art
+  products:
+    visual-identity:
+      name: Identité visuelle
+      front cover: cinematic-intro
+      type: video
+      categories:
+        - graphisme
+        - motion
+      tags:
+        - intro
+        - outro
+        - logo
+        - banner
+    aqua:
+      name: Aqua
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    aria-math:
+      name: Aria Math
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    circular:
+      name: Circular
+      categories:
+        - graphism
+        - music
+        - motion
+      tags:
+        - cover art
+        - single
+        - music video
+    codelines:
+      name: Codelines
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    coldfingers:
+      name: Coldfingers
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    corrupted:
+      name: Corrupted
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - ep
+    etymology:
+      name: Etymology
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    filetype:
+      name: Filetype
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    flows-of-flowr:
+      name: Flows of Flowr
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    glass-shrapnel:
+      name: Glass Shrapnel
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    glitchopin:
+      name: Glitchopin
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    infrasonic-village:
+      name: Infrasonic Village
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - album
+    ink:
+      name: Ink
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    interstellar:
+      name: Interstellar
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    lcd:
+      name: LCD
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - ep
+    malwr:
+      name: Malwr
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - album
+    miss-you-remix:
+      name: trentemøller - Miss You (Mx3 Remix)
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+        - remix
+    morph:
+      name: Morph
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    mr-blue-sky-remix:
+      name: ELO - Mr. Blue Sky (Mx3 Remix)
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+        - remix
+    neptune:
+      name: Neptune
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - album
+    nihon:
+      name: Nihon
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - ep
+    patterns:
+      name: Patterns
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - ep
+    relocation:
+      name: Relocation
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    schedule-hell:
+      name: Schedule Hell
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+    serial:
+      name: Serial
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - album
+    stranger-things-remix:
+      name: Stranger Things (Remixes)
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - ep
+        - remix
+    tesseract:
+      name: Tesseract
+      # type: video
+      # front cover: video
+      categories:
+        - graphism
+        - music
+        - motion
+      tags:
+        - cover art
+        - single
+        - music video
+    unspecial-effects-remix:
+      name: deadmau5 - unspecial effects (Mx3 Remix)
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - single
+        - remix
+    work:
+      name: Work
+      categories:
+        - graphism
+        - music
+      tags:
+        - cover art
+        - album
+
+cubing-t:
+  name: Cubing-T
+  products:
+    banner:
+      name: Bannière
+      date: null
+      categories:
+        - graphism
+      tags:
+        - banner
+    logo:
+      name: Logo
+      date: null
+      categories:
+        - graphism
+      tags:
+        - logo
+
+freezaxe:
+  name: FreeZaxe
+  products:
+    banner:
+      name: banner
+      categories:
+        - graphism
+      tags:
+        - banner
+    intro-outro:
+      name: Intro & Outro
+      front cover: intro
+      categories:
+        - motion
+      tags:
+        - intro
+        - outro
+    cube-lycee:
+      name: Cube Lycée
+      date: 2019
+      categories:
+      - graphism
+      tags:
+      - poster
+
+hyperis:
+  name: Hyperis
+  products:
+    teaser:
+      name: Teaser
+      categories:
+      - motion
+      tags:
+      - teaser
+    dossier:
+      type: pdf
+      name: Dossier
+      categories:
+      - graphism
+    hyperis:
+      name: Jeu
+      categories:
+      - software
+      tags:
+      - game
+      - cli
+    pychemin:
+      name: PyChemin
+      categories:
+      - software
+      tags:
+      - markup-language
+
+jitters-team:
+  name: JiTTeR's Team
+  products:
+    logo:
+      name: Logo
+      hide from:
+      - gallery
+      categories:
+      - graphism
+      tags:
+      - logo
+    logotype:
+      name: Logotype
+      hide from:
+      - gallery
+      categories:
+      - graphism
+      tags:
+      - logotype
+    compound:
+      name: Logo complet
+      categories:
+      - graphism
+      tags:
+      - logo
+      - logotype
+
+les-harobases:
+  name: Les Harobases
+  products:
+    banner:
+      name: Bannière
+      date: 2019
+      categories:
+      - graphism
+      tags:
+      - banner
+  intro-cinematique:
+    name: Intro (version cinématique)
+    date: 2019
+    categories:
+    - motion
+    tags:
+    - intro
+  logo:
+    name: logo
+    date: 2018
+    categories:
+    - graphism
+    tags:
+    - logo
+  logotype:
+    name: logotype
+    date: 2018
+    categories:
+    - graphism
+    tags:
+    - logotype
+  parkour:
+    name: Parkour
+    categories:
+    - motion
+    tags:
+    - video
+  parkour-3-thumbnail:
+    name: parkour-3-thumbnail
+    categories:
+    - graphism
+    tags:
+    - thumbnail
+  space-time-portals-intro:
+    name: Spacetime Portals - Intro
+    categories:
+    - motion
+    tags:
+    - intro
+
+portfolio:
+  name: Portfolio
+  products:
+    banners:
+      front cover: teaser
+      name: Bannière
+      categories:
+      - graphism
+      tags:
+      - banner
+    icons:
+      name: Icônes
+      categories:
+      - graphism
+      tags:
+      - icon
+    mockups:
+      name: Prototypes de design
+      front cover: music
+      categories:
+      - graphism
+      tags:
+      - user interface
+    website:
+      name: website
+      categories:
+      - software
+      tags:
+      - website
+      link: https://mx3creations.com
+
+reccube:
+  name: RecCube
+  products:
+    logo:
+      name: Logo
+      categories:
+      - graphism
+      tags:
+      - logo
+    logotype:
+      name: logotype
+      categories:
+      - graphism
+      tags:
+      - logotype
+    intro-outro:
+      name: intro-outro
+      front cover: intro
+      categories:
+      - motion
+      tags:
+      - intro
+      - outro
+
+schoolsyst:
+  name: Schoolsyst
+  products:
+    user-interface:
+      hide from:
+      - gallery
+      date: 2019
+      name: Premier prototype de l'interface utilisateur
+      categories:
+        - graphism
+      tags:
+        - user interface
+    user-interface-v2:
+      hide from:
+      - gallery
+      date: 2019
+      name: Second prototype de l'interface utilisateur
+      categories:
+        - graphism
+      tags:
+        - user interface
+    logo:
+      date: 2019
+      name: Logo
+      front cover: logotype
+      categories:
+        - graphism
+        - motion
+      tags:
+        - logo
+    api:
+      hide from:
+        - gallery
+      name: API
+      categories:
+        - software
+      tags:
+        - api
+    webapp:
+      hide from:
+        - gallery
+      name: Application web
+      categories:
+        - software
+      tags:
+        - webapp
+    banner:
+      hide from:
+      - gallery
+      name: Bannières
+      categories:
+        - graphism
+      tags:
+        - banner
+
+secours-populaire:
+  name: Secours populaire
+  products:
+    fete-des-couleurs:
+      name: Fête des couleurs
+      categories:
+      - graphism
+      tags:
+      - poster
+
+travaux-scolaires:
+  name: Travaux scolaires
+  products:
+    eating-kills:
+      name: Eating kills
+      date: 2019
+      categories:
+      - graphism
+      tags:
+      - poster
+    erwin:
+      name: Erwin
+      front cover: title
+      date: 2018
+      categories:
+      - motion
+      tags:
+      - short film
+    humanr:
+      name: HumanR
+      front cover: apple
+      date: 2018
+      categories:
+      - graphism
+      tags:
+      - poster
+    innovation:
+      name: Innovation
+      date: 2019
+      categories:
+      - motion
+      tags:
+      - video
+    manufact:
+      name: Manufact
+      date: 2016
+      categories:
+      - motion
+      tags:
+      - video
+    oral-bac-russe:
+      name: Diapositives de l'oral du bac de Russe
+      front cover: юрий-гагарин
+      date: 2020
+      categories:
+      - graphism
+      tags:
+      - slide
+    restauration-rapide:
+      name: Restauration rapide
+      type: pdf
+      date: 2018
+      categories:
+      - graphism
+      tags:
+      - dossier
+
+various:
+  name: Others
+  products:
+    abstrakitten:
+      name: Abstrakitten
+      categories:
+      - graphism
+      tags:
+      - font
+    conflict:
+      name: conflict
+      categories:
+      - graphism
+      tags:
+      - compositing
+    glyphs:
+      name: Glyphs
+      front cover: illustrator
+      categories:
+      - graphism
+      tags:
+      - icon
+    inklings:
+      name: Inklings
+      description: |
+        En anglais, _inkling_ désigne une petite idée, une impression un soupçon.
+        On remarque aussi la présence de _ink_, encre, qui est contenu dans ce mot.
+
+        Ces dessins sont des enchevêtrements de flux d'idée,
+        je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
+      front cover: feelings
+      categories:
+        - graphism
+      tags:
+        - drawing
+    equations:
+      name: Equations
+      type: pdf
+      categories:
+      - graphism
+      tags:
+      - typography
+    flat-fruits:
+      name: Flat Fruits
+      front cover: watermelon
+      categories:
+      - graphism
+      tags:
+      - illustration
+    makisushi:
+      name: まきすし
+      front cover: columns
+      categories:
+      - graphism
+      tags:
+      - illustration
+      - t-shirt
+      link: https://www.redbubble.com/fr/shop/p/43234485.WFLAH
+    math-functions:
+      name: math functions
+      front cover: one-over-x
+      categories:
+      - graphism
+      tags:
+      - math
+    periodic-table:
+      name: Periodic Table
+      categories:
+      - graphism
+      tags:
+      - math
+    train:
+      name: Train
+      categories:
+      - graphism
+      tags:
+      - vectorial
+    universe-anatomy:
+      name: Universe anatomy
+      categories:
+      - graphism
+      tags:
+      - compositing
+      - illustration
+    you-gotta-think-outside-the-box:
+      name: You Gotta Think Outside the Box
+      categories:
+      - graphism
+      tags:
+      - poster

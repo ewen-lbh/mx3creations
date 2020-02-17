@@ -1,10 +1,11 @@
 <template lang="pug">
 #page
-  Gallery
+  Gallery(category="graphism")
 </template>
 
 <script>
 import Gallery from '~/components/Gallery.vue'
+
 export default {
   components: { Gallery }
 }

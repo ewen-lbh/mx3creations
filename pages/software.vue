@@ -1,6 +1,6 @@
 <template lang="pug">
 #page
-  Gallery
+  Gallery(category="software")
 </template>
 
 <script>
