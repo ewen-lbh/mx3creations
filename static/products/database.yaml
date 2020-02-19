@@ -9,8 +9,8 @@
 #       link:
 
 acf:
-  name: Association de Cause Freudienne
-  #TOADD website
+  name: Association de la Cause Freudienne
+  website: https://acf.voiedomitienne.fr
   products:
     pub-site:
       name: Carte d'annonce du site web de l'ACF
@@ -18,13 +18,13 @@ acf:
         L'ACF-VD avait besoin de communiquer la création de leur site web,
         j'ai donc réalisé cette carte pour qu'elle puisse être facilement
         distribuée lors d'interventions de l'association.
-      #TOADD link
       date: 2019
       categories:
         - graphism
       tags:
         - card
     actualite-des-cartels-2019:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Actualité des cartels
       front cover: 1
       date: 2019
@@ -33,6 +33,7 @@ acf:
       tags:
         - poster
     conference-eric-zuliani:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Conférence d'Éric Zuliani
       date: 2020
       categories:
@@ -40,6 +41,7 @@ acf:
       tags:
         - poster
     conference-laurent-dupont:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Conférence de Laurent Dupont
       date: 2019
       categories:
@@ -47,6 +49,7 @@ acf:
       tags:
         - poster
     journees-preparatoires-congres-amp-2019:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Journées préparatoires au congrès de l'AMP
       front cover: recto
       date: 2019
@@ -55,6 +58,7 @@ acf:
       tags:
         - poster
     le-petit-chose-2019:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Le Petit Chose
       front cover: recto
       date: 2019
@@ -63,6 +67,7 @@ acf:
       tags:
         - poster
     preparatoires-j49:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Préparatoires aux J49
       date: 2019
       categories:
@@ -77,6 +82,7 @@ acf:
       tags:
         - poster
     une-femme-est-une-femme:
+      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Une femme est une femme
       date: 2019
       categories:

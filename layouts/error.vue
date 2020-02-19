@@ -2,24 +2,28 @@
   main.centered
     h1 {{ error.statusCode }}
     template(v-if="error.statusCode === 404")
-      p Cette page n'existe pas.
+      p {{ $t(error.message) || $t('inexistantPage') }}
     template(v-else)
       p Une erreur s'est produite
 
-    nuxt-link.btn-primary(to="/") Retour à l'accueil
+    BtnOutline(href="/") {{ $t('backToHome') }}
 </template>
 
 <script>
+import BtnOutline from '~/components/BtnOutline.vue'
+
 export default {
+  components: { BtnOutline },
   props: ['error']
 }
 </script>
 
 <style lang="stylus" scoped>
 h1
-  font-size 5em
+  font-size 20vmin
   margin-bottom 0
   animation status-code 0.5s linear infinite alternate
+  font-family 'Recursive'
 
 @keyframes status-code
   0%

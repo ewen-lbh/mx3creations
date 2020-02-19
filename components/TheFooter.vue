@@ -1,38 +1,28 @@
 <template lang="pug">
   footer
-    .langage-switcher
-      nuxt-link(
-        :to="switchLocalePath('en')"
-        :class="{ current:  $i18n.locale === 'en' }"
-      ) English
-      span.sep /
-      nuxt-link(
-        :to="switchLocalePath('fr')"
-        :class="{ current:  $i18n.locale === 'fr' }"
-      ) Français
+    h2 mx3creations.com
+    p
+      | En cours de développement
+      br
+      | Fait avec ❤ par Ewen Le Bihan, aka Mx3
+      br
+      a(href="//github.com/ewen-lbh/mx3creations" target="_blank") >> Code source <<
 </template>
 
 <style lang="stylus" scoped>
 footer
   display flex
-  justify-content center
   background black
   color white
-  height: 100px
+  height: 300px
   padding 20px
   padding-top: 40px
   border-top 1px solid white
-
-.langage-switcher
-  text-transform uppercase
-  font-size 1.5em
-  a
-    transition all .5s ease
-  a:hover
-    font-weight bold
-  a.current
-    opacity: 0.5
-  .sep
-    opacity: 0.5
-    // font-weight bold
+  text-align center
+  flex-direction column
+  justify-content center
+h2
+  font-family Work Sans
+  font-size 7.5vmin
+  margin: 0
 </style>
