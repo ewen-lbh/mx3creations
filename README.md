@@ -1,5 +1,7 @@
 # mx3creations
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c6a50e8-0337-4103-a622-0d9d6f90e6d8/deploy-status)](https://app.netlify.com/sites/mx3creations/deploys)
+
 > My portfolio
 
 ## Build Setup
