@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap&subset=latin-ext' // TODO: Use local font
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -28,7 +35,8 @@ export default {
     '~assets/styles/global.styl',
     // Fonts
     '~assets/fonts/RobotoMono/import.css',
-    '~assets/fonts/Recursive/import.css'
+    '~assets/fonts/Recursive/import.css',
+    '~assets/fonts/work-sans/import.css'
   ],
   /*
    ** Plugins to load before mounting the App

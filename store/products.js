@@ -35,7 +35,7 @@ const processType = (product) => {
 
 const getProductFrontCover = (product, collection) => {
   const constructURL = (productId, file, ext = 'png') =>
-    `/products/renders/${collection.id}/${productId}/${file}.${ext}`
+    `http://static.mx3creations.com/renders/${collection.id}/${productId}/${file}.${ext}`
   const frontCover =
     product['front cover'] ||
     product.frontCover ||

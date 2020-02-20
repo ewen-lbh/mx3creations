@@ -1,7 +1,8 @@
 <template lang="pug">
   .container
     TheNavbar#nav
-    nuxt#page
+    .page-container
+      nuxt#page
     TheFooter#footer
 </template>
 
@@ -29,7 +30,19 @@ body
 #page
   padding 0 20px
   min-height 100vh
-  background black
+
+nav-height = 70px
+max-page-width = 1400px
+#nav
+  height nav-height
+  & /deep/ nav
+    max-width max-page-width
+#page
+  margin-top nav-height
+  max-width max-page-width
+.page-container
+  display flex
+  justify-content center
 
 #page .gallery
   margin-bottom: 40px

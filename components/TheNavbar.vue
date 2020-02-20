@@ -1,67 +1,68 @@
 <template lang="pug">
-.nav-wrapper
-  nav(:class="{ scrolled }").desktop-nav
-    .nav-group.works
-      //- span.nav-item {{ $t('works') }} = {
-      nuxt-link.nav-link(
-        :to="localePath('/')"
-        :class="{current: isCurrent('/')}"
-      ) {{ $t('all') }}
-      nuxt-link.nav-link(
-        v-for="link in links.works"
-        :to="localePath(link)"
-        :class="{current: isCurrent(link)}"
-      ) {{ $t(link.replace('/', '')) }}
-      //- span.nav-item.chomp-left-margin }
+.nav-wrapper(:class="{ scrolled }")
+  nav
+    template(v-if="backURL")
+      NavItem.go-back(:to="backURL"): Iconed(icon="arrow-left") {{ $t('back') }}
+    template(v-else)
+      NavItem(to="/") {{ $t('works') }}
+      NavItem(to="/about") {{ $t('about') }}
+      NavItem(to="/contact") {{ $t('contact') }}
 
-    //- .nav-group.title
-    //-   nuxt-link.nav-link(:to="localePath('/')") Mx3's Creations
+    span.center.breadcrumbs(v-if="breadcrumbs.length")
+      NavItem.breadcrumb(
+        v-for="fragment in breadcrumbs" :key="fragment"
+        :to="fragment"
+      ) {{ fragment }}
+    span.center(v-else)
+      NavItem Ewen Le Bihan
 
-    .nav-group.others
-      nuxt-link.nav-link(
-        v-for="link in links.others"
-        :to="localePath(link)"
-        :class="{current: isCurrent(link)}"
-      ) {{ $t(link.replace('/', '')) }}
-
-  nav.mobile-nav
-    nuxt-link.nav-link(
-      :class="{current: isCurrent('/')}"
-      :to="localePath('/')"
-    ) {{ $t('works') }}
-    nuxt-link.nav-link(
-      :class="{current: isCurrent('/about')}"
-      :to="localePath('/about')"
-    ) {{ $t('about') }}
+    NavLanguageSwitch.right
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import { mapState, mapGetters } from 'vuex'
+import NavItem from '~/components/NavItem.vue'
+import NavLanguageSwitch from '~/components/NavLanguageSwitch.vue'
+import Iconed from '~/components/Iconed.vue'
 
 export default {
+  components: { NavItem, NavLanguageSwitch, Iconed },
   data() {
     return {
       scrolled: false
     }
   },
   computed: {
-    ...mapState('navigation', ['links'])
-  },
-  methods: {
-    isCurrent(link) {
-      if (process.browser) {
-        const topPathFragment = this.$route.path
-          .replace('fr/', '')
-          .split('/')[1]
-        if (!link.startsWith('/')) link = '/' + link
-        return '/' + topPathFragment === link
+    backURL() {
+      const path = this.$route.path.replace('fr/', '')
+      const fragments = path.split('/')
+      if (fragments.length <= 1) {
+        return false
+      } else {
+        fragments.pop()
+        const backURL = fragments.join('/') // localePath() is handled by <NavItem>
+        if (backURL === '/works') {
+          return '/'
+        } else {
+          return backURL
+        }
       }
+    },
+    breadcrumbs() {
+      const path = this.$route.path.replace('fr/', '')
+      const fragments = path.split('/')
+      if (fragments.length <= 2) return []
+      fragments.shift()
+      fragments.shift()
+      let breadcrumbs = []
+      fragments.forEach((fragment) => {
+        breadcrumbs = [...breadcrumbs, fragment.replace(/-/g, ' ')]
+      })
+      return breadcrumbs
     }
   },
   mounted() {
     window.addEventListener('scroll', (event) => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         this.scrolled = true
       } else {
         this.scrolled = false
@@ -74,79 +75,34 @@ export default {
 <style lang="stylus" scoped>
 .nav-wrapper
   width 100%
+  font-size: 1.5em
+  background white
+  position fixed
+  display flex
+  align-items center
+  justify-content center
+  top 0
 
 nav
-  width: 100%
-  font-size: 1.5em
-  display: flex
-  align-items: center
-  // background: transparent
-  color white
-
-nav.desktop-nav
-  padding: 20px 0 // ref:globals.styl/#page/padding
-  border-bottom: 1px solid transparent
-
-  &.scrolled
-    border-color: white
-
-nav.mobile-nav
-  padding: 20px 0 // ref:globals.styl/#page/padding
-  border-top: 1px solid white
-  display: flex
-  justify-content: center
-  align-items: center
-
-.nav-link, .nav-item
-  transition: all 0.25s ease
-  display: flex
-  align-items: center
-  text-transform: uppercase
-  text-decoration: none
-  color: inherit
-
-.chomp-left-margin
-    margin-left: -1em
-
-.nav-link:not(:last-child)
-    margin-right: 1em
-
-.nav-group:not(.title)
-  .nav-item
-    opacity: 0.5
-
-  .nav-link:hover
-    font-weight: 600
-
-.nav-group:not(.title), .mobile-nav
-  .nav-link.current
-    text-shadow 0 0 1em white, 0 0 .25em white, 0 0 .5em white, 0 0 .75em white, 0 0 1.75em white, 0 0 3em white
-
-.nav-group
-  display: flex
-  align-items: center
-
-  &.works
-    margin-left: 20px // ref:globals.styl/#page/padding
-
-  &.title
-    margin: 0 auto
-
-  &.others
-    margin-left: auto
-    margin-right: 20px // ref:globals.styl/#page/padding
-
-@media (max-width: 1100px)
-  nav.desktop-nav
-    display: none
-  .nav-wrapper
+  width 100%
+  padding 0 20px
+  display flex
+  align-items center
+  .--nav-item:not(:last-child)
+    margin-right 1.5em
+  .right
+    margin-left auto
+  .center
+    margin 0 auto
+  .center.breadcrumbs
     position fixed
-    bottom: 0
-
-@media (min-width: 1101px)
-  nav.mobile-nav
-    display: none
-  .nav-wrapper
-    position sticky
-    top: 0
+    left 50%
+    transform translateX(-50%)
+  .breadcrumb
+    margin-right: 0 !important
+  .breadcrumb:not(:last-child)::after
+    content '/'
+    opacity: 0.25
+  .go-back
+    border none
 </style>

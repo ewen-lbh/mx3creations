@@ -1,14 +1,14 @@
 <template lang="pug">
-section.gallery
+.gallery
   li(v-for="(product, i) in productsOfCategory" :key="`${product.collection.id}/${product.id}`")
     template(v-if="showProduct(product)")
       nuxt-link(
-        :to="`/works/${product.collection.id}/${product.id}`"
-        :title="product.frontCover"
+        :to="localePath(`/works/${product.collection.id}/${product.id}`)"
+        :title="product.title"
       )
         component.item(
           :is="frontCoverHTMLElement(product.type)"
-          :src="'https://mx3creations.com/.netlify/large-media' + product.frontCover"
+          :src="product.frontCover"
           :alt="product.title"
           autoplay muted loop
         )
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-gallery-gaps = 0.25em
+gallery-gaps = 25px
 
 .gallery
   line-height: 0 // Prevent vertical gaps
@@ -69,6 +69,8 @@ gallery-gaps = 0.25em
   height: auto
   margin-bottom: gallery-gaps
   background white
+  border 1px solid black
+
 .gallery embed.item
   width 100%
   height 100%
