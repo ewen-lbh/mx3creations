@@ -1,0 +1,78 @@
+#!/usr/bin/env node
+const fs = require('fs')
+const path = require('path')
+const consola = require('consola')
+const boxen = require('boxen')
+const chalk = require('chalk')
+const ora = require('ora')
+const program = require('commander')
+const utils = require('./utils')
+
+program
+  .option('-o', '--output', 'Output to the given filename.')
+  .parse(process.argv)
+
+const database = utils.parseYAML(program.args[0])
+const spinner = ora('Compiling...').start()
+
+// Flatten collections & products
+spinner.text = 'Flattening...'
+const collections = []
+Object.entries(database).forEach(([collectionID, collection]) => {
+  // Push a new collection
+  collections.push({
+    // Normal properties
+    ...collection,
+    // Flattened products list
+    products: Object.entries(collection.products).map(
+      ([productID, product]) => {
+        //
+        const variantsDir = path.resolve(
+          program.args[1],
+          collectionID,
+          productID
+        )
+        if (!fs.existsSync(variantsDir)) return
+        const frontCover =
+          product['front cover'] || collection['front covers'] || productID
+        return {
+          id: productID,
+          ...product,
+          variants: fs
+            .readdirSync(variantsDir)
+            .filter((item) =>
+              fs.statSync(path.resolve(variantsDir, item)).isFile()
+            )
+            .map((file) => ({
+              file,
+              'front cover':
+                path.basename(file, path.extname(file)) === frontCover
+            })),
+          collection: Object.keys(collection)
+            .filter((k) => k !== 'products')
+            .map((k) => collection[k])
+        }
+      }
+    ),
+    id: collectionID
+  })
+})
+
+spinner.text = 'Serializing to JSON...'
+const jsoned = JSON.stringify(collections)
+
+const outputFile =
+  program.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
+try {
+  fs.writeFileSync(outputFile, jsoned)
+  spinner.succeed(chalk`Compiled to {bold ${outputFile}}!`)
+} catch (error) {
+  spinner.fail(chalk`Error while writing to {bold ${outputFile}}`)
+  console.log(
+    boxen(chalk`{red ${error}}`, {
+      margin: 1,
+      padding: 1,
+      borderColor: 'red'
+    })
+  )
+}
