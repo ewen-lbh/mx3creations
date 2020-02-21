@@ -3,6 +3,7 @@ component.--nav-item(
   :is="to ? 'nuxt-link' : 'span'"
   :to="to ? localePath(to) : false"
   :class="{current: to && isCurrent(to)}"
+  @click="$emit('click')"
 ): slot
 </template>
 
@@ -31,7 +32,7 @@ export default {
 <style lang="stylus" scoped>
 .--nav-item
   text-transform uppercase
-  border-bottom 2px solid transparent
+  border-bottom 1px solid transparent
 
 .current
   border-bottom-color black
