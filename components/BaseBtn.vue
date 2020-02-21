@@ -4,6 +4,7 @@
     :to="localePath(href) || false"
     :class="{ clicked, disabled }"
     v-bind="{ disabled }"
+    @click="onClicked"
   ): slot
 </template>
 
@@ -18,6 +19,20 @@ export default {
       type: Boolean,
       default: false
     }
+  },
+  data() {
+    return {
+      clicked: false
+    }
+  },
+  methods: {
+    onClicked() {
+      this.$emit('click')
+      this.clicked = true
+      setTimeout(() => {
+        this.clicked = false
+      }, 100)
+    }
   }
 }
 </script>
@@ -25,4 +40,5 @@ export default {
 <style lang="stylus" scoped>
 .--base-btn
   display inline-block
+  margin 1em
 </style>
