@@ -4,14 +4,18 @@
   section.intro
     p {{ $t('intro') }}
     BtnOutline(href="/about") {{ $t('learnMore') }}
-  Gallery
+  Gallery(v-bind="{products}")
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Gallery from '~/components/Gallery.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
 export default {
-  components: { Gallery, BtnOutline }
+  components: { Gallery, BtnOutline },
+  computed: {
+    ...mapGetters('products', ['products'])
+  }
 }
 </script>
 
