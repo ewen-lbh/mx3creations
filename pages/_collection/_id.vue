@@ -2,7 +2,7 @@
 main
   section.left
     .variant(v-for="(variant, i) in product.variants")
-      code(v-if="variant.type === 'text'") {{ variant.content }}
+      pre.variant-element(v-if="variant.type === 'text'") {{ variant.content }}
       component.variant-element(
         v-else
         :key="variant.gid"
@@ -128,7 +128,7 @@ main
   background-color var(--bg)
   color var(--bgi)
   display: grid
-  grid-template-columns 1fr 1fr
+  grid-template-columns 50% 50%
   grid-gap: 3em
 
 img
@@ -172,11 +172,18 @@ section.right
     margin-bottom: 0
     margin-left: 0
 
+.variant
+  width auto
+
 .variant-element
   border 1px solid black
-  width 100%
 .variant:not(:last-child)
   margin-bottom 4em
+pre.variant-element
+  padding: 10px
+  white-space pre-wrap
+embed.variant-element
+  width 100%
 
 h3
   text-transform uppercase
