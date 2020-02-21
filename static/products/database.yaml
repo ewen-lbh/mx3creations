@@ -24,7 +24,8 @@ acf:
       tags:
         - card
     actualite-des-cartels-2019:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Actualité des cartels
       front cover: 1
       date: 2019
@@ -33,7 +34,8 @@ acf:
       tags:
         - poster
     conference-eric-zuliani:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Conférence d'Éric Zuliani
       date: 2020
       categories:
@@ -41,7 +43,8 @@ acf:
       tags:
         - poster
     conference-laurent-dupont:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Conférence de Laurent Dupont
       date: 2019
       categories:
@@ -49,7 +52,8 @@ acf:
       tags:
         - poster
     journees-preparatoires-congres-amp-2019:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Journées préparatoires au congrès de l'AMP
       front cover: recto
       date: 2019
@@ -58,7 +62,8 @@ acf:
       tags:
         - poster
     le-petit-chose-2019:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Le Petit Chose
       front cover: recto
       date: 2019
@@ -67,7 +72,8 @@ acf:
       tags:
         - poster
     preparatoires-j49:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Préparatoires aux J49
       date: 2019
       categories:
@@ -82,7 +88,8 @@ acf:
       tags:
         - poster
     une-femme-est-une-femme:
-      link: https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
+      links:
+        - https://www.acfvoiedomitienne.fr/evenements-de-lacfvd
       name: Une femme est une femme
       date: 2019
       categories:
@@ -138,7 +145,7 @@ books:
         - book
 
 college-dalzon:
-  name: Collège de d'Alzon Vestric-et-Candiac
+  name: Collège de d'Alzon <br>Vestric-et-Candiac
   products:
     forum-des-metiers:
       name: Forum des métiers
@@ -530,45 +537,45 @@ les-harobases:
       - graphism
       tags:
       - banner
-  intro-cinematique:
-    name: Intro (version cinématique)
-    date: 2019
-    categories:
-    - motion
-    tags:
-    - intro
-  logo:
-    name: logo
-    date: 2018
-    categories:
-    - graphism
-    tags:
-    - logo
-  logotype:
-    name: logotype
-    date: 2018
-    categories:
-    - graphism
-    tags:
-    - logotype
-  parkour:
-    name: Parkour
-    categories:
-    - motion
-    tags:
-    - video
-  parkour-3-thumbnail:
-    name: parkour-3-thumbnail
-    categories:
-    - graphism
-    tags:
-    - thumbnail
-  space-time-portals-intro:
-    name: Spacetime Portals - Intro
-    categories:
-    - motion
-    tags:
-    - intro
+    intro-cinematique:
+      name: Intro (version cinématique)
+      date: 2019
+      categories:
+      - motion
+      tags:
+      - intro
+    logo:
+      name: logo
+      date: 2018
+      categories:
+      - graphism
+      tags:
+      - logo
+    logotype:
+      name: logotype
+      date: 2018
+      categories:
+      - graphism
+      tags:
+      - logotype
+    parkour:
+      name: Parkour
+      categories:
+      - motion
+      tags:
+      - video
+    parkour-3-thumbnail:
+      name: parkour-3-thumbnail
+      categories:
+      - graphism
+      tags:
+      - thumbnail
+    space-time-portals-intro:
+      name: Spacetime Portals - Intro
+      categories:
+      - motion
+      tags:
+      - intro
 
 portfolio:
   name: Portfolio
@@ -599,7 +606,8 @@ portfolio:
       - software
       tags:
       - website
-      link: https://mx3creations.com
+      links:
+        - https://mx3creations.com
 
 reccube:
   name: RecCube
@@ -772,8 +780,8 @@ various:
     inklings:
       name: Inklings
       description: |
-        En anglais, _inkling_ désigne une petite idée, une impression un soupçon.
-        On remarque aussi la présence de _ink_, encre, qui est contenu dans ce mot.
+        En anglais, <em>inkling</em> désigne une petite idée, une impression un soupçon.
+        On remarque aussi la présence de <em>ink</em>, encre, qui est contenu dans ce mot.
 
         Ces dessins sont des enchevêtrements de flux d'idée,
         je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
@@ -804,7 +812,8 @@ various:
       tags:
       - illustration
       - t-shirt
-      link: https://www.redbubble.com/fr/shop/p/43234485.WFLAH
+      links:
+      - https://www.redbubble.com/fr/shop/p/43234485.WFLAH
     math-functions:
       name: math functions
       front cover: one-over-x
