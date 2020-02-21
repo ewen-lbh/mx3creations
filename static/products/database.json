@@ -1,1 +1,4203 @@
-[{"name":"Association de la Cause Freudienne","website":"https://acf.voiedomitienne.fr","products":[{"id":"pub-site","name":"Carte d'annonce du site web de l'ACF","description":"L'ACF-VD avait besoin de communiquer la création de leur site web,\nj'ai donc réalisé cette carte pour qu'elle puisse être facilement\ndistribuée lors d'interventions de l'association.\n","date":2019,"categories":{"0":"graphism"},"tags":{"0":"card"},"variants":[{"file":"description.html","front cover":false},{"file":"pub-site.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"actualite-des-cartels-2019","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Actualité des cartels","front_cover":1,"date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"0.png","front cover":false},{"file":"1.png","front cover":false}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"conference-eric-zuliani","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Conférence d'Éric Zuliani","date":2020,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"conference-eric-zuliani.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"conference-laurent-dupont","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Conférence de Laurent Dupont","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"conference-laurent-dupont.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"journees-preparatoires-congres-amp-2019","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Journées préparatoires au congrès de l'AMP","front_cover":"recto","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"recto.png","front cover":false},{"file":"verso.png","front cover":false}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"le-petit-chose-2019","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Le Petit Chose","front_cover":"recto","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"recto.png","front cover":false},{"file":"verso.png","front cover":false}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"preparatoires-j49","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Préparatoires aux J49","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"preparatoires-j49.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"semaine-interne","name":"Semaine interne d'étude","date":2020,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"semaine-interne.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]},{"id":"une-femme-est-une-femme","link":"https://www.acfvoiedomitienne.fr/evenements-de-lacfvd","name":"Une femme est une femme","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"une-femme-est-une-femme.png","front cover":true}],"collection":["Association de la Cause Freudienne","https://acf.voiedomitienne.fr"]}],"id":"acf"},{"name":"Appstract","by":null,"products":[{"id":"appstract-contribution","name":"Contribution d'icônes à Appstract","date":2019,"categories":{"0":"graphism"},"tags":{"0":"iconography"},"variants":[{"file":"appstract-contribution.png","front cover":true}],"collection":["Appstract",null]}],"id":"appstract"},{"name":"Aven E-Sport","products":[{"id":"wallpaper","name":"Fond d'écran","date":2019,"categories":{"0":"graphism"},"tags":{"0":"banner","1":"wallpaper"},"variants":[{"file":"wallpaper.png","front cover":true}],"collection":["Aven E-Sport"]},{"id":"website-mockup","name":"Prototypage du site web","date":2019,"categories":{"0":"graphism"},"tags":{"0":"user interface","1":"website mockup"},"variants":[{"file":"website-mockup.png","front cover":true}],"collection":["Aven E-Sport"]}],"id":"aven"},{"name":"Books","description":"À la fin de chaque année depuis 2019, je regroupe mes\nmeilleures créations dans un livre\n","products":[{"id":"2019","type":"pdf","name":2019,"date":2019,"categories":{"0":"graphism"},"tags":{"0":"book"},"variants":[{"file":"2019.pdf","front cover":true},{"file":"_thumbnail.png","front cover":false}],"collection":["Books","À la fin de chaque année depuis 2019, je regroupe mes\nmeilleures créations dans un livre\n"]}],"id":"books"},{"name":"Collège de d'Alzon Vestric-et-Candiac","products":[{"id":"forum-des-metiers","name":"Forum des métiers","front_cover":2020,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"2017.png","front cover":false},{"file":"2018.png","front cover":false},{"file":"2019.png","front cover":false},{"file":"2020.png","front cover":false}],"collection":["Collège de d'Alzon Vestric-et-Candiac"]},{"id":"bal","name":"Bal","categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"bal.png","front cover":true}],"collection":["Collège de d'Alzon Vestric-et-Candiac"]},{"id":"journee-sante-securite","name":"Journée Santé & Sécurité","categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"journee-sante-securite.png","front cover":true}],"collection":["Collège de d'Alzon Vestric-et-Candiac"]}],"id":"college-dalzon"},{"name":"Mx3","description":"Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","front_covers":"cover-art","products":[{"id":"visual-identity","name":"Identité visuelle","front_cover":"cinematic-intro","type":"video","categories":{"0":"graphisme","1":"motion"},"tags":{"0":"intro","1":"outro","2":"logo","3":"banner"},"variants":[{"file":"banner.png","front cover":false},{"file":"cinematic-intro.mp4","front cover":false},{"file":"favicon-dark.png","front cover":false},{"file":"favicon-rgb.png","front cover":false},{"file":"intro.mp4","front cover":false},{"file":"logo-blue.png","front cover":false},{"file":"logo-stripes.png","front cover":false},{"file":"outro.mp4","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"aqua","name":"Aqua","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"aria-math","name":"Aria Math","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"circular","name":"Circular","categories":{"0":"graphism","1":"music","2":"motion"},"tags":{"0":"cover art","1":"single","2":"music video"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art.png","front cover":false},{"file":"video.mp4","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"codelines","name":"Codelines","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"coldfingers","name":"Coldfingers","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"corrupted","name":"Corrupted","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"ep"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"etymology","name":"Etymology","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"filetype","name":"Filetype","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"flows-of-flowr","name":"Flows of Flowr","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"glass-shrapnel","name":"Glass Shrapnel","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"glitchopin","name":"Glitchopin","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"infrasonic-village","name":"Infrasonic Village","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"album"},"variants":[{"file":"cover-art-2.png","front cover":false},{"file":"cover-art-3.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"ink","name":"Ink","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"interstellar","name":"Interstellar","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false},{"file":"video.mp4","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"lcd","name":"LCD","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"ep"},"variants":[{"file":"cover-art-square-recto.png","front cover":false},{"file":"cover-art-square-verso.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"malwr","name":"Malwr","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"album"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"miss-you-remix","name":"trentemøller - Miss You (Mx3 Remix)","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single","2":"remix"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"morph","name":"Morph","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"mr-blue-sky-remix","name":"ELO - Mr. Blue Sky (Mx3 Remix)","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single","2":"remix"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"neptune","name":"Neptune","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"album"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art.png","front cover":false},{"file":"out-now.png","front cover":false},{"file":"teaser.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"nihon","name":"Nihon","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"ep"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"patterns","name":"Patterns","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"ep"},"variants":[{"file":"background-green.png","front cover":false},{"file":"background.png","front cover":false},{"file":"cover-art.png","front cover":false},{"file":"green-dot.png","front cover":false},{"file":"pattern.png","front cover":false},{"file":"textless.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"relocation","name":"Relocation","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art.png","front cover":false},{"file":"landscape-diagonal.png","front cover":false},{"file":"landscape-mirror-centered-text.png","front cover":false},{"file":"landscape-mirror.png","front cover":false},{"file":"landscape-squared-text.png","front cover":false},{"file":"landscape-vertical.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"schedule-hell","name":"Schedule Hell","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"serial","name":"Serial","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"album"},"variants":[{"file":"cover-art-textless.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"stranger-things-remix","name":"Stranger Things (Remixes)","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"ep","2":"remix"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"tesseract","name":"Tesseract","categories":{"0":"graphism","1":"music","2":"motion"},"tags":{"0":"cover art","1":"single","2":"music video"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"unspecial-effects-remix","name":"deadmau5 - unspecial effects (Mx3 Remix)","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"single","2":"remix"},"variants":[{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]},{"id":"work","name":"Work","categories":{"0":"graphism","1":"music"},"tags":{"0":"cover art","1":"album"},"variants":[{"file":"cover-art-landscape.png","front cover":false},{"file":"cover-art-square-pipes.png","front cover":false},{"file":"cover-art.png","front cover":false}],"collection":["Mx3","Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n","cover-art"]}],"id":"mx3"},{"name":"Cubing-T","products":[{"id":"banner","name":"Bannière","date":null,"categories":{"0":"graphism"},"tags":{"0":"banner"},"variants":[{"file":"banner.png","front cover":true}],"collection":["Cubing-T"]},{"id":"logo","name":"Logo","date":null,"categories":{"0":"graphism"},"tags":{"0":"logo"},"variants":[{"file":"logo.png","front cover":true}],"collection":["Cubing-T"]}],"id":"cubing-t"},{"name":"FreeZaxe","products":[{"id":"banner","name":"banner","categories":{"0":"graphism"},"tags":{"0":"banner"},"variants":[{"file":"banner.png","front cover":true}],"collection":["FreeZaxe"]},{"id":"intro-outro","name":"Intro & Outro","front_cover":"intro","categories":{"0":"motion"},"tags":{"0":"intro","1":"outro"},"variants":[{"file":"intro.mp4","front cover":false},{"file":"outro.mp4","front cover":false}],"collection":["FreeZaxe"]},{"id":"cube-lycee","name":"Cube Lycée","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"cube-lycee.png","front cover":true}],"collection":["FreeZaxe"]}],"id":"freezaxe"},{"name":"Hyperis","products":[{"id":"teaser","name":"Teaser","categories":{"0":"motion"},"tags":{"0":"teaser"},"variants":[{"file":"teaser.mp4","front cover":true}],"collection":["Hyperis"]},{"id":"dossier","type":"pdf","name":"Dossier","categories":{"0":"graphism"},"variants":[{"file":"_thumbnail.png","front cover":false},{"file":"dossier.pdf","front cover":true}],"collection":["Hyperis"]},null,null],"id":"hyperis"},{"name":"JiTTeR's Team","products":[{"id":"logo","name":"Logo","hide_from":{"0":"gallery"},"categories":{"0":"graphism"},"tags":{"0":"logo"},"variants":[{"file":"logo.png","front cover":true}],"collection":["JiTTeR's Team"]},{"id":"logotype","name":"Logotype","hide_from":{"0":"gallery"},"categories":{"0":"graphism"},"tags":{"0":"logotype"},"variants":[{"file":"logotype.png","front cover":true}],"collection":["JiTTeR's Team"]},{"id":"compound","name":"Logo complet","categories":{"0":"graphism"},"tags":{"0":"logo","1":"logotype"},"variants":[{"file":"compound.png","front cover":true}],"collection":["JiTTeR's Team"]}],"id":"jitters-team"},{"name":"Les Harobases","products":[{"id":"banner","name":"Bannière","date":2019,"categories":{"0":"graphism"},"tags":{"0":"banner"},"variants":[{"file":"banner.png","front cover":true}],"collection":["Les Harobases",{"name":"Intro (version cinématique)","date":2019,"categories":{"0":"motion"},"tags":{"0":"intro"}},{"name":"logo","date":2018,"categories":{"0":"graphism"},"tags":{"0":"logo"}},{"name":"logotype","date":2018,"categories":{"0":"graphism"},"tags":{"0":"logotype"}},{"name":"Parkour","categories":{"0":"motion"},"tags":{"0":"video"}},{"name":"parkour-3-thumbnail","categories":{"0":"graphism"},"tags":{"0":"thumbnail"}},{"name":"Spacetime Portals - Intro","categories":{"0":"motion"},"tags":{"0":"intro"}}]}],"intro-cinematique":{"name":"Intro (version cinématique)","date":2019,"categories":{"0":"motion"},"tags":{"0":"intro"}},"logo":{"name":"logo","date":2018,"categories":{"0":"graphism"},"tags":{"0":"logo"}},"logotype":{"name":"logotype","date":2018,"categories":{"0":"graphism"},"tags":{"0":"logotype"}},"parkour":{"name":"Parkour","categories":{"0":"motion"},"tags":{"0":"video"}},"parkour-3-thumbnail":{"name":"parkour-3-thumbnail","categories":{"0":"graphism"},"tags":{"0":"thumbnail"}},"space-time-portals-intro":{"name":"Spacetime Portals - Intro","categories":{"0":"motion"},"tags":{"0":"intro"}},"id":"les-harobases"},{"name":"Portfolio","products":[{"id":"banners","front_cover":"teaser","name":"Bannière","categories":{"0":"graphism"},"tags":{"0":"banner"},"variants":[{"file":"social-medias.png","front cover":false},{"file":"teaser.png","front cover":false},{"file":"youtube.png","front cover":false}],"collection":["Portfolio"]},{"id":"icons","name":"Icônes","categories":{"0":"graphism"},"tags":{"0":"icon"},"variants":[{"file":"about.png","front cover":false},{"file":"coding.png","front cover":false},{"file":"contact.png","front cover":false},{"file":"download-hover.png","front cover":false},{"file":"download.png","front cover":false},{"file":"feedback.png","front cover":false},{"file":"graphism.png","front cover":false},{"file":"icons.png","front cover":true},{"file":"image.png","front cover":false},{"file":"mail-hover.png","front cover":false},{"file":"mail.png","front cover":false},{"file":"news.png","front cover":false},{"file":"pause-hover.png","front cover":false},{"file":"pause.png","front cover":false},{"file":"play-hover.png","front cover":false},{"file":"play.png","front cover":false},{"file":"share-hover.png","front cover":false},{"file":"share.png","front cover":false},{"file":"video-hover.png","front cover":false},{"file":"video.png","front cover":false},{"file":"videos.png","front cover":false}],"collection":["Portfolio"]},{"id":"mockups","name":"Prototypes de design","front_cover":"music","categories":{"0":"graphism"},"tags":{"0":"user interface"},"variants":[{"file":"landing-page.png","front cover":false},{"file":"mobile-landing-page-1.png","front cover":false},{"file":"mobile-landing-page-2.png","front cover":false},{"file":"mobile-landing-page-3.png","front cover":false},{"file":"mobile-landing-page.png","front cover":false},{"file":"mobile-music.png","front cover":false},{"file":"mobile-opened-menu-about.png","front cover":false},{"file":"mobile-opened-menu-creations.png","front cover":false},{"file":"mobile-opened-menu.png","front cover":false},{"file":"music.png","front cover":false},{"file":"opened-menu-about.png","front cover":false},{"file":"opened-menu-creations-coding-item-hovered.png","front cover":false},{"file":"opened-menu-creations.png","front cover":false},{"file":"opened-menu-search.png","front cover":false}],"collection":["Portfolio"]},null],"id":"portfolio"},{"name":"RecCube","products":[{"id":"logo","name":"Logo","categories":{"0":"graphism"},"tags":{"0":"logo"},"variants":[{"file":"logo.png","front cover":true}],"collection":["RecCube"]},{"id":"logotype","name":"logotype","categories":{"0":"graphism"},"tags":{"0":"logotype"},"variants":[{"file":"logotype.png","front cover":true}],"collection":["RecCube"]},{"id":"intro-outro","name":"intro-outro","front_cover":"intro","categories":{"0":"motion"},"tags":{"0":"intro","1":"outro"},"variants":[{"file":"intro.mp4","front cover":false},{"file":"outro.mp4","front cover":false}],"collection":["RecCube"]}],"id":"reccube"},{"name":"Schoolsyst","products":[null,null,{"id":"logo","date":2019,"name":"Logo","front_cover":"logotype","categories":{"0":"graphism","1":"motion"},"tags":{"0":"logo"},"variants":[{"file":"logotype.png","front cover":false}],"collection":["Schoolsyst"]},{"id":"api","hide_from":{"0":"gallery"},"name":"API","categories":{"0":"software"},"tags":{"0":"api"},"variants":[{"file":"description.html","front cover":false}],"collection":["Schoolsyst"]},null,null],"id":"schoolsyst"},{"name":"Secours populaire","products":[{"id":"fete-des-couleurs","name":"Fête des couleurs","categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"fete-des-couleurs.png","front cover":true}],"collection":["Secours populaire"]}],"id":"secours-populaire"},{"name":"Travaux scolaires","products":[{"id":"eating-kills","name":"Eating kills","date":2019,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"eating-kills.png","front cover":true}],"collection":["Travaux scolaires"]},{"id":"erwin","name":"Erwin","front_cover":"title","date":2018,"categories":{"0":"motion"},"tags":{"0":"short film"},"variants":[{"file":"title.mp4","front cover":false}],"collection":["Travaux scolaires"]},{"id":"humanr","name":"HumanR","front_cover":"apple","date":2018,"categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"apple.png","front cover":false},{"file":"levis.png","front cover":false},{"file":"nike.png","front cover":false}],"collection":["Travaux scolaires"]},{"id":"innovation","name":"Innovation","date":2019,"categories":{"0":"motion"},"tags":{"0":"video"},"variants":[{"file":"innovation.mp4","front cover":true}],"collection":["Travaux scolaires"]},{"id":"manufact","name":"Manufact","date":2016,"categories":{"0":"motion"},"tags":{"0":"video"},"variants":[{"file":"manufact.mp4","front cover":true}],"collection":["Travaux scolaires"]},{"id":"oral-bac-russe","name":"Diapositives de l'oral du bac de Russe","front_cover":"юрий-гагарин","date":2020,"categories":{"0":"graphism"},"tags":{"0":"slide"},"variants":[{"file":"алексей-леонов.png","front cover":false},{"file":"валентина-черешкова.png","front cover":false},{"file":"юрий-гагарин.png","front cover":false}],"collection":["Travaux scolaires"]},{"id":"restauration-rapide","name":"Restauration rapide","type":"pdf","date":2018,"categories":{"0":"graphism"},"tags":{"0":"dossier"},"variants":[{"file":"_thumbnail.png","front cover":false},{"file":"restauration-rapide.pdf","front cover":true}],"collection":["Travaux scolaires"]}],"id":"travaux-scolaires"},{"name":"Others","products":[{"id":"abstrakitten","name":"Abstrakitten","categories":{"0":"graphism"},"tags":{"0":"font"},"variants":[{"file":"abstrakitten.png","front cover":true}],"collection":["Others"]},{"id":"conflict","name":"conflict","categories":{"0":"graphism"},"tags":{"0":"compositing"},"variants":[{"file":"conflict.png","front cover":true}],"collection":["Others"]},{"id":"glyphs","name":"Glyphs","front_cover":"illustrator","categories":{"0":"graphism"},"tags":{"0":"icon"},"variants":[{"file":"illustrator.png","front cover":false},{"file":"papier.png","front cover":false}],"collection":["Others"]},{"id":"inklings","name":"Inklings","description":"En anglais, _inkling_ désigne une petite idée, une impression un soupçon.\nOn remarque aussi la présence de _ink_, encre, qui est contenu dans ce mot.\n\nCes dessins sont des enchevêtrements de flux d'idée,\nje dessine ce qui me passe par la tête, sans plus n'y réfléchir.\n","front_cover":"feelings","categories":{"0":"graphism"},"tags":{"0":"drawing"},"variants":[{"file":"astralchitecture.png","front cover":false},{"file":"feelings.png","front cover":false}],"collection":["Others"]},{"id":"equations","name":"Equations","type":"pdf","categories":{"0":"graphism"},"tags":{"0":"typography"},"variants":[{"file":"_thumbnail.png","front cover":false},{"file":"equations.pdf","front cover":true},{"file":"equations.tex","front cover":true}],"collection":["Others"]},{"id":"flat-fruits","name":"Flat Fruits","front_cover":"watermelon","categories":{"0":"graphism"},"tags":{"0":"illustration"},"variants":[{"file":"chocolate-bar.png","front cover":false},{"file":"lemon.png","front cover":false},{"file":"orange.png","front cover":false},{"file":"pear.png","front cover":false},{"file":"strawberry.png","front cover":false},{"file":"watermelon.png","front cover":false}],"collection":["Others"]},{"id":"makisushi","name":"まきすし","front_cover":"columns","categories":{"0":"graphism"},"tags":{"0":"illustration","1":"t-shirt"},"link":"https://www.redbubble.com/fr/shop/p/43234485.WFLAH","variants":[{"file":"columns.png","front cover":false},{"file":"landscape.png","front cover":false}],"collection":["Others"]},{"id":"math-functions","name":"math functions","front_cover":"one-over-x","categories":{"0":"graphism"},"tags":{"0":"math"},"variants":[{"file":"one-over-x.png","front cover":false}],"collection":["Others"]},{"id":"periodic-table","name":"Periodic Table","categories":{"0":"graphism"},"tags":{"0":"math"},"variants":[{"file":"periodic-table.png","front cover":true}],"collection":["Others"]},{"id":"train","name":"Train","categories":{"0":"graphism"},"tags":{"0":"vectorial"},"variants":[{"file":"train.png","front cover":true}],"collection":["Others"]},{"id":"universe-anatomy","name":"Universe anatomy","categories":{"0":"graphism"},"tags":{"0":"compositing","1":"illustration"},"variants":[{"file":"universe-anatomy.png","front cover":true}],"collection":["Others"]},{"id":"you-gotta-think-outside-the-box","name":"You Gotta Think Outside the Box","categories":{"0":"graphism"},"tags":{"0":"poster"},"variants":[{"file":"you-gotta-think-outside-the-box.png","front cover":true}],"collection":["Others"]}],"id":"various"}]
+[
+  {
+    "id": "acf",
+    "renders_dir": "products/renders/acf",
+    "name": "Association de la Cause Freudienne",
+    "website": "https://acf.voiedomitienne.fr",
+    "products": [
+      {
+        "name": "Carte d'annonce du site web de l'ACF",
+        "description": "L'ACF-VD avait besoin de communiquer la création de leur site web,\nj'ai donc réalisé cette carte pour qu'elle puisse être facilement\ndistribuée lors d'interventions de l'association.\n",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "card"
+        ],
+        "id": "pub-site",
+        "gid": "acf:pub-site",
+        "title": "Association de la Cause Freudienne: Carte d'annonce du site web de l'ACF",
+        "hide_from": [],
+        "front_cover": {
+          "file": "pub-site.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/pub-site/pub-site.png",
+          "gid": "acf:pub-site::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "description.html",
+            "type": "text",
+            "html_element": "code",
+            "src": "/products/renders/acf/pub-site/description.html",
+            "gid": "acf:pub-site:description",
+            "content": "\n"
+          },
+          {
+            "file": "pub-site.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/pub-site/pub-site.png",
+            "gid": "acf:pub-site::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Actualité des cartels",
+        "front_cover": {
+          "file": "0.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/actualite-des-cartels-2019/0.png",
+          "gid": "acf:actualite-des-cartels-2019:0",
+          "content": null
+        },
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "actualite-des-cartels-2019",
+        "gid": "acf:actualite-des-cartels-2019",
+        "title": "Association de la Cause Freudienne: Actualité des cartels",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "0.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/actualite-des-cartels-2019/0.png",
+            "gid": "acf:actualite-des-cartels-2019:0",
+            "content": null
+          },
+          {
+            "file": "1.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/actualite-des-cartels-2019/1.png",
+            "gid": "acf:actualite-des-cartels-2019:1",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Conférence d'Éric Zuliani",
+        "date": 2020,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "conference-eric-zuliani",
+        "gid": "acf:conference-eric-zuliani",
+        "title": "Association de la Cause Freudienne: Conférence d'Éric Zuliani",
+        "hide_from": [],
+        "front_cover": {
+          "file": "conference-eric-zuliani.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/conference-eric-zuliani/conference-eric-zuliani.png",
+          "gid": "acf:conference-eric-zuliani::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "conference-eric-zuliani.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/conference-eric-zuliani/conference-eric-zuliani.png",
+            "gid": "acf:conference-eric-zuliani::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Conférence de Laurent Dupont",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "conference-laurent-dupont",
+        "gid": "acf:conference-laurent-dupont",
+        "title": "Association de la Cause Freudienne: Conférence de Laurent Dupont",
+        "hide_from": [],
+        "front_cover": {
+          "file": "conference-laurent-dupont.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/conference-laurent-dupont/conference-laurent-dupont.png",
+          "gid": "acf:conference-laurent-dupont::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "conference-laurent-dupont.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/conference-laurent-dupont/conference-laurent-dupont.png",
+            "gid": "acf:conference-laurent-dupont::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Journées préparatoires au congrès de l'AMP",
+        "front_cover": {
+          "file": "recto.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/journees-preparatoires-congres-amp-2019/recto.png",
+          "gid": "acf:journees-preparatoires-congres-amp-2019:recto",
+          "content": null
+        },
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "journees-preparatoires-congres-amp-2019",
+        "gid": "acf:journees-preparatoires-congres-amp-2019",
+        "title": "Association de la Cause Freudienne: Journées préparatoires au congrès de l'AMP",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "recto.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/journees-preparatoires-congres-amp-2019/recto.png",
+            "gid": "acf:journees-preparatoires-congres-amp-2019:recto",
+            "content": null
+          },
+          {
+            "file": "verso.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/journees-preparatoires-congres-amp-2019/verso.png",
+            "gid": "acf:journees-preparatoires-congres-amp-2019:verso",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Le Petit Chose",
+        "front_cover": {
+          "file": "recto.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/le-petit-chose-2019/recto.png",
+          "gid": "acf:le-petit-chose-2019:recto",
+          "content": null
+        },
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "le-petit-chose-2019",
+        "gid": "acf:le-petit-chose-2019",
+        "title": "Association de la Cause Freudienne: Le Petit Chose",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "recto.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/le-petit-chose-2019/recto.png",
+            "gid": "acf:le-petit-chose-2019:recto",
+            "content": null
+          },
+          {
+            "file": "verso.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/le-petit-chose-2019/verso.png",
+            "gid": "acf:le-petit-chose-2019:verso",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Préparatoires aux J49",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "preparatoires-j49",
+        "gid": "acf:preparatoires-j49",
+        "title": "Association de la Cause Freudienne: Préparatoires aux J49",
+        "hide_from": [],
+        "front_cover": {
+          "file": "preparatoires-j49.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/preparatoires-j49/preparatoires-j49.png",
+          "gid": "acf:preparatoires-j49::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "preparatoires-j49.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/preparatoires-j49/preparatoires-j49.png",
+            "gid": "acf:preparatoires-j49::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "name": "Semaine interne d'étude",
+        "date": 2020,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "semaine-interne",
+        "gid": "acf:semaine-interne",
+        "title": "Association de la Cause Freudienne: Semaine interne d'étude",
+        "hide_from": [],
+        "front_cover": {
+          "file": "semaine-interne.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/semaine-interne/semaine-interne.png",
+          "gid": "acf:semaine-interne::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "semaine-interne.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/semaine-interne/semaine-interne.png",
+            "gid": "acf:semaine-interne::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      },
+      {
+        "links": [
+          "https://www.acfvoiedomitienne.fr/evenements-de-lacfvd"
+        ],
+        "name": "Une femme est une femme",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "une-femme-est-une-femme",
+        "gid": "acf:une-femme-est-une-femme",
+        "title": "Association de la Cause Freudienne: Une femme est une femme",
+        "hide_from": [],
+        "front_cover": {
+          "file": "une-femme-est-une-femme.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/acf/une-femme-est-une-femme/une-femme-est-une-femme.png",
+          "gid": "acf:une-femme-est-une-femme::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "une-femme-est-une-femme.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/acf/une-femme-est-une-femme/une-femme-est-une-femme.png",
+            "gid": "acf:une-femme-est-une-femme::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Association de la Cause Freudienne",
+          "id": "acf",
+          "website": "https://acf.voiedomitienne.fr"
+        }
+      }
+    ]
+  },
+  {
+    "id": "appstract",
+    "renders_dir": "products/renders/appstract",
+    "name": "Appstract",
+    "by": null,
+    "products": [
+      {
+        "name": "Contribution d'icônes à Appstract",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "iconography"
+        ],
+        "id": "appstract-contribution",
+        "gid": "appstract:appstract-contribution",
+        "title": "Appstract: Contribution d'icônes à Appstract",
+        "hide_from": [],
+        "front_cover": {
+          "file": "appstract-contribution.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/appstract/appstract-contribution/appstract-contribution.png",
+          "gid": "appstract:appstract-contribution::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "appstract-contribution.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/appstract/appstract-contribution/appstract-contribution.png",
+            "gid": "appstract:appstract-contribution::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Appstract",
+          "id": "appstract",
+          "by": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "aven",
+    "renders_dir": "products/renders/aven",
+    "name": "Aven E-Sport",
+    "products": [
+      {
+        "name": "Fond d'écran",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "banner",
+          "wallpaper"
+        ],
+        "id": "wallpaper",
+        "gid": "aven:wallpaper",
+        "title": "Aven E-Sport: Fond d'écran",
+        "hide_from": [],
+        "front_cover": {
+          "file": "wallpaper.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/aven/wallpaper/wallpaper.png",
+          "gid": "aven:wallpaper::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "wallpaper.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/aven/wallpaper/wallpaper.png",
+            "gid": "aven:wallpaper::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Aven E-Sport",
+          "id": "aven"
+        }
+      },
+      {
+        "name": "Prototypage du site web",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "user interface",
+          "website mockup"
+        ],
+        "id": "website-mockup",
+        "gid": "aven:website-mockup",
+        "title": "Aven E-Sport: Prototypage du site web",
+        "hide_from": [],
+        "front_cover": {
+          "file": "website-mockup.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/aven/website-mockup/website-mockup.png",
+          "gid": "aven:website-mockup::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "website-mockup.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/aven/website-mockup/website-mockup.png",
+            "gid": "aven:website-mockup::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Aven E-Sport",
+          "id": "aven"
+        }
+      }
+    ]
+  },
+  {
+    "id": "books",
+    "renders_dir": "products/renders/books",
+    "name": "Books",
+    "description": "À la fin de chaque année depuis 2019, je regroupe mes\nmeilleures créations dans un livre\n",
+    "products": [
+      {
+        "type": "pdf",
+        "name": 2019,
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "book"
+        ],
+        "id": "2019",
+        "gid": "books:2019",
+        "title": "Books: 2019",
+        "hide_from": [],
+        "front_cover": {
+          "file": "2019.pdf",
+          "type": "pdf",
+          "html_element": "embed",
+          "src": "/products/renders/books/2019/2019.pdf",
+          "gid": "books:2019::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "2019.pdf",
+            "type": "pdf",
+            "html_element": "embed",
+            "src": "/products/renders/books/2019/2019.pdf",
+            "gid": "books:2019::",
+            "content": null
+          },
+          {
+            "file": "_thumbnail.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/books/2019/_thumbnail.png",
+            "gid": "books:2019:_thumbnail",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Books",
+          "id": "books",
+          "description": "À la fin de chaque année depuis 2019, je regroupe mes\nmeilleures créations dans un livre\n"
+        }
+      }
+    ]
+  },
+  {
+    "id": "college-dalzon",
+    "renders_dir": "products/renders/college-dalzon",
+    "name": "Collège de d'Alzon <br>Vestric-et-Candiac",
+    "products": [
+      {
+        "name": "Forum des métiers",
+        "front_cover": {
+          "file": "2017.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/college-dalzon/forum-des-metiers/2017.png",
+          "gid": "college-dalzon:forum-des-metiers:2017",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "forum-des-metiers",
+        "gid": "college-dalzon:forum-des-metiers",
+        "title": "Collège de d'Alzon <br>Vestric-et-Candiac: Forum des métiers",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "2017.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/forum-des-metiers/2017.png",
+            "gid": "college-dalzon:forum-des-metiers:2017",
+            "content": null
+          },
+          {
+            "file": "2018.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/forum-des-metiers/2018.png",
+            "gid": "college-dalzon:forum-des-metiers:2018",
+            "content": null
+          },
+          {
+            "file": "2019.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/forum-des-metiers/2019.png",
+            "gid": "college-dalzon:forum-des-metiers:2019",
+            "content": null
+          },
+          {
+            "file": "2020.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/forum-des-metiers/2020.png",
+            "gid": "college-dalzon:forum-des-metiers:2020",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Collège de d'Alzon <br>Vestric-et-Candiac",
+          "id": "college-dalzon"
+        }
+      },
+      {
+        "name": "Bal",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "bal",
+        "gid": "college-dalzon:bal",
+        "title": "Collège de d'Alzon <br>Vestric-et-Candiac: Bal",
+        "hide_from": [],
+        "front_cover": {
+          "file": "bal.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/college-dalzon/bal/bal.png",
+          "gid": "college-dalzon:bal::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "bal.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/bal/bal.png",
+            "gid": "college-dalzon:bal::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Collège de d'Alzon <br>Vestric-et-Candiac",
+          "id": "college-dalzon"
+        }
+      },
+      {
+        "name": "Journée Santé & Sécurité",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "journee-sante-securite",
+        "gid": "college-dalzon:journee-sante-securite",
+        "title": "Collège de d'Alzon <br>Vestric-et-Candiac: Journée Santé & Sécurité",
+        "hide_from": [],
+        "front_cover": {
+          "file": "journee-sante-securite.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/college-dalzon/journee-sante-securite/journee-sante-securite.png",
+          "gid": "college-dalzon:journee-sante-securite::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "journee-sante-securite.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/college-dalzon/journee-sante-securite/journee-sante-securite.png",
+            "gid": "college-dalzon:journee-sante-securite::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Collège de d'Alzon <br>Vestric-et-Candiac",
+          "id": "college-dalzon"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mx3",
+    "renders_dir": "products/renders/mx3",
+    "name": "Mx3",
+    "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+    "front_covers": "cover-art",
+    "products": [
+      {
+        "name": "Identité visuelle",
+        "front_cover": {
+          "file": "banner.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/visual-identity/banner.png",
+          "gid": "mx3:visual-identity:banner",
+          "content": null
+        },
+        "type": "video",
+        "categories": [
+          "graphisme",
+          "motion"
+        ],
+        "tags": [
+          "intro",
+          "outro",
+          "logo",
+          "banner"
+        ],
+        "id": "visual-identity",
+        "gid": "mx3:visual-identity",
+        "title": "Mx3: Identité visuelle",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "banner.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/visual-identity/banner.png",
+            "gid": "mx3:visual-identity:banner",
+            "content": null
+          },
+          {
+            "file": "cinematic-intro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/mx3/visual-identity/cinematic-intro.mp4",
+            "gid": "mx3:visual-identity:cinematic-intro",
+            "content": null
+          },
+          {
+            "file": "favicon-dark.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/visual-identity/favicon-dark.png",
+            "gid": "mx3:visual-identity:favicon-dark",
+            "content": null
+          },
+          {
+            "file": "favicon-rgb.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/visual-identity/favicon-rgb.png",
+            "gid": "mx3:visual-identity:favicon-rgb",
+            "content": null
+          },
+          {
+            "file": "intro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/mx3/visual-identity/intro.mp4",
+            "gid": "mx3:visual-identity:intro",
+            "content": null
+          },
+          {
+            "file": "logo-blue.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/visual-identity/logo-blue.png",
+            "gid": "mx3:visual-identity:logo-blue",
+            "content": null
+          },
+          {
+            "file": "logo-stripes.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/visual-identity/logo-stripes.png",
+            "gid": "mx3:visual-identity:logo-stripes",
+            "content": null
+          },
+          {
+            "file": "outro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/mx3/visual-identity/outro.mp4",
+            "gid": "mx3:visual-identity:outro",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Aqua",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "aqua",
+        "gid": "mx3:aqua",
+        "title": "Mx3: Aqua",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/aqua/cover-art.png",
+          "gid": "mx3:aqua:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/aqua/cover-art.png",
+            "gid": "mx3:aqua:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Aria Math",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "aria-math",
+        "gid": "mx3:aria-math",
+        "title": "Mx3: Aria Math",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/aria-math/cover-art.png",
+          "gid": "mx3:aria-math:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/aria-math/cover-art.png",
+            "gid": "mx3:aria-math:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Circular",
+        "categories": [
+          "graphism",
+          "music",
+          "motion"
+        ],
+        "tags": [
+          "cover art",
+          "single",
+          "music video"
+        ],
+        "id": "circular",
+        "gid": "mx3:circular",
+        "title": "Mx3: Circular",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/circular/cover-art-landscape.png",
+          "gid": "mx3:circular:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/circular/cover-art-landscape.png",
+            "gid": "mx3:circular:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/circular/cover-art.png",
+            "gid": "mx3:circular:cover-art",
+            "content": null
+          },
+          {
+            "file": "video.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/mx3/circular/video.mp4",
+            "gid": "mx3:circular:video",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Codelines",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "codelines",
+        "gid": "mx3:codelines",
+        "title": "Mx3: Codelines",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/codelines/cover-art.png",
+          "gid": "mx3:codelines:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/codelines/cover-art.png",
+            "gid": "mx3:codelines:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Coldfingers",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "coldfingers",
+        "gid": "mx3:coldfingers",
+        "title": "Mx3: Coldfingers",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/coldfingers/cover-art.png",
+          "gid": "mx3:coldfingers:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/coldfingers/cover-art.png",
+            "gid": "mx3:coldfingers:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Corrupted",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "ep"
+        ],
+        "id": "corrupted",
+        "gid": "mx3:corrupted",
+        "title": "Mx3: Corrupted",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/corrupted/cover-art.png",
+          "gid": "mx3:corrupted:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/corrupted/cover-art.png",
+            "gid": "mx3:corrupted:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Etymology",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "etymology",
+        "gid": "mx3:etymology",
+        "title": "Mx3: Etymology",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/etymology/cover-art.png",
+          "gid": "mx3:etymology:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/etymology/cover-art.png",
+            "gid": "mx3:etymology:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Filetype",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "filetype",
+        "gid": "mx3:filetype",
+        "title": "Mx3: Filetype",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/filetype/cover-art-landscape.png",
+          "gid": "mx3:filetype:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/filetype/cover-art-landscape.png",
+            "gid": "mx3:filetype:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/filetype/cover-art.png",
+            "gid": "mx3:filetype:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Flows of Flowr",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "flows-of-flowr",
+        "gid": "mx3:flows-of-flowr",
+        "title": "Mx3: Flows of Flowr",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/flows-of-flowr/cover-art.png",
+          "gid": "mx3:flows-of-flowr:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/flows-of-flowr/cover-art.png",
+            "gid": "mx3:flows-of-flowr:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Glass Shrapnel",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "glass-shrapnel",
+        "gid": "mx3:glass-shrapnel",
+        "title": "Mx3: Glass Shrapnel",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/glass-shrapnel/cover-art.png",
+          "gid": "mx3:glass-shrapnel:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/glass-shrapnel/cover-art.png",
+            "gid": "mx3:glass-shrapnel:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Glitchopin",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "glitchopin",
+        "gid": "mx3:glitchopin",
+        "title": "Mx3: Glitchopin",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/glitchopin/cover-art.png",
+          "gid": "mx3:glitchopin:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/glitchopin/cover-art.png",
+            "gid": "mx3:glitchopin:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Infrasonic Village",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "album"
+        ],
+        "id": "infrasonic-village",
+        "gid": "mx3:infrasonic-village",
+        "title": "Mx3: Infrasonic Village",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-2.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/infrasonic-village/cover-art-2.png",
+          "gid": "mx3:infrasonic-village:cover-art-2",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-2.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/infrasonic-village/cover-art-2.png",
+            "gid": "mx3:infrasonic-village:cover-art-2",
+            "content": null
+          },
+          {
+            "file": "cover-art-3.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/infrasonic-village/cover-art-3.png",
+            "gid": "mx3:infrasonic-village:cover-art-3",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/infrasonic-village/cover-art.png",
+            "gid": "mx3:infrasonic-village:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Ink",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "ink",
+        "gid": "mx3:ink",
+        "title": "Mx3: Ink",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/ink/cover-art.png",
+          "gid": "mx3:ink:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/ink/cover-art.png",
+            "gid": "mx3:ink:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Interstellar",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "interstellar",
+        "gid": "mx3:interstellar",
+        "title": "Mx3: Interstellar",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/interstellar/cover-art.png",
+          "gid": "mx3:interstellar:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/interstellar/cover-art.png",
+            "gid": "mx3:interstellar:cover-art",
+            "content": null
+          },
+          {
+            "file": "video.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/mx3/interstellar/video.mp4",
+            "gid": "mx3:interstellar:video",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "LCD",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "ep"
+        ],
+        "id": "lcd",
+        "gid": "mx3:lcd",
+        "title": "Mx3: LCD",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-square-recto.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/lcd/cover-art-square-recto.png",
+          "gid": "mx3:lcd:cover-art-square-recto",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-square-recto.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/lcd/cover-art-square-recto.png",
+            "gid": "mx3:lcd:cover-art-square-recto",
+            "content": null
+          },
+          {
+            "file": "cover-art-square-verso.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/lcd/cover-art-square-verso.png",
+            "gid": "mx3:lcd:cover-art-square-verso",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/lcd/cover-art.png",
+            "gid": "mx3:lcd:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Malwr",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "album"
+        ],
+        "id": "malwr",
+        "gid": "mx3:malwr",
+        "title": "Mx3: Malwr",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/malwr/cover-art.png",
+          "gid": "mx3:malwr:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/malwr/cover-art.png",
+            "gid": "mx3:malwr:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "trentemøller - Miss You (Mx3 Remix)",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single",
+          "remix"
+        ],
+        "id": "miss-you-remix",
+        "gid": "mx3:miss-you-remix",
+        "title": "Mx3: trentemøller - Miss You (Mx3 Remix)",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/miss-you-remix/cover-art.png",
+          "gid": "mx3:miss-you-remix:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/miss-you-remix/cover-art.png",
+            "gid": "mx3:miss-you-remix:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Morph",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "morph",
+        "gid": "mx3:morph",
+        "title": "Mx3: Morph",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/morph/cover-art.png",
+          "gid": "mx3:morph:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/morph/cover-art.png",
+            "gid": "mx3:morph:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "ELO - Mr. Blue Sky (Mx3 Remix)",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single",
+          "remix"
+        ],
+        "id": "mr-blue-sky-remix",
+        "gid": "mx3:mr-blue-sky-remix",
+        "title": "Mx3: ELO - Mr. Blue Sky (Mx3 Remix)",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/mr-blue-sky-remix/cover-art.png",
+          "gid": "mx3:mr-blue-sky-remix:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/mr-blue-sky-remix/cover-art.png",
+            "gid": "mx3:mr-blue-sky-remix:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Neptune",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "album"
+        ],
+        "id": "neptune",
+        "gid": "mx3:neptune",
+        "title": "Mx3: Neptune",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/neptune/cover-art-landscape.png",
+          "gid": "mx3:neptune:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/neptune/cover-art-landscape.png",
+            "gid": "mx3:neptune:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/neptune/cover-art.png",
+            "gid": "mx3:neptune:cover-art",
+            "content": null
+          },
+          {
+            "file": "out-now.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/neptune/out-now.png",
+            "gid": "mx3:neptune:out-now",
+            "content": null
+          },
+          {
+            "file": "teaser.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/neptune/teaser.png",
+            "gid": "mx3:neptune:teaser",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Nihon",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "ep"
+        ],
+        "id": "nihon",
+        "gid": "mx3:nihon",
+        "title": "Mx3: Nihon",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/nihon/cover-art.png",
+          "gid": "mx3:nihon:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/nihon/cover-art.png",
+            "gid": "mx3:nihon:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Patterns",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "ep"
+        ],
+        "id": "patterns",
+        "gid": "mx3:patterns",
+        "title": "Mx3: Patterns",
+        "hide_from": [],
+        "front_cover": {
+          "file": "background-green.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/patterns/background-green.png",
+          "gid": "mx3:patterns:background-green",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "background-green.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/background-green.png",
+            "gid": "mx3:patterns:background-green",
+            "content": null
+          },
+          {
+            "file": "background.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/background.png",
+            "gid": "mx3:patterns:background",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/cover-art.png",
+            "gid": "mx3:patterns:cover-art",
+            "content": null
+          },
+          {
+            "file": "green-dot.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/green-dot.png",
+            "gid": "mx3:patterns:green-dot",
+            "content": null
+          },
+          {
+            "file": "pattern.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/pattern.png",
+            "gid": "mx3:patterns:pattern",
+            "content": null
+          },
+          {
+            "file": "textless.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/patterns/textless.png",
+            "gid": "mx3:patterns:textless",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Relocation",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "relocation",
+        "gid": "mx3:relocation",
+        "title": "Mx3: Relocation",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/relocation/cover-art-landscape.png",
+          "gid": "mx3:relocation:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/cover-art-landscape.png",
+            "gid": "mx3:relocation:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/cover-art.png",
+            "gid": "mx3:relocation:cover-art",
+            "content": null
+          },
+          {
+            "file": "landscape-diagonal.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/landscape-diagonal.png",
+            "gid": "mx3:relocation:landscape-diagonal",
+            "content": null
+          },
+          {
+            "file": "landscape-mirror-centered-text.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/landscape-mirror-centered-text.png",
+            "gid": "mx3:relocation:landscape-mirror-centered-text",
+            "content": null
+          },
+          {
+            "file": "landscape-mirror.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/landscape-mirror.png",
+            "gid": "mx3:relocation:landscape-mirror",
+            "content": null
+          },
+          {
+            "file": "landscape-squared-text.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/landscape-squared-text.png",
+            "gid": "mx3:relocation:landscape-squared-text",
+            "content": null
+          },
+          {
+            "file": "landscape-vertical.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/relocation/landscape-vertical.png",
+            "gid": "mx3:relocation:landscape-vertical",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Schedule Hell",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single"
+        ],
+        "id": "schedule-hell",
+        "gid": "mx3:schedule-hell",
+        "title": "Mx3: Schedule Hell",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/schedule-hell/cover-art.png",
+          "gid": "mx3:schedule-hell:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/schedule-hell/cover-art.png",
+            "gid": "mx3:schedule-hell:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Serial",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "album"
+        ],
+        "id": "serial",
+        "gid": "mx3:serial",
+        "title": "Mx3: Serial",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-textless.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/serial/cover-art-textless.png",
+          "gid": "mx3:serial:cover-art-textless",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-textless.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/serial/cover-art-textless.png",
+            "gid": "mx3:serial:cover-art-textless",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/serial/cover-art.png",
+            "gid": "mx3:serial:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Stranger Things (Remixes)",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "ep",
+          "remix"
+        ],
+        "id": "stranger-things-remix",
+        "gid": "mx3:stranger-things-remix",
+        "title": "Mx3: Stranger Things (Remixes)",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/stranger-things-remix/cover-art-landscape.png",
+          "gid": "mx3:stranger-things-remix:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/stranger-things-remix/cover-art-landscape.png",
+            "gid": "mx3:stranger-things-remix:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/stranger-things-remix/cover-art.png",
+            "gid": "mx3:stranger-things-remix:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Tesseract",
+        "categories": [
+          "graphism",
+          "music",
+          "motion"
+        ],
+        "tags": [
+          "cover art",
+          "single",
+          "music video"
+        ],
+        "id": "tesseract",
+        "gid": "mx3:tesseract",
+        "title": "Mx3: Tesseract",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/tesseract/cover-art.png",
+          "gid": "mx3:tesseract:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/tesseract/cover-art.png",
+            "gid": "mx3:tesseract:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "deadmau5 - unspecial effects (Mx3 Remix)",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "single",
+          "remix"
+        ],
+        "id": "unspecial-effects-remix",
+        "gid": "mx3:unspecial-effects-remix",
+        "title": "Mx3: deadmau5 - unspecial effects (Mx3 Remix)",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/unspecial-effects-remix/cover-art.png",
+          "gid": "mx3:unspecial-effects-remix:cover-art",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/unspecial-effects-remix/cover-art.png",
+            "gid": "mx3:unspecial-effects-remix:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      },
+      {
+        "name": "Work",
+        "categories": [
+          "graphism",
+          "music"
+        ],
+        "tags": [
+          "cover art",
+          "album"
+        ],
+        "id": "work",
+        "gid": "mx3:work",
+        "title": "Mx3: Work",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cover-art-landscape.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/mx3/work/cover-art-landscape.png",
+          "gid": "mx3:work:cover-art-landscape",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cover-art-landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/work/cover-art-landscape.png",
+            "gid": "mx3:work:cover-art-landscape",
+            "content": null
+          },
+          {
+            "file": "cover-art-square-pipes.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/work/cover-art-square-pipes.png",
+            "gid": "mx3:work:cover-art-square-pipes",
+            "content": null
+          },
+          {
+            "file": "cover-art.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/mx3/work/cover-art.png",
+            "gid": "mx3:work:cover-art",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Mx3",
+          "id": "mx3",
+          "description": "Mon nom d'artiste, sous lequel je réalisé la plupart de mes créations, notamment ma musique.\n",
+          "front_covers": "cover-art"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cubing-t",
+    "renders_dir": "products/renders/cubing-t",
+    "name": "Cubing-T",
+    "products": [
+      {
+        "name": "Bannière",
+        "date": null,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "banner"
+        ],
+        "id": "banner",
+        "gid": "cubing-t:banner",
+        "title": "Cubing-T: Bannière",
+        "hide_from": [],
+        "front_cover": {
+          "file": "banner.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/cubing-t/banner/banner.png",
+          "gid": "cubing-t:banner::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "banner.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/cubing-t/banner/banner.png",
+            "gid": "cubing-t:banner::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Cubing-T",
+          "id": "cubing-t"
+        }
+      },
+      {
+        "name": "Logo",
+        "date": null,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logo"
+        ],
+        "id": "logo",
+        "gid": "cubing-t:logo",
+        "title": "Cubing-T: Logo",
+        "hide_from": [],
+        "front_cover": {
+          "file": "logo.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/cubing-t/logo/logo.png",
+          "gid": "cubing-t:logo::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logo.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/cubing-t/logo/logo.png",
+            "gid": "cubing-t:logo::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Cubing-T",
+          "id": "cubing-t"
+        }
+      }
+    ]
+  },
+  {
+    "id": "freezaxe",
+    "renders_dir": "products/renders/freezaxe",
+    "name": "FreeZaxe",
+    "products": [
+      {
+        "name": "banner",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "banner"
+        ],
+        "id": "banner",
+        "gid": "freezaxe:banner",
+        "title": "FreeZaxe: banner",
+        "hide_from": [],
+        "front_cover": {
+          "file": "banner.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/freezaxe/banner/banner.png",
+          "gid": "freezaxe:banner::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "banner.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/freezaxe/banner/banner.png",
+            "gid": "freezaxe:banner::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "FreeZaxe",
+          "id": "freezaxe"
+        }
+      },
+      {
+        "name": "Intro & Outro",
+        "front_cover": {
+          "file": "intro.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/freezaxe/intro-outro/intro.mp4",
+          "gid": "freezaxe:intro-outro:intro",
+          "content": null
+        },
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "intro",
+          "outro"
+        ],
+        "id": "intro-outro",
+        "gid": "freezaxe:intro-outro",
+        "title": "FreeZaxe: Intro & Outro",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "intro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/freezaxe/intro-outro/intro.mp4",
+            "gid": "freezaxe:intro-outro:intro",
+            "content": null
+          },
+          {
+            "file": "outro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/freezaxe/intro-outro/outro.mp4",
+            "gid": "freezaxe:intro-outro:outro",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "FreeZaxe",
+          "id": "freezaxe"
+        }
+      },
+      {
+        "name": "Cube Lycée",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "cube-lycee",
+        "gid": "freezaxe:cube-lycee",
+        "title": "FreeZaxe: Cube Lycée",
+        "hide_from": [],
+        "front_cover": {
+          "file": "cube-lycee.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/freezaxe/cube-lycee/cube-lycee.png",
+          "gid": "freezaxe:cube-lycee::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "cube-lycee.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/freezaxe/cube-lycee/cube-lycee.png",
+            "gid": "freezaxe:cube-lycee::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "FreeZaxe",
+          "id": "freezaxe"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hyperis",
+    "renders_dir": "products/renders/hyperis",
+    "name": "Hyperis",
+    "products": [
+      {
+        "name": "Teaser",
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "teaser"
+        ],
+        "id": "teaser",
+        "gid": "hyperis:teaser",
+        "title": "Hyperis: Teaser",
+        "hide_from": [],
+        "front_cover": {
+          "file": "teaser.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/hyperis/teaser/teaser.mp4",
+          "gid": "hyperis:teaser::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "teaser.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/hyperis/teaser/teaser.mp4",
+            "gid": "hyperis:teaser::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Hyperis",
+          "id": "hyperis"
+        }
+      },
+      {
+        "type": "pdf",
+        "name": "Dossier",
+        "categories": [
+          "graphism"
+        ],
+        "id": "dossier",
+        "gid": "hyperis:dossier",
+        "title": "Hyperis: Dossier",
+        "hide_from": [],
+        "front_cover": {
+          "file": "dossier.pdf",
+          "type": "pdf",
+          "html_element": "embed",
+          "src": "/products/renders/hyperis/dossier/dossier.pdf",
+          "gid": "hyperis:dossier::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "_thumbnail.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/hyperis/dossier/_thumbnail.png",
+            "gid": "hyperis:dossier:_thumbnail",
+            "content": null
+          },
+          {
+            "file": "dossier.pdf",
+            "type": "pdf",
+            "html_element": "embed",
+            "src": "/products/renders/hyperis/dossier/dossier.pdf",
+            "gid": "hyperis:dossier::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Hyperis",
+          "id": "hyperis"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jitters-team",
+    "renders_dir": "products/renders/jitters-team",
+    "name": "JiTTeR's Team",
+    "products": [
+      {
+        "name": "Logo",
+        "hide_from": [
+          "gallery"
+        ],
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logo"
+        ],
+        "id": "logo",
+        "gid": "jitters-team:logo",
+        "title": "JiTTeR's Team: Logo",
+        "front_cover": {
+          "file": "logo.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/jitters-team/logo/logo.png",
+          "gid": "jitters-team:logo::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logo.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/jitters-team/logo/logo.png",
+            "gid": "jitters-team:logo::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "JiTTeR's Team",
+          "id": "jitters-team"
+        }
+      },
+      {
+        "name": "Logotype",
+        "hide_from": [
+          "gallery"
+        ],
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logotype"
+        ],
+        "id": "logotype",
+        "gid": "jitters-team:logotype",
+        "title": "JiTTeR's Team: Logotype",
+        "front_cover": {
+          "file": "logotype.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/jitters-team/logotype/logotype.png",
+          "gid": "jitters-team:logotype::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logotype.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/jitters-team/logotype/logotype.png",
+            "gid": "jitters-team:logotype::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "JiTTeR's Team",
+          "id": "jitters-team"
+        }
+      },
+      {
+        "name": "Logo complet",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logo",
+          "logotype"
+        ],
+        "id": "compound",
+        "gid": "jitters-team:compound",
+        "title": "JiTTeR's Team: Logo complet",
+        "hide_from": [],
+        "front_cover": {
+          "file": "compound.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/jitters-team/compound/compound.png",
+          "gid": "jitters-team:compound::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "compound.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/jitters-team/compound/compound.png",
+            "gid": "jitters-team:compound::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "JiTTeR's Team",
+          "id": "jitters-team"
+        }
+      }
+    ]
+  },
+  {
+    "id": "les-harobases",
+    "renders_dir": "products/renders/les-harobases",
+    "name": "Les Harobases",
+    "products": [
+      {
+        "name": "Bannière",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "banner"
+        ],
+        "id": "banner",
+        "gid": "les-harobases:banner",
+        "title": "Les Harobases: Bannière",
+        "hide_from": [],
+        "front_cover": {
+          "file": "banner.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/les-harobases/banner/banner.png",
+          "gid": "les-harobases:banner::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "banner.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/les-harobases/banner/banner.png",
+            "gid": "les-harobases:banner::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Les Harobases",
+          "id": "les-harobases"
+        }
+      },
+      {
+        "name": "logo",
+        "date": 2018,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logo"
+        ],
+        "id": "logo",
+        "gid": "les-harobases:logo",
+        "title": "Les Harobases: logo",
+        "hide_from": [],
+        "front_cover": {
+          "file": "logo.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/les-harobases/logo/logo.png",
+          "gid": "les-harobases:logo::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logo.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/les-harobases/logo/logo.png",
+            "gid": "les-harobases:logo::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Les Harobases",
+          "id": "les-harobases"
+        }
+      },
+      {
+        "name": "logotype",
+        "date": 2018,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logotype"
+        ],
+        "id": "logotype",
+        "gid": "les-harobases:logotype",
+        "title": "Les Harobases: logotype",
+        "hide_from": [],
+        "front_cover": {
+          "file": "logotype.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/les-harobases/logotype/logotype.png",
+          "gid": "les-harobases:logotype::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logotype.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/les-harobases/logotype/logotype.png",
+            "gid": "les-harobases:logotype::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Les Harobases",
+          "id": "les-harobases"
+        }
+      },
+      {
+        "name": "Parkour",
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "video"
+        ],
+        "id": "parkour",
+        "gid": "les-harobases:parkour",
+        "title": "Les Harobases: Parkour",
+        "hide_from": [],
+        "front_cover": {
+          "file": "parkour.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/les-harobases/parkour/parkour.mp4",
+          "gid": "les-harobases:parkour::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "parkour.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/les-harobases/parkour/parkour.mp4",
+            "gid": "les-harobases:parkour::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Les Harobases",
+          "id": "les-harobases"
+        }
+      },
+      {
+        "name": "Spacetime Portals - Intro",
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "intro"
+        ],
+        "id": "space-time-portals-intro",
+        "gid": "les-harobases:space-time-portals-intro",
+        "title": "Les Harobases: Spacetime Portals - Intro",
+        "hide_from": [],
+        "front_cover": {
+          "file": "space-time-portals-intro.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/les-harobases/space-time-portals-intro/space-time-portals-intro.mp4",
+          "gid": "les-harobases:space-time-portals-intro::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "space-time-portals-intro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/les-harobases/space-time-portals-intro/space-time-portals-intro.mp4",
+            "gid": "les-harobases:space-time-portals-intro::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Les Harobases",
+          "id": "les-harobases"
+        }
+      }
+    ]
+  },
+  {
+    "id": "portfolio",
+    "renders_dir": "products/renders/portfolio",
+    "name": "Portfolio",
+    "products": [
+      {
+        "front_cover": {
+          "file": "social-medias.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/portfolio/banners/social-medias.png",
+          "gid": "portfolio:banners:social-medias",
+          "content": null
+        },
+        "name": "Bannière",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "banner"
+        ],
+        "id": "banners",
+        "gid": "portfolio:banners",
+        "title": "Portfolio: Bannière",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "social-medias.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/banners/social-medias.png",
+            "gid": "portfolio:banners:social-medias",
+            "content": null
+          },
+          {
+            "file": "teaser.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/banners/teaser.png",
+            "gid": "portfolio:banners:teaser",
+            "content": null
+          },
+          {
+            "file": "youtube.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/banners/youtube.png",
+            "gid": "portfolio:banners:youtube",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Portfolio",
+          "id": "portfolio"
+        }
+      },
+      {
+        "name": "Icônes",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "icon"
+        ],
+        "id": "icons",
+        "gid": "portfolio:icons",
+        "title": "Portfolio: Icônes",
+        "hide_from": [],
+        "front_cover": {
+          "file": "icons.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/portfolio/icons/icons.png",
+          "gid": "portfolio:icons::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "about.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/about.png",
+            "gid": "portfolio:icons:about",
+            "content": null
+          },
+          {
+            "file": "coding.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/coding.png",
+            "gid": "portfolio:icons:coding",
+            "content": null
+          },
+          {
+            "file": "contact.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/contact.png",
+            "gid": "portfolio:icons:contact",
+            "content": null
+          },
+          {
+            "file": "download-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/download-hover.png",
+            "gid": "portfolio:icons:download-hover",
+            "content": null
+          },
+          {
+            "file": "download.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/download.png",
+            "gid": "portfolio:icons:download",
+            "content": null
+          },
+          {
+            "file": "feedback.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/feedback.png",
+            "gid": "portfolio:icons:feedback",
+            "content": null
+          },
+          {
+            "file": "graphism.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/graphism.png",
+            "gid": "portfolio:icons:graphism",
+            "content": null
+          },
+          {
+            "file": "icons.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/icons.png",
+            "gid": "portfolio:icons::",
+            "content": null
+          },
+          {
+            "file": "image.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/image.png",
+            "gid": "portfolio:icons:image",
+            "content": null
+          },
+          {
+            "file": "mail-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/mail-hover.png",
+            "gid": "portfolio:icons:mail-hover",
+            "content": null
+          },
+          {
+            "file": "mail.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/mail.png",
+            "gid": "portfolio:icons:mail",
+            "content": null
+          },
+          {
+            "file": "news.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/news.png",
+            "gid": "portfolio:icons:news",
+            "content": null
+          },
+          {
+            "file": "pause-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/pause-hover.png",
+            "gid": "portfolio:icons:pause-hover",
+            "content": null
+          },
+          {
+            "file": "pause.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/pause.png",
+            "gid": "portfolio:icons:pause",
+            "content": null
+          },
+          {
+            "file": "play-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/play-hover.png",
+            "gid": "portfolio:icons:play-hover",
+            "content": null
+          },
+          {
+            "file": "play.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/play.png",
+            "gid": "portfolio:icons:play",
+            "content": null
+          },
+          {
+            "file": "share-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/share-hover.png",
+            "gid": "portfolio:icons:share-hover",
+            "content": null
+          },
+          {
+            "file": "share.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/share.png",
+            "gid": "portfolio:icons:share",
+            "content": null
+          },
+          {
+            "file": "video-hover.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/video-hover.png",
+            "gid": "portfolio:icons:video-hover",
+            "content": null
+          },
+          {
+            "file": "video.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/video.png",
+            "gid": "portfolio:icons:video",
+            "content": null
+          },
+          {
+            "file": "videos.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/icons/videos.png",
+            "gid": "portfolio:icons:videos",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Portfolio",
+          "id": "portfolio"
+        }
+      },
+      {
+        "name": "Prototypes de design",
+        "front_cover": {
+          "file": "landing-page.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/portfolio/mockups/landing-page.png",
+          "gid": "portfolio:mockups:landing-page",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "user interface"
+        ],
+        "id": "mockups",
+        "gid": "portfolio:mockups",
+        "title": "Portfolio: Prototypes de design",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "landing-page.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/landing-page.png",
+            "gid": "portfolio:mockups:landing-page",
+            "content": null
+          },
+          {
+            "file": "mobile-landing-page-1.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-landing-page-1.png",
+            "gid": "portfolio:mockups:mobile-landing-page-1",
+            "content": null
+          },
+          {
+            "file": "mobile-landing-page-2.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-landing-page-2.png",
+            "gid": "portfolio:mockups:mobile-landing-page-2",
+            "content": null
+          },
+          {
+            "file": "mobile-landing-page-3.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-landing-page-3.png",
+            "gid": "portfolio:mockups:mobile-landing-page-3",
+            "content": null
+          },
+          {
+            "file": "mobile-landing-page.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-landing-page.png",
+            "gid": "portfolio:mockups:mobile-landing-page",
+            "content": null
+          },
+          {
+            "file": "mobile-music.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-music.png",
+            "gid": "portfolio:mockups:mobile-music",
+            "content": null
+          },
+          {
+            "file": "mobile-opened-menu-about.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-opened-menu-about.png",
+            "gid": "portfolio:mockups:mobile-opened-menu-about",
+            "content": null
+          },
+          {
+            "file": "mobile-opened-menu-creations.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-opened-menu-creations.png",
+            "gid": "portfolio:mockups:mobile-opened-menu-creations",
+            "content": null
+          },
+          {
+            "file": "mobile-opened-menu.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/mobile-opened-menu.png",
+            "gid": "portfolio:mockups:mobile-opened-menu",
+            "content": null
+          },
+          {
+            "file": "music.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/music.png",
+            "gid": "portfolio:mockups:music",
+            "content": null
+          },
+          {
+            "file": "opened-menu-about.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/opened-menu-about.png",
+            "gid": "portfolio:mockups:opened-menu-about",
+            "content": null
+          },
+          {
+            "file": "opened-menu-creations-coding-item-hovered.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/opened-menu-creations-coding-item-hovered.png",
+            "gid": "portfolio:mockups:opened-menu-creations-coding-item-hovered",
+            "content": null
+          },
+          {
+            "file": "opened-menu-creations.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/opened-menu-creations.png",
+            "gid": "portfolio:mockups:opened-menu-creations",
+            "content": null
+          },
+          {
+            "file": "opened-menu-search.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/portfolio/mockups/opened-menu-search.png",
+            "gid": "portfolio:mockups:opened-menu-search",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Portfolio",
+          "id": "portfolio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "reccube",
+    "renders_dir": "products/renders/reccube",
+    "name": "RecCube",
+    "products": [
+      {
+        "name": "Logo",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logo"
+        ],
+        "id": "logo",
+        "gid": "reccube:logo",
+        "title": "RecCube: Logo",
+        "hide_from": [],
+        "front_cover": {
+          "file": "logo.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/reccube/logo/logo.png",
+          "gid": "reccube:logo::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logo.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/reccube/logo/logo.png",
+            "gid": "reccube:logo::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "RecCube",
+          "id": "reccube"
+        }
+      },
+      {
+        "name": "logotype",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "logotype"
+        ],
+        "id": "logotype",
+        "gid": "reccube:logotype",
+        "title": "RecCube: logotype",
+        "hide_from": [],
+        "front_cover": {
+          "file": "logotype.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/reccube/logotype/logotype.png",
+          "gid": "reccube:logotype::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "logotype.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/reccube/logotype/logotype.png",
+            "gid": "reccube:logotype::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "RecCube",
+          "id": "reccube"
+        }
+      },
+      {
+        "name": "intro-outro",
+        "front_cover": {
+          "file": "intro.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/reccube/intro-outro/intro.mp4",
+          "gid": "reccube:intro-outro:intro",
+          "content": null
+        },
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "intro",
+          "outro"
+        ],
+        "id": "intro-outro",
+        "gid": "reccube:intro-outro",
+        "title": "RecCube: intro-outro",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "intro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/reccube/intro-outro/intro.mp4",
+            "gid": "reccube:intro-outro:intro",
+            "content": null
+          },
+          {
+            "file": "outro.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/reccube/intro-outro/outro.mp4",
+            "gid": "reccube:intro-outro:outro",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "RecCube",
+          "id": "reccube"
+        }
+      }
+    ]
+  },
+  {
+    "id": "schoolsyst",
+    "renders_dir": "products/renders/schoolsyst",
+    "name": "Schoolsyst",
+    "products": [
+      {
+        "date": 2019,
+        "name": "Logo",
+        "front_cover": {
+          "file": "logotype.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/schoolsyst/logo/logotype.png",
+          "gid": "schoolsyst:logo:logotype",
+          "content": null
+        },
+        "categories": [
+          "graphism",
+          "motion"
+        ],
+        "tags": [
+          "logo"
+        ],
+        "id": "logo",
+        "gid": "schoolsyst:logo",
+        "title": "Schoolsyst: Logo",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "logotype.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/schoolsyst/logo/logotype.png",
+            "gid": "schoolsyst:logo:logotype",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Schoolsyst",
+          "id": "schoolsyst"
+        }
+      },
+      {
+        "hide_from": [
+          "gallery"
+        ],
+        "name": "API",
+        "categories": [
+          "software"
+        ],
+        "tags": [
+          "api"
+        ],
+        "id": "api",
+        "gid": "schoolsyst:api",
+        "title": "Schoolsyst: API",
+        "front_cover": {
+          "file": "description.html",
+          "type": "text",
+          "html_element": "code",
+          "src": "/products/renders/schoolsyst/api/description.html",
+          "gid": "schoolsyst:api:description",
+          "content": "<h2></h2>\n"
+        },
+        "variants": [
+          {
+            "file": "description.html",
+            "type": "text",
+            "html_element": "code",
+            "src": "/products/renders/schoolsyst/api/description.html",
+            "gid": "schoolsyst:api:description",
+            "content": "<h2></h2>\n"
+          }
+        ],
+        "collection": {
+          "name": "Schoolsyst",
+          "id": "schoolsyst"
+        }
+      }
+    ]
+  },
+  {
+    "id": "secours-populaire",
+    "renders_dir": "products/renders/secours-populaire",
+    "name": "Secours populaire",
+    "products": [
+      {
+        "name": "Fête des couleurs",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "fete-des-couleurs",
+        "gid": "secours-populaire:fete-des-couleurs",
+        "title": "Secours populaire: Fête des couleurs",
+        "hide_from": [],
+        "front_cover": {
+          "file": "fete-des-couleurs.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/secours-populaire/fete-des-couleurs/fete-des-couleurs.png",
+          "gid": "secours-populaire:fete-des-couleurs::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "fete-des-couleurs.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/secours-populaire/fete-des-couleurs/fete-des-couleurs.png",
+            "gid": "secours-populaire:fete-des-couleurs::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Secours populaire",
+          "id": "secours-populaire"
+        }
+      }
+    ]
+  },
+  {
+    "id": "travaux-scolaires",
+    "renders_dir": "products/renders/travaux-scolaires",
+    "name": "Travaux scolaires",
+    "products": [
+      {
+        "name": "Eating kills",
+        "date": 2019,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "eating-kills",
+        "gid": "travaux-scolaires:eating-kills",
+        "title": "Travaux scolaires: Eating kills",
+        "hide_from": [],
+        "front_cover": {
+          "file": "eating-kills.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/travaux-scolaires/eating-kills/eating-kills.png",
+          "gid": "travaux-scolaires:eating-kills::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "eating-kills.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/eating-kills/eating-kills.png",
+            "gid": "travaux-scolaires:eating-kills::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "Erwin",
+        "front_cover": {
+          "file": "title.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/travaux-scolaires/erwin/title.mp4",
+          "gid": "travaux-scolaires:erwin:title",
+          "content": null
+        },
+        "date": 2018,
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "short film"
+        ],
+        "id": "erwin",
+        "gid": "travaux-scolaires:erwin",
+        "title": "Travaux scolaires: Erwin",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "title.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/travaux-scolaires/erwin/title.mp4",
+            "gid": "travaux-scolaires:erwin:title",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "HumanR",
+        "front_cover": {
+          "file": "apple.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/travaux-scolaires/humanr/apple.png",
+          "gid": "travaux-scolaires:humanr:apple",
+          "content": null
+        },
+        "date": 2018,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "humanr",
+        "gid": "travaux-scolaires:humanr",
+        "title": "Travaux scolaires: HumanR",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "apple.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/humanr/apple.png",
+            "gid": "travaux-scolaires:humanr:apple",
+            "content": null
+          },
+          {
+            "file": "levis.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/humanr/levis.png",
+            "gid": "travaux-scolaires:humanr:levis",
+            "content": null
+          },
+          {
+            "file": "nike.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/humanr/nike.png",
+            "gid": "travaux-scolaires:humanr:nike",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "Innovation",
+        "date": 2019,
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "video"
+        ],
+        "id": "innovation",
+        "gid": "travaux-scolaires:innovation",
+        "title": "Travaux scolaires: Innovation",
+        "hide_from": [],
+        "front_cover": {
+          "file": "innovation.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/travaux-scolaires/innovation/innovation.mp4",
+          "gid": "travaux-scolaires:innovation::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "innovation.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/travaux-scolaires/innovation/innovation.mp4",
+            "gid": "travaux-scolaires:innovation::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "Manufact",
+        "date": 2016,
+        "categories": [
+          "motion"
+        ],
+        "tags": [
+          "video"
+        ],
+        "id": "manufact",
+        "gid": "travaux-scolaires:manufact",
+        "title": "Travaux scolaires: Manufact",
+        "hide_from": [],
+        "front_cover": {
+          "file": "manufact.mp4",
+          "type": "video",
+          "html_element": "video",
+          "src": "/products/renders/travaux-scolaires/manufact/manufact.mp4",
+          "gid": "travaux-scolaires:manufact::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "manufact.mp4",
+            "type": "video",
+            "html_element": "video",
+            "src": "/products/renders/travaux-scolaires/manufact/manufact.mp4",
+            "gid": "travaux-scolaires:manufact::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "Diapositives de l'oral du bac de Russe",
+        "front_cover": {
+          "file": "алексей-леонов.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/travaux-scolaires/oral-bac-russe/алексей-леонов.png",
+          "gid": "travaux-scolaires:oral-bac-russe:алексей-леонов",
+          "content": null
+        },
+        "date": 2020,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "slide"
+        ],
+        "id": "oral-bac-russe",
+        "gid": "travaux-scolaires:oral-bac-russe",
+        "title": "Travaux scolaires: Diapositives de l'oral du bac de Russe",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "алексей-леонов.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/oral-bac-russe/алексей-леонов.png",
+            "gid": "travaux-scolaires:oral-bac-russe:алексей-леонов",
+            "content": null
+          },
+          {
+            "file": "валентина-черешкова.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/oral-bac-russe/валентина-черешкова.png",
+            "gid": "travaux-scolaires:oral-bac-russe:валентина-черешкова",
+            "content": null
+          },
+          {
+            "file": "юрий-гагарин.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/oral-bac-russe/юрий-гагарин.png",
+            "gid": "travaux-scolaires:oral-bac-russe:юрий-гагарин",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      },
+      {
+        "name": "Restauration rapide",
+        "type": "pdf",
+        "date": 2018,
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "dossier"
+        ],
+        "id": "restauration-rapide",
+        "gid": "travaux-scolaires:restauration-rapide",
+        "title": "Travaux scolaires: Restauration rapide",
+        "hide_from": [],
+        "front_cover": {
+          "file": "restauration-rapide.pdf",
+          "type": "pdf",
+          "html_element": "embed",
+          "src": "/products/renders/travaux-scolaires/restauration-rapide/restauration-rapide.pdf",
+          "gid": "travaux-scolaires:restauration-rapide::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "_thumbnail.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/travaux-scolaires/restauration-rapide/_thumbnail.png",
+            "gid": "travaux-scolaires:restauration-rapide:_thumbnail",
+            "content": null
+          },
+          {
+            "file": "restauration-rapide.pdf",
+            "type": "pdf",
+            "html_element": "embed",
+            "src": "/products/renders/travaux-scolaires/restauration-rapide/restauration-rapide.pdf",
+            "gid": "travaux-scolaires:restauration-rapide::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Travaux scolaires",
+          "id": "travaux-scolaires"
+        }
+      }
+    ]
+  },
+  {
+    "id": "various",
+    "renders_dir": "products/renders/various",
+    "name": "Others",
+    "products": [
+      {
+        "name": "Abstrakitten",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "font"
+        ],
+        "id": "abstrakitten",
+        "gid": "various:abstrakitten",
+        "title": "Others: Abstrakitten",
+        "hide_from": [],
+        "front_cover": {
+          "file": "abstrakitten.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/abstrakitten/abstrakitten.png",
+          "gid": "various:abstrakitten::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "abstrakitten.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/abstrakitten/abstrakitten.png",
+            "gid": "various:abstrakitten::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "conflict",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "compositing"
+        ],
+        "id": "conflict",
+        "gid": "various:conflict",
+        "title": "Others: conflict",
+        "hide_from": [],
+        "front_cover": {
+          "file": "conflict.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/conflict/conflict.png",
+          "gid": "various:conflict::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "conflict.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/conflict/conflict.png",
+            "gid": "various:conflict::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Glyphs",
+        "front_cover": {
+          "file": "illustrator.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/glyphs/illustrator.png",
+          "gid": "various:glyphs:illustrator",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "icon"
+        ],
+        "id": "glyphs",
+        "gid": "various:glyphs",
+        "title": "Others: Glyphs",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "illustrator.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/glyphs/illustrator.png",
+            "gid": "various:glyphs:illustrator",
+            "content": null
+          },
+          {
+            "file": "papier.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/glyphs/papier.png",
+            "gid": "various:glyphs:papier",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Inklings",
+        "description": "En anglais, <em>inkling</em> désigne une petite idée, une impression un soupçon.\nOn remarque aussi la présence de <em>ink</em>, encre, qui est contenu dans ce mot.\n\nCes dessins sont des enchevêtrements de flux d'idée,\nje dessine ce qui me passe par la tête, sans plus n'y réfléchir.\n",
+        "front_cover": {
+          "file": "astralchitecture.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/inklings/astralchitecture.png",
+          "gid": "various:inklings:astralchitecture",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "drawing"
+        ],
+        "id": "inklings",
+        "gid": "various:inklings",
+        "title": "Others: Inklings",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "astralchitecture.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/inklings/astralchitecture.png",
+            "gid": "various:inklings:astralchitecture",
+            "content": null
+          },
+          {
+            "file": "feelings.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/inklings/feelings.png",
+            "gid": "various:inklings:feelings",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Equations",
+        "type": "pdf",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "typography"
+        ],
+        "id": "equations",
+        "gid": "various:equations",
+        "title": "Others: Equations",
+        "hide_from": [],
+        "front_cover": {
+          "file": "equations.pdf",
+          "type": "pdf",
+          "html_element": "embed",
+          "src": "/products/renders/various/equations/equations.pdf",
+          "gid": "various:equations::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "_thumbnail.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/equations/_thumbnail.png",
+            "gid": "various:equations:_thumbnail",
+            "content": null
+          },
+          {
+            "file": "equations.pdf",
+            "type": "pdf",
+            "html_element": "embed",
+            "src": "/products/renders/various/equations/equations.pdf",
+            "gid": "various:equations::",
+            "content": null
+          },
+          {
+            "file": "equations.tex",
+            "type": "text",
+            "html_element": "code",
+            "src": "/products/renders/various/equations/equations.tex",
+            "gid": "various:equations::",
+            "content": "\\documentclass{article}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb}\n\\usepackage{amsmath}\n\\usepackage{amsfonts}\n\\usepackage[a4paper, total={6.5in, 9.5in}]{geometry}\n\n\\begin{document}\n\n\\begin{center}\n    \n\\begin{aligned}\n(A' + \\tilde{\\imath}) - \\mathring{B} &= \\lceil \\Gamma'' / \\widetilde{\\beta * \\alpha} \\rceil\\\\\n\\uparrow \\overgroup{\\gamma \\amalg \\delta} \\barwedge \\acute{\\Delta}\\downarrow \\bigcirc \\vec{E}&\\eqcirc [ \\utilde{\\epsilon \\bmod \\zeta} ] \\boxdot \\bar{Z}\\\\\n\\undergroup{\\eta \\boxplus \\theta} \\boxtimes \\lfloor \\breve{H} \\bullet \\check{\\Theta} \\rfloor&\\lesseqqgtr \\Overrightarrow{I \\cap K} \\Cap \\{ \\dot{\\kappa} \\cdot \\ddot{\\lambda} \\}\\\\\n\\langle \\overleftharpoon{\\rho\\sigma} \\Cup \\widecheck{P\\Sigma T} \\rangle \\cup \\tau \\curlyvee \\upsilon &<  \\lgroup \\Upsilon \\curlywedge \\overrightharpoon{\\Phi X} \\rgroup \\div \\underline{\\phi}_{\\varphi + 2}\\\\\n\\Psi \\divideontimes \\overline{\\Omega}^{\\varepsilon - 3 / a} \\Uparrow \\psi \\dotplus \\omega \\Downarrow&\\eqcolon | C' \\doublebarwedge b | \\gtrdot 4\\\\\n\\nabla'' \\intercal \\ulcorner 5 \\land \\Im \\urcorner &\\Eqcolon \\tilde{c} \\leftthreetimes \\llcorner \\underleftarrow{CD} \\ldotp \\mathring{d} \\lrcorner\\\\\n\\lVert\\Reals \\lor \\breve{\\jmath} \\rVert \\lessdot \\underrightarrow{ef} \\lhd F &\\eqsim \\frac {7 \\ltimes \\partial}{g \\mod i} \\mp 6\\\\\n\\underlinesegment{\\aleph J} \\oplus \\backslash 10\\wp \\ominus j \\backslash &\\eqslantgtr 9 \\otimes \\overlinesegment{lG} \\lt \\acute{k} \\oslash \\Game \\gt\\\\\n\\Updownarrow h \\odot 8 \\Updownarrow \\; \\between \\prod_{i=20}^{Y_{40}}  \\eta \\pm \\sigma &\\Subset  \\coprod_{i=21}^{25} A_i \\rm b \\: \\cancel{+ я\\cupи\\capд}\\\\\n\\daleth \\gg +\\infty &\\ggg - \\infty \\gggtr \\eth\\cdot\\hslash^{19}\\\\\n[\\N\\veebar\\Z]\\wr\\Complex + \\gimel &\\frown \\hbar - 14 \\asymp ù\\\\\n\\llbracket L \\pm \\bar{m} \\rrbracket \\rhd \\check{n} &\\eqslantless \\lBrace pq\\rightthreetimes r \\rBrace \\rtimes \\ddot{s}\\setminus\\{11;13\\}\\\\\n\\ulcorner \\overrightharpoon{Q} \\sqcap 12 \\lrcorner t \\sqcup S \\smallsetminus v &\\equiv \\hat{x} \\unlhd (\\dot{y} \\times \\widetilde{zR})\\\\\nw\\unrhd u &\\fallingdotseq T \\lfloor \\Bbbk  \\uplus \\Finv \\rfloor \\vee 13\\vec{U}\\\\\n15\\hslash \\ge  \\frac{\\arcsin V}{W} &\\geqq 16 /17\\ell * \\mathring{\\pi} \\geqslant \\sum^{\\Re}_{-\\infty} 18\\\\\n\\overleftarrow{\\mu_1} \\circ \\lmoustache \\grave{\\Lambda} \\centerdot \\hat{M} \\rmoustache &\\sqsupset \\quad \\updownarrow \\overrightarrow{N\\Xi} \\circledast \\widehat{\\nu\\xi o} \\updownarrow \\circledcirc O^\\circleddash \\Pi\\\\\nЮ : а &\\mapsto щ \\div \\Gamma(\\bar{Б}) + \\lang\\frac{a!}{Б!!}\\rang\\\\\n%&\\backepsilon ю \\bowtie зертыуопчэсфгхйклмвьцжбн\\\\\n%АЗЕРТЫУИОПЧЯСХЙКЛМЭВЬЦЖН\\\\\n\\mathring{\\imath} = 4.41544545\\cdot10^{14} &\\quad\\text{neV}^2\\cdot\\text{Tm}^ {-1}\\\\\n\\end{aligned}\n\\end{center}\n\n\\end{document}\n\n"
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Flat Fruits",
+        "front_cover": {
+          "file": "chocolate-bar.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/flat-fruits/chocolate-bar.png",
+          "gid": "various:flat-fruits:chocolate-bar",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "illustration"
+        ],
+        "id": "flat-fruits",
+        "gid": "various:flat-fruits",
+        "title": "Others: Flat Fruits",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "chocolate-bar.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/chocolate-bar.png",
+            "gid": "various:flat-fruits:chocolate-bar",
+            "content": null
+          },
+          {
+            "file": "lemon.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/lemon.png",
+            "gid": "various:flat-fruits:lemon",
+            "content": null
+          },
+          {
+            "file": "orange.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/orange.png",
+            "gid": "various:flat-fruits:orange",
+            "content": null
+          },
+          {
+            "file": "pear.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/pear.png",
+            "gid": "various:flat-fruits:pear",
+            "content": null
+          },
+          {
+            "file": "strawberry.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/strawberry.png",
+            "gid": "various:flat-fruits:strawberry",
+            "content": null
+          },
+          {
+            "file": "watermelon.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/flat-fruits/watermelon.png",
+            "gid": "various:flat-fruits:watermelon",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "まきすし",
+        "front_cover": {
+          "file": "columns.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/makisushi/columns.png",
+          "gid": "various:makisushi:columns",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "illustration",
+          "t-shirt"
+        ],
+        "links": [
+          "https://www.redbubble.com/fr/shop/p/43234485.WFLAH"
+        ],
+        "id": "makisushi",
+        "gid": "various:makisushi",
+        "title": "Others: まきすし",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "columns.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/makisushi/columns.png",
+            "gid": "various:makisushi:columns",
+            "content": null
+          },
+          {
+            "file": "landscape.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/makisushi/landscape.png",
+            "gid": "various:makisushi:landscape",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "math functions",
+        "front_cover": {
+          "file": "one-over-x.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/math-functions/one-over-x.png",
+          "gid": "various:math-functions:one-over-x",
+          "content": null
+        },
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "math"
+        ],
+        "id": "math-functions",
+        "gid": "various:math-functions",
+        "title": "Others: math functions",
+        "hide_from": [],
+        "variants": [
+          {
+            "file": "one-over-x.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/math-functions/one-over-x.png",
+            "gid": "various:math-functions:one-over-x",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Periodic Table",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "math"
+        ],
+        "id": "periodic-table",
+        "gid": "various:periodic-table",
+        "title": "Others: Periodic Table",
+        "hide_from": [],
+        "front_cover": {
+          "file": "periodic-table.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/periodic-table/periodic-table.png",
+          "gid": "various:periodic-table::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "periodic-table.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/periodic-table/periodic-table.png",
+            "gid": "various:periodic-table::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Train",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "vectorial"
+        ],
+        "id": "train",
+        "gid": "various:train",
+        "title": "Others: Train",
+        "hide_from": [],
+        "front_cover": {
+          "file": "train.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/train/train.png",
+          "gid": "various:train::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "train.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/train/train.png",
+            "gid": "various:train::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "Universe anatomy",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "compositing",
+          "illustration"
+        ],
+        "id": "universe-anatomy",
+        "gid": "various:universe-anatomy",
+        "title": "Others: Universe anatomy",
+        "hide_from": [],
+        "front_cover": {
+          "file": "universe-anatomy.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/universe-anatomy/universe-anatomy.png",
+          "gid": "various:universe-anatomy::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "universe-anatomy.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/universe-anatomy/universe-anatomy.png",
+            "gid": "various:universe-anatomy::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      },
+      {
+        "name": "You Gotta Think Outside the Box",
+        "categories": [
+          "graphism"
+        ],
+        "tags": [
+          "poster"
+        ],
+        "id": "you-gotta-think-outside-the-box",
+        "gid": "various:you-gotta-think-outside-the-box",
+        "title": "Others: You Gotta Think Outside the Box",
+        "hide_from": [],
+        "front_cover": {
+          "file": "you-gotta-think-outside-the-box.png",
+          "type": "image",
+          "html_element": "img",
+          "src": "/products/renders/various/you-gotta-think-outside-the-box/you-gotta-think-outside-the-box.png",
+          "gid": "various:you-gotta-think-outside-the-box::",
+          "content": null
+        },
+        "variants": [
+          {
+            "file": "you-gotta-think-outside-the-box.png",
+            "type": "image",
+            "html_element": "img",
+            "src": "/products/renders/various/you-gotta-think-outside-the-box/you-gotta-think-outside-the-box.png",
+            "gid": "various:you-gotta-think-outside-the-box::",
+            "content": null
+          }
+        ],
+        "collection": {
+          "name": "Others",
+          "id": "various"
+        }
+      }
+    ]
+  }
+]
