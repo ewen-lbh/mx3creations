@@ -55,7 +55,7 @@ const parseYAML = (file) => {
 const normalizeKeys = (object) => {
   const normalized = {}
   Object.entries(object).forEach(([key, value]) => {
-    const typeStr = Object.prototype.toString.call(object)
+    const typeStr = Object.prototype.toString.call(value)
     key = key.replace(' ', '_')
     if (['camel', 'pascal'].includes(Case.of(key))) {
       key = Case.snake(key)
@@ -72,6 +72,46 @@ const normalizeKeys = (object) => {
   return normalized
 }
 
+const getTypeFromExt = (ext) => {
+  switch (ext.replace('.', '')) {
+    case 'png':
+    case 'jpg':
+    case 'jpeg':
+      return 'image'
+
+    case 'mp4':
+      return 'video'
+
+    case 'pdf':
+      return 'pdf'
+
+    case 'mp3':
+    case 'wav':
+    case 'flac':
+      return 'audio'
+
+    default:
+      return 'text'
+  }
+}
+
+const getHTMLElementFromExt = (ext) => {
+  switch (getTypeFromExt(ext)) {
+    case 'video':
+      return 'video'
+    case 'image':
+      return 'img'
+    case 'pdf':
+      return 'embed'
+    case 'text':
+      return 'code'
+    default:
+      return null
+  }
+}
+
 module.exports = {
-  parseYAML
+  parseYAML,
+  getTypeFromExt,
+  getHTMLElementFromExt
 }

@@ -6,21 +6,74 @@ const boxen = require('boxen')
 const chalk = require('chalk')
 const ora = require('ora')
 const program = require('commander')
+const dt = require('date-fns')
+const fr = require('date-fns/locale/fr')
+const columnify = require('columnify')
+const _ = require('lodash')
 const utils = require('./utils')
 
 program
-  .option('-o', '--output', 'Output to the given filename.')
+  .option('-o, --output', 'Output to the given filename.')
+  .option(
+    '-i, --indentation <level>',
+    'Set the indentation level for the outputted JSON. Set to 0 to minify the output. Default: 0',
+    parseInt,
+    0
+  )
   .parse(process.argv)
 
 const database = utils.parseYAML(program.args[0])
 const spinner = ora('Compiling...').start()
+const getAvgModTime = (p) => {
+  if (p === null || p === undefined || !Object.keys(p).includes('variants')) {
+    return null
+  }
+  const mtimes = p.variants
+    .map((variant) => {
+      if (!variant) return
+      const filepath = path.resolve('../static', variant.src.replace('/', ''))
+      const mtime = ~~fs.statSync(filepath).mtimeMs
+      spinner.info(chalk`{red singl} {bold ${JSON.stringify(Date(mtime))}}`)
+      return mtime
+    })
+    .filter((mtime) => mtime > 0)
+  let mean = _.mean(mtimes)
+  spinner.info(chalk`{red unixt} {bold ${JSON.stringify(mean)}}`)
+  spinner.info(
+    chalk`{red parsd} {bold ${JSON.stringify(
+      dt.format(mean / 1000, 'yyyy-MM-dd')
+    )}}`
+  )
+  mean = new Date(mean * 1000)
+
+  mean = {
+    year: (p.date && p.date.year) || dt.getYear(mean),
+    month: (p.date && p.date.month) || dt.getMonth(mean),
+    day: (p.date && p.date.day) || dt.getDay(mean)
+  }
+  spinner.info(chalk`{red objec} {bold ${JSON.stringify(mean)}}`)
+  mean = dt.format(new Date(mean.year, mean.month, mean.day), 'yyyy-MM-dd')
+  return mean
+}
 
 // Flatten collections & products
 spinner.text = 'Flattening...'
-const collections = []
+let collections = []
 Object.entries(database).forEach(([collectionID, collection]) => {
   // Push a new collection
   collections.push({
+    // ID
+    id: collectionID,
+    // Directory of renders
+    renders_dir: path.relative(
+      '../static/',
+      path.resolve(program.args[1], collectionID)
+    ),
+    // Remove spaces from tags & categories
+    tags: collection.tags && collection.tags.map((t) => t.replace(/ /g, '-')),
+    categories:
+      collection.categories &&
+      collection.categories.map((t) => t.replace(/ /g, '-')),
     // Normal properties
     ...collection,
     // Flattened products list
@@ -33,39 +86,118 @@ Object.entries(database).forEach(([collectionID, collection]) => {
           productID
         )
         if (!fs.existsSync(variantsDir)) return
+        const variantsFiles = fs
+          .readdirSync(variantsDir)
+          .filter((item) =>
+            fs.statSync(path.resolve(variantsDir, item)).isFile()
+          )
+        const isFrontCover = (file) =>
+          path.basename(file, path.extname(file)) === String(frontCover)
+        const getVariantSrc = (file) =>
+          '/' + path.relative('../static', path.join(variantsDir, file))
+        const getVariantObject = (file) => {
+          let obj = {
+            file,
+            type: utils.getTypeFromExt(path.extname(file)),
+            html_element: utils.getHTMLElementFromExt(path.extname(file)),
+            src: getVariantSrc(file),
+            gid: `${collectionID}:${productID}:${
+              path.basename(file, path.extname(file)) === productID
+                ? ':'
+                : path.basename(file, path.extname(file))
+            }`
+          }
+          if (obj.type === 'text') {
+            obj = {
+              ...obj,
+              content: fs
+                .readFileSync(path.resolve(variantsDir, file))
+                .toString()
+            }
+          } else {
+            obj = { ...obj, content: null }
+          }
+          return obj
+        }
         const frontCover =
           product['front cover'] || collection['front covers'] || productID
         return {
-          id: productID,
           ...product,
-          variants: fs
-            .readdirSync(variantsDir)
-            .filter((item) =>
-              fs.statSync(path.resolve(variantsDir, item)).isFile()
-            )
-            .map((file) => ({
-              file,
-              'front cover':
-                path.basename(file, path.extname(file)) === frontCover
-            })),
+          id: productID,
+          gid: `${collectionID}:${productID}`,
+          title: `${collection.name}: ${product.name}`,
+          hide_from: product.hide_from || [],
+          front_cover:
+            variantsFiles
+              .filter((file) => isFrontCover(file))
+              .map((file) => getVariantObject(file))[0] ||
+            getVariantObject(variantsFiles[0]),
+          variants: variantsFiles.map((file) => getVariantObject(file)),
           collection: Object.keys(collection)
             .filter((k) => k !== 'products')
-            .map((k) => collection[k])
+            .reduce(
+              (acc, cur) => ({
+                ...acc,
+                [cur]: collection[cur],
+                id: collectionID
+              }),
+              {}
+            )
         }
       }
-    ),
-    id: collectionID
+    )
   })
 })
 
+// Remove "null" products
+collections = collections.map((c) => ({
+  ...c,
+  products: c.products.filter((p) => p !== null && p !== undefined)
+}))
+
+const productGIDsWithNoExplicitDate = []
+// collections = collections.map((collection) => {
+//   return {
+//     products: collection.products.map((p) => {
+//       if (!p.date) {
+//         productGIDsWithNoExplicitDate.push(
+//           chalk`{blue ${p.collection.id}}:${p.id}`
+//         )
+//       }
+//       return {
+//         date: p.date || getAvgModTime(p),
+//         ...p
+//       }
+//     }),
+//     ...collection
+//   }
+// })
+
 spinner.text = 'Serializing to JSON...'
-const jsoned = JSON.stringify(collections)
+const jsoned = JSON.stringify(collections, null, program.indentation)
 
 const outputFile =
-  program.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
+  program.options.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
 try {
   fs.writeFileSync(outputFile, jsoned)
-  spinner.succeed(chalk`Compiled to {bold ${outputFile}}!`)
+  spinner.succeed(
+    chalk`Compiled to {bold ${outputFile}}` +
+      (program.indentation
+        ? chalk` with indentation level {bold ${program.indentation}}`
+        : '')
+  )
+  if (productGIDsWithNoExplicitDate.length) {
+    consola.warn(
+      chalk`{bold ${productGIDsWithNoExplicitDate.length}} (${Math.round(
+        productGIDsWithNoExplicitDate.length / _.sumBy(collections, (c) => c.products.length) * 100
+      )}%) products didn't have a date set, used the mod time average of variants' files.`
+    )
+    // console.log(
+    //   columnify(_.chunk(productGIDsWithNoExplicitDate, 4), {
+    //     showHeaders: false
+    //   })
+    // )
+  }
 } catch (error) {
   spinner.fail(chalk`Error while writing to {bold ${outputFile}}`)
   console.log(
