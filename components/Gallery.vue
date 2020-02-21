@@ -1,42 +1,30 @@
 <template lang="pug">
 .gallery
-  li(v-for="(product, i) in productsOfCategory" :key="`${product.collection.id}/${product.id}`")
+  li(v-for="(product, i) in products" :key="product.gid")
     template(v-if="showProduct(product)")
       nuxt-link(
-        :to="localePath(`/works/${product.collection.id}/${product.id}`)"
+        :to="localePath(`/${product.collection.id}/${product.id}`)"
         :title="product.title"
       )
         component.item(
-          :is="frontCoverHTMLElement(product.type)"
-          :src="product.frontCover"
+          :is="frontCoverHTMLElement(product)"
+          :src="frontCoverHref(product)"
           :alt="product.title"
-          autoplay muted loop
-        )
+          @load="product.front_cover.type === 'video' ? $el.play() : false"
+        ) {{ product.front_cover.src }}
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import { firstBy } from 'thenby'
-
 export default {
   props: {
-    category: {
-      type: String,
+    products: {
+      type: Array,
       default: null
     }
   },
-  computed: {
-    ...mapGetters('products', ['products']),
-    productsOfCategory() {
-      if (!this.category) return this.products
-      return this.products
-        .filter((product) => product.categories.includes(this.category))
-        .sort(firstBy('collection.date').thenBy('id'))
-    }
-  },
   methods: {
-    frontCoverHTMLElement(productType) {
-      switch (productType) {
+    frontCoverHTMLElement(product) {
+      switch (product.front_cover.type) {
         case 'image':
         case 'pdf':
           return 'img'
@@ -48,16 +36,29 @@ export default {
     },
     showProduct(product) {
       return (
-        product.frontCover &&
-        !product.hideFrom.includes('gallery') &&
-        this.frontCoverHTMLElement(product.type)
+        product &&
+        product.front_cover !== undefined &&
+        !product.hide_from.includes('gallery') &&
+        this.frontCoverHTMLElement(product)
       )
+    },
+    frontCoverHref(product) {
+      const cover = product.front_cover
+      if (cover.type === 'pdf') {
+        return `/products/renders/${product.collection.id}/${product.id}/_thumbnail.png`
+      } else {
+        return cover.src
+      }
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+//
+// Definitions
+//
+
 gallery-gaps = 25px
 
 .gallery
@@ -70,6 +71,20 @@ gallery-gaps = 25px
   margin-bottom: gallery-gaps
   background white
   border 1px solid black
+  transition all 0.25s ease
+  box-sizing border-box
+
+.gallery a::before
+    content ''
+    height: 20px
+    background #000
+    position absolute
+
+.item:hover
+  transform translateY(-10px)
+  box-shadow 0 10px 10px rgba(0,0,0,0.4)
+  border-color rgba(0,0,0,0.25)
+  z-index: -1
 
 .gallery embed.item
   width 100%
