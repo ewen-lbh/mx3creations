@@ -13,7 +13,8 @@ const _ = require('lodash')
 const utils = require('./utils')
 
 program
-  .option('-o, --output', 'Output to the given filename.')
+  .option('-o, --output <path>', 'Output to the given filename.')
+  .option('-l, --local', 'Compile for local files use.')
   .option(
     '-i, --indentation <level>',
     'Set the indentation level for the outputted JSON. Set to 0 to minify the output. Default: 0',
@@ -94,7 +95,7 @@ Object.entries(database).forEach(([collectionID, collection]) => {
         const isFrontCover = (file) =>
           path.basename(file, path.extname(file)) === String(frontCover)
         const getVariantSrc = (file) =>
-          '/' + path.relative('../static', path.join(variantsDir, file))
+          (program.local ? '' : 'http://static.mx3creations.com') + '/' + path.relative('../static', path.join(variantsDir, file))
         const getVariantObject = (file) => {
           let obj = {
             file,
@@ -177,13 +178,13 @@ spinner.text = 'Serializing to JSON...'
 const jsoned = JSON.stringify(collections, null, program.indentation)
 
 const outputFile =
-  program.options.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
+  program.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
 try {
   fs.writeFileSync(outputFile, jsoned)
   spinner.succeed(
-    chalk`Compiled to {bold ${outputFile}}` +
+    chalk`Compiled to {bold ${outputFile}} with {bold ${program.local ? 'local' : 'distant'}} variant file sources` +
       (program.indentation
-        ? chalk` with indentation level {bold ${program.indentation}}`
+        ? chalk` and indentation level {bold ${program.indentation}}`
         : '')
   )
   if (productGIDsWithNoExplicitDate.length) {
