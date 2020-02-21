@@ -29,11 +29,10 @@ body
 
 #page
   padding 0 20px
-  min-height 100vh
 
 nav-height = 70px
 max-page-width = 1400px
-#nav
+#nav:not(.opened)
   height nav-height
   & /deep/ nav
     max-width max-page-width
@@ -46,4 +45,8 @@ max-page-width = 1400px
 
 #page .gallery
   margin-bottom: 40px
+
+#footer
+  margin-top: 100px
+  padding-bottom: 70px
 </style>
