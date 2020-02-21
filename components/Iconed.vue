@@ -1,6 +1,6 @@
 <template lang="pug">
 span.--iconed
-  img(v-if="icon" :src="`/icons/${icon}.svg`")
+  img(v-if="icon" :src="`/icons/${icon}.svg`" :class="{ flip }")
   slot
 </template>
 
@@ -10,6 +10,10 @@ export default {
     icon: {
       type: String,
       default: null
+    },
+    flip: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -18,4 +22,6 @@ export default {
 <style lang="stylus" scoped>
 img
   margin-right: 0.5em
+.flip
+  transform scaleX(-1)
 </style>
