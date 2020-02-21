@@ -14,6 +14,7 @@ export default {
   anErrorOccured: 'An error occured',
   inexistantWork: 'This work does not exist',
   backToHome: 'Back to home',
+  myCreations: `My creations`,
   html: {
     about: fr.html.about.replace('<h1>', '<h1> TODO: Trad! </h1>')
   }

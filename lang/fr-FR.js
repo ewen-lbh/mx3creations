@@ -1,5 +1,5 @@
 export default {
-  works: 'créations',
+  works: 'Créations',
   graphism: 'Image',
   all: 'Tout',
   mx3screations: "Mx3's Creations",
@@ -8,15 +8,24 @@ export default {
   music: 'Musique',
   software: 'Code',
   contact: 'Contact',
+  legal: 'Informations légales',
+  credits: 'Crédits',
+  'This page could not be found': 'Page introuvable',
   pageNotFound: 'Page non trouvée',
   anErrorOccured: "Une erreur s'est produite",
   Others: 'Autres',
   inexistantWork: "Cette œuvre n'existe pas.",
   backToHome: "Retour à l'accueil",
   back: 'Retour',
-  hello: 'Voici mes créations.',
-  intro: `Je suis Ewen Le Bihan, {#TODO: phrase de définition}.`,
+  myCreations: 'Voici mes créations.',
+  heyImEwenLeBihan: `Je suis Ewen Le Bihan, {#TODO: phrase de définition}.`,
   learnMore: 'En savoir plus',
+  openMenu: 'menu',
+  closeMenu: 'fermer',
+  seeInAction: 'Voir sur',
+  categories: {
+    image: 'Graphism'
+  },
   html: {
     about: `
       <h1>Qui suis-je?</h1>
