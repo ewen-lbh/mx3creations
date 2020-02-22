@@ -17,9 +17,13 @@
     "consola": "^2.11.3",
     "date-fns": "^2.9.0",
     "enquirer": "^2.3.4",
+    "image-size": "^0.8.3",
     "listr": "^0.14.3",
     "lodash": "^4.17.15",
     "ora": "^4.0.3",
+    "resize-optimize-images": "^1.1.0",
+    "scp": "^0.0.3",
+    "wrap-ansi": "^6.2.0",
     "yaml": "^1.7.2"
   }
 }
