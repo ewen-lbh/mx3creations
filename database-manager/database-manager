@@ -6,5 +6,6 @@ program
   .description("CLI to manage my portfolio's database file")
   .command('compile [file] [directory]', 'Compiles a database file')
   .alias('c')
-  .command('add', 'Adds a product')
+  .command('upload [file] [user]@[host]', 'Uploads the database file via scp')
+  .alias('u')
   .parse(process.argv)
