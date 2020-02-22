@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   mode: 'universal',
   /*
@@ -21,7 +23,8 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap&subset=latin-ext' // TODO: Use local font
       }
-    ]
+    ],
+    script: [{ src: '/js/pig.min.js' }]
   },
   /*
    ** Customize the progress-bar color
@@ -42,6 +45,52 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+  /*
+   ** Generation settings
+   */
+  generate: {
+    routes() {
+      return axios
+        .get('http://static.mx3creations.com/products/database.json')
+        .then(({ data }) => {
+          const collectionRoutes = data.map((c) => `/${c.id}`)
+          const productRoutes = []
+          let categoryRoutes = []
+          let tagRoutes = []
+          data.forEach((collection) => {
+            collection.products.forEach((product) => {
+              productRoutes.push(`/${collection.id}/${product.id}`)
+              categoryRoutes = [
+                ...categoryRoutes,
+                ...product.categories.map((o) => `/category/${o}`)
+              ]
+              if (product.tags)
+                tagRoutes = [
+                  ...tagRoutes,
+                  ...product.tags.map((o) => `/tags/${o}`)
+                ]
+            })
+          })
+          const withFrLocale = (paths) => {
+            let localePaths = []
+            paths.forEach(
+              (path) => (localePaths = [...localePaths, path, '/fr' + path])
+            )
+            return localePaths
+          }
+          const allPaths = [
+            ...withFrLocale(collectionRoutes),
+            ...withFrLocale(productRoutes),
+            ...withFrLocale(categoryRoutes),
+            ...withFrLocale(tagRoutes)
+          ]
+          return allPaths
+        })
+        .error(() => {
+          return []
+        })
+    }
+  },
   /*
    ** Nuxt.js dev-modules
    */
