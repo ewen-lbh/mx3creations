@@ -1,5 +1,5 @@
 <template lang="pug">
-#page
+main
   h1 {{ $t('hello') }}
   section.intro
     p {{ $t('intro') }}
@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+main
+  width min(100vw, 1200px)
 h1
   font-family Work Sans
   font-size max(10vmin, 3rem)

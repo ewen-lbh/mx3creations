@@ -1,25 +1,47 @@
 <template lang="pug">
-.gallery
-  li(v-for="(product, i) in products" :key="product.gid")
-    template(v-if="showProduct(product)")
-      nuxt-link(
-        :to="localePath(`/${product.collection.id}/${product.id}`)"
-        :title="product.title"
-      )
-        component.item(
-          :is="frontCoverHTMLElement(product)"
-          :src="frontCoverHref(product)"
-          :alt="product.title"
-          @load="product.front_cover.type === 'video' ? $el.play() : false"
-        ) {{ product.front_cover.src }}
+.--gallery
+  PIG(
+    :images="pigImages"
+    @image-click="handleImageClicked($event)"
+  )
+  //- li(v-for="(product, i) in products" :key="product.gid")
+  //-   template(v-if="showProduct(product)")
+  //-     nuxt-link(
+  //-       :to="localePath(`/${product.collection.id}/${product.id}`)"
+  //-       :title="product.title"
+  //-     )
+  //-       component.item(
+  //-         :is="frontCoverHTMLElement(product)"
+  //-         :src="frontCoverHref(product)"
+  //-         :alt="product.title"
+  //-         :style="{ height: product.front_cover.size ? product.front_cover.size.height + 'px' : 'auto' }"
+  //-       ) {{ product.front_cover.content }}
 </template>
 
 <script>
+import PIG from '~/components/PIG.vue'
+
 export default {
+  components: { PIG },
   props: {
     products: {
       type: Array,
       default: null
+    }
+  },
+  computed: {
+    pigImages() {
+      let pigImages = []
+      this.products.forEach((product) => {
+        product.variants.forEach((variant) => {
+          if (!variant.size) return
+          pigImages = [
+            ...pigImages,
+            { filename: variant.src, aspectRatio: variant.size.aspect_ratio }
+          ]
+        })
+      })
+      return pigImages
     }
   },
   methods: {
@@ -49,60 +71,40 @@ export default {
       } else {
         return cover.src
       }
+    },
+    handleImageClicked($event) {
+      // http://static.mx3creations.com/products/renders/acf/actualite-des-cartels-2019/0.png
+      const idPath = $event
+        .replace('http://static.mx3creations.com/products/renders/', '')
+        .replace('.png', '')
+      console.log(idPath)
+      // eslint-disable-next-line no-unused-vars
+      const [collectionID, productID, variantID] = idPath.split('/')
+      this.$router.push(this.localePath(`/${collectionID}/${productID}`))
     }
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-//
-// Definitions
-//
-
-gallery-gaps = 25px
-
-.gallery
-  line-height: 0 // Prevent vertical gaps
-  column-gap: gallery-gaps
-
-.gallery .item
+<style lang="stylus">
+.pig-figure
   width: 100%
   height: auto
   margin-bottom: gallery-gaps
   background white
-  border 1px solid black
-  transition all 0.25s ease
   box-sizing border-box
+  overflow visible !important
+  background-color white !important
+  img.pig-loaded
+    transition all 0.25s ease !important
+    border 1px solid black
+  img.pig-thumbnail
+    filter none !important
+    display none
 
-.gallery a::before
-    content ''
-    height: 20px
-    background #000
+.pig-figure:hover
+  img.pig-loaded:not(.pig-thumbnail)
+    box-shadow 0 10px 30px rgba(0,0,0,0.4)
+    transform translateY(-10px)
     position absolute
-
-.item:hover
-  transform translateY(-10px)
-  box-shadow 0 10px 10px rgba(0,0,0,0.4)
-  border-color rgba(0,0,0,0.25)
-  z-index: -1
-
-.gallery embed.item
-  width 100%
-  height 100%
-  border none
-
-.gallery
-  column-count: 5
-
-  @media (max-width: 1200px)
-    column-count: 4
-
-  @media (max-width: 1000px)
-    column-count: 3
-
-  @media (max-width: 800px)
-    column-count: 2
-
-  @media (max-width: 400px)
-    column-count: 1
 </style>
