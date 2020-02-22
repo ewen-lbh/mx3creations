@@ -10,6 +10,7 @@ const dt = require('date-fns')
 const fr = require('date-fns/locale/fr')
 const columnify = require('columnify')
 const _ = require('lodash')
+const sizeOf = require('image-size')
 const utils = require('./utils')
 
 program
@@ -106,7 +107,7 @@ Object.entries(database).forEach(([collectionID, collection]) => {
               path.basename(file, path.extname(file)) === productID
                 ? ':'
                 : path.basename(file, path.extname(file))
-            }`
+            }`,
           }
           if (obj.type === 'text') {
             obj = {
@@ -117,6 +118,11 @@ Object.entries(database).forEach(([collectionID, collection]) => {
             }
           } else {
             obj = { ...obj, content: null }
+          }
+          if (obj.type === 'image') {
+            spinner.text = chalk`Getting size of {bold ${obj.gid}}`
+            const { height, width } = sizeOf(path.resolve(variantsDir, file))
+            obj = { ...obj, size: { height, width, aspect_ratio: width / height } }
           }
           return obj
         }
@@ -199,6 +205,15 @@ try {
     //   })
     // )
   }
+  
+  /*TODO: 
+   * generate GIFs from videos (or PNGs?),
+   * explode PDFs into one png for each page,
+   * render code files into PNGs and 
+   * _then_ extract color of front cover 
+   * generate thumbs of diff sizes for every png for pig.js
+   */
+  
 } catch (error) {
   spinner.fail(chalk`Error while writing to {bold ${outputFile}}`)
   console.log(
@@ -208,4 +223,5 @@ try {
       borderColor: 'red'
     })
   )
+  process.exit(1)
 }
