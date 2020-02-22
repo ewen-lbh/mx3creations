@@ -11,7 +11,7 @@
       NavItem(to="/about") {{ $t('about') }}
       NavItem(to="/contact") {{ $t('contact') }}
     // Center
-    span.center.breadcrumbs(v-if="breadcrumbs.length && !['contact', 'about', 'tags', 'categories', ''].includes(breadcrumbs[0])")
+    span.center.breadcrumbs(v-if="breadcrumbs.length && !['fr', 'contact', 'about', 'tags', 'categories', ''].includes(breadcrumbs[0])")
       NavItem.breadcrumb(
         v-for="fragment in breadcrumbs" :key="fragment"
         :to="fragment"
