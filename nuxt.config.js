@@ -48,7 +48,7 @@ export default {
   /*
    ** Generation settings
    */
-  generate: {
+  /**DISABLED*generate: {
     routes() {
       return axios
         .get('http://static.mx3creations.com/products/database.json')
@@ -90,7 +90,7 @@ export default {
           return []
         })
     }
-  },
+  },*/
   /*
    ** Nuxt.js dev-modules
    */
