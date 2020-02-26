@@ -98,22 +98,19 @@ export default {
   width: 100%
   height: auto
   margin-bottom: gallery-gaps
-  background: white
-  box-sizing: border-box
-  overflow: visible !important
   background-color: white !important
 
-  img.pig-loaded
+  img.pig-loaded:not(.pig-thumbnail)
     transition: all 0.25s ease !important
-    border: 1px solid black
-
-  img.pig-thumbnail
-    filter: none !important
-    display: none
+    box-sizing: border-box
+    // border: 1px solid black
 
 .pig-figure:hover
+  overflow: visible !important
   img.pig-loaded:not(.pig-thumbnail)
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25)
     transform: translateY(-10px)
     position: absolute
+  img.pig-thumbnail
+    display none
 </style>
