@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import path from 'path'
+
 export default {
   props: {
     images: {
@@ -10,12 +12,20 @@ export default {
     }
   },
   data() {
+    const app = this
     return {
       clickedFilename: null,
       options: {
-        urlForSize: (filename, size) => filename,
+        urlForSize: (filename, size) => {
+          return path.join(
+            path.dirname(filename),
+            'thumbs',
+            size.toString(),
+            path.basename(filename)
+          )
+        },
         onClickHandler(filename) {
-          this.$emit('image-clicked')
+          app.$emit('image-click', filename.replace(/\/thumbs\/\d+/, ''))
         },
         getMinAspectRatio(lastWindowWidth) {
           // Phones
@@ -27,29 +37,29 @@ export default {
           // Large desktops
           return 4
         },
+        getImageSize(lastWindowWidth) {
+          if (lastWindowWidth <= 700)
+            // Phones
+            return 250
+          return 500
+        },
         spaceBetweenImages: 20
       }
     }
   },
   mounted() {
-    setTimeout(() => {
-      window.pig = new window.Pig(this.images, this.options).enable()
-      document.querySelectorAll('figure.pig-figure').forEach((e) => {
-        e.addEventListener('click', (ev) => {
-          this.$emit('image-click', e.querySelector('img').getAttribute('src'))
-        })
-      })
-    }, 1000)
+    window.pig = new window.Pig(this.images, this.options).enable()
   }
 }
 </script>
 
 <style lang="stylus">
+#pig
+  height: 100vh
+
 .pig-figure img
-  background white
+  background: white
+
 .pig-figure
-  cursor pointer
-  background-image url(https://thumbs.gfycat.com/PotableEmbarrassedFrenchbulldog-small.gif) !important
-  background-position center
-  background-size contain
+  cursor: pointer
 </style>

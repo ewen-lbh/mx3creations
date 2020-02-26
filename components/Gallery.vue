@@ -37,7 +37,10 @@ export default {
           if (!variant.size) return
           pigImages = [
             ...pigImages,
-            { filename: variant.src, aspectRatio: variant.size.aspect_ratio }
+            {
+              filename: variant.src,
+              aspectRatio: variant.size.aspect_ratio
+            }
           ]
         })
       })
@@ -75,7 +78,8 @@ export default {
     handleImageClicked($event) {
       // http://static.mx3creations.com/products/renders/acf/actualite-des-cartels-2019/0.png
       const idPath = $event
-        .replace('http://static.mx3creations.com/products/renders/', '')
+        .replace('http://static.mx3creations.com', '')
+        .replace('/products/renders/', '')
         .replace('.png', '')
       console.log(idPath)
       // eslint-disable-next-line no-unused-vars
@@ -87,24 +91,29 @@ export default {
 </script>
 
 <style lang="stylus">
+#pig
+  width 100%
+
 .pig-figure
   width: 100%
   height: auto
   margin-bottom: gallery-gaps
-  background white
-  box-sizing border-box
-  overflow visible !important
-  background-color white !important
+  background: white
+  box-sizing: border-box
+  overflow: visible !important
+  background-color: white !important
+
   img.pig-loaded
-    transition all 0.25s ease !important
-    border 1px solid black
+    transition: all 0.25s ease !important
+    border: 1px solid black
+
   img.pig-thumbnail
-    filter none !important
-    display none
+    filter: none !important
+    display: none
 
 .pig-figure:hover
   img.pig-loaded:not(.pig-thumbnail)
-    box-shadow 0 10px 30px rgba(0,0,0,0.4)
-    transform translateY(-10px)
-    position absolute
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4)
+    transform: translateY(-10px)
+    position: absolute
 </style>
