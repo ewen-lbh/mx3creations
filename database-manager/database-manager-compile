@@ -1,17 +1,12 @@
 #!/usr/bin/env node
-const fs = require('fs')
-const path = require('path')
+const childProcess = require('child_process')
+const cliProgress = require('cli-progress')
+const Listr = require('listr')
 const consola = require('consola')
-const boxen = require('boxen')
 const chalk = require('chalk')
 const ora = require('ora')
 const program = require('commander')
-const dt = require('date-fns')
-const fr = require('date-fns/locale/fr')
-const columnify = require('columnify')
-const _ = require('lodash')
-const sizeOf = require('image-size')
-const utils = require('./utils')
+const compiler = require('./compiler')
 
 program
   .option('-o, --output <path>', 'Output to the given filename.')
@@ -24,204 +19,133 @@ program
   )
   .parse(process.argv)
 
-const database = utils.parseYAML(program.args[0])
-const spinner = ora('Compiling...').start()
-const getAvgModTime = (p) => {
-  if (p === null || p === undefined || !Object.keys(p).includes('variants')) {
-    return null
-  }
-  const mtimes = p.variants
-    .map((variant) => {
-      if (!variant) return
-      const filepath = path.resolve('../static', variant.src.replace('/', ''))
-      const mtime = ~~fs.statSync(filepath).mtimeMs
-      spinner.info(chalk`{red singl} {bold ${JSON.stringify(Date(mtime))}}`)
-      return mtime
-    })
-    .filter((mtime) => mtime > 0)
-  let mean = _.mean(mtimes)
-  spinner.info(chalk`{red unixt} {bold ${JSON.stringify(mean)}}`)
-  spinner.info(
-    chalk`{red parsd} {bold ${JSON.stringify(
-      dt.format(mean / 1000, 'yyyy-MM-dd')
-    )}}`
-  )
-  mean = new Date(mean * 1000)
-
-  mean = {
-    year: (p.date && p.date.year) || dt.getYear(mean),
-    month: (p.date && p.date.month) || dt.getMonth(mean),
-    day: (p.date && p.date.day) || dt.getDay(mean)
-  }
-  spinner.info(chalk`{red objec} {bold ${JSON.stringify(mean)}}`)
-  mean = dt.format(new Date(mean.year, mean.month, mean.day), 'yyyy-MM-dd')
-  return mean
-}
-
-// Flatten collections & products
-spinner.text = 'Flattening...'
-let collections = []
-Object.entries(database).forEach(([collectionID, collection]) => {
-  // Push a new collection
-  collections.push({
-    // ID
-    id: collectionID,
-    // Directory of renders
-    renders_dir: path.relative(
-      '../static/',
-      path.resolve(program.args[1], collectionID)
-    ),
-    // Remove spaces from tags & categories
-    tags: collection.tags && collection.tags.map((t) => t.replace(/ /g, '-')),
-    categories:
-      collection.categories &&
-      collection.categories.map((t) => t.replace(/ /g, '-')),
-    // Normal properties
-    ...collection,
-    // Flattened products list
-    products: Object.entries(collection.products).map(
-      ([productID, product]) => {
-        //
-        const variantsDir = path.resolve(
-          program.args[1],
-          collectionID,
-          productID
-        )
-        if (!fs.existsSync(variantsDir)) return
-        const variantsFiles = fs
-          .readdirSync(variantsDir)
-          .filter((item) =>
-            fs.statSync(path.resolve(variantsDir, item)).isFile()
-          )
-        const isFrontCover = (file) =>
-          path.basename(file, path.extname(file)) === String(frontCover)
-        const getVariantSrc = (file) =>
-          (program.local ? '' : 'http://static.mx3creations.com') + '/' + path.relative('../static', path.join(variantsDir, file))
-        const getVariantObject = (file) => {
-          let obj = {
-            file,
-            type: utils.getTypeFromExt(path.extname(file)),
-            html_element: utils.getHTMLElementFromExt(path.extname(file)),
-            src: getVariantSrc(file),
-            gid: `${collectionID}:${productID}:${
-              path.basename(file, path.extname(file)) === productID
-                ? ':'
-                : path.basename(file, path.extname(file))
-            }`,
+const tasks = new Listr([
+  {
+    title: 'Load and compile the database',
+    task: () => {
+      return new Listr([
+        {
+          title: 'Load the yaml file',
+          task: (ctx, task) => {
+            ctx.program = program
+            ctx = compiler.database.load(ctx)
+            task.title = chalk`Loaded {bold.green ${
+              Object.entries(ctx.database).length
+            }} collection(s)`
           }
-          if (obj.type === 'text') {
-            obj = {
-              ...obj,
-              content: fs
-                .readFileSync(path.resolve(variantsDir, file))
-                .toString()
+        },
+        {
+          title: 'Compile',
+          task: (ctx, task) => {
+            ctx = compiler.database.compile(ctx)
+          }
+        },
+        {
+          title: 'Write to file',
+          task: (ctx, task) => {
+            compiler.database.write(ctx)
+          }
+        }
+      ])
+    }
+  },
+  {
+    title: 'Process files',
+    task: () => {
+      return new Listr(
+        [
+          {
+            title: 'Process videos',
+            task: (ctx) => {
+              ctx = compiler.videos.getList(ctx)
+              return new Listr(
+                ctx.videos.map((video) => {
+                  return {
+                    title: chalk`Processing {yellow ${video.gid}}`,
+                    task: async () => {
+                      ctx = await compiler.videos.processOne(ctx, video)
+                    },
+                    skip: () => {
+                      if (compiler.videos.alreadyExists(video)) {
+                        return 'The video was already processed'
+                      }
+                      return false
+                    }
+                  }
+                }),
+                { concurrent: true }
+              )
             }
-          } else {
-            obj = { ...obj, content: null }
+          },
+          {
+            title: 'Process PDFs',
+            enabled: () => false,
+            task: (ctx) => {
+              const pdfs = compiler.database.pdfs.getList(ctx)
+              return new Listr(
+                pdfs.map((pdf) => ({
+                  title: chalk`Process {yellow ${pdf.gid}}`,
+                  task: (ctx, task) => compiler.pdfs.processOne(pdf)
+                })),
+                { concurrent: true }
+              )
+            }
           }
-          if (obj.type === 'image') {
-            spinner.text = chalk`Getting size of {bold ${obj.gid}}`
-            const { height, width } = sizeOf(path.resolve(variantsDir, file))
-            obj = { ...obj, size: { height, width, aspect_ratio: width / height } }
-          }
-          return obj
-        }
-        const frontCover =
-          product['front cover'] || collection['front covers'] || productID
-        return {
-          ...product,
-          id: productID,
-          gid: `${collectionID}:${productID}`,
-          title: `${collection.name}: ${product.name}`,
-          hide_from: product.hide_from || [],
-          front_cover:
-            variantsFiles
-              .filter((file) => isFrontCover(file))
-              .map((file) => getVariantObject(file))[0] ||
-            getVariantObject(variantsFiles[0]),
-          variants: variantsFiles.map((file) => getVariantObject(file)),
-          collection: Object.keys(collection)
-            .filter((k) => k !== 'products')
-            .reduce(
-              (acc, cur) => ({
-                ...acc,
-                [cur]: collection[cur],
-                id: collectionID
-              }),
-              {}
-            )
-        }
-      }
-    )
-  })
-})
-
-// Remove "null" products
-collections = collections.map((c) => ({
-  ...c,
-  products: c.products.filter((p) => p !== null && p !== undefined)
-}))
-
-const productGIDsWithNoExplicitDate = []
-// collections = collections.map((collection) => {
-//   return {
-//     products: collection.products.map((p) => {
-//       if (!p.date) {
-//         productGIDsWithNoExplicitDate.push(
-//           chalk`{blue ${p.collection.id}}:${p.id}`
-//         )
-//       }
-//       return {
-//         date: p.date || getAvgModTime(p),
-//         ...p
-//       }
-//     }),
-//     ...collection
-//   }
-// })
-
-spinner.text = 'Serializing to JSON...'
-const jsoned = JSON.stringify(collections, null, program.indentation)
-
-const outputFile =
-  program.output || program.args[0].replace(/\.ya?ml$/, ($0) => '.json')
-try {
-  fs.writeFileSync(outputFile, jsoned)
-  spinner.succeed(
-    chalk`Compiled to {bold ${outputFile}} with {bold ${program.local ? 'local' : 'distant'}} variant file sources` +
-      (program.indentation
-        ? chalk` and indentation level {bold ${program.indentation}}`
-        : '')
-  )
-  if (productGIDsWithNoExplicitDate.length) {
-    consola.warn(
-      chalk`{bold ${productGIDsWithNoExplicitDate.length}} (${Math.round(
-        productGIDsWithNoExplicitDate.length / _.sumBy(collections, (c) => c.products.length) * 100
-      )}%) products didn't have a date set, used the mod time average of variants' files.`
-    )
-    // console.log(
-    //   columnify(_.chunk(productGIDsWithNoExplicitDate, 4), {
-    //     showHeaders: false
-    //   })
-    // )
+        ],
+        { concurrent: true }
+      )
+    }
   }
-  
-  /*TODO: 
-   * generate GIFs from videos (or PNGs?),
-   * explode PDFs into one png for each page,
-   * render code files into PNGs and 
-   * _then_ extract color of front cover 
-   * generate thumbs of diff sizes for every png for pig.js
-   */
-  
-} catch (error) {
-  spinner.fail(chalk`Error while writing to {bold ${outputFile}}`)
-  console.log(
-    boxen(chalk`{red ${error}}`, {
-      margin: 1,
-      padding: 1,
-      borderColor: 'red'
-    })
-  )
-  process.exit(1)
-}
+])
+
+tasks
+  .run()
+  .catch((err) => {
+    consola.error(err)
+  })
+  .then(() => {
+    const spinner = ora({ text: chalk`Loading...`, spinner: 'dots11' }).start()
+    let ctx = compiler.database.load({ program })
+    ctx = compiler.database.compile(ctx)
+    const thumbs = compiler.thumbnails.getList(ctx)
+    const uncomputedThumbs = thumbs.filter((t) => !t.skipped)
+    spinner.text = 'Making missing dirs...'
+    compiler.thumbnails.makeDirs(thumbs)
+    spinner.succeed()
+    const bar = new cliProgress.SingleBar(
+      {
+        format: chalk`{dim [\{value\}/\{total\}]} \{bar\} {dim (\{percentage\}%)}`,
+        forceRedraw: true
+      },
+      cliProgress.Presets.shades_grey
+    )
+    if (uncomputedThumbs.length === 0) {
+      consola.success(chalk`All thumbnails were already generated.`)
+    } else {
+      bar.start(thumbs.length, thumbs.length - uncomputedThumbs.length)
+      uncomputedThumbs.forEach((t, i) => {
+        // spinner.info(chalk`Skipped ${t.gid}: Already exists`)
+        childProcess.exec(
+          [
+            'convert',
+            '-thumbnail',
+            t.resolution,
+            t.thumbPathIn,
+            t.thumbPathOut
+          ].join(' '),
+          (err, stdout, stderr) => {
+            bar.increment()
+            if (err) {
+              spinner.stop()
+              consola.error(err)
+              spinner.start()
+            }
+            if (bar.getTotal() === i + 1) {
+              bar.stop()
+              consola.success(chalk`Thumbnails generated`)
+            }
+          }
+        )
+      })
+    }
+  })
