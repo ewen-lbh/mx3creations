@@ -8,6 +8,7 @@ main
         :key="variant.gid"
         :is="variant.html_element"
         :src="variant.src"
+        :data-aspect-ratio="variant.size.aspect_ratio"
         controls
       )
       h3.text(v-if="product.variants.length > 1")
@@ -81,6 +82,17 @@ export default {
     document.documentElement.style.setProperty('--bg', 'white')
     document.documentElement.style.setProperty('--bgi', 'black')
     document.documentElement.style.setProperty('--fg', 'black')
+    // Set height of images to prevent jankiness
+    document.querySelectorAll('.variant-element').forEach((el) => {
+      const ratio = parseFloat(el.dataset.aspectRatio)
+      const { width } = el.parentElement.getBoundingClientRect()
+      const expectedHeight = (1 / ratio) * width
+      console.table({ ratio, width, expectedHeight })
+      el.style.height = expectedHeight + 'px'
+      el.addEventListener('load', (ev) => {
+        el.style.height = ''
+      })
+    })
   },
   methods: {
     domainName(url) {
@@ -151,6 +163,9 @@ section.right
   position sticky
   top: 60px
   margin-left: 0
+section.left
+  max-width unset
+  width: 100%
 
 .see-in-action
   margin-top 2em
@@ -173,9 +188,10 @@ section.right
     margin-left: 0
 
 .variant
-  width auto
+  width 100%
 
 .variant-element
+  width 100%
   border 1px solid black
 .variant:not(:last-child)
   margin-bottom 4em
