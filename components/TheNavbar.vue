@@ -11,7 +11,7 @@
       NavItem(to="/about") {{ $t('about') }}
       NavItem(to="/contact") {{ $t('contact') }}
     // Center
-    span.center.breadcrumbs(v-if="breadcrumbs.length && !['fr', 'contact', 'about', 'tags', 'categories', ''].includes(breadcrumbs[0])")
+    span.center.breadcrumbs(v-if="false")
       NavItem.breadcrumb(
         v-for="fragment in breadcrumbs" :key="fragment"
         :to="fragment"
@@ -57,6 +57,7 @@ export default {
       }
     },
     breadcrumbs() {
+      // TODO: Rework this. Disabled for now
       const path = this.$route.path.replace('fr/', '')
       const fragments = path.split('/')
       if (fragments.length <= 1) return []
