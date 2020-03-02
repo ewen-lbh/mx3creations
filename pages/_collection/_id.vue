@@ -25,10 +25,11 @@ main
     ul.categories
       li(v-for="(category, i) in product.categories" :key="i")
         nuxt-link(:to="localePath(`/categories/${category}`)") {{ $t('categories.' + category) === `categories.${category}` ? category : $t('categories.' + category) }}
-    span.tags-overline {{ $t('tags') }}
+    span.tags-overline tags
     ul.tags
       li(v-for="(tag, i) in product.tags" :key="i")
-        nuxt-link(:to="localePath(`/tags/${tag}`)") \#{{ $t('tags.' + tag) === `tags.${tag}` ? tag : $t('tags.' + tag) }}
+        nuxt-link(:to="localePath(`/tags/${tag}`)") 
+          | \#{{ $t('tags.' + tag) === `tags.${tag}` ? tag : $t('tags.' + tag) }}
     template(v-if="product.links")
       h2.see-in-action {{ $t('seeInAction') }}
       ul.links
