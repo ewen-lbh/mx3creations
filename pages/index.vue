@@ -1,8 +1,8 @@
 <template lang="pug">
 main
-  h1 {{ $t('hello') }}
+  h1 {{ $t('myCreations') }}
   section.intro
-    p {{ $t('intro') }}
+    p {{ $t('html.intro') }}
     BtnOutline(href="/about") {{ $t('learnMore') }}
   Gallery(v-bind="{products}")
 </template>
