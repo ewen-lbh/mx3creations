@@ -23,10 +23,27 @@ export default {
   openMenu: 'menu',
   closeMenu: 'fermer',
   seeInAction: 'Voir sur',
+  and: 'et',
   categories: {
-    image: 'Graphism'
+    image: 'Graphisme'
+  },
+  tags: {
+    drawing: 'Dessin',
+    cards: 'carte',
+    poster: 'affiche',
+    iconography: 'iconographie',
+    banner: 'bannière',
+    wallpaper: "fond d'écran",
+    'user interface': 'inteface utilisateur',
+    'website mockup': 'prototype de site web',
+    book: 'book',
+    'cover art': 'pochette',
+    'music video': 'vidéo musicale'
   },
   html: {
+    intro: `
+      Je suis un élève actuellement en Terminale, et 
+    `,
     about: `
       <h1>Qui suis-je?</h1>
       <section>
