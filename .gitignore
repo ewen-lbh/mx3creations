@@ -94,3 +94,6 @@ prepros*.config
 
 # Local Netlify folder
 .netlify
+
+# Renders & database
+static/products
