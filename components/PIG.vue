@@ -12,16 +12,20 @@ export default {
     }
   },
   data() {
+    // eslint-disable-next-line no-unused-vars
     const app = this
     return {
-      clickedFilename: null,
       options: {
         urlForSize: (filename, size) => {
-          return path.join(
-            path.dirname(filename),
-            'thumbs',
-            size.toString(),
-            path.basename(filename)
+          filename = filename.replace(/^https?:\/\/static.mx3creations.com/, '')
+          return (
+            'http://static.mx3creations.com' +
+            path.join(
+              path.dirname(filename),
+              'thumbs',
+              size.toString(),
+              path.basename(filename)
+            )
           )
         },
         onClickHandler(filename) {
