@@ -2,7 +2,7 @@
 component.--nav-item(
   :is="to ? 'nuxt-link' : 'span'"
   :to="to ? localePath(to) : false"
-  :class="{current: to && isCurrent(to)}"
+  :class="{current: to && isCurrent(to), 'has-a-click-handler': hasAClickHandler}"
   @click="$emit('click')"
 ): slot
 </template>
@@ -13,6 +13,11 @@ export default {
     to: {
       type: String,
       default: null
+    }
+  },
+  computed: {
+    hasAClickHandler() {
+      return Object.keys(this.$listeners).includes('click')
     }
   },
   methods: {
@@ -36,4 +41,7 @@ export default {
 
 .current
   border-bottom-color black
+
+.has-a-click-handler
+  cursor pointer
 </style>
