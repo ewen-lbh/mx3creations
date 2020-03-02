@@ -5,7 +5,7 @@
   nav
     // Left
     template(v-if="backURL")
-      NavItem.go-back(:to="backURL"): Iconed(icon="arrow-left") {{ $t('back') }}
+      NavItem.go-back(@click="goBack"): Iconed(icon="arrow-left") {{ $t('back') }}
     template(v-else)
       NavItem(to="/") {{ $t('works') }}
       NavItem(to="/about") {{ $t('about') }}
@@ -85,6 +85,9 @@ export default {
       } else {
         document.body.style.overflow = 'auto'
       }
+    },
+    goBack() {
+      history.go(-1)
     }
   }
 }
