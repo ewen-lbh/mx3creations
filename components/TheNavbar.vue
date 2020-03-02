@@ -119,11 +119,10 @@ nav
 .right
   margin-left auto
 .center
-  margin 0 auto
-.center.breadcrumbs
-  position fixed
-  left 50%
-  transform translateX(-50%)
+  position: fixed
+  left: 50%
+  transform: translateX(-50%)
+
 .breadcrumb
   margin-right: 0 !important
 .breadcrumb:not(:last-child)::after
