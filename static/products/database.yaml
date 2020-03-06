@@ -14,11 +14,11 @@ acf:
   products:
     pub-site:
       name: Carte d'annonce du site web de l'ACF
-      description: |
+      description: >
         L'ACF-VD avait besoin de communiquer la création de leur site web,
         j'ai donc réalisé cette carte pour qu'elle puisse être facilement
         distribuée lors d'interventions de l'association.
-      date: 2019
+      date: 2019-05-26
       categories:
         - graphism
       tags:
@@ -99,10 +99,24 @@ acf:
 
 appstract:
   name: Appstract
+  description: >
+    Appstract est un pack d'icônes pour Android créé par un étudiant.
+    Chaque icône est créer à la main, et j'ai beaucoup aimé le style
+    des icônes -- ultra minimaliste -- et je les utilises toujours
+    sur mon téléphone.
   by:
   products:
     appstract-contribution:
       name: Contribution d'icônes à Appstract
+      description: >
+        J'ai voulu contribuer à ce pack d'icônes, car, chaque icône étant faite
+        à la main, le pauvre étudiant ne peut en dessiner des millers.
+        Au lieu de simplement envoyer des demandes, j'ai contribué en proposant
+        mes designs, la plupart desquels il a ensuite directement intégré
+        dans une mise à jour.
+      links:
+        - name: Google Play Store
+          url: 
       date: 2019
       categories:
         - graphism
@@ -111,6 +125,9 @@ appstract:
 
 aven:
   name: Aven E-Sport
+  description: >
+    Une structure associative d'e-sport lancée par un camarade
+    de classe du lycée.
   products:
     wallpaper:
       name: Fond d'écran
@@ -121,6 +138,12 @@ aven:
         - banner
         - wallpaper
     website-mockup:
+      description: >
+        Aven avait besoin d'un site web pour afficher les nouveautés
+        de la structure et présenter les membres.
+        Puisque l'entièreté de la communication d'Aven se faisait par
+        Discord, j'ai utilisé l'API de Discord pour récupérer, traiter
+        puis afficher les messages du canal discord "#annonces".
       name: Prototypage du site web
       date: 2019
       categories:
@@ -131,7 +154,7 @@ aven:
 
 books:
   name: Books
-  description: |
+  description: >
     À la fin de chaque année depuis 2019, je regroupe mes
     meilleures créations dans un livre
   products:
@@ -146,8 +169,17 @@ books:
 
 college-dalzon:
   name: Collège de d'Alzon <br>Vestric-et-Candiac
+  description: >
+    Le collège où j'ai fait ma scolarité, de la sixième à la troisième.
+    Depuis que je suis en troisième, j'ai réalisé plusieurs affiches
+    pour le collège, après qu'un enseignant m'est proposé de réaliser
+    des affiches pour eux.
   products:
     forum-des-metiers:
+      description: >
+        Chaque année, le collège d'Alzon-Vestric organise une rencontre
+        entre des élèves de troisième et des professionnels, afin d'aider
+        les élèves dans leur orientation.
       name: Forum des métiers
       front cover: 2020
       categories:
@@ -161,6 +193,9 @@ college-dalzon:
       tags:
         - poster
     journee-sante-securite:
+      description: >
+        Chaque année, le collège d'Alzon-Vestric organise une journée
+        de prévention et information conçernant la sécurité et la santé.
       name: Journée Santé & Sécurité
       categories:
         - graphism
@@ -368,6 +403,13 @@ mx3:
         - ep
     relocation:
       name: Relocation
+      description: >
+        Composée de photos prises à l'appartemment où j'ai passé la 
+        majeure partie de mon enfance, mélangée à des photos prises
+        dans mon trajet quotidien entre mon domicile et mon lycée,
+        ces images en noir et blanc représentent le déménagement,
+        le dépaysement, et la mélancolie qui survient à la revisite
+        d'ancien lieux auquels nous étions habitués, qui ont été transformés.
       categories:
         - graphism
         - music
@@ -375,6 +417,15 @@ mx3:
         - cover art
         - single
     schedule-hell:
+      description: >
+        Un des composants les plus difficiles à mettre en place dans mon application
+        web <em>schoolsyst</em> est l'emploi du temps.
+        Calculer la position, la largeur et la longueur de tout les évènements, n'a pas été
+        évident. L'arrangement des carrés semble aléatoire. C'est cependant le résultat
+        d'un code que j'ai écrit.
+        Le titre, "schedule hell", exprime la difficulté à créer des emplois du temps,
+        quand des milliers d'évènements appartenant à des milliers d'individus doivent
+        coïncider.
       name: Schedule Hell
       categories:
         - graphism
@@ -431,8 +482,12 @@ mx3:
 
 cubing-t:
   name: Cubing-T
+  description: >
+    Une chaîne YouTube sur les rubik's cubes.
   products:
     banner:
+      description: >
+        Une personne m'a contacté pour faire l'indentité visuelle de sa chaîne YouTube
       name: Bannière
       date: null
       categories:
@@ -440,6 +495,8 @@ cubing-t:
       tags:
         - banner
     logo:
+      description: >
+        Une personne m'a contacté pour faire l'indentité visuelle de sa chaîne YouTube
       name: Logo
       date: null
       categories:
@@ -465,6 +522,10 @@ freezaxe:
         - intro
         - outro
     cube-lycee:
+      description: >
+        Mon ami souhaitait organiser un club de rubik's cube pour le lycée.
+        J'ai réalisé cette affiche qui a ensuite était approuvée par le directeur
+        puis affichée dans le lycée.
       name: Cube Lycée
       date: 2019
       categories:
@@ -474,6 +535,10 @@ freezaxe:
 
 hyperis:
   name: Hyperis
+  description: >
+    Hyperis est une aventure textuelle interactive qui se joue dans un terminal.
+    C'est également mon projet d'ISN pour le bac.
+    J'ai notamment créé un langage de description pour décrire des histoires interactives.
   products:
     teaser:
       name: Teaser
@@ -529,6 +594,9 @@ jitters-team:
 
 les-harobases:
   name: Les Harobases
+  description: >
+    Avec mon frère, nous avons réalisé plusieurs courts-métrages
+    que nous avons publié sur une chaîne YouTube, "Les Harobases".
   products:
     banner:
       name: Bannière
@@ -579,6 +647,8 @@ les-harobases:
 
 portfolio:
   name: Portfolio
+  description: >
+    Ce site web !
   products:
     banners:
       front cover: teaser
