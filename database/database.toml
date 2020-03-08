@@ -1,0 +1,16 @@
+[[collection]]
+id = "inklings"
+name = "Inklings"
+categories = [ "graphism" ]
+tags = [ "drawing" ]
+
+[[product]]
+name = "Feelings"
+description = """
+L'ACF-VD avait besoin de communiquer la création de leur site web, j'ai donc réalisé cette carte pour qu'elle puisse être facilement distribuée lors d'interventions de l'association.
+"""
+filename = "feelings.png"
+# id: from filename
+# type: from filename
+created = 2019-05-26
+
