@@ -1,0 +1,187 @@
+- name: You Gotta Think Outside the Box
+  used: [illustrator, photoshop]
+  tags: [poster]
+  description: >
+    Ce poster que j'ai conçu pour une utilisation personnelle (décoration de ma chambre)
+    représente un echaînement de constructions mathématiques indéfinies, la division par
+    zéro et la racine carré d'un nombre négatif (même si le nombre complexe "i" peut représenter)
+    la quantité "√-1").
+
+- name: Universe Anatomy
+  used: [gimp]
+  tags: [compositing]
+  description: >
+    Cette illustration est une accumulation d'objets sans rapport particulier entre eux.
+    J'ai choisi ces différents objets principalement pour créer une composition à couleurs
+    variées
+
+- name: Train
+  used: [illustrator]
+  tags: [illustration]
+  description: >
+    Une illustration minimaliste d'un train
+
+- name: Tableau périodique des éléments
+  used: [illustrator]
+  tags: []
+  description: >
+    Quand j'étais au collège, je faisais des recherches sur le mystérieux "tableau périodique des éléments"
+    arroché au fond du laboratoire de physique. Après plusieurs recherches, je n'est pas trouvé
+    un tableau suffisamment "beau" à mon goût, et j'ai donc décidé de créé le mien.
+
+- name: makisushi
+  used: [illustrator, photoshop]
+  tags: [illustration, typography]
+  description: >
+    J'ai eu l'idée de réaliser mon propre T-Shirt peu de temps après avoir découvert le site
+    RedBubble, qui permet de vendre et acheter des œuvres sur n'importe quel support, dont
+    notamment des t-shirts.
+    
+    J'ai d'abord réalisé une illustration assez minimaliste puis est ajouté de la texture
+    aux morceaux de poisson et d'avocat.
+
+- name: one-over-x
+  collection: math-is-beautiful
+  used: [illustrator]
+  tags: []
+  description: >
+    Dans ma série de recherche sur la beauté des fonctions mathématiques,
+    le caractère asymptotique de la fonction inverse, 1/x, m'a beaucoup plus,
+    c'était aussi la première fonction qui m'a intrigué lorsque j'ai découvert sa courbe
+    représentative. C'est aussi une manière magnifique d'approcher le problème de la division
+    par zéro, que l'on peut à la fois "égaler" à +∞ ou à -∞ lors d'une approche par 
+    itérations de plus en plus rapprochées.
+    
+    Dans cette illustration, l'épaisseur d'un trait est image de la valeur absolue de
+    l'inverse du nombre, avec la barre rouge l'origine du "repère" utilisé.
+
+- name: Flat fruits
+  front: watermelon
+  used: [assembly]
+  tags: [illustration]
+  description: >
+    Une série d'illustrations de fruits en flat design réalisé sur mon iPad pendant
+    le collège
+
+- name: Inklings
+  used: [papier]
+  tags: [drawing]
+  description: >
+    En anglais, <em>inkling</em> désigne une petite idée, une impression un soupçon.
+    On remarque aussi la présence de <em>ink</em>, encre, qui est contenu dans ce mot.
+    
+    Ces dessins sont des enchevêtrements de flux d'idée,
+    je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
+
+- name: Poésie Mathématique
+  collection: math-is-beautiful
+  used: [latex]
+  tags: [typography]
+  description: >
+    J'ai toujours été fasciné par les symboles. En lisant la documentation du langage
+    de <em>typesetting</em> mathématique <em>LaTeX</em>, je suis tombé sur la liste des
+    divers symboles fournis par <em>LaTeX</em>.
+    
+    J'ai ensuite assemblé tout ces symboles en une suite d'équations, en utilisant les opérateurs
+    de relation au milieu et en combinant lettres latines, grecques, cyrilliques et hébraïque,
+    nombres et autres opérateurs pour constituer les membres de chaque (in)équation.
+
+- name: l'Alphabet des Formes
+  collection: shapes
+  used: [papier, illustrator]
+  tags: [iconography]
+  description: >
+    Combien de formes différentes peut on créer ?
+    En utilisant des formes "élémentaires", combien de formes peut on générer, par 
+    rotation, duplication, translation, homotéthie ou combinaison ?
+    Quelles seraient ces formes élémentaires, à partie desquelles l'ont pourrait
+    revenir à toutes les lettres de l'alphabet ?
+    
+    Ces nombreux questionnements sur l'étude des formes m'ont mené à m'atteler à une tâche
+    qui semble interminable: lister toutes les formes suffisamment différentes les unes des autres.
+    
+    Même si cette liste est certainement incomplète, elle n'est pas terminée, et je tiens à 
+    y rajouter encore d'autres
+    
+    Ce dessin est aussi partiellement inspiré par "Planetarische Folklore" de Vassily Vasarelly:
+    cette liste pourrait être utilisé comme une sorte d'alphabet des formes.
+
+- name: Conflict
+  used: [photoshop]
+  tags: [compositing]
+  description: >
+    Compositing de deux photos faisant partie d'une série de photos aériennes insolites,
+    disponibles <a href="https://drive.google.com/open?id=13IG-II9eDRi7XMrE9GppJOR1c2Vz9ONo">ici</a>.
+
+- name: Abstrakitten
+  used: [papier, photoshop]
+  tags: [typography]
+  description: >
+    Fasciné par les alphabets, j'ai souvent créé des polices d'écritures fictives dans
+    les marges de mes cahiers. Dans une première étape de concrétisation, j'ai utilisé
+    un service en ligne permettant d'imprimmer, remplir puis scanner une table de caractères
+    pour la transformer en un fichier de police. Cependant, il me reste encore à ce jour
+    à réaliser une véritable police d'écriture.
+
+- name: Restauration rapide
+  used: [indesign]
+  tags: [book]
+  description: >
+    En classe de seconde, on nous a demandé d'écrire un court dossier sur un sujet
+    conçernant la nourriture. Avec le reste de mon groupe, nous avons choisi de travailler
+    sur les services de restauration rapide. J'ai réalisé la quasi-totalité du dossier,
+    et c'était une occasion pour moi d'apprendre à me servir du logiciel de PAO Adobe InDesign.
+
+- name: humanR
+  used: [photoshop]
+  tags: [poster]
+  year: 2018
+  description: >
+    En classe de seconde, on nous a demandé de réaliser une campagne de publicité pour
+    une organisation se battant pour les droits de l'Homme. J'ai choisi de parler des
+    horribles conditions de travail qu'impliquent certains métiers, notamment conçernant
+    les chaînes de productions d'objets de consommation, sur lesquelles les marques 
+    n'hésitent pas à ajouter des marges de prix toujours plus importantes.
+    
+    J'ai réalisé trois affiches ainsi que le logo d'une organisation fictive, "humanR",
+    écriture stylisée de l'adjectif comparitif anglais "humaner", signifiant "plus hufront".
+    En vérité, c'est un ajectif long qui serait correctement traduit par "More human", mais
+    cette écriture permet un logotype plus court et impactant.
+    
+    J'ai représenté chaque produit de consommation en haut, sur fond blanc, le contrastant
+    avec le bas de l'image représentant les conditions de travail liées à l'objet au-dessus:
+    l'objet, mis en lumière, et les conditions de travail, dans l'obscurité.
+    
+- name: Manufact
+  used: [after effects]
+  tags: [motion design]
+  year: 2017
+  description: >
+    En classe de troisième, nous avons réalisé, en groupes et dans le cadre de 
+    l'enseignement de technologie, une lampe en respectant un cahier des charges donné.
+    
+    On nous a également demandé de présenter notre produit par un diaporama.
+    J'ai réalisé cette vidéo sur After Effects et j'ai créé le logo de "Lumin Corp." pour
+    l'occasion.
+    
+- name: innovation
+  used: [after effects]
+  tags: [motion design]
+  year: 2019
+  description: >
+    En classe de première, en cours d'Anglais, on nous a demandé de réaliser une vidéo
+    sur l'innovation. J'ai décidé de parler du World Wide Web, inventé par Tim Berners-Lee,
+    et qui est sans doute l'une des inventions les plus importantes de l'histoire de l'humanité.
+    
+- name: Eating Kills
+  used: [photoshop]
+  tags: [poster, compositing]
+  year: 2019
+  description: >
+    J'ai réalisé cette affiche 
+
+
+
+    
+
+

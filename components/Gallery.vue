@@ -4,18 +4,6 @@
     :images="pigImages"
     @image-click="handleImageClicked($event)"
   )
-  //- li(v-for="(product, i) in products" :key="product.gid")
-  //-   template(v-if="showProduct(product)")
-  //-     nuxt-link(
-  //-       :to="localePath(`/${product.collection.id}/${product.id}`)"
-  //-       :title="product.title"
-  //-     )
-  //-       component.item(
-  //-         :is="frontCoverHTMLElement(product)"
-  //-         :src="frontCoverHref(product)"
-  //-         :alt="product.title"
-  //-         :style="{ height: product.front_cover.size ? product.front_cover.size.height + 'px' : 'auto' }"
-  //-       ) {{ product.front_cover.content }}
 </template>
 
 <script>
@@ -24,26 +12,29 @@ import PIG from '~/components/PIG.vue'
 export default {
   components: { PIG },
   props: {
-    products: {
+    works: {
       type: Array,
       default: null
     }
   },
+  mounted() {
+    console.log(this.works)
+  },
   computed: {
     pigImages() {
-      let pigImages = []
-      this.products.forEach((product) => {
-        product.variants.forEach((variant) => {
-          if (!variant.size) return
-          pigImages = [
-            ...pigImages,
-            {
-              filename: variant.src,
-              aspectRatio: variant.size.aspect_ratio
-            }
-          ]
-        })
-      })
+      const pigImages = []
+      // this.works.forEach((work) => {
+      //   product.variants.forEach((variant) => {
+      //     if (!variant.size) return
+      //     pigImages = [
+      //       ...pigImages,
+      //       {
+      //         filename: variant.src,
+      //         aspectRatio: variant.size.aspect_ratio
+      //       }
+      //     ]
+      //   })
+      // })
       return pigImages
     }
   },
@@ -70,16 +61,16 @@ export default {
     frontCoverHref(product) {
       const cover = product.front_cover
       if (cover.type === 'pdf') {
-        return `/products/renders/${product.collection.id}/${product.id}/_thumbnail.png`
+        return `/works/renders/${product.collection.id}/${product.id}/_thumbnail.png`
       } else {
         return cover.src
       }
     },
     handleImageClicked($event) {
-      // http://static.mx3creations.com/products/renders/acf/actualite-des-cartels-2019/0.png
+      // http://static.mx3creations.com/works/renders/acf/actualite-des-cartels-2019/0.png
       const idPath = $event
         .replace('http://static.mx3creations.com', '')
-        .replace('/products/renders/', '')
+        .replace('/works/renders/', '')
         .replace('.png', '')
       console.log(idPath)
       // eslint-disable-next-line no-unused-vars
