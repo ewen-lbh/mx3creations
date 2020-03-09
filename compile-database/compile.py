@@ -41,6 +41,7 @@ class Work:
 		collection: Optional[str] = [],
 		best: Optional[bool] = None,
 		using: List[str] = [],
+		wip: Optional[bool] = None,
 		tags: List[str] = [],
 		**other_attributes: dict
 	):
@@ -56,6 +57,7 @@ class Work:
 		self.front = front or self.id
 		self.front += '.png'
 		self.size = size
+		self.wip = wip or False
 		for attrname, value in other_attributes.items():
 			setattr(self, attrname, value)
 
