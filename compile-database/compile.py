@@ -40,7 +40,7 @@ class Work:
 		size: WorkSize = WorkSize(0, 0),
 		collection: Optional[str] = [],
 		best: Optional[bool] = None,
-		used: List[str] = [],
+		using: List[str] = [],
 		tags: List[str] = [],
 		**other_attributes: dict
 	):
@@ -49,7 +49,7 @@ class Work:
 		self.collection = collection
 		self.best = best
 		self.directory = directory or self.id
-		self.used = used
+		self.using = using
 		self.tags = tags
 		self.year = year
 		self.description = description

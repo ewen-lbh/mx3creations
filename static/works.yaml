@@ -1,5 +1,5 @@
 - name: You Gotta Think Outside the Box
-  used: [illustrator, photoshop]
+  using: [illustrator, photoshop]
   tags: [poster]
   description: >
     Ce poster que j'ai conçu pour une utilisation personnelle (décoration de ma chambre)
@@ -8,7 +8,7 @@
     la quantité "√-1").
 
 - name: Universe Anatomy
-  used: [gimp]
+  using: [gimp]
   tags: [compositing]
   description: >
     Cette illustration est une accumulation d'objets sans rapport particulier entre eux.
@@ -16,13 +16,13 @@
     variées
 
 - name: Train
-  used: [illustrator]
+  using: [illustrator]
   tags: [illustration]
   description: >
     Une illustration minimaliste d'un train
 
 - name: Tableau périodique des éléments
-  used: [illustrator]
+  using: [illustrator]
   tags: []
   description: >
     Quand j'étais au collège, je faisais des recherches sur le mystérieux "tableau périodique des éléments"
@@ -30,7 +30,7 @@
     un tableau suffisamment "beau" à mon goût, et j'ai donc décidé de créé le mien.
 
 - name: makisushi
-  used: [illustrator, photoshop]
+  using: [illustrator, photoshop]
   tags: [illustration, typography]
   description: >
     J'ai eu l'idée de réaliser mon propre T-Shirt peu de temps après avoir découvert le site
@@ -42,7 +42,7 @@
 
 - name: One over X
   collection: math-is-beautiful
-  used: [illustrator]
+  using: [illustrator]
   tags: []
   description: >
     Dans ma série de recherche sur la beauté des fonctions mathématiques,
@@ -57,14 +57,14 @@
 
 - name: Flat fruits
   front: watermelon
-  used: [assembly]
+  using: [assembly]
   tags: [illustration]
   description: >
     Une série d'illustrations de fruits en flat design réalisé sur mon iPad pendant
     le collège
 
 - name: Inklings
-  used: [papier]
+  using: [papier]
   tags: [drawing]
   description: >
     En anglais, <em>inkling</em> désigne une petite idée, une impression un soupçon.
@@ -75,7 +75,7 @@
 
 - name: Poésie Mathématique
   collection: math-is-beautiful
-  used: [latex]
+  using: [latex]
   tags: [typography]
   description: >
     J'ai toujours été fasciné par les symboles. En lisant la documentation du langage
@@ -88,7 +88,7 @@
 
 - name: l'Alphabet des Formes
   collection: shapes
-  used: [papier, illustrator]
+  using: [papier, illustrator]
   tags: [iconography]
   description: >
     Combien de formes différentes peut on créer ?
@@ -107,14 +107,14 @@
     cette liste pourrait être utilisé comme une sorte d'alphabet des formes.
 
 - name: Conflict
-  used: [photoshop]
+  using: [photoshop]
   tags: [compositing]
   description: >
     Compositing de deux photos faisant partie d'une série de photos aériennes insolites,
     disponibles <a href="https://drive.google.com/open?id=13IG-II9eDRi7XMrE9GppJOR1c2Vz9ONo">ici</a>.
 
 - name: Abstrakitten
-  used: [papier, photoshop]
+  using: [papier, photoshop]
   tags: [typography]
   description: >
     Fasciné par les alphabets, j'ai souvent créé des polices d'écritures fictives dans
@@ -124,7 +124,7 @@
     à réaliser une véritable police d'écriture.
 
 - name: Restauration rapide
-  used: [indesign]
+  using: [indesign]
   tags: [book]
   description: >
     En classe de seconde, on nous a demandé d'écrire un court dossier sur un sujet
@@ -133,7 +133,7 @@
     et c'était une occasion pour moi d'apprendre à me servir du logiciel de PAO Adobe InDesign.
 
 - name: humanR
-  used: [photoshop]
+  using: [photoshop]
   tags: [poster]
   year: 2018
   description: >
@@ -153,7 +153,7 @@
     l'objet, mis en lumière, et les conditions de travail, dans l'obscurité.
     
 - name: Manufact
-  used: [after effects]
+  using: [after effects]
   tags: [motion design]
   year: 2017
   description: >
@@ -165,7 +165,7 @@
     l'occasion.
     
 - name: innovation
-  used: [after effects]
+  using: [after effects]
   tags: [motion design]
   year: 2019
   description: >
@@ -174,7 +174,7 @@
     et qui est sans doute l'une des inventions les plus importantes de l'histoire de l'humanité.
     
 - name: Eating Kills
-  used: [photoshop]
+  using: [photoshop]
   tags: [poster, compositing]
   year: 2019
   description: >
@@ -186,7 +186,7 @@
   collection: schoolsyst
   id: web-app
   tags: [web, app]
-  used: [nuxt, vue, javascript, pug, stylus, html, sass, css]
+  using: [nuxt, vue, javascript, pug, stylus, html, sass, css]
   website: https://app.schoolsyst.com
   repository: https://gituhb.com/schoolsyst/frontend
   description: >
@@ -206,7 +206,7 @@
   collection: schoolsyst
   id: api
   tags: [web, api]
-  used: [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
+  using: [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
   website: https://api.schoolsyst.com
   repository: https://github.com/schoolsyst/backend
   description: >
