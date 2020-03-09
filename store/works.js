@@ -7,8 +7,8 @@ export const state = () => ({
 export const getters = {
   all: ({ works }) =>
     works.map((w) => ({
-      best: bestWorksIDs.includes(w.id),
-      ...w
+      ...w,
+      best: bestWorksIDs.includes(w.id)
     })),
   best: (_, { all }) => all.filter((w) => w.best),
   byID: (_, { all }) => (id) => all.find((w) => w.id === id)
