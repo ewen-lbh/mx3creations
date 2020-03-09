@@ -96,4 +96,5 @@ prepros*.config
 .netlify
 
 # Renders & database
-static/products
+static/works.json
+static/works/**
