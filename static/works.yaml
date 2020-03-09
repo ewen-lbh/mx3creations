@@ -185,3 +185,62 @@
     
 
 
+- name: Application web
+  year: 2020
+  wip: yes
+  collection: schoolsyst
+  id: web-app
+  tags: [web, app]
+  used: [nuxt, vue, javascript, pug, stylus, html, sass, css]
+  website: https://app.schoolsyst.com
+  repository: https://gituhb.com/schoolsyst/frontend
+  description: >
+    L'application web de <em>schoolsyst</em> contient l'interface et
+    tout ce avec quoi l'utilisateur interagit.
+
+    Cette application web est réalisée avec le <em>framework</em>
+    nuxt, qui permet la création d'application web.
+    L'application communique avec la base de données de schoolsyst
+    en utilisation <a href="/schoolsyst/api">l'api de schoolsyst</a>
+
+    J'ai commencé par établir un <a href="/schoolsyst/design">design de l'interface</a>,
+    puis j'ai développé l'application.
+
+- name: API REST
+  year: 2020
+  collection: schoolsyst
+  id: api
+  tags: [web, api]
+  used: [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
+  website: https://api.schoolsyst.com
+  repository: https://github.com/schoolsyst/backend
+  description: >
+    schoolsyst propose un API, bien qu'il soit pour l'instant
+    fermé à toute utilisation par un tiers, le serveur que je
+    paye ne pouvant supporter trop de requêtes.
+
+    L'API est une interface entre la base de données de schoolsyst
+    et le monde extérieur. J'utilise un <em>framework</em> pour Django
+    appelé <em>django-rest-framework</em> qui permet de gérer
+    authentification, sérialisation des réponses au format JSON et
+    exposition des différentes tables de la base de données.
+
+    Je m'y suis pris à deux reprises pour créer cette base de données,
+    et en est profité pour apperendre le langage de diagrammes PlantUML
+    (spécifiquement) la syntaxe des diagrammes de classes.
+
+    Cet API interagit aussi avec l'API de Github, les rapports de bugs
+    et propositions de fonctionnalités étant directement publiés
+    sur le dépôt GitHub correspondant.
+
+    Il y a aussi de la gestion de traitement d'images, car je génère dynamiquement
+    des miniatures pour les prises de cours, et du traitement de documents,
+    pour proposer un téléchargement des notes en PDF, Micosoft Word, OpenOffice
+    Document, LaTeX, etc.
+
+    J'ai acheté une instance <em>Public Cloud</em> chez OVH, et est configuré
+    tout le serveur moi-même, depuis l'installation du logiciel de serveur Web,
+    <em>nginx</em>, jusqu'à la mise en place des noms de domaine.
+
+    Il y a aussi un système pour gérer l'envoi d'emails, servant à la réinitialisation
+    de mot de passe et à la confirmation lors de la création d'un compte.

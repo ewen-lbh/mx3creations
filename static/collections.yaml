@@ -1,0 +1,35 @@
+- id: schoolsyst
+  name: schoolsyst
+  learn_more:
+    Site de présentation: https://www.schoolsyst.com
+     
+  description: >
+    Au collège, j'ai fait mes quatres années en classe iPad. J'ai grandement
+    apprécié l'avantage en terme d'organisation.
+    Mais il manquait quelque chose.
+    Un système centralisé, accessible depuis partout, où je pourrait renseigner
+    mes devoirs, obtenir des statistiques sur mes notes, prendre mes cours,
+    réviser et voir mon emploi du temps.
+
+    J'ai donc créé schoolsyst, une application web, qui remplit ce besoin.
+    J'ai commencé ce projet pendant l'été 2019, en utilisant Django et Python,
+    puis me suit rapidement rendu compte qu'il me fallait autre chose pour une application
+    web. J'ai donc appris à faire des <em>API</em>s, c'est à dire un site permettant
+    de communiquer avec une base de données, pouvant être utilisé par plusieurs autres programmes
+    tels qu'un site (dans ce cas https://app.schoolsyst.com/) ou autre.
+    Ce découplage entre les opérations sur une base de données et le traitement de celles-ci,
+    communéement appelé partie "<em>backend</em>", et l'interface utilisateur, communéement appelée
+    "<em>frontend</em>", est très à la mode en ce moment, et permet une meilleure organisation
+    du code sur de gros projets et l'utilisation régulée d'une base de donnée par des services tiers.
+
+    schoolsyst est mon projet le plus conséquent à ce jour, et sa création
+    m'a permis d'apprendre beaucoup de choses:
+    <ul>
+      <li> créer une application web avec vue et nuxt
+      <li> créer un API REST avec django-rest-framework
+      <li> configurer le logiciel de serveur Web nginx
+      <li> décrire une base de données avec des diagrammes de classe via PlantUML
+      <li> designer une interface avec Figma
+    </ul>
+
+    Ce projet est loin d'être terminé, sa première version beta est sortie le 02/02/2020.
