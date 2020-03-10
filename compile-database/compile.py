@@ -6,10 +6,10 @@ Usage:
   swdbc (-h|--help|--version)
 
 Files & directories options
---works=<file>         The works YAML file [default: works.yaml]
---renders=<directory>  The directory where renders are stored [default: ./works]
---collections=<file>   The collections YAML file [default: collections.yaml]
---sites=<file>         The sites YAML file [default: sites.yaml]
+--works=<file>         The works YAML file [default: ../static/works.yaml]
+--renders=<directory>  The directory where renders are stored [default: ../static/works]
+--collections=<file>   The collections YAML file [default: ../static/collections.yaml]
+--sites=<file>         The sites YAML file [default: ../static/sites.yaml]
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 3]
