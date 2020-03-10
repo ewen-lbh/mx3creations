@@ -25,6 +25,8 @@ import json
 from logger import Logger
 from slugify import slugify
 from time import time
+from markdown2 import Markdown
+markdown = Markdown()
 
 class Link:
 	def __init__(self, name: str, url: str, id: str):
@@ -105,7 +107,7 @@ class Work:
 		self.using = using
 		self.tags = tags
 		self.year = year
-		self.description = description
+		self.description = markdown.convert(description.replace('\n', '\n\n'))
 		self.front = front or self.id
 		self.front += '.png'
 		self.size = size

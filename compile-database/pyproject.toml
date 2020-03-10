@@ -12,6 +12,7 @@ pastel = "^0.2.0"
 pillow = "^7.0.0"
 python-slugify = "^4.0.0"
 "ruamel.yaml" = "^0.16.10"
+markdown2 = "^2.3.8"
 
 [tool.poetry.dev-dependencies]
 
