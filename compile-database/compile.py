@@ -2,16 +2,17 @@
 """A compiler for works.yaml file for my portfolio
 
 Usage:
-  swdbc [--renders ASSETS-DIR] [--works WORKS-FILE] [--collections COLLECTIONS-FILE] [--thumbs RESOLUTIONS]
-  swdbc (-h|--help)
-	
-Options:
-  -w --works WORKS-FILE              The YAML file where all the works are stored [default: works.yaml]
-  -d --renders ASSETS-DIR            The directory where all of the work's renders are. [default: ./works]
-	-c --collections COLLECTIONS-FILE  The YAML file where all the collections are stored [default: collections.yaml]
-	-s --sites SITES-FILE              The YAML file where all the links to external sites are stored. [default: sites.yaml]
-	-t --thumbs RESOLUTIONS            A comma-separated list of resolution for thumbnails [default: 20,250,500]
-  -h --help                          Show this help
+  swdbc [options]
+  swdbc (-h|--help|--version)
+
+Files & directories options
+--works=<file>         The works YAML file [default: works.yaml]
+--renders=<directory>  The directory where renders are stored [default: ./works]
+--collections=<file>   The collections YAML file [default: collections.yaml]
+--sites=<file>         The sites YAML file [default: sites.yaml]
+
+Miscellaneous options
+--verbose=<level>      The verbosity level, 0 to quiet [default: 3]
 """
 import os, shutil
 from typing import List, Dict, Optional, Union
@@ -21,7 +22,9 @@ import pastel
 from ruamel.yaml import YAML
 yaml = YAML()
 import json
+from logger import Logger
 from slugify import slugify
+from time import time
 
 class Link:
 	def __init__(self, name: str, url: str, id: str):
@@ -75,7 +78,7 @@ class WorkSize:
 	def aspect_ratio(self) -> float:
 		if self.height == 0:
 			return None
-		return self.width / self.height
+		return self.height / self.width
 
 class Work:
 	def __init__(
@@ -222,11 +225,13 @@ def run():
 	# 
 	# Get infos
 	#
-	args = docopt(__doc__)
+	time_start = time()
+	args = docopt(__doc__, version='0.1.0')
 	fullpath = lambda *paths: os.path.join(os.path.abspath(args['--renders']), *paths)
 	folders = os.listdir(args['--renders'])
 	database = Database(args['--works'])
-	print(pastel.colorize(f'\n    Compiling at <fg=cyan>{datetime.datetime.now().isoformat(sep=" ")}</fg=cyan>\n'))
+	log = Logger(int(args['--verbose']))
+	log.info('\n    Compiling {0} at {1}\n', args['--works'], datetime.datetime.now().strftime('%H:%M:%S'))
 	#
 	# Iterate
 	#
@@ -235,7 +240,7 @@ def run():
 		path = fullpath(work.directory, work.front)
 		# Check if work.front file exists
 		if not os.path.isfile(path):
-			print(pastel.colorize(f"<fg=red>File <fg=white>{work.collection or ''}/{work.front}</fg=white> not found</fg=red>"))
+			log.error('File {0} not found.', f'{work.collection or ""}/{work.front}')
 			continue
 		# Compute the work's size
 		image = Image.open(path)
@@ -243,15 +248,13 @@ def run():
 		database.edit(work.id, size=WorkSize(height, width))
 		# Make thumbnails
 		thumbs_dir = os.path.join(args['--renders'], work.directory, 'thumbs')
-		shutil.rmtree(thumbs_dir)
 		os.makedirs(thumbs_dir, exist_ok=True)
 		for width in [500, 150, 20]:
+			if work.size.aspect_ratio() is not None: continue
 			thumb_path = os.path.join(thumbs_dir, str(width) + '.png')
-			thumb = Image.open(path)
-			thumb.resize((width, width))
-			thumb.save(thumb_path)
-		print(pastel.colorize(f'<info>Made thumbnails for {work.collection or ""}/{work.id}</info>'))
-		
+			image.thumbnail((width, width))
+			image.save(thumb_path)
+		log.info('Made thumbnails for {0}', f'{work.collection or ""}/{work.id}')
 		
 	#
 	# Show infos
@@ -263,7 +266,7 @@ def run():
 	# Write to .json
 	works_output_path = args['--works'].replace('.yaml', '.json')
 	database.save(to=works_output_path)
-	print(pastel.colorize(f'Saved works file to <fg=cyan>./{works_output_path}</fg=cyan>'))
+	log.info('\n    Saved works file to {0} in {1}\n', works_output_path, f'{time()-time_start:.3f}s')
 
 if __name__ == "__main__":
 	run()
