@@ -159,8 +159,22 @@ class Database:
 			elif 'name' not in work.keys():
 				work['name'] = work['id']
 			# Instanciate
+			bool_keys = ['best', 'wip']
+			for key in bool_keys:
+				if key in work.keys():
+					work[key] = self._parse_yes_no(work[key])
 			work = Work(**work)
 			yield work
+		
+	@classmethod
+	def _parse_yes_no(cls, value):
+		truthy = ['yes', 'on', 'true']
+		falsey = ['no', 'off', 'false']
+		if value in truthy:
+			return True
+		if value in falsey:
+			return False
+		return None
 	
 	def edit(self, id: str, **modifications: dict) -> Work:
 		modified = self._modify(id, modifications)
@@ -212,7 +226,7 @@ def run():
 	fullpath = lambda *paths: os.path.join(os.path.abspath(args['--renders']), *paths)
 	folders = os.listdir(args['--renders'])
 	database = Database(args['--works'])
-	print(pastel.colorize(f'\n<info>    Compiling at {datetime.datetime.now().isoformat(sep=" ")}</info>\n'))
+	print(pastel.colorize(f'\n    Compiling at <fg=cyan>{datetime.datetime.now().isoformat(sep=" ")}</fg=cyan>\n'))
 	#
 	# Iterate
 	#
@@ -247,7 +261,9 @@ def run():
 	# I/O
 	#
 	# Write to .json
-	database.save(to=args['--works'].replace('.yaml', '.json'))
+	works_output_path = args['--works'].replace('.yaml', '.json')
+	database.save(to=works_output_path)
+	print(pastel.colorize(f'Saved works file to <fg=cyan>./{works_output_path}</fg=cyan>'))
 
 if __name__ == "__main__":
 	run()
