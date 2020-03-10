@@ -98,12 +98,12 @@
     revenir à toutes les lettres de l'alphabet ?
     
     Ces nombreux questionnements sur l'étude des formes m'ont mené à m'atteler à une tâche
-    qui semble interminable: lister toutes les formes suffisamment différentes les unes des autres.
+    qui semble interminable&colon; lister toutes les formes suffisamment différentes les unes des autres.
     
     Même si cette liste est certainement incomplète, elle n'est pas terminée, et je tiens à 
     y rajouter encore d'autres
     
-    Ce dessin est aussi partiellement inspiré par "Planetarische Folklore" de Vassily Vasarelly:
+    Ce dessin est aussi partiellement inspiré par "Planetarische Folklore" de Vassily Vasarelly&colon;
     cette liste pourrait être utilisé comme une sorte d'alphabet des formes.
 
 - name: Conflict
@@ -239,3 +239,106 @@
 
     Il y a aussi un système pour gérer l'envoi d'emails, servant à la réinitialisation
     de mot de passe et à la confirmation lors de la création d'un compte.
+
+- name: Site de présentation
+  collection: schoolsyst
+  best: yes
+  using: [pug, stylus, coffeescript, html, css, js]
+  tags: [web, site]
+  year: 2020
+  website: https://www.schoolsyst.com/
+  repository: https://github.com/schoolsyst/presentation
+  wip: yes
+  description: >
+    Pour présenter schoolsyst, il fallait réaliser un site de présentation.
+    Ce site manque encore d'améliorations, il est pour le moment rudimentaire et 
+    uniquement en français.
+
+- name: Identité visuelle
+  collection: schoolsyst
+  best: yes
+  using: [illustrator, photoshop]
+  tags: [visual identity, logo, banner, motion design]
+  year: 2019
+  wip: no
+  description: >
+    schoolsyst avait besoin d'une identité visuelle, c'est-à-dire d'un logo,
+    de bannières pour les réseaux sociaux, et cætera.
+    Le logo de schoolsyst est une fusion entre deux éléments.
+    <ul>
+    <li> Une feuille, un élément omniprésent dans le système éducatif classique, 
+    mais un concept qui se conserve dans le domaine informatique, 
+    la métaphore de la feuille de papier étant celle utilisée pour représenter des fichiers.
+    <li> Un symbole "%", représentant les statistiques et les nombreuses
+    données -- emploi du temps, notes,... que schoolsyst traite à votre place.
+
+- name: fsorg
+  collection: null
+  best: yes
+  using: [python]
+  tags: [cli, automation]
+  year: 2018
+  wip: no
+  repository: https://github.com/ewen-lbh/fsorg
+  install: https://pypi.org/project/fsorg
+  description: >
+    Ce petit script d'automatisation permet de créer une structure de dossiers
+    à partir d'un fichier qui décrit cette structure.
+    J'ai créé ce script quand je voulais refaire l'organisation de mon ordinateur,
+    pour automatiser la fastidieuse tâche de création de structures de dossiers.
+
+- name: PyChemin
+  collection: null
+  best: yes
+  using: [python, lark]
+  tags: [cli, langage]
+  year: 2020
+  wip: yes
+  repository: https://github.com/ewen-lbh/pychemin
+  learn_more: https://ewen-lbh.github.io/pychemin
+  install: https://pypi.org/project/pychemin
+  description: >
+    PyChemin est un langage de description d'aventure textuelles interactives.
+    Ce projet m'a permis de découvrir le processus de création d'un langage
+    informatique interpreté, avec la description formelle de la grammaire,
+    le <em>lexing</em>, le <em>parsing</em>, et l'interprétation d'arbres
+    de syntaxe abstraits (AST).
+    Ce projet est aussi mon projet d'ISN de Terminale.
+
+- name: Hyperis
+  collection: null
+  best: no
+  using: [python, pychemin]
+  tags: [cli, game]
+  year: 2020
+  wip: yes
+  repository: https://github.com/ewen-lbh/hyperis
+  description: >
+    Un jeu d'aventure textuelle dans un terminal se passant dans un univers
+    parallèle en 1681.
+    C'est aussi mon projet d'ISN et l'origine du langage de description <a href="/pychemin">PyChemin</a>
+
+- name: creations
+  collection: null
+  best: no
+  using: [typescript, oclif]
+  tags: [cli, automation]
+  year: 2020
+  wip: yes
+  repository: https://github.com/ewen-lbh/creations
+  install: https://npmjs.com/package/creations
+  description: >
+    Un programme en ligne de commande proposant de nombreuses commandes
+    pour créer, ouvrir, publier, versionner, archiver, lister et plus généralement
+    gérer des projets, que ce soit de la musique, de la programmation, du graphisme
+    ou tout autre type de projet.
+    J'ai toujours beaucoup de projets sur lesquels je travaille en même temps et,
+    surtout quand il s'agit de programmation, le temps passé à mettre en place, lancer
+    et démarrer des projets me semblait trop long.
+    J'ai donc créé ce programme, et c'est également mon premier "gros" programme
+    en ligne de commande, avec plus de 10 commandes différentes, des fichiers de 
+    configuration, et cætera.
+
+- name: Forum des métiers 2019
+  description: >
+    Lol mdr.
