@@ -8,8 +8,20 @@ export const getters = {
   all: ({ works }) =>
     works.map((w) => ({
       ...w,
-      best: bestWorksIDs.includes(w.id)
+      best: w.collection
+        ? bestWorksIDs.includes(w.collection.id)
+        : bestWorksIDs.includes(w.id)
     })),
-  best: (_, { all }) => all.filter((w) => w.best),
-  byID: (_, { all }) => (id) => all.find((w) => w.id === id)
+  bestOf: () => (works) => works.filter((w) => w.best),
+  best: (_, { all, bestOf }) => bestOf(all),
+  byID: (_, { all }) => (id) => all.find((w) => w.id === id),
+  ofFirstTag: (_, { all }) => (tag) =>
+    all.filter((w) => w.tags && w.tags[0] === tag),
+  withTags: (_, { all }) => (tags) => {
+    const result = []
+    tags.forEach((tag) => {
+      result.push(all.filter((w) => w.tags && w.tags.includes(tag)))
+    })
+    return result
+  }
 }

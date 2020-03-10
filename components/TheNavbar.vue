@@ -17,7 +17,7 @@
         :to="fragment"
         no-line
       ) {{ fragment }}
-    nuxt-link(to="/").center(v-else)
+    nuxt-link(v-else to="/").center
       NavItem Ewen Le Bihan
     NavItem.switch-menu.center(@click="switchMenu") {{ $t(switchMenuText) }}
     // Right

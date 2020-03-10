@@ -4,7 +4,12 @@ main
   section.intro
     p {{ $t('html.intro') }}
     BtnOutline(href="/about") {{ $t('learnMore') }}
-  Gallery(v-bind="{products}")
+  section(
+    v-for="firstTag in workSections"
+    :class="firstTag"
+  )
+    h2 {{ $t(firstTag) }}
+    Gallery(:works="ofFirstTag(firstTag)")
 </template>
 
 <script>
@@ -13,8 +18,20 @@ import Gallery from '~/components/Gallery.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
 export default {
   components: { Gallery, BtnOutline },
+  data() {
+    return {
+      workSections: [
+        'poster',
+        'illustration',
+        'drawing',
+        'visual-indentity',
+        'web',
+        'cli'
+      ]
+    }
+  },
   computed: {
-    ...mapGetters('products', ['products'])
+    ...mapGetters('works', ['bestOf', 'ofFirstTag'])
   }
 }
 </script>
