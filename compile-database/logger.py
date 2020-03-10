@@ -18,20 +18,20 @@ class Logger:
     self.warn = self._make_log_function(
       level=2,
       style_normal='fg=yellow',
-      style_value_primary='options=bold;fg=default',
-      style_value_secondary='fg=default'
+      style_value_primary='fg=default',
+      style_value_secondary='options=bold'
     )
     self.error = self._make_log_function(
       level=1,
       style_normal='fg=red',
-      style_value_primary='options=bold;fg=default',
-      style_value_secondary='fg=default'
+      style_value_primary='fg=default',
+      style_value_secondary='options=bold'
     )
     self.success = self._make_log_function(
       level=3,
       style_normal='fg=green',
-      style_value_primary='options=bold;fg=default',
-      style_value_secondary='fg=default'
+      style_value_primary='fg=default',
+      style_value_secondary='options=bold'
     )
 
   def _make_log_function(self, level, style_normal, style_value_primary, style_value_secondary):
