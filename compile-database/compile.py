@@ -12,7 +12,7 @@ Files & directories options
 --sites=<file>         The sites YAML file [default: ../static/sites.yaml]
 
 Miscellaneous options
---verbose=<level>      The verbosity level, 0 to quiet [default: 3]
+--verbose=<level>      The verbosity level, 0 to quiet [default: 2]
 """
 import os, shutil
 from typing import List, Dict, Optional, Union
