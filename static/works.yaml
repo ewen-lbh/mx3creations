@@ -22,6 +22,7 @@
     Une illustration minimaliste d'un train
 
 - name: Tableau périodique des éléments
+  collection: math-is-beautiful
   using: [illustrator]
   tags: []
   description: >
@@ -67,8 +68,8 @@
   using: [papier]
   tags: [drawing]
   description: >
-    En anglais, <em>inkling</em> désigne une petite idée, une impression un soupçon.
-    On remarque aussi la présence de <em>ink</em>, encre, qui est contenu dans ce mot.
+    En anglais, _inkling_ désigne une petite idée, une impression un soupçon.
+    On remarque aussi la présence de _ink_, encre, qui est contenu dans ce mot.
     
     Ces dessins sont des enchevêtrements de flux d'idée,
     je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
@@ -79,8 +80,8 @@
   tags: [typography]
   description: >
     J'ai toujours été fasciné par les symboles. En lisant la documentation du langage
-    de <em>typesetting</em> mathématique <em>LaTeX</em>, je suis tombé sur la liste des
-    divers symboles fournis par <em>LaTeX</em>.
+    de _typesetting_ mathématique _LaTeX_, je suis tombé sur la liste des
+    divers symboles fournis par _LaTeX_.
     
     J'ai ensuite assemblé tout ces symboles en une suite d'équations, en utilisant les opérateurs
     de relation au milieu et en combinant lettres latines, grecques, cyrilliques et hébraïque,
@@ -111,7 +112,7 @@
   tags: [compositing]
   description: >
     Compositing de deux photos faisant partie d'une série de photos aériennes insolites,
-    disponibles <a href="https://drive.google.com/open?id=13IG-II9eDRi7XMrE9GppJOR1c2Vz9ONo">ici</a>.
+    disponibles [ici](https://drive.google.com/open?id=13IG-II9eDRi7XMrE9GppJOR1c2Vz9ONo).
 
 - name: Abstrakitten
   using: [papier, photoshop]
@@ -187,18 +188,19 @@
   id: web-app
   tags: [web, app]
   using: [nuxt, vue, javascript, pug, stylus, html, sass, css]
-  website: https://app.schoolsyst.com
-  repository: https://gituhb.com/schoolsyst/frontend
+  links:
+    website: https://app.schoolsyst.com
+    repository: https://gituhb.com/schoolsyst/frontend
   description: >
-    L'application web de <em>schoolsyst</em> contient l'interface et
+    L'application web de _schoolsyst_ contient l'interface et
     tout ce avec quoi l'utilisateur interagit.
 
-    Cette application web est réalisée avec le <em>framework</em>
+    Cette application web est réalisée avec le _framework_
     nuxt, qui permet la création d'application web.
     L'application communique avec la base de données de schoolsyst
-    en utilisation <a href="/schoolsyst/api">l'api de schoolsyst</a>
+    en utilisation [l'api de schoolsyst](/schoolsyst/api)
 
-    J'ai commencé par établir un <a href="/schoolsyst/design">design de l'interface</a>,
+    J'ai commencé par établir un [design de l'interface](/schoolsyst/design),
     puis j'ai développé l'application.
 
 - name: API REST
@@ -207,16 +209,17 @@
   id: api
   tags: [web, api]
   using: [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
-  website: https://api.schoolsyst.com
-  repository: https://github.com/schoolsyst/backend
+  links:
+    website: https://api.schoolsyst.com
+    repository: https://github.com/schoolsyst/backend
   description: >
     schoolsyst propose un API, bien qu'il soit pour l'instant
     fermé à toute utilisation par un tiers, le serveur que je
     paye ne pouvant supporter trop de requêtes.
 
     L'API est une interface entre la base de données de schoolsyst
-    et le monde extérieur. J'utilise un <em>framework</em> pour Django
-    appelé <em>django-rest-framework</em> qui permet de gérer
+    et le monde extérieur. J'utilise un _framework_ pour Django
+    appelé _django-rest-framework_ qui permet de gérer
     authentification, sérialisation des réponses au format JSON et
     exposition des différentes tables de la base de données.
 
@@ -233,9 +236,9 @@
     pour proposer un téléchargement des notes en PDF, Micosoft Word, OpenOffice
     Document, LaTeX, etc.
 
-    J'ai acheté une instance <em>Public Cloud</em> chez OVH, et est configuré
+    J'ai acheté une instance _Public Cloud_ chez OVH, et est configuré
     tout le serveur moi-même, depuis l'installation du logiciel de serveur Web,
-    <em>nginx</em>, jusqu'à la mise en place des noms de domaine.
+    _nginx_, jusqu'à la mise en place des noms de domaine.
 
     Il y a aussi un système pour gérer l'envoi d'emails, servant à la réinitialisation
     de mot de passe et à la confirmation lors de la création d'un compte.
@@ -246,8 +249,9 @@
   using: [pug, stylus, coffeescript, html, css, js]
   tags: [web, site]
   year: 2020
-  website: https://www.schoolsyst.com/
-  repository: https://github.com/schoolsyst/presentation
+  links:
+    website: https://www.schoolsyst.com/
+    repository: https://github.com/schoolsyst/presentation
   wip: yes
   description: >
     Pour présenter schoolsyst, il fallait réaliser un site de présentation.
@@ -279,8 +283,9 @@
   tags: [cli, automation]
   year: 2018
   wip: no
-  repository: https://github.com/ewen-lbh/fsorg
-  install: https://pypi.org/project/fsorg
+  links:
+    repository: https://github.com/ewen-lbh/fsorg
+    install: https://pypi.org/project/fsorg
   description: >
     Ce petit script d'automatisation permet de créer une structure de dossiers
     à partir d'un fichier qui décrit cette structure.
@@ -294,14 +299,15 @@
   tags: [cli, langage]
   year: 2020
   wip: yes
-  repository: https://github.com/ewen-lbh/pychemin
-  learn_more: https://ewen-lbh.github.io/pychemin
-  install: https://pypi.org/project/pychemin
+  links:
+    repository: https://github.com/ewen-lbh/pychemin
+    learn_more: https://ewen-lbh.github.io/pychemin
+    install: https://pypi.org/project/pychemin
   description: >
     PyChemin est un langage de description d'aventure textuelles interactives.
     Ce projet m'a permis de découvrir le processus de création d'un langage
     informatique interpreté, avec la description formelle de la grammaire,
-    le <em>lexing</em>, le <em>parsing</em>, et l'interprétation d'arbres
+    le _lexing_, le _parsing_, et l'interprétation d'arbres
     de syntaxe abstraits (AST).
     Ce projet est aussi mon projet d'ISN de Terminale.
 
@@ -316,7 +322,7 @@
   description: >
     Un jeu d'aventure textuelle dans un terminal se passant dans un univers
     parallèle en 1681.
-    C'est aussi mon projet d'ISN et l'origine du langage de description <a href="/pychemin">PyChemin</a>
+    C'est aussi mon projet d'ISN et l'origine du langage de description [PyChemin](/pychemin)
 
 - name: creations
   collection: null
