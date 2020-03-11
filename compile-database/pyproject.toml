@@ -13,6 +13,8 @@ pillow = "^7.0.0"
 python-slugify = "^4.0.0"
 "ruamel.yaml" = "^0.16.10"
 markdown2 = "^2.3.8"
+pdf2image = "^1.12.1"
+moviepy = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 

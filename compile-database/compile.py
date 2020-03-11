@@ -26,6 +26,8 @@ from logger import Logger
 from slugify import slugify
 from time import time
 from markdown2 import Markdown
+import pdf2image
+import moviepy
 markdown = Markdown()
 
 def convert_markdown(text: str) -> str:
@@ -133,8 +135,8 @@ class Work:
 		tags: List[str] = [],
 		**other_attributes: dict
 	):
-		self.id = id
-		self.name = name
+		self.id = str(id)
+		self.name = str(name)
 		self.collection = collection
 		self.best = best
 		self.directory = directory or self.compute_directory()
@@ -201,7 +203,7 @@ class Database:
 			if 'id' not in work.keys() and 'name' not in work.keys():
 				raise KeyError(f'A work has neither a name nor an id.')
 			if 'id' not in work.keys():
-				work['id'] = slugify(work['name'])
+				work['id'] = slugify(str(work['name']))
 			elif 'name' not in work.keys():
 				work['name'] = work['id']
 			# Instanciate
@@ -300,12 +302,39 @@ def run():
 	# Iterate
 	#
 	for work in database:
+		log.debug('Working on work {0}:\n {1}', work.name, json.dumps({ k:v for k,v in work.as_dict().items() if k != 'description'}, ensure_ascii=False))
 		# Get infos
 		path = fullpath(work.directory, work.front)
+		path_disp = f'{work.collection.id if work.collection else ""}/{work.front}'
 		# Check if work.front file exists
 		if not os.path.isfile(path):
-			log.error('File {0} not found.', f'{work.collection.id if work.collection else ""}/{work.front}')
-			database.edit(work.id, front=None)
+			os.makedirs(os.path.dirname(path), exist_ok=True)
+			video_path = path.replace('.png', '.mp4')
+			pdf_path = path.replace('.png', '.pdf')
+			if os.path.isfile(pdf_path):
+				log.warn('File {0} not found, but {1} was found: converting the PDF to a PNG...', path_disp, path_disp.replace('.png', '.pdf'))
+				try:
+					pages = pdf2image.convert_from_path(pdf_path)
+					pages[0].save(path) #TODO: choose the front page num. from works.yaml, instead of always #1
+					if len(pages) > 1:
+						for i, page in enumerate(pages):
+							log.success('  Converted page {0} successfully', f'#{i+1}')
+							page.save(path.replace('.png', f'--p{i}.png'))
+				except Exception:
+					log.error('An error occured during the conversion of {0} to a PNG', path_disp.replace('.png', '.pdf'))
+					database.edit(work.id, front=None)
+			elif os.path.isfile(video_path):
+				log.warn('File {0} not found, but {1} was found: making a 5-second GIF...', path_disp, path_disp.replace('.png', '.mp4'))
+				try:
+					clip = moviepy.editor.VideoFileClip(video_path).subclip((0,0), (0,5)).resize(0.3)
+					clip.write_gif(path.replace('.png', '.gif'))
+					database.edit(work.id, front=work.front.replace('.png', '.gif'))
+				except Exception:
+					log.error('An error occured during the conversion of {0} to a GIF', path_disp.replace('.png', '.mp4'))
+					database.edit(work.id, front=None)
+			else:
+				log.error('File {0} not found.', path_disp)
+				database.edit(work.id, front=None)
 			continue
 		# Compute the work's size
 		image = Image.open(path)
