@@ -355,4 +355,28 @@
   description: >
     Le logo de creations
   
+- name: Forum des métiers 2019
+  id: 2019
+  collection: forum-des-metiers-dalzon-vestric
+  best: yes
+  using: [photoshop]
+  tags: [poster]
+  description: >
+    Pour la quatrième année consécutive, je réalise l'affiche du Forum des métiers
+    du collège d'Alzon-Vestric.
+    Cette fois-ci, j'ai voulu proposer un design assez minimaliste, toujours
+    avec cette idée de représenter la diversité des métiers.
+    Je me suis inspiré des "carrés de textures" présents dans ma 
+    [pochette pour mon album Serial](/works/serial/cover-art").
 
+- name: Forum des métiers 2018
+  id: 2018
+  collection: forum-des-metiers-dalzon-vestric
+  best: no
+  using: [photoshop]
+  tags: [poster]
+  description: >
+    Pour la troisième année consécutive, je réalise l'affiche du Forum des métiers
+    du collège d'Alzon-Vestric.
+    Après avoir été déçu de mon affiche de l'année dernière, j'ai voulu
+    revenir à ce que j'avais fait pour ma [première affiche du forum des métiers](/works/forum-des-metiers-dalzon/2017)

@@ -33,10 +33,10 @@
 
     Ce projet est loin d'être terminé, sa première version beta est sortie le 02/02/2020.
 
-- id: math-is-beautiful
-  name: Math is Beautiful
+- id: science-is-beautiful
+  name: Science is Beautiful
   description: >
-    Une série d'œuvres à la recherche de la beauté dans les mathématiques
+    Une série d'œuvres à la recherche de la beauté dans les sciences
 
 - id: shapes
   name: Shapes
