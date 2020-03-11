@@ -2,7 +2,7 @@
 .--gallery
   ul
     li(v-for="work in works")
-      h3 
+      h3
         template(v-if="work.collection")
           | {{ work.collection.name }}
           span.sep /
@@ -88,6 +88,14 @@ export default {
 </script>
 
 <style lang="stylus">
+h2
+  font-family 'Work Sans'
+  font-size 6vmin
+  text-align center
+h3
+  font-family 'Work Sans'
+  font-size 4vmin
+
 #pig
   width: 100%
 
