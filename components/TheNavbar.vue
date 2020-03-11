@@ -148,6 +148,8 @@ nav
     top unset
     border-top-color black
     background white
+
+@media (max-width 400px)
   .switch-menu
     display inline-block
   .--nav-item:not(.switch-menu)
@@ -174,6 +176,6 @@ nav
     margin-bottom .5em
 
 .scrolled
-  .center
+  .center:not(.switch-menu)
     opacity 0
 </style>
