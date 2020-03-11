@@ -9,7 +9,6 @@
     template(v-else)
       NavItem(to="/") {{ $t('works') }}
       NavItem(to="/about") {{ $t('about') }}
-      NavItem(to="/contact") {{ $t('contact') }}
     // Center
     span.center.breadcrumbs(v-if="false")
       NavItem.breadcrumb(
@@ -21,7 +20,8 @@
       NavItem Ewen Le Bihan
     NavItem.switch-menu.center(@click="switchMenu") {{ $t(switchMenuText) }}
     // Right
-    NavLanguageSwitch.right
+    //- NavLanguageSwitch.right
+    NavItem.right(to="/contact") {{ $t('contact') }}
 </template>
 
 <script>
@@ -98,13 +98,12 @@ export default {
 .nav-wrapper
   width 100%
   font-size: 1.5em
-  background white
+  background transparent
   position fixed
   display flex
   align-items center
   justify-content center
-  top 0
-  box-sizing border-box
+  top 0  box-sizing border-box
   transition all 0.5s ease, border 0.25s ease
   border 2px solid transparent
   z-index: 1000
@@ -148,6 +147,7 @@ nav
     bottom: 0
     top unset
     border-top-color black
+    background white
   .switch-menu
     display inline-block
   .--nav-item:not(.switch-menu)
@@ -172,4 +172,8 @@ nav
     margin-left: 0
   .--nav-item:not(:last-child):not(.switch-menu)
     margin-bottom .5em
+
+.scrolled
+  .center
+    opacity 0
 </style>
