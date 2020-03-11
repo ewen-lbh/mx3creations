@@ -345,6 +345,14 @@
     en ligne de commande, avec plus de 10 commandes différentes, des fichiers de 
     configuration, et cætera.
 
-- name: Forum des métiers 2019
+- name: Logo
+  collection: creations
+  best: yes
+  using: [illustrator]
+  tags: [visual-identity]
+  year: 2020
+  wip: no
   description: >
-    Lol mdr.
+    Le logo de creations
+  
+

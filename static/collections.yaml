@@ -42,3 +42,11 @@
   name: Shapes
   description: >
     Une série de travaux sur les formes
+
+- id: creations
+  name: creations
+  description: >
+    creations est un programme en ligne de commande
+    permettant de démarrer, archiver, publier, ouvrir
+    et plus globalement gérer des créations de n'importe quelle nature:
+    graphisme, programmation, motio design, et cætera.
