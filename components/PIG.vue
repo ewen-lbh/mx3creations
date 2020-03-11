@@ -25,8 +25,7 @@ export default {
             path.join(
               path.dirname(filename),
               'thumbs',
-              size.toString(),
-              path.basename(filename)
+              size.toString() + '.png'
             )
           )
         },
