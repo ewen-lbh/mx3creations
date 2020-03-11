@@ -2,6 +2,7 @@
 .--gallery
   ul
     li(v-for="work in works")
+      img(:src="getWorkFrontSrc(work)")
       h3
         template(v-if="work.collection")
           | {{ work.collection.name }}
@@ -25,22 +26,16 @@ export default {
       default: null
     }
   },
-  mounted() {
-    console.log(this.works)
-  },
   computed: {
     pigImages() {
-      let pigImages = []
+      const pigImages = []
       this.works.forEach((work) => {
-        if (!work.size) return
-        pigImages = [
-          ...pigImages,
-          {
-            filename: `/works/${work.directory}/${work.front}`,
-            aspectRatio: work.size.aspect_ratio
-          }
-        ]
+        pigImages.push({
+          filename: '/works/' + work.directory + '/' + work.front,
+          aspect_ratio: work.size.aspect_ratio
+        })
       })
+      console.table(pigImages)
       return pigImages
     }
   },
@@ -64,24 +59,24 @@ export default {
         this.frontCoverHTMLElement(product)
       )
     },
-    frontCoverHref(product) {
-      const cover = product.front_cover
-      if (cover.type === 'pdf') {
-        return `/works/renders/${product.collection.id}/${product.id}/_thumbnail.png`
-      } else {
-        return cover.src
-      }
-    },
     handleImageClicked($event) {
       // http://static.mx3creations.com/works/renders/acf/actualite-des-cartels-2019/0.png
       const idPath = $event
         .replace('http://static.mx3creations.com', '')
-        .replace('/works/renders/', '')
+        .replace('/works/', '')
         .replace('.png', '')
       console.log(idPath)
       // eslint-disable-next-line no-unused-vars
       const [collectionID, productID, variantID] = idPath.split('/')
       this.$router.push(this.localePath(`/${collectionID}/${productID}`))
+    },
+    getWorkFrontSrc(work) {
+      let src = '/works/'
+      if (work.collection) {
+        src += work.collection.id + '/'
+      }
+      src += work.front
+      return src
     }
   }
 }
