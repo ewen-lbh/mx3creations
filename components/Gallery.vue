@@ -1,17 +1,22 @@
 <template lang="pug">
 .--gallery
   ul
-    li(v-for="work in works")
-      img(:src="getWorkFrontSrc(work)")
-      h3
-        template(v-if="work.collection")
-          | {{ work.collection.name }}
-          span.sep /
-        | {{ work.name }}
-      .description(v-html="work.description")
+    template(v-for="(work, i) in works")
+      li(v-if="getWorkFrontSrc(work)" :key="i")
+        //- h3
+        //-   template(v-if="work.collection")
+        //-     | {{ work.collection.name }}
+        //-     span.sep /
+        //-   | {{ work.name }}
+        img(
+          :src="getWorkFrontSrc(work)"
+        )
+
   //- PIG(
   //-   :images="pigImages"
-  //-   @image-click="handleImageClicked($event)"
+  //-   @image-click="handleImageClicked($event)",
+  //-   :pig-id="'pig-' + id"
+  //-   style="height:100vh;"
   //- )
 </template>
 
@@ -24,18 +29,29 @@ export default {
     works: {
       type: Array,
       default: null
+    },
+    id: {
+      type: String,
+      required: true
     }
+  },
+  mounted() {
+    console.dir(this.works)
+    console.table(
+      this.works.map((w) => ({ id: w.id, src: this.getWorkFrontSrc(w) }))
+    )
   },
   computed: {
     pigImages() {
-      const pigImages = []
+      let pigImages = []
       this.works.forEach((work) => {
         pigImages.push({
-          filename: '/works/' + work.directory + '/' + work.front,
+          filename: this.getWorkFrontSrc(work),
           aspect_ratio: work.size.aspect_ratio
         })
       })
-      console.table(pigImages)
+      pigImages = pigImages.filter((img) => img.filename)
+      console.dir(pigImages)
       return pigImages
     }
   },
@@ -72,35 +88,47 @@ export default {
     },
     getWorkFrontSrc(work) {
       let src = '/works/'
-      if (work.collection) {
-        src += work.collection.id + '/'
-      }
-      src += work.front
+      if (work.front === null) return null
+      src += work.directory + '/' + work.front
       return src
     }
   }
 }
 </script>
 
-<style lang="stylus">
-h2
-  font-family 'Work Sans'
-  font-size 6vmin
-  text-align center
+<style lang="stylus" scoped>
 h3
-  font-family 'Work Sans'
-  font-size 4vmin
+  font-family: 'Work Sans'
+  font-size: 4vmin
 
-#pig
+ul
+  height: 300px
+  display flex
+  align-items center
+li
+  height 100%
+img
+  object-fit contain
+  height: 100%
+
+.description
+  a
+    border 1px solid transparent
+    border-bottom 1px solid black
+  a:hover
+    border 1px solid black
+
+.--pig
   width: 100%
 
-.pig-figure
-  width: 100%
-  height: auto
+.--pig .pig-figure
+  width: 100% !important
+  height: auto !important
   margin-bottom: gallery-gaps
   background-color: white !important
 
   img.pig-loaded:not(.pig-thumbnail)
+    height auto
     transition: all 0.25s ease !important
     box-sizing: border-box
     // border: 1px solid black

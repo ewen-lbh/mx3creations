@@ -22,7 +22,7 @@
     Une illustration minimaliste d'un train
 
 - name: Tableau périodique des éléments
-  collection: math-is-beautiful
+  collection: science-is-beautiful
   using: [illustrator]
   tags: []
   description: >
@@ -42,7 +42,7 @@
     aux morceaux de poisson et d'avocat.
 
 - name: One over X
-  collection: math-is-beautiful
+  collection: science-is-beautiful
   using: [illustrator]
   tags: []
   description: >
@@ -64,18 +64,8 @@
     Une série d'illustrations de fruits en flat design réalisé sur mon iPad pendant
     le collège
 
-- name: Inklings
-  using: [papier]
-  tags: [drawing]
-  description: >
-    En anglais, _inkling_ désigne une petite idée, une impression un soupçon.
-    On remarque aussi la présence de _ink_, encre, qui est contenu dans ce mot.
-    
-    Ces dessins sont des enchevêtrements de flux d'idée,
-    je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
-
 - name: Poésie Mathématique
-  collection: math-is-beautiful
+  collection: science-is-beautiful
   using: [latex]
   tags: [typography]
   description: >
@@ -312,11 +302,11 @@
     Ce projet est aussi mon projet d'ISN de Terminale.
 
 - name: Hyperis
-  collection: null
   best: no
   using: [python, pychemin]
   tags: [cli, game]
   year: 2020
+  front: teaser
   wip: yes
   repository: https://github.com/ewen-lbh/hyperis
   description: >
@@ -355,8 +345,7 @@
   description: >
     Le logo de creations
   
-- name: Forum des métiers 2019
-  id: 2019
+- name: 2020
   collection: forum-des-metiers-dalzon-vestric
   best: yes
   using: [photoshop]
@@ -367,10 +356,9 @@
     Cette fois-ci, j'ai voulu proposer un design assez minimaliste, toujours
     avec cette idée de représenter la diversité des métiers.
     Je me suis inspiré des "carrés de textures" présents dans ma 
-    [pochette pour mon album Serial](/works/serial/cover-art").
+    [pochette pour mon album Serial](/works/serial/cover-art).
 
-- name: Forum des métiers 2018
-  id: 2018
+- name: 2019
   collection: forum-des-metiers-dalzon-vestric
   best: no
   using: [photoshop]

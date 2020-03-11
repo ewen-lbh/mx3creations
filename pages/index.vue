@@ -9,7 +9,8 @@ main
     :class="firstTag"
   )
     h2 {{ $t('tags.plural.'+firstTag) }}
-    Gallery(:works="ofFirstTag(firstTag)")
+    
+    Gallery(:works="ofFirstTag(firstTag)" :id="firstTag")
 </template>
 
 <script>
@@ -38,11 +39,32 @@ export default {
 
 <style lang="stylus" scoped>
 main
-  width min(100vw, 1200px)
+  width min(100vw, 1400px)
+
 h1
   font-family Work Sans
   font-size max(10vmin, 3rem)
 .intro
   text-align center
   margin-bottom 10vmin
+
+section:not(.intro)
+  max-width unset
+
+h2
+  height: 70px //ref:<TheNavbar>/height
+  font-family: 'Inconsolata'
+  font-size: 1.5em
+  text-transform uppercase
+  display flex
+  align-items center
+  justify-content center
+  position sticky
+  top: 0
+  // mix-blend-mode difference
+  // color white
+  z-index: 1000
+
+.--gallery
+  width 100%
 </style>
