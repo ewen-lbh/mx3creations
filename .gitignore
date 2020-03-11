@@ -98,3 +98,6 @@ prepros*.config
 # Renders & database
 static/works.json
 static/works/**
+
+# Python
+**.pyc
