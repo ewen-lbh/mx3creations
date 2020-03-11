@@ -19,7 +19,9 @@ export default {
         urlForSize: (filename, size) => {
           filename = filename.replace(/^https?:\/\/static.mx3creations.com/, '')
           return (
-            'http://static.mx3creations.com' +
+            (process.env.NODE_ENV === 'production'
+              ? 'http://static.mx3creations.com'
+              : '') +
             path.join(
               path.dirname(filename),
               'thumbs',

@@ -1,9 +1,17 @@
 <template lang="pug">
 .--gallery
-  PIG(
-    :images="pigImages"
-    @image-click="handleImageClicked($event)"
-  )
+  ul
+    li(v-for="work in works")
+      h3 
+        template(v-if="work.collection")
+          | {{ work.collection.name }}
+          span.sep /
+        | {{ work.name }}
+      .description(v-html="work.description")
+  //- PIG(
+  //-   :images="pigImages"
+  //-   @image-click="handleImageClicked($event)"
+  //- )
 </template>
 
 <script>
@@ -22,19 +30,17 @@ export default {
   },
   computed: {
     pigImages() {
-      const pigImages = []
-      // this.works.forEach((work) => {
-      //   product.variants.forEach((variant) => {
-      //     if (!variant.size) return
-      //     pigImages = [
-      //       ...pigImages,
-      //       {
-      //         filename: variant.src,
-      //         aspectRatio: variant.size.aspect_ratio
-      //       }
-      //     ]
-      //   })
-      // })
+      let pigImages = []
+      this.works.forEach((work) => {
+        if (!work.size) return
+        pigImages = [
+          ...pigImages,
+          {
+            filename: `/works/${work.directory}/${work.front}`,
+            aspectRatio: work.size.aspect_ratio
+          }
+        ]
+      })
       return pigImages
     }
   },
@@ -83,7 +89,7 @@ export default {
 
 <style lang="stylus">
 #pig
-  width 100%
+  width: 100%
 
 .pig-figure
   width: 100%
@@ -98,10 +104,12 @@ export default {
 
 .pig-figure:hover
   overflow: visible !important
+
   img.pig-loaded:not(.pig-thumbnail)
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25)
     transform: translateY(-10px)
     position: absolute
+
   img.pig-thumbnail
-    display none
+    display: none
 </style>

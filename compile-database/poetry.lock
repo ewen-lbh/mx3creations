@@ -8,6 +8,14 @@ version = "0.6.2"
 
 [[package]]
 category = "main"
+description = "A fast and complete Python implementation of Markdown"
+name = "markdown2"
+optional = false
+python-versions = "*"
+version = "2.3.8"
+
+[[package]]
+category = "main"
 description = "Bring colors to your terminal."
 name = "pastel"
 optional = false
@@ -71,12 +79,16 @@ python-versions = "*"
 version = "1.3"
 
 [metadata]
-content-hash = "229164bdd8e30602cf9762069a4f20035bbd75ee7d2cb4014bca23bf9d988de4"
+content-hash = "3dee18ac5c3466716e14c03f70fead28e094507f765d1a08b78a9d8e4fa1ff59"
 python-versions = "^3.6"
 
 [metadata.files]
 docopt = [
     {file = "docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"},
+]
+markdown2 = [
+    {file = "markdown2-2.3.8-py2.py3-none-any.whl", hash = "sha256:882d3607fc023cdea0ac2cd0e1147617fcb0361cb1133d3ff095417f995ff270"},
+    {file = "markdown2-2.3.8.tar.gz", hash = "sha256:7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"},
 ]
 pastel = [
     {file = "pastel-0.2.0-py2.py3-none-any.whl", hash = "sha256:18b559dc3ad4ba9b8bd5baebe6503f25f36d21460f021cf27a8d889cb5d17840"},
