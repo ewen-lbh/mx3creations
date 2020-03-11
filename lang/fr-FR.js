@@ -28,17 +28,40 @@ export default {
     image: 'Graphisme'
   },
   tags: {
-    drawing: 'Dessin',
-    cards: 'carte',
-    poster: 'affiche',
-    iconography: 'iconographie',
-    banner: 'bannière',
-    wallpaper: "fond d'écran",
-    'user interface': 'inteface utilisateur',
-    'website mockup': 'prototype de site web',
-    book: 'book',
-    'cover art': 'pochette',
-    'music video': 'vidéo musicale'
+    singular: {
+      illustration: 'illustration',
+      drawing: 'Dessin',
+      cards: 'carte',
+      poster: 'affiche',
+      iconography: 'iconographie',
+      banner: 'bannière',
+      wallpaper: "fond d'écran",
+      'user interface': 'inteface utilisateur',
+      'website mockup': 'prototype de site web',
+      book: 'book',
+      'cover art': 'pochette',
+      'music video': 'vidéo musicale',
+      'visual identity': 'identité visuelle',
+      web: 'web',
+      cli: 'programme en ligne de commande'
+    },
+    plural: {
+      illustration: 'illustrations',
+      drawing: 'Dessins',
+      cards: 'cartes',
+      poster: 'affiches',
+      iconography: 'iconographies',
+      banner: 'bannières',
+      wallpaper: "fonds d'écrans",
+      'user interface': 'intefaces utilisateur',
+      'website mockup': 'prototypes de site web',
+      book: 'books',
+      'cover art': 'pochettes',
+      'music video': 'vidéos musicales',
+      'visual identity': 'identités visuelles',
+      web: 'web',
+      cli: 'programmes en ligne de commande'
+    }
   },
   html: {
     intro: `

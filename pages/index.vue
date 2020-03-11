@@ -8,7 +8,7 @@ main
     v-for="firstTag in workSections"
     :class="firstTag"
   )
-    h2 {{ $t(firstTag) }}
+    h2 {{ $t('tags.plural.'+firstTag) }}
     Gallery(:works="ofFirstTag(firstTag)")
 </template>
 
@@ -24,7 +24,7 @@ export default {
         'poster',
         'illustration',
         'drawing',
-        'visual-indentity',
+        'visual identity',
         'web',
         'cli'
       ]
