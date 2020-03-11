@@ -15,17 +15,18 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"YAML Product entry": {
+	"YAML Creation entry": {
 		"scope": "yaml",
 		"prefix": "entry",
 		"body": [
-			"- id: ${1/(.*)/${1:/downcase}/}",
-			"\tname: $1",
+			"- name: $1",
 			"\tcollection: ${2:null}",
-			"\tfront: ${3|yes,no|}",
-			"\tused: [$4]",
+			"\tbest: ${3|yes,no|}",
+			"\tusing: [$4]",
 			"\ttags: [$5]",
 			"\tyear: $6",
+			"\twip: ${7|yes,no|}",
+			"\trepository: ${9:null}",
 			"\tdescription: >",
 			"\t\t$0",
 			"",
