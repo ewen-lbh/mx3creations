@@ -120,7 +120,7 @@ export default {
       { code: 'en', file: 'en-US.js' },
       { code: 'fr', file: 'fr-FR.js' }
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     lazy: true,
     langDir: 'lang/',
     detectBrowserLanguage: {
