@@ -178,4 +178,5 @@ nav
 .scrolled
   .center:not(.switch-menu)
     opacity 0
+    pointer-events none
 </style>
