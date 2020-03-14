@@ -27,7 +27,8 @@ export default {
         'drawing',
         'visual identity',
         'web',
-        'cli'
+        'cli',
+        'motion design'
       ]
     }
   },
