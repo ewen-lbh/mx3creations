@@ -6,8 +6,13 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Ewen's works.",
-    titleTemplate: "%s · Ewen Le Bihan",
+    title: '',
+    titleTemplate: (titleChunk) => {
+      let title = 'Ewen Le Bihan'
+      const sep = ' · '
+      if (titleChunk) title = titleChunk + sep + title
+      return title
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
