@@ -5,12 +5,16 @@
   "author": "Ewen Le Bihan",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "concurrently --kill-others \"yarn nuxt-dev\" \"yarn db-dev\"",
+    "nuxt-dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "nuxt-generate": "nuxt generate",
+    "generate": "concurrently --kill-others \"yarn nuxt-generate\" \"yarn db-generate\"",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "db-generate": "cd compile-database; poetry run /compile.py",
+    "db-dev": "cd compile-database; poetry run ./compile.py --watch --rate 10 --verbose 3"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint"
@@ -35,6 +39,7 @@
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
+    "concurrently": "^5.1.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
