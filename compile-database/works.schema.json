@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "description": "An explanation about the purpose of this instance.",
+    "default": {},
+    "additionalProperties": false,
+    "examples": [
+      {
+        "year": 2020,
+        "links": {
+          "website": "https://app.schoolsyst.com",
+          "repository": "https://gituhb.com/schoolsyst/frontend"
+        },
+        "using": [
+          "nuxt",
+          "vue",
+          "javascript",
+          "pug",
+          "stylus",
+          "html",
+          "sass",
+          "css"
+        ],
+        "wip": "yes",
+        "collection": "schoolsyst",
+        "id": "web-app",
+        "tags": ["web", "app"],
+        "description": "L'application web de _schoolsyst_ contient l'interface et tout ce avec quoi l'utilisateur interagit.\nCette application web est réalisée avec le _framework_ nuxt, qui permet la création d'application web. L'application communique avec la base de données de schoolsyst en utilisation [l'api de schoolsyst](/schoolsyst/api)\nJ'ai commencé par établir un [design de l'interface](/schoolsyst/design), puis j'ai développé l'application.\n",
+        "name": "Application web"
+      }
+    ],
+    "required": ["name"],
+    "properties": {
+      "name": {
+        "$id": "#/items/properties/name",
+        "type": ["string", "number"],
+        "title": "The Name Schema",
+        "description": "The work's name. Must be unique if `id` is omitted",
+        "default": "",
+        "examples": ["You Gotta Think Outside the Box"]
+      },
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "string",
+        "description": "The work's id. Used internally and for URLs. Must be unique. Generated from the name if omitted",
+        "examples": ["you-gotta-think-outside-the-box"]
+      },
+      "collection": {
+        "$id": "#/items/properties/collection",
+        "type": ["string", "null"],
+        "description": "The collection's id the work is part of. Can be null if the work has no collection.",
+        "title": "Collection ID",
+        "examples": ["science-is-beautiful"]
+      },
+      "year": {
+        "$id": "#/items/properties/year",
+        "type": "integer",
+        "description": "The year the work was finished. Defaults to today's year.",
+        "title": "Year",
+        "examples": [2020]
+      },
+      "front": {
+        "$id": "#/items/properties/front",
+        "type": "string",
+        "description": "The (extension-less) file name representing the 'main' variant, used for thumbnails"
+      },
+      "best": {
+        "$id": "#/items/properties/best",
+        "type": "boolean",
+        "description": "Whether this work is considered one of the best.",
+        "title": "Best"
+      },
+      "wip": {
+        "$id": "#/items/properties/wip",
+        "type": "boolean",
+        "description": "Whether this work is not finished.",
+        "title": "Work In Progress status"
+      },
+      "links": {
+        "$id": "#/items/properties/links",
+        "type": ["array", "object", "string"],
+        "title": "Links",
+        "description": "Describes external links showcasing the work. Can be an object mapping link names to URLs, an array of objects or simply an URL.",
+        "additionalProperties": true,
+        "additionalItems": true,
+        "items": {
+          "required": ["url", "name"],
+          "properties": {
+            "url": {
+              "$id": "#/items/properties/links/url",
+              "title": "Link URL",
+              "type": "string"
+            },
+            "name": {
+              "$id": "#/items/properties/links/name",
+              "title": "Link name",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "using": {
+        "$id": "#/items/properties/using",
+        "type": "array",
+        "title": "Using",
+        "description": "What techniques and/or software, frameworks or libraries were used for this work?",
+        "default": [],
+        "items": {
+          "$id": "#/items/properties/using/items",
+          "type": "string",
+          "default": "",
+          "examples": ["illustrator", "photoshop"]
+        }
+      },
+      "tags": {
+        "$id": "#/items/properties/tags",
+        "type": "array",
+        "title": "Tags",
+        "description": "Tags to apply to this work",
+        "default": [],
+        "items": {
+          "$id": "#/items/properties/tags/items",
+          "type": "string",
+          "title": "Tag",
+          "description": "A tag",
+          "default": "",
+          "examples": ["poster"]
+        }
+      },
+      "description": {
+        "$id": "#/items/properties/description",
+        "type": "string",
+        "title": "Description",
+        "description": "A description of the work, with markdown support."
+      }
+    }
+  }
+}

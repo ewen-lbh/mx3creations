@@ -1,0 +1,7 @@
+{
+  "python.pythonPath": "/home/ewen-lbh/.cache/pypoetry/virtualenvs/compile-database--qqP7J3d-py3.6/bin/python",
+  "yaml.schemas": {
+    "compile-database/works.schema.json": ["works.yaml"],
+    "compile-database/collections.schema.json": ["collections.yaml"]
+  }
+}

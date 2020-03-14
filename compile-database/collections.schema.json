@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "description"],
+    "$id": "#/items",
+    "default": {},
+    "properties": {
+      "id": {
+        "type": "string",
+        "title": "ID",
+        "description": "The collection's ID. must be unique",
+        "default": ""
+      },
+      "name": {
+        "type": "string",
+        "description": "The collection's name",
+        "title": "Name",
+        "default": ""
+      },
+       "links": {
+        "$id": "#/items/properties/links",
+        "type": ["array", "object", "string"],
+        "title": "Links",
+        "description": "Describes external links showcasing the work. Can be an object mapping link names to URLs, an array of objects or simply an URL.",
+        "additionalProperties": true,
+        "additionalItems": true,
+        "items": {
+          "required": ["url", "name"],
+          "properties": {
+            "url": {
+              "$id": "#/items/properties/links/url",
+              "title": "Link URL",
+              "type": "string"
+            },
+            "name": {
+              "$id": "#/items/properties/links/name",
+              "title": "Link name",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": {
+        "$id": "#/items/properties/description",
+        "type": "string",
+        "title": "Description",
+        "description": "A description of the work, with markdown support.",
+        "default": ""
+      }
+    }
+  }
+}
