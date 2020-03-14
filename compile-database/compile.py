@@ -10,7 +10,7 @@ Files & directories options
 --renders=<directory>  The directory where renders are stored [default: ../static/works]
 --collections=<file>   The collections YAML file [default: ../static/collections.yaml]
 --watch                Auto-recompile when one of the YAML files or contents of the renders directory changes.
---polling-rate=<ms>    Sets the refresh rate for the watch option. [default: 1000]
+--rate=<ms>            Sets the refresh rate for the watch option. [default: 1000]
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
@@ -384,7 +384,7 @@ def run():
 		observer.start()
 		try:
 			while True:
-				sleep(int(args['--polling-rate']))
+				sleep(int(args['--rate']))
 		except KeyboardInterrupt:
 			observer.stop()
 
