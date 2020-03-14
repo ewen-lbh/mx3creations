@@ -30,7 +30,8 @@
     arroché au fond du laboratoire de physique. Après plusieurs recherches, je n'est pas trouvé
     un tableau suffisamment "beau" à mon goût, et j'ai donc décidé de créé le mien.
 
-- name: makisushi
+- name: makisushi (まきすし)
+  id: makisushi
   using: [illustrator, photoshop]
   tags: [illustration, typography]
   description: >
