@@ -308,7 +308,8 @@
   year: 2020
   front: teaser
   wip: yes
-  repository: https://github.com/ewen-lbh/hyperis
+  links:
+    repository: https://github.com/ewen-lbh/hyperis
   description: >
     Un jeu d'aventure textuelle dans un terminal se passant dans un univers
     parallèle en 1681.
@@ -321,8 +322,9 @@
   tags: [cli, automation]
   year: 2020
   wip: yes
-  repository: https://github.com/ewen-lbh/creations
-  install: https://npmjs.com/package/creations
+  links:
+    repository: https://github.com/ewen-lbh/creations
+    install: https://npmjs.com/package/creations
   description: >
     Un programme en ligne de commande proposant de nombreuses commandes
     pour créer, ouvrir, publier, versionner, archiver, lister et plus généralement
