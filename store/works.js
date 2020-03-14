@@ -23,5 +23,7 @@ export const getters = {
       result.push(all.filter((w) => w.tags && w.tags.includes(tag)))
     })
     return result
-  }
+  },
+  collections: (_, { all }) =>
+    all.filter((w) => w.collection).map((w) => w.collection)
 }
