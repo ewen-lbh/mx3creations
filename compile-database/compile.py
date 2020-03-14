@@ -9,7 +9,8 @@ Files & directories options
 --works=<file>         The works YAML file [default: ../static/works.yaml]
 --renders=<directory>  The directory where renders are stored [default: ../static/works]
 --collections=<file>   The collections YAML file [default: ../static/collections.yaml]
---sites=<file>         The sites YAML file [default: ../static/sites.yaml]
+--watch                Auto-recompile when one of the YAML files or contents of the renders directory changes.
+--polling-rate=<ms>    Sets the refresh rate for the watch option. [default: 1000]
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
@@ -24,11 +25,13 @@ yaml = YAML()
 import json
 from logger import Logger
 from slugify import slugify
-from time import time
+from time import time, sleep
 from markdown2 import Markdown
 import pdf2image
 import moviepy
 markdown = Markdown()
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
 
 def convert_markdown(text: str) -> str:
 	text = text.replace('\n', '\n\n')
@@ -286,17 +289,15 @@ class Database:
 		return listd
 
 
-def run():
+def doit(args, log):
 	import datetime
 	# 
 	# Get infos
 	#
 	time_start = time()
-	args = docopt(__doc__, version='0.1.0')
 	fullpath = lambda *paths: os.path.join(os.path.abspath(args['--renders']), *paths)
 	folders = os.listdir(args['--renders'])
 	database = Database(args['--works'], args['--collections'])
-	log = Logger(int(args['--verbose']))
 	log.info('\n    Compiling {0} at {1}\n', args['--works'], datetime.datetime.now().strftime('%H:%M:%S'))
 	#
 	# Iterate
@@ -361,6 +362,31 @@ def run():
 	works_output_path = args['--works'].replace('.yaml', '.json')
 	database.save(to=works_output_path)
 	log.info('\n    Saved works file to {0} in {1}\n', works_output_path, f'{time()-time_start:.3f}s')
+
+		
+
+def run():
+	args = docopt(__doc__, version='0.1.0')
+	log = Logger(int(args['--verbose']))
+	doit(args, log)
+	if args['--watch']:
+		watched_dir = os.path.dirname(args['--works'])
+		log.info("Watching for changes in {0}... (Press {1} to stop)", watched_dir, 'Ctrl-C')
+		class WatchEventHandler(FileSystemEventHandler):
+			def on_any_event(self, event):
+				super(WatchEventHandler, self).on_any_event(event)
+				if (event.src_path.endswith('.yaml')):
+					log.info("Detected changes in {0}", event.src_path)
+					doit(args, log)
+					log.info("Watching for changes in {0}... (Press {1} to stop)", watched_dir, 'Ctrl-C')
+		observer = Observer()
+		observer.schedule(WatchEventHandler(), watched_dir)
+		observer.start()
+		try:
+			while True:
+				sleep(int(args['--polling-rate']))
+		except KeyboardInterrupt:
+			observer.stop()
 
 if __name__ == "__main__":
 	run()
