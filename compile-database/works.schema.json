@@ -11,7 +11,7 @@
     "description": "An explanation about the purpose of this instance.",
     "default": {},
     "additionalProperties": false,
-    "examples": [
+    "uniqueItems": true
       {
         "year": 2020,
         "links": {
@@ -43,28 +43,24 @@
         "type": ["string", "number"],
         "title": "The Name Schema",
         "description": "The work's name. Must be unique if `id` is omitted",
-        "default": "",
-        "examples": ["You Gotta Think Outside the Box"]
+        "default": ""
       },
       "id": {
         "$id": "#/items/properties/id",
         "type": "string",
-        "description": "The work's id. Used internally and for URLs. Must be unique. Generated from the name if omitted",
-        "examples": ["you-gotta-think-outside-the-box"]
+        "description": "The work's id. Used internally and for URLs. Must be unique. Generated from the name if omitted"
       },
       "collection": {
         "$id": "#/items/properties/collection",
         "type": ["string", "null"],
         "description": "The collection's id the work is part of. Can be null if the work has no collection.",
-        "title": "Collection ID",
-        "examples": ["science-is-beautiful"]
+        "title": "Collection ID"
       },
       "year": {
         "$id": "#/items/properties/year",
         "type": "integer",
         "description": "The year the work was finished. Defaults to today's year.",
-        "title": "Year",
-        "examples": [2020]
+        "title": "Year"
       },
       "front": {
         "$id": "#/items/properties/front",
@@ -115,8 +111,7 @@
         "items": {
           "$id": "#/items/properties/using/items",
           "type": "string",
-          "default": "",
-          "examples": ["illustrator", "photoshop"]
+          "default": ""
         }
       },
       "tags": {
@@ -130,8 +125,7 @@
           "type": "string",
           "title": "Tag",
           "description": "A tag",
-          "default": "",
-          "examples": ["poster"]
+          "default": ""
         }
       },
       "description": {
