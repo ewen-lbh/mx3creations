@@ -10,7 +10,7 @@ main
   )
     h2 {{ $t('tags.plural.'+firstTag) }}
     
-    Gallery(:works="ofFirstTag(firstTag)" :id="firstTag")
+    Gallery(:works="bestOf(ofFirstTag(firstTag))" :id="firstTag")
 </template>
 
 <script>
