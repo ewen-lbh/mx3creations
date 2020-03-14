@@ -3,14 +3,16 @@
   ul
     template(v-for="(work, i) in works")
       li(v-if="getWorkFrontSrc(work)" :key="i")
-        //- h3
-        //-   template(v-if="work.collection")
-        //-     | {{ work.collection.name }}
-        //-     span.sep /
-        //-   | {{ work.name }}
-        img(
-          :src="getWorkFrontSrc(work)"
-        )
+        nuxt-link(:to="getWorkDetailsHref(work)")
+          img(
+            :src="getWorkFrontSrc(work)"
+            :title="work.name"
+          )
+          h3
+            template(v-if="work.collection")
+              | {{ work.collection.name }}
+              span.sep /
+            | {{ work.name }}
 
   //- PIG(
   //-   :images="pigImages"
@@ -41,56 +43,22 @@ export default {
       this.works.map((w) => ({ id: w.id, src: this.getWorkFrontSrc(w) }))
     )
   },
-  computed: {
-    pigImages() {
-      let pigImages = []
-      this.works.forEach((work) => {
-        pigImages.push({
-          filename: this.getWorkFrontSrc(work),
-          aspect_ratio: work.size.aspect_ratio
-        })
-      })
-      pigImages = pigImages.filter((img) => img.filename)
-      console.dir(pigImages)
-      return pigImages
-    }
-  },
   methods: {
-    frontCoverHTMLElement(product) {
-      switch (product.front_cover.type) {
-        case 'image':
-        case 'pdf':
-          return 'img'
-
-        case 'video':
-          return 'video'
-      }
-      return null
-    },
-    showProduct(product) {
-      return (
-        product &&
-        product.front_cover !== undefined &&
-        !product.hide_from.includes('gallery') &&
-        this.frontCoverHTMLElement(product)
-      )
-    },
-    handleImageClicked($event) {
-      // http://static.mx3creations.com/works/renders/acf/actualite-des-cartels-2019/0.png
-      const idPath = $event
-        .replace('http://static.mx3creations.com', '')
-        .replace('/works/', '')
-        .replace('.png', '')
-      console.log(idPath)
-      // eslint-disable-next-line no-unused-vars
-      const [collectionID, productID, variantID] = idPath.split('/')
-      this.$router.push(this.localePath(`/${collectionID}/${productID}`))
-    },
     getWorkFrontSrc(work) {
+      return 'https://placehold.it/500/500'
+      // eslint-disable-next-line no-unreachable
       let src = '/works/'
       if (work.front === null) return null
       src += work.directory + '/' + work.front
       return src
+    },
+    getWorkDetailsHref(work) {
+      let path = '/'
+      if (work.collection) {
+        path += work.collection.id
+      }
+      path += work.id
+      return path
     }
   }
 }
@@ -99,7 +67,10 @@ export default {
 <style lang="stylus" scoped>
 h3
   font-family: 'Work Sans'
-  font-size: 4vmin
+  font-size: 2em
+  text-align center
+  font-weight normal
+  margin-top: 0
 
 ul
   height: 300px
