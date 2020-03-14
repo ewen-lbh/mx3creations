@@ -7,6 +7,7 @@ export default {
    */
   head: {
     title: "Ewen's works.",
+    titleTemplate: "%s · Ewen Le Bihan",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
