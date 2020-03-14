@@ -43,7 +43,8 @@ export default {
       'music video': 'vidéo musicale',
       'visual identity': 'identité visuelle',
       web: 'web',
-      cli: 'programme en ligne de commande'
+      cli: 'programme en ligne de commande',
+      'motion design': 'motion design'
     },
     plural: {
       illustration: 'illustrations',
@@ -60,7 +61,8 @@ export default {
       'music video': 'vidéos musicales',
       'visual identity': 'identités visuelles',
       web: 'web',
-      cli: 'programmes en ligne de commande'
+      cli: 'programmes en ligne de commande',
+      'motion design': 'motion design'
     }
   },
   html: {
