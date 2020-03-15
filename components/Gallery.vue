@@ -4,9 +4,10 @@
     article(
       v-for="work in works"
       :key="work.full_id"
+      :class="{ 'has-image': !!getWorkFrontSrc(work) }"
     )
       nuxt-link(:to="'/' + work.full_id")
-        .image
+        .image(v-if="getWorkFrontSrc(work)")
           img(:src="getWorkFrontSrc(work)")
         .titles(:style="getWorkColors(work)")
           h4(v-if="work.collection") {{ work.collection.name }}
@@ -27,7 +28,7 @@ export default {
     getWorkFrontSrc(work) {
       // eslint-disable-next-line no-unreachable
       let src = '/works/'
-      if (work.front === null) return 'https://placehold.it/500/500'
+      if (work.front === null) return null
       src += work.directory + '/' + work.front
       return src
     },
@@ -139,7 +140,11 @@ img
 // Reactions
 //
 
-article:hover
+article:not(.has-image)
+  .titles
+    top 0
+
+article.has-image:hover
   .titles
     top 50%
 </style>
