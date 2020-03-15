@@ -150,6 +150,7 @@ class Work:
 		self.year = year
 		self.description = convert_markdown(description)
 		self.front = front or self.id
+		self.front = str(self.front)
 		self.front += '.png'
 		self.size = size
 		self.wip = wip or False
