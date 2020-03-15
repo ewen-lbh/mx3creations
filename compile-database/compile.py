@@ -141,6 +141,7 @@ class Work:
 	):
 		self.id = str(id)
 		self.collection = collection
+		self.full_id = self.id + ('/' + self.collection.id if self.collection else '')
 		self.name = str(name)
 		self.best = best
 		self.directory = directory or self.compute_directory()
@@ -165,6 +166,7 @@ class Work:
 	def as_dict(self) -> dict:
 		return {
 			'id': self.id,
+			'full_id': self.full_id,
 			'name': self.name,
 			'collection': None if self.collection is None else self.collection.as_dict(),
 			'best': self.best,
@@ -350,7 +352,7 @@ def doit(args, log):
 			thumb_path = os.path.join(thumbs_dir, str(width) + '.png')
 			image.thumbnail((width, width))
 			image.save(thumb_path)
-		log.info('Made thumbnails for {0}', f'{work.collection.id if work.collection else ""}/{work.id}')
+		log.info('Made thumbnails for {0}', work.full_id)
 		
 	#
 	# Show infos
