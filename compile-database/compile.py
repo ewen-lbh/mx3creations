@@ -147,7 +147,7 @@ class Work:
 	):
 		self.id = str(id)
 		self.collection = collection
-		self.full_id = self.id + ('/' + self.collection.id if self.collection else '')
+		self.full_id = (self.collection.id + '/' if self.collection else '') + self.id
 		self.name = str(name)
 		self.best = best
 		self.directory = directory or self.compute_directory()
