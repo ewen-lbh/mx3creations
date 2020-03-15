@@ -20,9 +20,8 @@ from typing import List, Dict, Optional, Union
 from docopt import docopt
 from PIL import Image
 import pastel
-from ruamel.yaml import YAML
+import yaml
 
-yaml = YAML()
 import json
 from logger import Logger
 from slugify import slugify
@@ -228,16 +227,16 @@ class ValidationError(Exception):
 
 class Database:
     def __init__(self, worksfile: str, collectionsfile: str, logger: Logger):
+        self.logger = logger
         self.worksfile = worksfile
         self.collectionsfile = collectionsfile
         self.collections = list(self.get_collections())
         self.works = list(self)
-        self.logger = logger
         self.validate()
 
     def __iter__(self):
         with open(self.worksfile, "r") as file:
-            works: List[dict] = yaml.load(file.read())
+            works: List[dict] = yaml.load(file.read(), Loader=yaml.SafeLoader)
         for work in works:
             # Determine work.id or work.name
             if "id" not in work.keys() and "name" not in work.keys():
@@ -247,10 +246,10 @@ class Database:
             elif "name" not in work.keys():
                 work["name"] = work["id"]
             # Instanciate
-            bool_keys = ["best", "wip"]
-            for key in bool_keys:
-                if key in work.keys():
-                    work[key] = self._parse_yes_no(work[key])
+            # bool_keys = ["best", "wip"]
+            # for key in bool_keys:
+            #     if key in work.keys():
+            #         work[key] = self._parse_yes_no(work[key])
             if "collection" in work.keys() and work["collection"] is not None:
                 work["collection"] = self.find_collection(id=work["collection"])
             else:
@@ -260,7 +259,7 @@ class Database:
 
     def get_collections(self):
         with open(self.collectionsfile, "r") as file:
-            collections: List[dict] = yaml.load(file.read())
+            collections: List[dict] = yaml.load(file.read(), Loader=yaml.SafeLoader)
         if collections is None:
             return []
         for collection in collections:
@@ -319,16 +318,6 @@ class Database:
         else:
             return matching[0]
 
-    @classmethod
-    def _parse_yes_no(cls, value):
-        truthy = ["yes", "on", "true"]
-        falsey = ["no", "off", "false"]
-        if value in truthy:
-            return True
-        if value in falsey:
-            return False
-        return None
-
     def edit(self, full_id: str, **modifications) -> Work:
         modified = self._modify(full_id, modifications)
         for idx, id in enumerate([w.full_id for w in self.works]):
@@ -380,7 +369,6 @@ def doit(args, log):
     #
     time_start = time()
     fullpath = lambda *paths: os.path.join(os.path.abspath(args["--renders"]), *paths)
-    folders = os.listdir(args["--renders"])
     database = Database(args["--works"], args["--collections"], logger=log)
     log.info(
         "\n    Compiling {0} at {1}\n",
