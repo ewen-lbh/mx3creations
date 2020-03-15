@@ -27,6 +27,15 @@ export default {
   categories: {
     image: 'Graphisme'
   },
+  repository: 'Code source',
+  website: 'Site web',
+  plantuml: 'PlantUML',
+  ovh: 'OVH',
+  html: 'HTML',
+  css: 'CSS',
+  javascript: 'JavaScript',
+  sass: 'SASS',
+  js: 'JavaScript', // TODO: transform this at compile-time
   tags: {
     singular: {
       illustration: 'illustration',
