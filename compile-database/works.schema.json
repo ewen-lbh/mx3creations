@@ -11,7 +11,8 @@
     "description": "An explanation about the purpose of this instance.",
     "default": {},
     "additionalProperties": false,
-    "uniqueItems": true
+    "uniqueItems": true,
+    "examples": [
       {
         "year": 2020,
         "links": {
@@ -43,18 +44,21 @@
         "type": ["string", "number"],
         "title": "The Name Schema",
         "description": "The work's name. Must be unique if `id` is omitted",
-        "default": ""
+        "default": "",
+        "examples": ["You Gotta Think Outside the Box"]
       },
       "id": {
         "$id": "#/items/properties/id",
-        "type": "string",
-        "description": "The work's id. Used internally and for URLs. Must be unique. Generated from the name if omitted"
+        "type": ["string", "number"],
+        "description": "The work's id. Used internally and for URLs. Must be unique. Generated from the name if omitted",
+        "examples": ["you-gotta-think-outside-the-box"]
       },
       "collection": {
         "$id": "#/items/properties/collection",
         "type": ["string", "null"],
         "description": "The collection's id the work is part of. Can be null if the work has no collection.",
-        "title": "Collection ID"
+        "title": "Collection ID",
+        "default": null
       },
       "year": {
         "$id": "#/items/properties/year",
@@ -64,7 +68,7 @@
       },
       "front": {
         "$id": "#/items/properties/front",
-        "type": "string",
+        "type": ["string", "number"],
         "description": "The (extension-less) file name representing the 'main' variant, used for thumbnails"
       },
       "best": {
@@ -97,7 +101,7 @@
             "name": {
               "$id": "#/items/properties/links/name",
               "title": "Link name",
-              "type": "string"
+              "type": ["string", "number"]
             }
           }
         }
@@ -110,8 +114,9 @@
         "default": [],
         "items": {
           "$id": "#/items/properties/using/items",
-          "type": "string",
-          "default": ""
+          "type": ["string", "number"],
+          "default": "",
+          "examples": ["illustrator", "photoshop"]
         }
       },
       "tags": {
@@ -122,15 +127,16 @@
         "default": [],
         "items": {
           "$id": "#/items/properties/tags/items",
-          "type": "string",
+          "type": ["string", "number"],
           "title": "Tag",
           "description": "A tag",
-          "default": ""
+          "default": "",
+          "examples": ["poster"]
         }
       },
       "description": {
         "$id": "#/items/properties/description",
-        "type": "string",
+        "type": ["string", "number"],
         "title": "Description",
         "description": "A description of the work, with markdown support."
       }
