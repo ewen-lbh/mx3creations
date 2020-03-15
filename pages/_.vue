@@ -41,15 +41,21 @@ export default {
         error({ message: 'inexistantWork', statusCode: 404 })
       }
     }
-    //   const matchingProducts = products.filter(
-    //     (p) =>
-    //       route.params.id === p.id && route.params.collection === p.collection.id
-    //   )
-    //   if (matchingProducts.length === 0) {
-    //     error({ message: 'inexistantWork', statusCode: 404 })
-    //   } else if (matchingProducts.length > 1) {
-    //     error({ message: 'internalError', statusCode: 500 })
-    //   }
+  },
+  head() {
+    let title = ''
+    if (this.collection) {
+      title += this.collection.name
+    }
+    if (this.collection && this.work) {
+      title += ': '
+    }
+    if (this.work) {
+      title += this.work.name
+    }
+    return {
+      title
+    }
   }
 }
 </script>
