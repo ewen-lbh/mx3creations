@@ -19,5 +19,12 @@ export const getters = {
   collections: (_, { all }) =>
     all.filter((w) => w.collection).map((w) => w.collection),
   ofCollection: (_, { all }) => (collectionID) =>
-    all.filter((w) => w.collection && w.collection.id === collectionID)
+    all.filter((w) => w.collection && w.collection.id === collectionID),
+  usingList: (_, { all }) => {
+    const usings = []
+    this.works.forEach((w) => {
+      usings.push(...w.using)
+    })
+    return [...new Set(usings)]
+  }
 }
