@@ -33,7 +33,8 @@ markdown = Markdown()
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-def convert_markdown(text: str) -> str:
+def convert_markdown(text: str) -> Optional[str]:
+	if not text: return None
 	text = text.replace('\n', '\n\n')
 	text = markdown.convert(text)
 	text = text.replace('\n\n', '')
