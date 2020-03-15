@@ -12,7 +12,6 @@ import Collection from '~/components/Collection.vue'
 
 export default {
   components: { Work, Collection },
-  // eslint-disable-next-line handle-callback-err
   asyncData({ error, route, store, app }) {
     const reqPath = route.params.pathMatch.split('/')
     const works = store.getters['works/all']
