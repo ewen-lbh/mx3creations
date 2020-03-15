@@ -11,7 +11,7 @@
   section.image
     img(
       v-if="front"
-      :src="`/works/${directory}/${front}`"
+      :src="workFrontSrc"
       importance="high"
     )
     p.no-images(v-else) Pas d'images :/ 
@@ -70,7 +70,17 @@ export default {
     }
   },
   computed: {
-    ...mapState('constants', ['usingHrefs'])
+    ...mapState('constants', ['usingHrefs']),
+    workFrontSrc() {
+      let src = ''
+      if (process.env.NODE_ENV === 'production') {
+        src = 'https://static.mx3creations.com'
+      }
+      src += '/works/'
+      if (this.front === null) return null
+      src += this.directory + '/' + this.front
+      return src
+    }
   },
   mounted() {
     const backgroundColor = this.color || 'black'

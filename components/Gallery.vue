@@ -26,8 +26,11 @@ export default {
   },
   methods: {
     getWorkFrontSrc(work) {
-      // eslint-disable-next-line no-unreachable
-      let src = '/works/'
+      let src = ''
+      if (process.env.NODE_ENV === 'production') {
+        src = 'https://static.mx3creations.com'
+      }
+      src += '/works/'
       if (work.front === null) return null
       src += work.directory + '/' + work.front
       return src
