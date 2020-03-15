@@ -1,18 +1,16 @@
 <template lang="pug">
 .--gallery
-  ul
-    template(v-for="(work, i) in works")
-      li(:key="i")
-        nuxt-link(:to="getWorkDetailsHref(work)")
-          .titles-layer(:style="getWorkTitlesLayerStyles(work)")
-            h4.collection(v-if="work.collection") {{ work.collection.name }}
-            h3.name {{ work.name }}
-            p.description(v-html="work.description || work.collection.description")
-          img(
-            :src="getWorkFrontSrc(work)"
-            :srcset="getWorkFrontSrcSet(work)"
-            :title="work.name"
-          )
+  transition-group(tag="div" name="gallery")
+    article(
+      v-for="work in works"
+      :key="work.full_id"
+    )
+      nuxt-link(:to="'/' + work.full_id")
+        .image
+          img(:src="getWorkFrontSrc(work)")
+        .titles(:style="getWorkColors(work)")
+          h4(v-if="work.collection") {{ work.collection.name }}
+          h3 {{ work.name }}
 </template>
 
 <script>
@@ -23,17 +21,7 @@ export default {
     works: {
       type: Array,
       default: null
-    },
-    id: {
-      type: String,
-      required: true
     }
-  },
-  mounted() {
-    console.dir(this.works)
-    console.table(
-      this.works.map((w) => ({ id: w.id, src: this.getWorkFrontSrc(w) }))
-    )
   },
   methods: {
     getWorkFrontSrc(work) {
@@ -66,7 +54,7 @@ export default {
       path += work.id
       return path
     },
-    getWorkTitlesLayerStyles(work) {
+    getWorkColors(work) {
       const bgColor = work.color || 'black'
       return {
         backgroundColor: bgColor,
@@ -78,63 +66,80 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-ul
-  height: 600px
-  display flex
-  align-items center
-li
-  height 100%
+//
+// Variables
+//
+
+items-count = auto-fill
+min-item-size = 275px
+gap = 2px
+
+//
+// Layout
+//
+
+.--gallery > div
+  display grid
+  grid-template-columns 'repeat(%s, minmax(%s, 1fr))' % (items-count min-item-size)
+  grid-gap gap
+  margin 4%
+
+article
   position relative
-  padding: 0
-  margin: 0
-
-img
-  object-fit contain
-  height: 100%
-
-li:hover
-  .titles-layer
-    opacity: 0.80
-    backdrop-filter blur(10px)
-    transform scale(1)
-
-.titles-layer
-  position absolute
-  background-color black
   overflow hidden
-  display flex
-  flex-direction column
-  justify-content center
-  align-items center
-  opacity: 0
-  transform scale(0)
-  height 100%
-  width 100%
-  transition all 0.25s cubic-bezier(.7,.34,.25,1)
-  h3, h4, p
-    padding 0 2em
-    margin 0
-    opacity: 1
-    text-align center
-  p
-    text-align left
-    max-height 50%
-    overflow hidden
-    text-overflow ellipsis
-  .name
-    font-size 5em
-    font-family Work Sans
-    line-height: 0.8
-  .collection
-    font-size: 2em
-    text-transform uppercase
-    opacity: 0.75
-    font-weight normal
+  animation mouseOut 0.3s ease-in
 
-.description
-  a
-    border 1px solid transparent
-    border-bottom 1px solid black
-  a:hover
-    border 1px solid black
+.image
+  position relative
+  width 100%
+.image::after
+  // Forces the container to be a square
+  content ''
+  display block
+  padding-bottom 100%
+img
+  position absolute
+  top: 0
+  left: 0
+  width 100%
+  z-index: 0
+  object-fit cover
+  height 100%
+
+.titles
+  padding 2em 1em
+  position absolute
+  z-index: 10
+  top 100%
+  left 0
+  right: 0
+  bottom: 0
+  display flex
+  justify-self center
+  align-items center
+  flex-direction column
+  transition all 0.25s ease
+  h3
+    font-family Work Sans
+    font-size 3em
+    margin 0
+    text-align center
+    font-weight normal
+    line-height: 0.8
+
+  h4
+    text-align center
+    font-size 1.5em
+    text-transform uppercase
+    font-weight bold
+    opacity: 0.5
+    margin: 0
+
+//
+// Reactions
+//
+
+article:hover
+  .titles
+    top 50%
 </style>
