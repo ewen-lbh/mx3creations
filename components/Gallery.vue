@@ -8,25 +8,10 @@
             :src="getWorkFrontSrc(work)"
             :title="work.name"
           )
-          h3
-            template(v-if="work.collection")
-              | {{ work.collection.name }}
-              span.sep /
-            | {{ work.name }}
-
-  //- PIG(
-  //-   :images="pigImages"
-  //-   @image-click="handleImageClicked($event)",
-  //-   :pig-id="'pig-' + id"
-  //-   style="height:100vh;"
-  //- )
 </template>
 
 <script>
-import PIG from '~/components/PIG.vue'
-
 export default {
-  components: { PIG },
   props: {
     works: {
       type: Array,

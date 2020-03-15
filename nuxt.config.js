@@ -29,8 +29,7 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap&subset=latin-ext' // TODO: Use local font
       }
-    ],
-    script: [{ src: '/js/pig.min.js' }]
+    ]
   },
   /*
    ** Customize the progress-bar color
