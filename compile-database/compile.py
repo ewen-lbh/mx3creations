@@ -241,7 +241,7 @@ class Database:
         for work in works:
             # Determine work.id or work.name
             if "id" not in work.keys() and "name" not in work.keys():
-                raise KeyError(f"A work has neither a name nor an id.")
+                raise KeyError(f"A work must have either a name or an id.")
             if "id" not in work.keys():
                 work["id"] = slugify(str(work["name"]))
             elif "name" not in work.keys():
