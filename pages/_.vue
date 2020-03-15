@@ -19,7 +19,9 @@ export default {
     const matchingCollection = collections.find((c) => c.id === reqPath[0])
     let matchingWork
     if (matchingCollection && reqPath.length > 1) {
-      matchingWork = works.find((w) => w.id === reqPath[1])
+      matchingWork = works.find(
+        (w) => w.full_id === reqPath[0] + '/' + reqPath[1]
+      )
       return {
         collection: matchingCollection,
         work: matchingWork
