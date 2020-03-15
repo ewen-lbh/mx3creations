@@ -73,7 +73,7 @@ export default {
 
 items-count = auto-fill
 min-item-size = 275px
-gap = 2px
+gap = 1em
 
 //
 // Layout
