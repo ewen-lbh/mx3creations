@@ -20,7 +20,6 @@
       NavItem Ewen Le Bihan
     NavItem.switch-menu.center(@click="switchMenu") {{ $t(switchMenuText) }}
     // Right
-    //- NavLanguageSwitch.right
     NavItem.right(to="/contact") {{ $t('contact') }}
 </template>
 
