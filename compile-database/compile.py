@@ -249,7 +249,7 @@ class Database:
 			return False
 		return None
 	
-	def edit(self, id: str, **modifications: dict) -> Work:
+	def edit(self, id: str, **modifications) -> Work:
 		modified = self._modify(id, modifications)
 		for idx, id in enumerate(self.get_ids()):
 			if modified.id == id:
@@ -267,7 +267,7 @@ class Database:
 	def get_ids(self) -> List[str]:
 		return [ w.id for w in self.works ]
 	
-	def find(self, **pred: dict) -> Work:
+	def find(self, **pred) -> Work:
 		key, value = list(pred.items())[0]
 		matching = [ w for w in self.works if getattr(w, key) == value ]
 		if not len(matching):
