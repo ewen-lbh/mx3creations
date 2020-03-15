@@ -5,7 +5,7 @@
       | En cours de développement
       br
       | Fait avec ❤ par Ewen Le Bihan, aka Mx3
-      br
+      brhe
       | Fièrement #[em non] propulsé par WordPress
       br
       BtnOutline(inverted small href="https://github.com/ewen-lbh/mx3creations" target="_blank") Code source
@@ -19,12 +19,8 @@
         li: nuxt-link(:to="localePath('/credits')") {{ $t('credits') }}
       ul.social
         h3 Sur les réseaux
-        li: Iconed(icon="youtube"): a(href="//youtube.com/c/mx3_music") YouTube
-        li: Iconed(icon="twitter"): a(href="//twitter.com/mx3_fr") Twitter
-        li: Iconed(icon="instagram"): a(href="//instagram.com/mx3_fr") Instagram
-        li: Iconed(icon="facebook"): a(href="//facebook.com/mx3fr") Facebook
-        li: Iconed(icon="discord"): a(href="//discord.gg/a2Yqd3j") Discord
-        li: Iconed(icon="reddit"): a(href="//reddit.com/r/mx3") Reddit
+        li(v-for="site in sites")
+          Iconed(:icon="site.name"): a(:href="site.url") {{ $t(site.name) }}
       ul.music
         h3 Ma musique
         li: a(href="https://open.spotify.com/artist/4jUrQ2TvXDA6Nupa9NBVcI?si=PIYJsVMPQHqOPDmXnNdVug") Spotify
@@ -36,7 +32,14 @@ import BtnOutline from '~/components/BtnOutline.vue'
 import Iconed from '~/components/Iconed.vue'
 
 export default {
-  components: { BtnOutline, Iconed }
+  components: { BtnOutline, Iconed },
+  data() {
+    return {
+      sites: Object.entries(
+        require('static/sites.json')
+      ).map(([name, url]) => ({ name, url }))
+    }
+  }
 }
 </script>
 
@@ -78,4 +81,7 @@ h3
   font-weight normal
   border-bottom 2px solid white
   padding-bottom: 7px
+
+.social a
+  text-transform capitalize
 </style>
