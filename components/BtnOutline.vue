@@ -22,9 +22,9 @@ export default {
 
 <style lang="stylus" scoped>
 .--btn-outline
-  --color: black
+  --color: var(--text)
   &.inverted
-    --color: white
+    --color: var(--prim)
 
 .--btn-outline
   background transparent
