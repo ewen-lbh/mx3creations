@@ -56,40 +56,30 @@ export default {
   generate: {
     routes() {
       return axios
-        .get('http://static.mx3creations.com/products/database.json')
+        .get('http://static.mx3creations.com/works.json')
         .then(({ data }) => {
-          const collectionRoutes = data.map((c) => `/${c.id}`)
-          const productRoutes = []
-          let categoryRoutes = []
-          let tagRoutes = []
-          data.forEach((collection) => {
-            collection.products.forEach((product) => {
-              productRoutes.push(`/${collection.id}/${product.id}`)
-              categoryRoutes = [
-                ...categoryRoutes,
-                ...product.categories.map((o) => `/category/${o}`)
-              ]
-              if (product.tags)
-                tagRoutes = [
-                  ...tagRoutes,
-                  ...product.tags.map((o) => `/tags/${o}`)
-                ]
-            })
+          const fullIds = data.map((w) => w.full_id)
+          let workAndCollectionsRoutes = []
+          fullIds.forEach((id) => {
+            const path = id.split('/')
+            // A collection-less work
+            if (path.length === 1) {
+              workAndCollectionsRoutes.push(id)
+              // A work that goes into a collection
+            } else if (path.length === 2) {
+              // Add the work itself
+              workAndCollectionsRoutes.push(id)
+              // Add the collection itself (we'll worry about duplicates later)
+              workAndCollectionsRoutes.push(path[0])
+            }
           })
-          const withFrLocale = (paths) => {
-            let localePaths = []
-            paths.forEach(
-              (path) => (localePaths = [...localePaths, path, '/fr' + path])
-            )
-            return localePaths
-          }
-          const allPaths = [
-            ...withFrLocale(collectionRoutes),
-            ...withFrLocale(productRoutes),
-            ...withFrLocale(categoryRoutes),
-            ...withFrLocale(tagRoutes)
-          ]
-          return allPaths
+          // Remove duplicates
+          workAndCollectionsRoutes = [...new Set(workAndCollectionsRoutes)]
+          // Prefix with '/'
+          workAndCollectionsRoutes = workAndCollectionsRoutes.map(
+            (route) => '/' + route
+          )
+          return workAndCollectionsRoutes
         })
         .catch(() => {
           return []
