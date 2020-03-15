@@ -3,5 +3,6 @@
   "yaml.schemas": {
     "compile-database/works.schema.json": ["works.yaml"],
     "compile-database/collections.schema.json": ["collections.yaml"]
-  }
+  },
+  "python.formatting.provider": "black"
 }
