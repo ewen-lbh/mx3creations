@@ -27,6 +27,8 @@ export default {
   categories: {
     image: 'Graphisme'
   },
+  install: 'Installer',
+  youtube: 'YouTube',
   repository: 'Code source',
   website: 'Site web',
   plantuml: 'PlantUML',
