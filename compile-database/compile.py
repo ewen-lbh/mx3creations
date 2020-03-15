@@ -203,12 +203,16 @@ class MultipleCollectionsFound(Exception):
 class MultipleWorksFound(Exception):
 	pass
 
+class ValidationError(Exception):
+	pass
+
 class Database:
 	def __init__(self, worksfile: str, collectionsfile: str):
 		self.worksfile = worksfile
 		self.collectionsfile = collectionsfile
 		self.collections = list(self.get_collections())
 		self.works = list(self)
+		self.validate()
 
 	def __iter__(self):
 		with open(self.worksfile, 'r') as file:
@@ -237,8 +241,39 @@ class Database:
 		with open(self.collectionsfile, 'r') as file:
 			collections: List[dict] = yaml.load(file.read())
 		for collection in collections:
-			# Instanciate the fuck
+			# Instanciate
 			yield Collection(**collection)
+	
+	def validate_works(self):
+		"""
+		Checks to see if there are no duplicate IDs
+		"""
+		# We'll build up a ID list and check every time if the ID is not already in it.
+		ids = []
+		for work in self:
+			if work.full_id in ids:
+				raise ValidationError(f"At least 2 works have the same id {work.full_id!r}")
+			else:
+				ids.append(work.full_id)
+
+	def validate_collections(self):
+		"""
+		Checks to see if there are no duplicate IDs
+		"""
+		# We'll build up a ID list and check every time if the ID is not already in it.
+		ids = []
+		for collection in self.collections:
+			if collection.id in ids:
+				raise ValidationError(f"At least 2 collections have the same id {collection.id!r}")
+			else:
+				ids.append(collection.id)
+
+	def validate(self):
+		"""
+		Checks to see if there are no duplicate IDs, in both works and collections
+		"""
+		self.validate_works()
+		self.validate_collections()
 	
 	def find_collection(self, **pred: dict) -> Collection:
 		key, value = list(pred.items())[0]
