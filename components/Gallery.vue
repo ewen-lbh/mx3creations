@@ -89,6 +89,7 @@ article
   position relative
   overflow hidden
   animation mouseOut 0.3s ease-in
+  min-height min-item-size
 
 .image
   position relative
