@@ -24,6 +24,7 @@ export default {
   closeMenu: 'fermer',
   seeInAction: 'Voir sur',
   and: 'et',
+  buy: 'acheter',
   categories: {
     image: 'Graphisme'
   },
@@ -35,7 +36,8 @@ export default {
   css: 'CSS',
   javascript: 'JavaScript',
   sass: 'SASS',
-  js: 'JavaScript', // TODO: transform this at compile-time
+  'django-rest-framework': 'Django REST Framework',
+  'learn more': 'En savoir plus',
   tags: {
     singular: {
       illustration: 'illustration',
