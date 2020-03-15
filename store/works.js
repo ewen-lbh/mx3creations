@@ -1,17 +1,9 @@
-const bestWorksIDs = require('../static/best-works-ids.json')
-
 export const state = () => ({
   works: require('../static/works.json')
 })
 
 export const getters = {
-  all: ({ works }) =>
-    works.map((w) => ({
-      ...w,
-      best: w.collection
-        ? bestWorksIDs.includes(w.collection.id)
-        : bestWorksIDs.includes(w.id)
-    })),
+  all: ({ works }) => works,
   bestOf: () => (works) => works.filter((w) => w.best),
   best: (_, { all, bestOf }) => bestOf(all),
   byID: (_, { all }) => (id) => all.find((w) => w.id === id),
