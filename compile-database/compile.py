@@ -405,7 +405,7 @@ def doit(args, log):
 			from colr import Colr
 			r, g, b = get_dominant_color(os.path.join(thumbs_dir, '500.png'))
 			database.edit(work.id, color=f'rgb({r},{g},{b})')
-			log.info(f"Got the dominant color for {0}: {Colr().rgb(r, g, b, '█' * 10)}", work.full_id)
+			log.info(f"Got the dominant color for {{0}}: {Colr().rgb(r, g, b, '█' * 10)}", work.full_id)
 		
 	#
 	# Show infos
