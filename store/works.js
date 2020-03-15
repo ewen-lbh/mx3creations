@@ -1,5 +1,5 @@
 export const state = () => ({
-  works: require('../static/works.json')
+  works: require('@/static/works.json')
 })
 
 export const getters = {
