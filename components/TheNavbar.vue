@@ -146,8 +146,8 @@ nav
   .nav-wrapper
     bottom: 0
     top unset
-    border-top-color black
-    background white
+    border-top-color var(--text)
+    background var(--prim)
 
 @media (max-width 400px)
   .switch-menu
