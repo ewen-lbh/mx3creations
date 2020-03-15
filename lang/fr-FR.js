@@ -18,7 +18,6 @@ export default {
   backToHome: "Retour à l'accueil",
   back: 'Retour',
   myCreations: 'Voici mes créations.',
-  heyImEwenLeBihan: `Je suis Ewen Le Bihan, {#TODO: phrase de définition}.`,
   learnMore: 'En savoir plus',
   openMenu: 'menu',
   closeMenu: 'fermer',

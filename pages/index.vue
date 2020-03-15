@@ -2,7 +2,7 @@
 main
   h1 {{ $t('myCreations') }}
   section.intro
-    p {{ $t('html.intro') }}
+    p Hey! Je suis Ewen Le Bihan, j'ai 16 ans et je m'intéresse à tout ce qui est à la fois créatif et numérique.
     BtnOutline(href="/about") {{ $t('learnMore') }}
   section(
     v-for="firstTag in workSections"
