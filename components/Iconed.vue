@@ -1,6 +1,6 @@
 <template lang="pug">
 span.--iconed
-  img(v-if="icon" :src="`/icons/${icon}.svg`" :class="{ flip }")
+  svg(viewBox="0 0 35 18"): use(:href="`/icons/${icon}.svg#path`" style="--fill: var(--text)")
   slot
 </template>
 
@@ -20,8 +20,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-img
+svg
   margin-right: 0.5em
+  height 1em
 .flip
   transform scaleX(-1)
 .--iconed
