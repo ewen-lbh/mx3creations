@@ -1,8 +1,8 @@
 <template lang="pug">
 .--work
   h1 {{ name }}
-  template(v-if="collection")  
-    nuxt-link.collection-link(:to="'/' + collection.id")
+  section.collection(v-if="collection")  
+    BtnOutline.collection-link(:href="'/' + collection.id")
       Iconed(icon="arrow-right") En savoir plus sur {{ collection.name }}
   section.links
     ul: li(v-for="(link, i) in links" :key="i")
@@ -87,12 +87,13 @@ img:not(.icon)
   padding 20em 5em
   text-align center
 
-.collection-link
-  text-align center
-  font-size 1.2em
+section.collection
   display flex
   justify-content center
-  padding 2em 0
+.collection-link
+  text-align center
+  font-size 1em
+  margin 2em auto
 
 .links ul
   display flex
