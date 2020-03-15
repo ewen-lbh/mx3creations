@@ -98,8 +98,8 @@ class Collection:
 		description: str = "",
 		links: Union[List[str], List[dict], dict] = []
 	):
-		self.name = name
-		self.id = id
+		self.name = str(name)
+		self.id = str(id)
 		self.links = Link.get_from_parsed_yaml(links)
 		self.description = convert_markdown(description)
 	def as_dict(self) -> dict:
@@ -140,8 +140,8 @@ class Work:
 		**other_attributes: dict
 	):
 		self.id = str(id)
-		self.name = str(name)
 		self.collection = collection
+		self.name = str(name)
 		self.best = best
 		self.directory = directory or self.compute_directory()
 		self.using = using
