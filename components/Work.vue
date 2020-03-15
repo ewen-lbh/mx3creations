@@ -95,6 +95,8 @@ img:not(.icon)
   display: flex
   justify-content: center
   width: 100%
+  object-fit contain
+  max-height 75vh
 
 .no-images
   background-color: rgba(0, 0, 0, 0.0625)
