@@ -8,7 +8,7 @@
       br
       | Fièrement #[em non] propulsé par WordPress
       br
-      BtnOutline(inverted small href="//github.com/ewen-lbh/mx3creations" target="_blank") Code source
+      BtnOutline(inverted small href="https://github.com/ewen-lbh/mx3creations" target="_blank") Code source
     .columns
       ul.links
         h3 Liens
