@@ -79,7 +79,11 @@ export default {
           workAndCollectionsRoutes = workAndCollectionsRoutes.map(
             (route) => '/' + route
           )
-          return workAndCollectionsRoutes
+          const sites = require('static/sites.json')
+          const redirectsRoutes = Object.entries(sites).map(
+            ([name, url]) => `/to/${name}`
+          )
+          return [...redirectsRoutes, ...workAndCollectionsRoutes]
         })
         .catch(() => {
           return []
