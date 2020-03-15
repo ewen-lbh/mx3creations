@@ -331,8 +331,8 @@ class Database:
 
     def edit(self, full_id: str, **modifications) -> Work:
         modified = self._modify(full_id, modifications)
-        for idx, id in enumerate(self.get_ids()):
-            if modified.id == id:
+        for idx, id in enumerate([w.full_id for w in self.works]):
+            if modified.full_id == id:
                 self.works[idx] = modified
         return modified
 
