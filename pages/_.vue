@@ -1,8 +1,8 @@
 <template lang="pug">
-main
-  section(v-if="work")
+.loader
+  template(v-if="work")
     Work(v-bind="work")
-  section(v-else-if="collection")
+  template(v-else-if="collection")
     Collection(v-bind="collection")
 </template>
 
