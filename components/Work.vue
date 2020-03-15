@@ -2,7 +2,7 @@
 .--work
   h1 {{ name }}
   section.collection(v-if="collection")  
-    BtnOutline.collection-link(:href="'/' + collection.id")
+    nuxt-link.collection-link(:to="'/' + collection.id")
       Iconed(icon="arrow-right") En savoir plus sur {{ collection.name }}
   section.links
     ul: li(v-for="(link, i) in links" :key="i")
@@ -18,10 +18,13 @@
   section.using(v-if="using.length")
     h2 Fait avec...
     ul: li(v-for="(item, i) in using" :key="i")
-        a(:href="usingHrefs[item] || item") 
-          img.icon(:src="'logos/' + item" onerror="this.style.display='none'")
+        component(
+          :is="usingHrefs[item] ? 'a' : 'span'"
+          :href="usingHrefs[item]"
+          target="_blank"
+        )
+          img.icon(:src="`/logos/${item}.png`")
           | {{ $t(item) }}
-          
 </template>
 
 <script>
@@ -84,37 +87,78 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  font-size 13vmin
+  font-size: 13vmin
   line-height: 0.8
-  font-family Work Sans
+  font-family: Work Sans
 
 img:not(.icon)
-  display flex
-  justify-content center
-  width 100%
+  display: flex
+  justify-content: center
+  width: 100%
 
 .no-images
-  background-color rgba(0, 0, 0, 0.0625)
-  padding 20em 5em
-  text-align center
+  background-color: rgba(0, 0, 0, 0.0625)
+  padding: 20em 5em
+  text-align: center
 
 section.collection
-  display flex
-  justify-content center
+  display: flex
+  justify-content: center
+
 .collection-link
-  text-align center
-  font-size 1em
-  margin 2em auto
+  text-align: center
+  font-size: 1.2em
+  margin-top: 2em
+  font-style: italic
+  font-weight: bold
+  opacity: 0.5
+  transition: opacity 0.25s ease
+
+  &:hover
+    opacity: 1
 
 .links ul
-  display flex
-  justify-content center
+  display: flex
+  justify-content: center
+  margin-bottom: 2em
+  margin-top: 0
 
-.using ul
+  .btn
+    text-transform: capitalize
+
+section.using
+  h2
+    text-align: center
+    font-weight: normal
+    font-size: 2.5em
+
+  ul
+    display: inline-block
+    margin: 0 auto
+
+  li
+    display: inline-flex
+    align-items: center
+    justify-content: center
+
+  li:not(:last-child)
+    margin-right: 1em
+
   a
-    display flex
-    align-items center
-    text-transform capitalize
+    display: flex
+    align-items: center
+    flex-direction: column
+    font-size: 1.2em
+    display: flex
+    align-items: center
+    text-transform: capitalize
+
   .icon
-    margin-right .5em
+    margin-bottom: 0.5em
+    filter: saturate(0)
+    height: 3em
+    transition: filter 0.25s ease
+
+  a:hover .icon
+    filter: saturate(1)
 </style>
