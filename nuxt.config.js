@@ -122,7 +122,7 @@ export default {
    */
   i18n: {
     locales: [
-      { code: 'en', file: 'en-US.js' },
+      // { code: 'en', file: 'en-US.js' },
       { code: 'fr', file: 'fr-FR.js' }
     ],
     defaultLocale: 'fr',
