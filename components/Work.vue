@@ -26,6 +26,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import tinycolor from 'tinycolor2'
 import Iconed from '~/components/Iconed.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
 
@@ -66,7 +67,17 @@ export default {
     }
   },
   computed: {
-    ...mapState(['usingHrefs', 'linkIcons'])
+    ...mapState('constants', ['usingHrefs'])
+  },
+  mounted() {
+    const backgroundColor = this.color || 'black'
+    const color = tinycolor(backgroundColor).isLight() ? 'black' : 'white'
+    document.body.style.setProperty('--text', color)
+    document.body.style.setProperty('--prim', backgroundColor)
+  },
+  beforeDestroy() {
+    document.body.style.setProperty('--text', null)
+    document.body.style.setProperty('--prim', null)
   }
 }
 </script>
