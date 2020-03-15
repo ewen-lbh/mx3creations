@@ -53,18 +53,10 @@ section:not(.intro)
   max-width unset
 
 h2
-  height: 70px //ref:<TheNavbar>/height
   font-family: 'Inconsolata'
   font-size: 1.5em
   text-transform uppercase
-  display flex
-  align-items center
-  justify-content center
-  position sticky
-  top: 0
-  // mix-blend-mode difference
-  // color white
-  z-index: 1000
+  text-align center
 
 .--gallery
   width 100%
