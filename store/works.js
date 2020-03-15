@@ -17,5 +17,7 @@ export const getters = {
     return result
   },
   collections: (_, { all }) =>
-    all.filter((w) => w.collection).map((w) => w.collection)
+    all.filter((w) => w.collection).map((w) => w.collection),
+  ofCollection: (_, { all }) => (collectionID) =>
+    all.filter((w) => w.collection && w.collection.id === collectionID)
 }
