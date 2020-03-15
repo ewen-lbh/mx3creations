@@ -24,4 +24,7 @@ img
   margin-right: 0.5em
 .flip
   transform scaleX(-1)
+.--iconed
+  display flex
+  align-items center
 </style>
