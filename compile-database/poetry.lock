@@ -16,6 +16,25 @@ version = "3.0.4"
 
 [[package]]
 category = "main"
+description = "A module for grabbing the color palette from an image."
+name = "colorthief"
+optional = false
+python-versions = "*"
+version = "0.2.1"
+
+[package.dependencies]
+Pillow = "*"
+
+[[package]]
+category = "main"
+description = "Easy terminal colors, with chainable methods.\n"
+name = "colr"
+optional = false
+python-versions = "*"
+version = "0.9.1"
+
+[[package]]
+category = "main"
 description = "Decorators for Humans"
 name = "decorator"
 optional = false
@@ -262,7 +281,7 @@ pathtools = ">=0.1.1"
 watchmedo = ["PyYAML (>=3.10)", "argh (>=0.24.1)"]
 
 [metadata]
-content-hash = "963616246aa7777999f55bcdca5ac50528ace98d41a2a745cff782374d9373b3"
+content-hash = "7885f1492855d94d69e2a06b260b69119f92852f1f24ea91ca2dd28ef8e4a1c8"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -273,6 +292,13 @@ certifi = [
 chardet = [
     {file = "chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"},
     {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
+]
+colorthief = [
+    {file = "colorthief-0.2.1-py2.py3-none-any.whl", hash = "sha256:b04fc8ce5cf9c888768745e29cb19b7b688d5711af6fba26e8057debabec56b9"},
+    {file = "colorthief-0.2.1.tar.gz", hash = "sha256:079cb0c95bdd669c4643e2f7494de13b0b6029d5cdbe2d74d5d3c3386bd57221"},
+]
+colr = [
+    {file = "Colr-0.9.1.tar.gz", hash = "sha256:8c15437eeb2ec8821c6df24b62946dfc6b79f69a1d84c1a6c131945a5ff4623c"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},

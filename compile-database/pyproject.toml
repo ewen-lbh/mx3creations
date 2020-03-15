@@ -16,6 +16,8 @@ markdown2 = "^2.3.8"
 pdf2image = "^1.12.1"
 moviepy = "^1.0.1"
 watchdog = "^0.10.2"
+colorthief = "^0.2.1"
+colr = "^0.9.1"
 
 [tool.poetry.dev-dependencies]
 

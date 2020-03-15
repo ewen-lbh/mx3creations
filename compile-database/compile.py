@@ -32,6 +32,7 @@ import moviepy
 markdown = Markdown()
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from colorthief import ColorThief
 
 def convert_markdown(text: str) -> Optional[str]:
 	if not text: return None
@@ -39,6 +40,10 @@ def convert_markdown(text: str) -> Optional[str]:
 	text = markdown.convert(text)
 	text = text.replace('\n\n', '')
 	return text
+
+def get_dominant_color(filepath: str) -> str:
+	thief = ColorThief(filepath)
+	return thief.get_color(quality=1)
 
 class Link:
 	def __init__(self, name: str, url: str, id: str):
@@ -130,6 +135,7 @@ class Work:
 		year: int = None,
 		description: str = "",
 		front: str = None,
+		color: str = None,
 		size: WorkSize = WorkSize(0, 0),
 		collection: Optional[Collection] = None,
 		links: Union[List[str], List[dict], dict] = [],
@@ -155,6 +161,7 @@ class Work:
 		self.size = size
 		self.wip = wip or False
 		self.links = Link.get_from_parsed_yaml(links)
+		self.color = color
 		for attrname, value in other_attributes.items():
 			setattr(self, attrname, value)
 	
@@ -184,6 +191,7 @@ class Work:
 				'aspect_ratio': self.size.aspect_ratio(),
 			},
 			'wip': self.wip,
+			'color': self.color
 		}
 
 class WorkNotFound(Exception):
@@ -354,6 +362,13 @@ def doit(args, log):
 			image.thumbnail((width, width))
 			image.save(thumb_path)
 		log.info('Made thumbnails for {0}', work.full_id)
+		# Compute the dominant color if not set explicitly
+		# We use the thumbnail so it's less intensive.
+		if not work.color:
+			from colr import Colr
+			r, g, b = get_dominant_color(os.path.join(thumbs_dir, '500.png'))
+			database.edit(work.id, color=f'rgb({r},{g},{b})')
+			log.info(f"Got the dominant color for {0}: {Colr().rgb(r, g, b, '█' * 10)}", work.full_id)
 		
 	#
 	# Show infos
