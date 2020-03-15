@@ -332,7 +332,7 @@ def doit(args, log):
 					if len(pages) > 1:
 						for i, page in enumerate(pages):
 							log.success('  Converted page {0} successfully', f'#{i+1}')
-							page.save(path.replace('.png', f'--p{i}.png'))
+							page.save(path.replace('.png', f'--page-{i}.png'))
 				except Exception:
 					log.error('An error occured during the conversion of {0} to a PNG', path_disp.replace('.png', '.pdf'))
 					database.edit(work.id, front=None)
