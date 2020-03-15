@@ -1,7 +1,9 @@
 <template lang="pug">
   component.--base-btn(
-    :is="href ? 'nuxt-link' : 'button'"
+    :is="href ? (href.startsWith('http') ? 'a' : 'nuxt-link') : 'button'"
     :to="localePath(href) || false"
+    :href="href"
+    :target="href.startsWith('http') ? '_blank' : null"
     :class="{ clicked, disabled }"
     v-bind="{ disabled }"
     @click="onClicked"
