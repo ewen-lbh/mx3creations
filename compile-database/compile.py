@@ -240,6 +240,8 @@ class Database:
 	def get_collections(self):
 		with open(self.collectionsfile, 'r') as file:
 			collections: List[dict] = yaml.load(file.read())
+		if collections is None:
+			return []
 		for collection in collections:
 			# Instanciate
 			yield Collection(**collection)
