@@ -85,9 +85,6 @@ export default {
           )
           return [...redirectsRoutes, ...workAndCollectionsRoutes]
         })
-        .catch(() => {
-          return []
-        })
     }
   },
   /*
@@ -108,7 +105,9 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    // Doc: https://github.com/nuxt-community/modules/tree/master/packages/toast
+    '@nuxtjs/toast'
   ],
   /*
    ** nuxt-i18n module configuration
@@ -132,6 +131,13 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  /*
+   ** Toast module configuration
+   ** See https://www.npmjs.com/package/@nuxtjs/toast
+   */
+  toast: {
+    position: 'bottom-center'
+  },
   /*
    ** Build configuration
    */
