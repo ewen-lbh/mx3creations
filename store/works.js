@@ -1,6 +1,12 @@
 export const state = () => ({
-  works: require('@/static/works.json')
+  works: [],
+  loaded: false
 })
+
+export const mutations = {
+  SET: (state, works) => (state.works = works),
+  POSTLOAD: (state) => (state.loaded = true)
+}
 
 export const getters = {
   all: ({ works }) => works,
@@ -22,9 +28,30 @@ export const getters = {
     all.filter((w) => w.collection && w.collection.id === collectionID),
   usingList: (_, { all }) => {
     const usings = []
-    this.works.forEach((w) => {
+    all.forEach((w) => {
       usings.push(...w.using)
     })
     return [...new Set(usings)]
+  }
+}
+
+export const actions = {
+  async load({ commit, state }, { force } = { force: false }) {
+    if (!force && state.loaded) return
+    try {
+      let works
+      if (process.env.NODE_ENV === 'production') {
+        const { data } = await this.$axios.get(
+          'http://static.mx3creations.com/works.json'
+        )
+        works = data
+      } else {
+        works = require('@/static/works.json')
+      }
+      if (works) {
+        commit('SET', works)
+        commit('POSTLOAD')
+      }
+    } catch (error) {}
   }
 }
