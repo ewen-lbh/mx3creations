@@ -8,6 +8,7 @@ export const state = () => ({
     latex: 'https://www.latex-project.org/',
     indesign: 'https://www.adobe.com/fr/products/indesign.html',
     'after effects': 'https://www.adobe.com/fr/products/aftereffects.html',
+    'premiere pro': 'https://www.adobe.com/fr/products/premiere.html',
     nuxt: 'https://nuxtjs.org',
     vue: 'https://vuejs.org',
     javascript: 'https://developer.mozilla.org/fr/docs/Web/JavaScript',
