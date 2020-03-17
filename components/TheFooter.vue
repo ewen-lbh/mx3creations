@@ -46,11 +46,11 @@ export default {
 <style lang="stylus" scoped>
 footer
   display flex
-  background black
-  color white
+  background var(--text)
+  color var(--prim)
   padding 20px
   padding-top: 40px
-  border-top 1px solid white
+  border-top 1px solid var(--prim)
   text-align center
   flex-direction column
   justify-content center
@@ -79,7 +79,7 @@ h3
   font-family Work Sans
   opacity: 0.5
   font-weight normal
-  border-bottom 2px solid white
+  border-bottom 2px solid var(--prim)
   padding-bottom: 7px
 
 .social a
