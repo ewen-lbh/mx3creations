@@ -5,11 +5,11 @@ main
     p.intro
       | Je suis depuis toujours intéressé par la création, le numérique et le
       | langage. Cette curiosité m'a conduit à approfondir en autodidacte plusieurs domaines
-      | qui m'intéresse
+      | qui m'intéresse.
   section
     h2 Artistique
     p
-      | dessin à l'école des beaux-arts de Nîmes, ateliers de peinture, de
+      | Dessin à l'école des beaux-arts de Nîmes, ateliers de peinture, de
       | sculpture. Depuis mes 7 ans, je compose de la musique électronique,
       | j'ai suivi des cours de piano et de DJ et participé à une masterclass
       | de production musicale. Pendant mes années de collège, j'ai réalisé de
@@ -18,26 +18,26 @@ main
   section
     h2 Numérique
     p
-      | j'ai appris à programmer dans différents langages informatiques: HTML,
-      | Python et JavaScript, ce qui m'a permis de créer
-      a(href='https://mx3creations.com') mon site
-      |  et, actuellement,
+      | J'ai appris à programmer dans différents langages informatiques: HTML,
+      | Python et JavaScript, ce qui m'a permis de créer 
+      a(href='https://mx3creations.com') mon site 
+      | et, actuellement, 
       a(href='https://www.schoolsyst.com/') une application web pour étudiants
       | . J'ai aussi pour projet la création de plusieurs langages de
-      |       programmation.
+      | programmation.
     p
-      | Tout mes projets de programmation sont publiquement visibles sur
+      | Tout mes projets de programmation sont visibles par tous sur 
       a(href='https://github.com/ewen-lbh') mon profil GitHub
       | : tout mes
       |       projets sont dits "Open Source".
   section
     h2 Linguistique
     p
-      | l'anglais étant indispensable à la lecture de documentations, j'ai approfondi cette langue (TOEIC Bridge: 176/180), conversé par mail avec un américain pour réaliser un logo. Je suis aussi fasciné depuis l'enfance par l'écriture: le cyrillique (d'où mon choix de LV3, le russe), le grec (cours particuliers) et les hiraganas et katakanas (japonais en autodidacte).
+      | L'anglais étant indispensable à la lecture de documentations, j'ai approfondi cette langue (TOEIC Bridge: 176/180), conversé par mail avec un américain pour réaliser un logo. Je suis aussi fasciné depuis l'enfance par l'écriture: le cyrillique (d'où mon choix de LV3, le russe), le grec (cours particuliers) et les #[em hiraganas] et #[em katakanas] (japonais en autodidacte).
   section
     h2 Scientifique
     p
-      | Le langage mathématique m'intéresse tout autant: Il m'arrive d'appréhender des concepts complexes mathématiques en naviguant sur wikipédia anglais ou en regardant des vidéos de chaînes YouTube telles que "3Blue1Brown" ou "Numerphile"
+      | Le langage mathématique m'intéresse tout autant: il m'arrive d'appréhender des concepts complexes mathématiques en naviguant sur wikipédia anglais ou en regardant des vidéos de chaînes YouTube telles que "3Blue1Brown" ou "Numerphile"
 </template>
 
 <style lang="stylus" scoped>
