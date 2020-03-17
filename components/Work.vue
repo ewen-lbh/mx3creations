@@ -145,8 +145,8 @@ section.using
     font-size: 2.5em
 
   ul
-    display: inline-block
-    margin: 0 auto
+    display flex
+    justify-content center
 
   li
     display: inline-flex
