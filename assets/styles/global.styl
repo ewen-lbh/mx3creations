@@ -59,3 +59,20 @@ a
 @media (min-width 1201px)
   .-mobile
     display none !important
+
+details summary::-webkit-details-marker
+  display none
+details summary
+  list-style none
+details summary::after
+  content 'En savoir plus...'
+  font-weight bold
+  cursor pointer
+  font-size 1.2em
+details[open] summary::after
+  content ''
+details[open] summary::after
+  content 'Afficher moins'
+  font-weight bold
+  cursor pointer
+  font-size 1.2em
