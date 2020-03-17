@@ -138,9 +138,6 @@ section.collection
   margin-bottom: 2em
   margin-top: 0
 
-  .btn
-    text-transform: capitalize
-
 section.using
   h2
     text-align: center
