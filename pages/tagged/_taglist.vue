@@ -1,5 +1,7 @@
 <template lang="pug">
+main
   h1 {{ taglistDisplay }}
+  Gallery(:works="worksOfTags")
 </template>
 
 <script>
@@ -9,28 +11,19 @@ import Gallery from '~/components/Gallery.vue'
 export default {
   components: { Gallery },
   computed: {
-    ...mapGetters('products', ['products']),
-    productsOfTags() {
+    ...mapGetters('works', ['all']),
+    worksOfTags() {
       let filtered = []
-      this.$route.params.taglist.split('+').forEach((t) => {
-        filtered = [
-          ...filtered,
-          ...this.products.filter((p) => p.tags.includes(t))
-        ]
+      this.$route.params.taglist.split(',').forEach((t) => {
+        filtered = [...filtered, ...this.all.filter((p) => p.tags.includes(t))]
       })
       return filtered
     },
     taglistDisplay() {
       const tags = this.$route.params.taglist
-        .split('+')
-        .map((tag) => this.$t('tags.' + tag))
-        .map((tag) => tag.replace('tags.', ''))
-        .map((tag) =>
-          tag
-            .split(' ')
-            .map((w) => w + 's')
-            .join(' ')
-        )
+        .split(',')
+        .map((tag) => this.$t('tags.plural.' + tag))
+        .map((tag) => tag.replace('tags.plural.', ''))
         .join(', ')
         .replace(/, ([^,]*)$/, ` ${this.$t('and')} $1`)
         .replace(/^(.)/, ($0, $1) => $1.toUpperCase())
@@ -39,3 +32,10 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+h1
+  font-size max(10vmin, 3rem)
+  text-align center
+  margin 0
+</style>
