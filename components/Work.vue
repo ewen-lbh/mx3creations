@@ -83,7 +83,7 @@ export default {
     }
   },
   mounted() {
-    const backgroundColor = this.color || 'black'
+    const backgroundColor = this.color || 'white'
     const color = tinycolor(backgroundColor).isLight() ? 'black' : 'white'
     document.body.style.setProperty('--text', color)
     document.body.style.setProperty('--prim', backgroundColor)
