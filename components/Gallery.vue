@@ -124,6 +124,11 @@ img
   align-items center
   flex-direction column
   transition all 0.25s ease
+  h3, h4
+    // text-overflow ellipsis
+    word-wrap break-word
+    word-break break-all
+    hyphens auto
   h3
     font-family Work Sans
     font-size 3em
