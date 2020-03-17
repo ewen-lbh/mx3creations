@@ -1,11 +1,16 @@
 <template lang="pug">
 .--work
-  h1 {{ name }}
+  h1 
+    span.work-name {{ name }}
+    nuxt-link.collection-name(
+      v-if="collection"
+      :to="'/' + collection.id"
+    ) Collection {{ collection.name }}
   section.links
     ul: li(v-for="(link, i) in links" :key="i")
         BtnOutline(:href="link.url").btn {{ $t(link.name) }}
   section.collection-description(v-if="collection && collection.description")
-    h2 À propos de la collection "{{ collection.name }}"
+    h2 À propos de la collection
     .description(v-html="collection.description")
   section.collection(v-if="collection")  
     nuxt-link.collection-link(:to="'/' + collection.id")
@@ -100,9 +105,20 @@ export default {
 
 <style lang="stylus" scoped>
 h1
+  display flex
+  flex-direction column
+  align-items center
+h1 .work-name
   font-size: 13vmin
   line-height: 0.8
   font-family: Work Sans
+h1 .collection-name
+  font-size: 3vmin
+  opacity: 0.5
+  text-transform uppercase
+  transition opacity 0.25s ease
+  &:hover
+    opacity: 0.25
 
 img:not(.icon)
   display: flex
@@ -110,11 +126,17 @@ img:not(.icon)
   width: 100%
   object-fit contain
   max-height 75vh
+  border 1px solid var(--text)
 
 .no-images
   background-color: rgba(0, 0, 0, 0.0625)
   padding: 20em 5em
   text-align: center
+
+section.collection-description h2
+  font-family Work Sans
+  font-size: 5vmin
+  margin-bottom -.25em
 
 section.collection
   display: flex
@@ -123,7 +145,8 @@ section.collection
 .collection-link
   text-align: center
   font-size: 1.2em
-  margin: 1em 0
+  margin-top 1em
+  margin-bottom: 2em
   font-style: italic
   font-weight: bold
   opacity: 0.5
