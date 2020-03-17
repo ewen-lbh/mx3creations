@@ -1,12 +1,15 @@
 <template lang="pug">
 .--work
   h1 {{ name }}
-  section.collection(v-if="collection")  
-    nuxt-link.collection-link(:to="'/' + collection.id")
-      Iconed(icon="arrow-right") En savoir plus sur {{ collection.name }}
   section.links
     ul: li(v-for="(link, i) in links" :key="i")
         BtnOutline(:href="link.url").btn {{ $t(link.name) }}
+  section.collection-description(v-if="collection && collection.description")
+    h2 À propos de la collection "{{ collection.name }}"
+    .description(v-html="collection.description")
+  section.collection(v-if="collection")  
+    nuxt-link.collection-link(:to="'/' + collection.id")
+      Iconed(icon="arrow-right") Voir les autres œuvres de la collection
   section.description(v-html="description")
   section.image
     img(
@@ -120,7 +123,7 @@ section.collection
 .collection-link
   text-align: center
   font-size: 1.2em
-  margin-top: 2em
+  margin: 1em 0
   font-style: italic
   font-weight: bold
   opacity: 0.5
