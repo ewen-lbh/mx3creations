@@ -60,31 +60,36 @@ a
   .-mobile
     display none !important
 
-details summary::-webkit-details-marker
-  display none
-details summary
-  list-style none
-details summary::after
-  content 'En savoir plus...'
-  font-weight bold
-  cursor pointer
-  font-size 1.2em
-details[open] summary::after
-  content ''
-details[open] summary::after
-  content 'Afficher moins'
-  font-weight bold
-  cursor pointer
-  font-size 1.2em
-
-@keyframes sweep
-  from
-    margin-left -10px
-    opacity 0
-
-  to
-    margin-left 0
+details
+  // Hide native toggle
+  summary::-webkit-details-marker
+    display none
+  summary
+    list-style none
+  // Toggle text content
+  summary::after
+    content 'En savoir plus...'
+  &[open] summary::after
+    content 'Afficher moins'
+  // Toggle syling
+  summary::after
+    font-weight bold
+    cursor pointer
+    font-size 1.2em
+    font-style italic
+    opacity 0.5
+    transition opacity 0.25s ease
+  &:hover summary::after
     opacity 1
+    
+  // Animation
+  &[open] summary ~ *
+    animation sweep .25s ease-in
+    @keyframes sweep
+      from
+        margin-left -10px
+        opacity 0
 
-details[open] summary ~ *
-  animation sweep .25s ease-in
+      to
+        margin-left 0
+        opacity 1
