@@ -5,7 +5,7 @@
       | En cours de développement
       br
       | Fait avec ❤ par Ewen Le Bihan, aka Mx3
-      brhe
+      br
       | Fièrement #[em non] propulsé par WordPress
       br
       BtnOutline(inverted small href="https://github.com/ewen-lbh/mx3creations" target="_blank") Code source
