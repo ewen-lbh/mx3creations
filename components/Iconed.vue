@@ -1,6 +1,6 @@
 <template lang="pug">
 span.--iconed
-  svg(viewBox="0 0 35 18"): use(:href="`/icons/${icon}.svg#path`" style="--fill: var(--text)")
+  span.icon(v-html="svgContents" :style="`--fill: ${color}`")
   slot
 </template>
 
@@ -14,18 +14,35 @@ export default {
     flip: {
       type: Boolean,
       default: false
+    },
+    color: {
+      type: String,
+      default: 'var(--text)'
+    }
+  },
+  computed: {
+    svgContents() {
+      let contents = require(`!raw-loader!@/static/icons/${this.icon}.svg`)
+        .default
+      contents = contents.replace(
+        '<svg',
+        '<svg style="height: 100%; width: 100%; fill: var(--fill) !important;" '
+      )
+      return contents
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-svg
+.icon
   margin-right: 0.5em
-  height 1em
+  height: 1em
+
 .flip
-  transform scaleX(-1)
+  transform: scaleX(-1)
+
 .--iconed
-  display flex
-  align-items center
+  display: flex
+  align-items: center
 </style>
