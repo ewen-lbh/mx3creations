@@ -83,6 +83,12 @@
         "description": "Whether this work is not finished.",
         "title": "Work In Progress status"
       },
+      "color": {
+        "$id": "#/items/properties/color",
+        "type": "string",
+        "description": "The work's main color. Determined from the `front` image when omitted.",
+        "title": "Color"
+      },
       "links": {
         "$id": "#/items/properties/links",
         "type": ["array", "object", "string"],
