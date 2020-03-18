@@ -20,7 +20,7 @@
       ul.social
         h3 Sur les réseaux
         li(v-for="site in sites")
-          Iconed(:icon="site.name"): a(:href="site.url") {{ $t(site.name) }}
+          a(:href="site.url"): Iconed(:icon="site.name" color="var(--prim)") {{ $t(site.name) }}
       ul.music
         h3 Ma musique
         li: a(href="https://open.spotify.com/artist/4jUrQ2TvXDA6Nupa9NBVcI?si=PIYJsVMPQHqOPDmXnNdVug") Spotify
@@ -73,6 +73,7 @@ h2
   text-align left
 .columns li
   margin-bottom .5em
+  font-size: 1.2em
 .columns a:hover
   opacity .75
 h3
