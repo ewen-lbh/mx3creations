@@ -14,7 +14,7 @@
     .description(v-html="collection.description")
   section.collection(v-if="collection")  
     nuxt-link.collection-link(:to="'/' + collection.id")
-      Iconed(icon="arrow-right") Voir les autres œuvres de la collection
+      Iconed(icon="arrow-right") Œuvres de la collection
   section.description(v-html="description")
   section.image
     img(
