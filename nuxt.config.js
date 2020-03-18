@@ -79,11 +79,14 @@ export default {
           workAndCollectionsRoutes = workAndCollectionsRoutes.map(
             (route) => '/' + route
           )
-          const sites = require('static/sites.json')
-          const redirectsRoutes = Object.entries(sites).map(
-            ([name, url]) => `/to/${name}`
-          )
-          return [...redirectsRoutes, ...workAndCollectionsRoutes]
+          return axios
+            .get('https://static.mx3creations.com/sites.json')
+            .then(({ data }) => {
+              const redirectsRoutes = Object.entries(data).map(
+                ([name]) => `/to/${name}`
+              )
+              return [...redirectsRoutes, ...workAndCollectionsRoutes]
+            })
         })
     }
   },
