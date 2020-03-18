@@ -73,7 +73,7 @@ h2
   text-align left
 .columns li
   margin-bottom .5em
-  font-size: 1.2em
+  font-size: 1.4em
 .columns a:hover
   opacity .75
 h3
