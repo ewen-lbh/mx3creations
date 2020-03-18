@@ -10,11 +10,13 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "nuxt-generate": "nuxt generate",
-    "generate": "concurrently --kill-others \"yarn nuxt-generate\" \"yarn db-generate\"",
+    "generate": "yarn db-generate --verbose 3 && yarn nuxt-generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "db-generate": "cd compile-database; poetry run /compile.py",
-    "db-dev": "cd compile-database; poetry run ./compile.py --watch --rate 10 --verbose 3"
+    "db-generate": "cd compile-database && poetry run ./compile.py",
+    "db-dev": "cd compile-database && poetry run ./compile.py --watch --rate 2",
+    "db-upload": "scp static/works.json ubuntu@51.89.116.101:/mnt/block-storages/portfolio-static-files/",
+    "db-genup": "yarn db-generate && yarn db-upload"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint"
@@ -25,11 +27,14 @@
     }
   },
   "dependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/toast": "^3.3.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.5.0",
+    "thenby": "^1.3.0",
     "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
