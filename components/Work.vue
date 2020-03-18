@@ -25,24 +25,20 @@
     p.no-images(v-else) Pas d'images :/ 
   section.using(v-if="using.length")
     h2 Fait avec...
-    ul: li(v-for="(item, i) in using" :key="i")
-        component(
-          :is="usingHrefs[item] ? 'a' : 'span'"
-          :href="usingHrefs[item]"
-          target="_blank"
-        )
-          img.icon(:src="`/logos/${item}.png`")
-          | {{ $t(item) }}
+    TechnologiesList(
+      :technologies="using"
+      :get-url="(tech) => `/made-with/${tech}`"
+    )
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import tinycolor from 'tinycolor2'
 import Iconed from '~/components/Iconed.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
+import TechnologiesList from '~/components/TechnologiesList.vue'
 
 export default {
-  components: { Iconed, BtnOutline },
+  components: { Iconed, BtnOutline, TechnologiesList },
   props: {
     description: {
       type: String,
@@ -78,7 +74,6 @@ export default {
     }
   },
   computed: {
-    ...mapState('constants', ['usingHrefs']),
     workFrontSrc() {
       let src = ''
       if (process.env.NODE_ENV === 'production') {
@@ -167,33 +162,7 @@ section.using
     font-weight: normal
     font-size: 2.5em
 
-  ul
+  .--technologies-list
     display flex
     justify-content center
-
-  li
-    display: inline-flex
-    align-items: center
-    justify-content: center
-
-  li:not(:last-child)
-    margin-right: 1em
-
-  a
-    display: flex
-    align-items: center
-    flex-direction: column
-    font-size: 1.2em
-    display: flex
-    align-items: center
-    text-transform: capitalize
-
-  .icon
-    margin-bottom: 0.5em
-    filter: saturate(0)
-    height: 3em
-    transition: filter 0.25s ease
-
-  a:hover .icon
-    filter: saturate(1)
 </style>
