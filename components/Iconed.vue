@@ -22,8 +22,14 @@ export default {
   },
   computed: {
     svgContents() {
-      let contents = require(`!raw-loader!@/static/icons/${this.icon}.svg`)
-        .default
+      let contents
+      try {
+        contents = require(`!raw-loader!@/static/icons/${this.icon}.svg`)
+          .default
+      } catch (error) {
+        console.error(error)
+        return ''
+      }
       contents = contents.replace(
         '<svg',
         '<svg style="height: 100%; width: 100%; fill: var(--fill) !important;" '
