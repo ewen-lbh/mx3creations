@@ -27,6 +27,7 @@ export default {
     --color: var(--prim)
 
 .--btn-outline
+  color var(--color)
   background transparent
   border 1px solid var(--color)
   padding 1em
