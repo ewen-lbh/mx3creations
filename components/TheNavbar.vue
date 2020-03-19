@@ -4,11 +4,11 @@
 .nav-wrapper(:class="{ scrolled, opened }")
   nav
     // Left
-    template(v-if="backURL")
-      NavItem.go-back(@click="goBack"): Iconed(icon="arrow-left") {{ $t('back') }}
-    template(v-else)
-      NavItem(to="/") {{ $t('works') }}
-      NavItem(to="/about") {{ $t('about') }}
+    transition
+      NavItem.go-back(@click="goBack" v-if="backURL"): Iconed(icon="arrow-left")
+    //- template(v-else)
+    NavItem(to="/") {{ $t('works') }}
+    NavItem(to="/about") {{ $t('about') }}
     // Center
     span.center.breadcrumbs(v-if="false")
       NavItem.breadcrumb(
@@ -148,7 +148,7 @@ nav
     border-top-color var(--text)
     background var(--prim)
 
-@media (max-width 400px)
+@media (max-width 500px)
   .switch-menu
     display inline-block
   .--nav-item:not(.switch-menu)
