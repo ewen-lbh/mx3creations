@@ -1,11 +1,14 @@
 <template lang="pug">
 .--work
+  section(fullwidth).title
+    h1 
   h1 
-    span.work-name {{ name }}
-    nuxt-link.collection-name(
-      v-if="collection"
-      :to="'/' + collection.id"
-    ) Collection {{ collection.name }}
+    h1 
+      span.work-name {{ name }}
+      nuxt-link.collection-name(
+        v-if="collection"
+        :to="'/' + collection.id"
+      ) Collection {{ collection.name }}
   section.links
     ul: li(v-for="(link, i) in links" :key="i")
         BtnOutline(:href="link.url").btn {{ $t(link.name) }}
