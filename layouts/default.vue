@@ -1,5 +1,6 @@
 <template lang="pug">
   .container
+    LocalhostWarning
     TheNavbar#nav
     .page-container
       nuxt#page
@@ -9,9 +10,10 @@
 <script>
 import TheNavbar from '~/components/TheNavbar.vue'
 import TheFooter from '~/components/TheFooter.vue'
+import LocalhostWarning from '~/components/LocalhostWarning.vue'
 
 export default {
-  components: { TheNavbar, TheFooter }
+  components: { TheNavbar, TheFooter, LocalhostWarning }
 }
 </script>
 
