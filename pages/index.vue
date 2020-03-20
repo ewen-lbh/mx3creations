@@ -8,7 +8,10 @@ main
     v-for="firstTag in workSections"
     :class="firstTag"
   )
-    h2 {{ $t('tags.plural.'+firstTag) }}
+    h2 
+      | {{ $t('tags.plural.'+firstTag) }}
+      nuxt-link(:to="`/tagged/${firstTag}`")
+        Iconed(icon="arrow-right") Voir tout
     
     Gallery(:works="bestOf(ofFirstTag(firstTag))" :id="firstTag")
 </template>
@@ -17,8 +20,9 @@ main
 import { mapGetters } from 'vuex'
 import Gallery from '~/components/Gallery.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
+import Iconed from '~/components/Iconed.vue'
 export default {
-  components: { Gallery, BtnOutline },
+  components: { Gallery, BtnOutline, Iconed },
   data() {
     return {
       workSections: [
@@ -33,7 +37,12 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('works', ['bestOf', 'ofFirstTag'])
+    ...mapGetters('works', ['bestOf', 'ofFirstTag', 'ofTag'])
+  },
+  methods: {
+    hasMoreWorksThanShown(tag) {
+      return this.bestOf(this.ofFirstTag(tag)).length < this.withTags([tag])
+    }
   }
 }
 </script>
@@ -57,6 +66,10 @@ h2
   font-size: 1.5em
   text-transform uppercase
   text-align center
+  display flex
+  align-items center
+  a
+    margin-left auto
 
 .--gallery
   width 100%
