@@ -1,17 +1,16 @@
 <template lang="pug">
 ul.--technologies-list
   li(v-for="(technology, i) in technologies" :key="i")
-    component(
-      :is="getUrl(technology) ? 'a' : 'span'"
-      :href="getUrl(technology)"
-      :target="openInNewTab ? '_blank' : null"
-    )
+    NuxtLinkOrA(:url="getUrl(technology)" :in-new-tab="openInNewTab")
       img.icon(:src="`/logos/${technology}.png`")
       | {{ $t(technology) }}
 </template>
 
 <script>
+import NuxtLinkOrA from '~/components/NuxtLinkOrA.vue'
+
 export default {
+  components: { NuxtLinkOrA },
   props: {
     technologies: {
       type: Array,
