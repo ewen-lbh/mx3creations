@@ -79,13 +79,23 @@ export default {
           workAndCollectionsRoutes = workAndCollectionsRoutes.map(
             (route) => '/' + route
           )
+          const technologies = Object.keys(
+            require('./store/constants').state().usingHrefs
+          )
+          const madeWithRoutes = technologies.map(
+            (tech) => `/made-with/${tech}`
+          )
           return axios
             .get('https://static.mx3creations.com/sites.json')
             .then(({ data }) => {
               const redirectsRoutes = Object.entries(data).map(
                 ([name]) => `/to/${name}`
               )
-              return [...redirectsRoutes, ...workAndCollectionsRoutes]
+              return [
+                ...redirectsRoutes,
+                ...workAndCollectionsRoutes,
+                ...madeWithRoutes
+              ]
             })
         })
     }
