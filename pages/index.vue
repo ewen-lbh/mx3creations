@@ -31,7 +31,8 @@ export default {
         'drawing',
         'visual identity',
         'web',
-        'cli',
+        'program',
+        'typography',
         'motion design'
       ]
     }
