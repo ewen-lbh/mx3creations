@@ -23,8 +23,10 @@
           a(:href="site.url"): Iconed(:icon="site.name" color="var(--prim)") {{ $t(site.name) }}
       ul.music
         h3 Ma musique
-        li: a(href="https://open.spotify.com/artist/4jUrQ2TvXDA6Nupa9NBVcI?si=PIYJsVMPQHqOPDmXnNdVug") Spotify
-        li: a(href="https://www.deezer.com/fr/artist/12928429") Deezer
+        li: a(href="https://open.spotify.com/artist/4jUrQ2TvXDA6Nupa9NBVcI?si=PIYJsVMPQHqOPDmXnNdVug")
+          Iconed(icon="spotify" color="var(--prim)") Spotify
+        li: a(href="https://www.deezer.com/fr/artist/12928429")
+          Iconed(icon="deezer" color="var(--prim)") Deezer
 </template>
 
 <script>
