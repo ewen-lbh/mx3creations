@@ -1,9 +1,7 @@
 <template lang="pug">
-  component.--base-btn(
-    :is="href ? (href.startsWith('http') ? 'a' : 'nuxt-link') : 'button'"
-    :to="localePath(href) || false"
-    :href="href"
-    :target="href.startsWith('http') ? '_blank' : null"
+  NuxtLinkOrA.--base-btn(
+    :url="href"
+    fallback-element="button"
     :class="{ clicked, disabled }"
     v-bind="{ disabled }"
     @click="onClicked"
@@ -11,7 +9,10 @@
 </template>
 
 <script>
+import NuxtLinkOrA from '~/components/NuxtLinkOrA.vue'
+
 export default {
+  components: { NuxtLinkOrA },
   props: {
     href: {
       type: String,
