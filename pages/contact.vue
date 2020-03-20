@@ -9,8 +9,16 @@ main
       | Votre message
       textarea(rows="20" cols="40")
     
-    p: button(type="submit") Envoyer
+    p: BtnOutline(type="submit") Envoyer
 </template>
+
+<script>
+import BtnOutline from '~/components/BtnOutline.vue'
+
+export default {
+  components: { BtnOutline }
+}
+</script>
 
 <style lang="stylus" scoped>
 form
