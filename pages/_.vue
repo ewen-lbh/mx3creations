@@ -12,7 +12,7 @@ import Collection from '~/components/Collection.vue'
 
 export default {
   components: { Work, Collection },
-  asyncData({ error, route, store, app }) {
+  asyncData({ error, route, store, app, redirect }) {
     const reqPath = route.params.pathMatch.split('/')
     const works = store.getters['works/all']
     const collections = store.getters['works/collections']
@@ -26,21 +26,26 @@ export default {
         collection: matchingCollection,
         work: matchingWork
       }
-    } else if (matchingCollection) {
+    }
+    if (matchingCollection) {
       return {
         collection: matchingCollection,
         work: null
       }
-    } else {
-      matchingWork = works.find((w) => w.id === reqPath[0])
-      if (matchingWork) {
-        return {
-          work: matchingWork,
-          collection: null
-        }
-      } else {
-        error({ message: 'inexistantWork', statusCode: 404 })
+    }
+    matchingWork = works.find((w) => w.id === reqPath[0])
+    if (matchingWork) {
+      return {
+        work: matchingWork,
+        collection: null
       }
+    }
+    const tags = Object.keys(require('@/lang/fr-FR').default.tags.singular)
+
+    if (tags.includes(route.params.pathMatch)) {
+      redirect(`/tagged/${reqPath}`)
+    } else {
+      error({ message: 'inexistantWork', statusCode: 404 })
     }
   },
   head() {
