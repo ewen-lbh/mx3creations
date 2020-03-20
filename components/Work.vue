@@ -2,8 +2,6 @@
 .--work
   section(fullwidth).title
     h1 
-  h1 
-    h1 
       span.work-name {{ name }}
       nuxt-link.collection-name(
         v-if="collection"
@@ -26,6 +24,11 @@
       importance="high"
     )
     p.no-images(v-else) Pas d'images :/ 
+  section.tags(v-if="tags.length")
+    h2 Catégories
+    ul: li(v-for="(tag, i) in tags" :key="i")
+      span.octothorpe #
+      nuxt-link(:to="`/tagged/${tag}`") {{ $t(`tags.singular.${tag}`) }}
   section.using(v-if="using.length")
     h2 Fait avec...
     TechnologiesList(
@@ -67,6 +70,10 @@ export default {
       type: Object,
       default: () => []
     },
+    tags: {
+      type: Object,
+      default: () => []
+    },
     collection: {
       type: Object,
       default: null
@@ -102,6 +109,28 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+section.tags
+  ul
+    text-align center
+  li
+    display inline-block
+    font-size 2em
+    line-height: 1.5
+  li:not(:last-child)
+    margin-right 1em
+  .octothorpe
+    opacity: 0.25
+  a
+    transition opacity 0.25 ease
+  a:hover
+    opacity: 0.25
+
+section h2
+  text-align: center
+  font-weight: normal
+  font-size: 2.5em
+  opacity: 0.25
+
 h1
   display flex
   flex-direction column
@@ -131,11 +160,6 @@ img:not(.icon)
   padding: 20em 5em
   text-align: center
 
-section.collection-description h2
-  font-family Work Sans
-  font-size: 5vmin
-  margin-bottom -.25em
-
 section.collection
   display: flex
   justify-content: center
@@ -160,11 +184,6 @@ section.collection
   margin-top: 0
 
 section.using
-  h2
-    text-align: center
-    font-weight: normal
-    font-size: 2.5em
-
   .--technologies-list
     display flex
     justify-content center
