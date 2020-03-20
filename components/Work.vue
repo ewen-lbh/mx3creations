@@ -92,8 +92,8 @@ export default {
     document.body.style.setProperty('--prim', backgroundColor)
   },
   beforeDestroy() {
-    document.body.style.setProperty('--text', null)
-    document.body.style.setProperty('--prim', null)
+    // document.body.style.setProperty('--text', null)
+    // document.body.style.setProperty('--prim', null)
   }
 }
 </script>
