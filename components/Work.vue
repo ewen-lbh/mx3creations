@@ -23,7 +23,10 @@
       :src="workFrontSrc"
       importance="high"
     )
-    p.no-images(v-else) Pas d'images :/ 
+    p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/ 
+  section.youtube(v-if="youtube.playlist || youtube.video")
+    YouTube(v-if="youtube.video" :id="youtube.video")
+    YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
   section.tags(v-if="tags.length")
     h2 Catégories
     ul: li(v-for="(tag, i) in tags" :key="i")
@@ -42,9 +45,10 @@ import tinycolor from 'tinycolor2'
 import Iconed from '~/components/Iconed.vue'
 import BtnOutline from '~/components/BtnOutline.vue'
 import TechnologiesList from '~/components/TechnologiesList.vue'
+import YouTube from '~/components/YouTube.vue'
 
 export default {
-  components: { Iconed, BtnOutline, TechnologiesList },
+  components: { Iconed, BtnOutline, TechnologiesList, YouTube },
   props: {
     description: {
       type: String,
@@ -81,6 +85,13 @@ export default {
     color: {
       type: String,
       default: null
+    },
+    youtube: {
+      type: Object,
+      default: () => ({
+        playlist: null,
+        video: null
+      })
     }
   },
   computed: {
@@ -182,6 +193,12 @@ section.collection
   justify-content: center
   margin-bottom: 2em
   margin-top: 0
+
+section.youtube
+  margin 3em 0
+  display flex
+  align-items center
+  flex-direction column
 
 section.using
   .--technologies-list
