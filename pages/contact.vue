@@ -1,7 +1,7 @@
 <template lang="pug">
 main
   h1 Me contacter
-  section: form(name="contact" netlify)
+  section: form(name="contact" netlify method="POST")
     p: label 
       | Votre e-mail
       input(type="email" name="email")
