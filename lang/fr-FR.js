@@ -41,6 +41,7 @@ export default {
   javascript: 'JavaScript',
   latex: 'LaTeX',
   sass: 'SASS',
+  'fl studio': 'FL Studio',
   'django-rest-framework': 'Django REST Framework',
   'learn more': 'En savoir plus',
   tags: {
@@ -72,7 +73,8 @@ export default {
       intro: 'intro',
       outro: 'outro',
       app: 'application',
-      compositing: 'compositing'
+      compositing: 'compositing',
+      music: 'musique'
     },
     plural: {
       illustration: 'illustrations',
@@ -102,7 +104,8 @@ export default {
       intro: 'intros',
       outro: 'outros',
       app: 'applications',
-      compositing: 'compositing'
+      compositing: 'compositing',
+      music: 'musique'
     }
   }
 }
