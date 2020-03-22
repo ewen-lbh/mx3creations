@@ -28,6 +28,7 @@ export const state = () => ({
     lark: 'https://github.com/lark-parser/lark',
     pychemin: 'https://ewen.works/pychemin',
     typescript: 'https://www.typescriptlang.org/',
-    oclif: 'https://oclif.io/'
+    oclif: 'https://oclif.io/',
+    'fl studio': 'https://www.image-line.com/flstudio/'
   }
 })
