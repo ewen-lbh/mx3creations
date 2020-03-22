@@ -195,7 +195,7 @@ section.collection
   margin-top: 0
 
 section.youtube
-  margin 3em 0
+  margin-top 3em
   display flex
   align-items center
   flex-direction column
