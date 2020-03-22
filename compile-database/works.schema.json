@@ -145,6 +145,26 @@
         "type": ["string", "number"],
         "title": "Description",
         "description": "A description of the work, with markdown support."
+      },
+      "youtube": {
+        "$id": "#/items/properties/youtube",
+        "type": "object",
+        "title": "YouTube IDs",
+        "description": "Specify YouTube IDs that represent the work directly.",
+        "properties": {
+          "playlist": {
+            "$id": "#/items/properties/youtube/playlist",
+            "type": "string",
+            "title": "YouTube playlist ID",
+            "description": "The YouTube playlist ID. (ONLY the ID)"
+          },
+          "video": {
+            "$id": "#/items/properties/youtube/video",
+            "type": "string",
+            "title": "YouTube video ID",
+            "description": "The YouTube video ID. (ONLY the ID)"
+          }
+        }
       }
     }
   }

@@ -132,6 +132,18 @@ class WorkSize:
         if self.height == 0:
             return None
         return self.height / self.width
+        
+class YoutubeProperties:
+    """IDs for YouTube playlist and/or video"""
+    def __init__(self, playlist: Optional[str] = None, video: Optional[str] = None) -> None:
+        self.playlist = playlist
+        self.video = video
+    
+    def as_dict(self):
+        return {
+            'playlist': self.playlist,
+            'video': self.video
+        }
 
 
 class Work:
@@ -151,6 +163,7 @@ class Work:
         using: List[str] = [],
         wip: Optional[bool] = None,
         tags: List[str] = [],
+        youtube: YoutubeProperties = YoutubeProperties(),
         **other_attributes: dict,
     ):
         self.id = str(id)
@@ -170,6 +183,7 @@ class Work:
         self.wip = wip or False
         self.links = Link.get_from_parsed_yaml(links)
         self.color = color
+        self.youtube = youtube
         for attrname, value in other_attributes.items():
             setattr(self, attrname, value)
 
@@ -202,6 +216,7 @@ class Work:
             },
             "wip": self.wip,
             "color": self.color,
+            "youtube": self.youtube.as_dict()
         }
 
 
@@ -254,6 +269,8 @@ class Database:
                 work["collection"] = self.find_collection(id=work["collection"])
             else:
                 work["collection"] = None
+            if "youtube" in work.keys():
+                work["youtube"] = YoutubeProperties(**work["youtube"])
             work = Work(**work)
             yield work
 
