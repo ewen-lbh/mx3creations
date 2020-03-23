@@ -32,6 +32,7 @@ export default {
         'visual identity',
         'web',
         'program',
+        'music',
         'typography',
         'motion design'
       ]
