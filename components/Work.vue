@@ -17,6 +17,9 @@
     nuxt-link.collection-link(:to="'/' + collection.id")
       Iconed(icon="arrow-right") Œuvres de la collection
   section.description(v-html="description")
+  section.youtube(v-if="youtube.playlist || youtube.video")
+    YouTube(v-if="youtube.video" :id="youtube.video")
+    YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
   section.image
     img(
       v-if="front"
