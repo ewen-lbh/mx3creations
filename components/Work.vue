@@ -114,6 +114,7 @@ export default {
     const color = tinycolor(backgroundColor).isLight() ? 'black' : 'white'
     document.body.style.setProperty('--text', color)
     document.body.style.setProperty('--prim', backgroundColor)
+    window.scrollTo(0, 0)
   },
   beforeDestroy() {
     document.body.style.setProperty('--text', null)
