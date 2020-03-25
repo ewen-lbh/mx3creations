@@ -79,12 +79,12 @@ export default {
           workAndCollectionsRoutes = workAndCollectionsRoutes.map(
             (route) => '/' + route
           )
-          const technologies = Object.keys(
-            require('./store/constants').state().usingHrefs
-          )
+          const { usingHrefs, tags } = require('./store/constants').state()
+          const technologies = Object.keys(usingHrefs)
           const madeWithRoutes = technologies.map(
             (tech) => `/made-with/${tech}`
           )
+          const taggedRoutes = tags.map((tag) => `tagged/${tag}`)
           return axios
             .get('https://static.ewen.works/sites.json')
             .then(({ data }) => {
@@ -94,7 +94,8 @@ export default {
               return [
                 ...redirectsRoutes,
                 ...workAndCollectionsRoutes,
-                ...madeWithRoutes
+                ...madeWithRoutes,
+                ...taggedRoutes
               ]
             })
         })
