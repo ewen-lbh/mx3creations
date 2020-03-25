@@ -30,5 +30,37 @@ export const state = () => ({
     typescript: 'https://www.typescriptlang.org/',
     oclif: 'https://oclif.io/',
     'fl studio': 'https://www.image-line.com/flstudio/'
-  }
+  },
+  tags: [
+    'illustration',
+    'drawing',
+    'cards',
+    'poster',
+    'iconography',
+    'banner',
+    'wallpaper',
+    'user interface',
+    'website mockup',
+    'book',
+    'cover art',
+    'music video',
+    'visual identity',
+    'web',
+    'cli',
+    'motion design',
+    'typography',
+    'site',
+    'api',
+    'language',
+    'logo',
+    'program',
+    'automation',
+    'game',
+    'intro',
+    'outro',
+    'app',
+    'compositing',
+    'music',
+    'graphism'
+  ]
 })
