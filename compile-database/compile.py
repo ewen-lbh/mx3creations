@@ -11,6 +11,7 @@ Files & directories options
 --collections=<file>   The collections YAML file [default: ../static/collections.yaml]
 --watch                Auto-recompile when one of the YAML files or contents of the renders directory changes.
 --rate=<ms>            Sets the refresh rate for the watch option. [default: 1000]
+--regen-thumbs         Regenerate thumbnails even if they already exist.
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
@@ -466,13 +467,17 @@ def doit(args, log):
         # Make thumbnails
         thumbs_dir = os.path.join(args["--renders"], work.directory, "thumbs")
         os.makedirs(thumbs_dir, exist_ok=True)
+        thumbnail_created_count = 0
         for width in [500, 150, 20]:
             if work.size.aspect_ratio() is not None:
                 continue
             thumb_path = os.path.join(thumbs_dir, str(width) + ".png")
-            image.thumbnail((width, width))
-            image.save(thumb_path)
-        log.info("Made thumbnails for {0}", work.full_id)
+            if args['--regen-thumbs'] or not os.path.isfile(thumb_path):
+                image.thumbnail((width, width))
+                image.save(thumb_path)
+                thumbnail_created_count += 1
+        if thumbnail_created_count:
+            log.info("Made {1} thumbnail(s) for {0}", work.full_id, thumbnail_created_count)
         # Compute the dominant color if not set explicitly
         # We use the thumbnail so it's less intensive.
         if not work.color:
