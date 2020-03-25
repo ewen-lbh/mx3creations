@@ -17,6 +17,13 @@
     nuxt-link.collection-link(:to="'/' + collection.id")
       Iconed(icon="arrow-right") Œuvres de la collection
   section.description(v-html="description")
+  section.date(v-if="year")
+    span(v-if="wip") Commencé en
+    span(v-else) Créé en
+    //- TODO: link to /made-in/:year
+    span.year {{ year }}
+    //- TODO: link to /work-in-progress
+    span(v-if="wip") (projet en cours)
   section.youtube(v-if="youtube.playlist || youtube.video")
     YouTube(v-if="youtube.video" :id="youtube.video")
     YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
@@ -53,6 +60,14 @@ export default {
     description: {
       type: String,
       default: ''
+    },
+    wip: {
+      type: Boolean,
+      default: false
+    },
+    year: {
+      type: Number,
+      default: null
     },
     name: {
       type: String,
@@ -158,6 +173,21 @@ h1 .collection-name
   transition opacity 0.25s ease
   &:hover
     opacity: 0.25
+
+section.date
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+  font-size: 1.5em
+  display flex
+  align-items center
+  justify-content center
+  span:not(.year)
+    opacity: 0.5
+    font-weight bold
+  span:not(:last-child)
+    margin-right 1rem
+  .year
+    font-size: 1.75em
 
 img:not(.icon)
   display: flex
