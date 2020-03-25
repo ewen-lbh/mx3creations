@@ -27,9 +27,6 @@
       importance="high"
     )
     p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/ 
-  section.youtube(v-if="youtube.playlist || youtube.video")
-    YouTube(v-if="youtube.video" :id="youtube.video")
-    YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
   section.tags(v-if="tags.length")
     h2 Catégories
     ul: li(v-for="(tag, i) in tags" :key="i")
