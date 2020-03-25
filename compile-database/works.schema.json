@@ -63,7 +63,7 @@
       "year": {
         "$id": "#/items/properties/year",
         "type": "integer",
-        "description": "The year the work was finished. Defaults to today's year.",
+        "description": "The year the work was finished.",
         "title": "Year"
       },
       "front": {
