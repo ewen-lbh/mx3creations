@@ -520,7 +520,7 @@ def run():
         class WatchEventHandler(FileSystemEventHandler):
             def on_any_event(self, event):
                 super(WatchEventHandler, self).on_any_event(event)
-                if event.src_path.endswith(".yaml"):
+                if event.src_path.endswith(".yaml") or event.src_path.endswith('.png'):
                     log.info("Detected changes in {0}", event.src_path)
                     doit(args, log)
                     log.info(
