@@ -41,17 +41,11 @@ export const actions = {
   async load({ commit, state }, { force } = { force: false }) {
     if (!force && state.loaded) return
     try {
-      let works
-      if (process.env.NODE_ENV === 'production') {
-        const { data } = await this.$axios.get(
-          'https://static.ewen.works/works.json'
-        )
-        works = data
-      } else {
-        works = require('@/static/works.json')
-      }
-      if (works) {
-        commit('SET', works)
+      const { data } = await this.$axios.get(
+        'https://static.ewen.works/works.json'
+      )
+      if (data) {
+        commit('SET', data)
         commit('POSTLOAD')
       }
     } catch (error) {
