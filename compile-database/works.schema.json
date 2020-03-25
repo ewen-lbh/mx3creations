@@ -66,6 +66,12 @@
         "description": "The year the work was finished.",
         "title": "Year"
       },
+      "month": {
+        "$id": "#/items/properties/month",
+        "type": "string",
+        "description": "The month when the work was finished.",
+        "title": "Month"
+      },
       "front": {
         "$id": "#/items/properties/front",
         "type": ["string", "number"],
