@@ -74,7 +74,8 @@ export default {
       outro: 'outro',
       app: 'application',
       compositing: 'compositing',
-      music: 'musique'
+      music: 'musique',
+      graphism: 'graphisme'
     },
     plural: {
       illustration: 'illustrations',
@@ -105,7 +106,8 @@ export default {
       outro: 'outros',
       app: 'applications',
       compositing: 'compositing',
-      music: 'musique'
+      music: 'musique',
+      graphism: 'graphisme'
     }
   }
 }
