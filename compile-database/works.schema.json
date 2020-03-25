@@ -68,7 +68,7 @@
       },
       "month": {
         "$id": "#/items/properties/month",
-        "type": "string",
+        "type": "integer",
         "description": "The month when the work was finished.",
         "title": "Month"
       },
