@@ -1,3 +1,5 @@
+import { firstBy } from 'thenby'
+
 export const state = () => ({
   works: [],
   loaded: false
@@ -9,7 +11,7 @@ export const mutations = {
 }
 
 export const getters = {
-  all: ({ works }) => works,
+  all: ({ works }) => [...works].sort(firstBy('year', -1).thenBy('id')),
   bestOf: () => (works) => works.filter((w) => w.best),
   best: (_, { all, bestOf }) => bestOf(all),
   byID: (_, { all }) => (id) => all.find((w) => w.id === id),
