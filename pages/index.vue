@@ -28,11 +28,10 @@ export default {
       workSections: [
         'poster',
         'illustration',
-        'drawing',
+        'music',
         'visual identity',
         'web',
         'program',
-        'music',
         'typography',
         'motion design'
       ]
