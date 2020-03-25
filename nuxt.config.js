@@ -56,7 +56,7 @@ export default {
   generate: {
     routes() {
       return axios
-        .get('http://static.mx3creations.com/works.json')
+        .get('https://static.ewen.works/works.json')
         .then(({ data }) => {
           const fullIds = data.map((w) => w.full_id)
           let workAndCollectionsRoutes = []
@@ -86,7 +86,7 @@ export default {
             (tech) => `/made-with/${tech}`
           )
           return axios
-            .get('https://static.mx3creations.com/sites.json')
+            .get('https://static.ewen.works/sites.json')
             .then(({ data }) => {
               const redirectsRoutes = Object.entries(data).map(
                 ([name]) => `/to/${name}`

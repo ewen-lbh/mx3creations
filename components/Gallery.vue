@@ -28,7 +28,7 @@ export default {
     getWorkFrontSrc(work) {
       let src = ''
       if (process.env.NODE_ENV === 'production') {
-        src = 'https://static.mx3creations.com'
+        src = 'https://static.ewen.works'
       }
       src += '/works/'
       if (work.front === null) return null
