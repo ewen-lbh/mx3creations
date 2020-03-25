@@ -12,6 +12,7 @@ Files & directories options
 --watch                Auto-recompile when one of the YAML files or contents of the renders directory changes.
 --rate=<ms>            Sets the refresh rate for the watch option. [default: 1000]
 --regen-thumbs         Regenerate thumbnails even if they already exist.
+--regen-colors         Recalculate colors even if they already exist.
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
@@ -481,14 +482,29 @@ def doit(args, log):
         # Compute the dominant color if not set explicitly
         # We use the thumbnail so it's less intensive.
         if not work.color:
-            from colr import Colr
-
-            r, g, b = get_dominant_color(os.path.join(thumbs_dir, "500.png"))
-            database.edit(work.full_id, color=f"rgb({r},{g},{b})")
-            log.info(
-                f"Got the dominant color for {{0}}: {Colr().rgb(r, g, b, '█' * 10)}",
-                work.full_id,
-            )
+            # Try to get the color from the last compiled works.json
+            color_of_last_compiled = None
+            last_compiled_filepath = os.path.join(os.path.dirname(args['--works']), 'works.json')
+            if os.path.isfile(last_compiled_filepath):
+                with open(last_compiled_filepath, 'r') as file:
+                    last_compiled = json.loads(file.read())
+                for last_compiled_work in last_compiled:
+                    if 'color' in last_compiled_work.keys() and last_compiled_work['full_id'] == work.full_id:
+                        color_of_last_compiled = last_compiled_work['color']
+            
+            if color_of_last_compiled is None or args['--regen-colors']:
+                r, g, b = get_dominant_color(os.path.join(thumbs_dir, "500.png"))
+                work_color = f"rgb({r},{g},{b})"
+                from colr import Colr
+                log.info(
+                    f"Got the dominant color for {{0}}: {Colr().rgb(r, g, b, '█' * 10)}",
+                    work.full_id,
+                )
+            
+            else:
+                work_color = color_of_last_compiled
+            
+            database.edit(work.full_id, color=work_color)
 
     #
     # Show infos
