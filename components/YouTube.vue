@@ -4,8 +4,7 @@ iframe.--youtube(
   frameborder='0'
   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
   allowfullscreen playsinline
-  width="560"
-  height="315"
+  width="100%"
 )
 </template>
 
