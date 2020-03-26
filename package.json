@@ -15,7 +15,7 @@
     "test": "jest",
     "db-generate": "cd compile-database && poetry run ./compile.py",
     "db-dev": "cd compile-database && poetry run ./compile.py --watch --rate 2",
-    "db-upload": "rsync -rPhtv static/works ubuntu@51.89.116.101:/mnt/block-storages/portfolio-static-files/ && scp static/works.json ubuntu@51.89.116.101:/mnt/block-storages/portfolio-static-files/",
+    "db-upload": "rsync -rPhtv static/works ubuntu@51.89.116.101:/mnt/block-storages/portfolio-static-files/ && scp static/works.json ubuntu@51.89.116.101:/mnt/block-storages/portfolio-static-files/ && http post https://api.netlify.com/build_hooks/$(grep NETLIFY_BUILD_HOOK .env | cut -d '=' -f2)",
     "db-genup": "yarn db-generate && yarn db-upload"
   },
   "lint-staged": {
