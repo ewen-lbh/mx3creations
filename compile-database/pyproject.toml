@@ -6,7 +6,7 @@ authors = ["ewen-lbh <ewen.lebihan7@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 docopt = "^0.6.2"
 pastel = "^0.2.0"
 pillow = "^7.0.0"
