@@ -4,9 +4,11 @@
     article(
       v-for="work in works"
       :key="work.full_id"
-      :class="{ 'has-image': !!getWorkFrontSrc(work) }"
+      :class="{ 'has-image': !!getWorkFrontSrc(work), 'has-video': isWorkAVideo(work) }"
     )
       nuxt-link(:to="'/' + work.full_id")
+        .video-indicator(v-if="isWorkAVideo(work)" :style="getWorkColors(work, true)")
+          Iconed(icon="play" :color="getWorkColors(work, true).color") Vidéo
         .image(v-if="getWorkFrontSrc(work)")
           img(:src="getWorkFrontSrc(work)")
         .titles(:style="getWorkColors(work)")
@@ -16,8 +18,10 @@
 
 <script>
 import tinycolor from 'tinycolor2'
+import Iconed from '~/components/Iconed.vue'
 
 export default {
+  components: { Iconed },
   props: {
     works: {
       type: Array,
@@ -58,12 +62,25 @@ export default {
       path += work.id
       return path
     },
-    getWorkColors(work) {
+    getWorkColors(work, reversed = false) {
       const bgColor = work.color || 'black'
-      return {
+      let colors = {
         backgroundColor: bgColor,
         color: tinycolor(bgColor).isLight() ? 'black' : 'white'
       }
+      if (reversed) {
+        colors = {
+          color: colors.backgroundColor,
+          backgroundColor: colors.color
+        }
+      }
+      return colors
+    },
+    isWorkAVideo(work) {
+      return (
+        (work.youtube.video || work.youtube.playlist) &&
+        work.tags.includes('motion design')
+      )
     }
   }
 }
@@ -87,6 +104,14 @@ gap = 1em
   grid-template-columns 'repeat(%s, minmax(%s, 1fr))' % (items-count min-item-size)
   grid-gap gap
   margin 4%
+
+.video-indicator
+  position absolute
+  top 0.5em
+  left 0.5em
+  z-index: 100
+  padding: 0.5em 1em
+  border-radius 0.3333333333em
 
 article
   position relative
