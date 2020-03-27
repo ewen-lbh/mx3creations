@@ -1,10 +1,11 @@
 <template lang="pug">
-iframe.--youtube(
+.video-wrapper.--youtube: iframe(
   :src='src'
   frameborder='0'
   allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
   allowfullscreen playsinline
   width="100%"
+  height="100%"
 )
 </template>
 
@@ -38,3 +39,12 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.video-wrapper
+  position relative
+  padding-bottom: 56.25%
+  width: 100%
+iframe
+  position absolute
+</style>
