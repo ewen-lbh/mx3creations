@@ -1,7 +1,7 @@
 <template lang="pug">
 .--work
   section(fullwidth).title
-    h1 
+    h1
       span.work-name {{ name }}
       nuxt-link.collection-name(
         v-if="collection"
@@ -13,16 +13,26 @@
   section.collection-description(v-if="collection && collection.description")
     h2 À propos de la collection
     .description(v-html="collection.description")
-  section.collection(v-if="collection")  
+  section.collection(v-if="collection")
     nuxt-link.collection-link(:to="'/' + collection.id")
       Iconed(icon="arrow-right") Œuvres de la collection
   section.description(v-html="description")
   section.date(v-if="year")
-    span(v-if="wip") Commencé en
-    span(v-else) Créé en
     //- TODO: link to /made-in/:year
-    span.year {{ year }}
-    //- TODO: link to /work-in-progress
+    template(v-if="wip")
+      span Commencé en
+      span.year {{ year }}
+      //- TODO: link to /work-in-progress
+      span.wip (projet en cours)
+    template(v-else)
+      template(v-if="yearDiff > 1")
+        span Créé il y a
+        span.year {{ yearDiff }}
+        span ans
+      template(v-else-if="yearDiff === 1")
+        span Créé l'année dernière
+      template(v-else)
+        span Créé cette année
     span(v-if="wip") (projet en cours)
   section.youtube(v-if="youtube.playlist || youtube.video")
     YouTube(v-if="youtube.video" :id="youtube.video")
@@ -33,7 +43,7 @@
       :src="workFrontSrc"
       importance="high"
     )
-    p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/ 
+    p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/
   section.tags(v-if="tags.length")
     h2 Catégories
     ul: li(v-for="(tag, i) in tags" :key="i")
@@ -119,6 +129,10 @@ export default {
       if (this.front === null) return null
       src += this.directory + '/' + this.front
       return src
+    },
+    yearDiff() {
+      if (!this.year) return null
+      return new Date().getFullYear() - this.year
     }
   },
   mounted() {
