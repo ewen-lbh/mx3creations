@@ -10,7 +10,12 @@
         .video-indicator(v-if="isWorkAVideo(work)" :style="getWorkColors(work, true)")
           Iconed(icon="play" :color="getWorkColors(work, true).color") Vidéo
         .image(v-if="getWorkFrontSrc(work)")
-          img(:src="getWorkFrontSrc(work)")
+          progressive-background(
+            :src="getWorkFrontSrc(work)"
+            :placeholder="getWorkFrontThumbSrc(work)"
+            aspect-ratio="1"
+            :style="{backgroundColor: work.color || 'black'}"
+          )
         .titles(:style="getWorkColors(work)")
           h4(v-if="work.collection") {{ work.collection.name }}
           h3 {{ work.name }}
@@ -30,29 +35,14 @@ export default {
   },
   methods: {
     getWorkFrontSrc(work) {
-      let src = ''
-      if (process.env.NODE_ENV === 'production') {
-        src = 'https://static.ewen.works'
-      }
-      src += '/works/'
-      if (work.front === null) return null
-      src += work.directory + '/' + work.front
-      return src
+      return (
+        'https://static.ewen.works/works/' + work.directory + '/thumbs/500.png'
+      )
     },
-    getWorkFrontSrcSet(work) {
-      const thumbsDir = work.directory + '/thumbs/'
-      const srcset = {
-        '1x': this.getWorkFrontSrc(work),
-        '20w': thumbsDir + '20.png',
-        '150w': thumbsDir + '150.png',
-        '500w': thumbsDir + '500.png'
-      }
-      let srcsetString = ''
-      Object.entries(srcset).forEach(([sizeDescriptor, src]) => {
-        srcsetString += src + ' ' + sizeDescriptor + ', '
-      })
-      srcsetString.replace(/,$/, '')
-      return srcsetString
+    getWorkFrontThumbSrc(work) {
+      return (
+        'https://static.ewen.works/works/' + work.directory + '/thumbs/20.png'
+      )
     },
     getWorkDetailsHref(work) {
       let path = '/'
@@ -120,14 +110,7 @@ article
   min-height min-item-size
 
 .image
-  position relative
   width 100%
-.image::after
-  // Forces the container to be a square
-  content ''
-  display block
-  padding-bottom 100%
-img
   position absolute
   top: 0
   left: 0

@@ -38,10 +38,12 @@
     YouTube(v-if="youtube.video" :id="youtube.video")
     YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
   section.image
-    img(
+    progressive-img(
       v-if="front"
       :src="workFrontSrc"
       importance="high"
+      :placeholder="workPlaceholderSrc"
+      :aspect-ratio="size.aspect_ratio"
     )
     p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/
   section.tags(v-if="tags.length")
@@ -87,6 +89,14 @@ export default {
       type: String,
       default: null
     },
+    size: {
+      type: Object,
+      default: () => ({
+        height: null,
+        width: null,
+        aspect_ratio: null
+      })
+    },
     directory: {
       type: String,
       required: true
@@ -122,12 +132,22 @@ export default {
   computed: {
     workFrontSrc() {
       let src = ''
+      src = 'https://static.ewen.works'
       if (process.env.NODE_ENV === 'production') {
-        src = 'https://static.ewen.works'
       }
       src += '/works/'
       if (this.front === null) return null
       src += this.directory + '/' + this.front
+      return src
+    },
+    workPlaceholderSrc() {
+      let src = ''
+      src = 'https://static.ewen.works'
+      if (process.env.NODE_ENV === 'production') {
+      }
+      src += '/works/'
+      if (this.front === null) return null
+      src += this.directory + `/thumbs/20.png`
       return src
     },
     yearDiff() {
@@ -202,14 +222,6 @@ section.date
     margin-right 1rem
   .year
     font-size: 1.75em
-
-img:not(.icon)
-  display: flex
-  justify-content: center
-  width: 100%
-  object-fit contain
-  max-height 75vh
-  border 1px solid var(--text)
 
 .no-images
   background-color: rgba(0, 0, 0, 0.0625)
