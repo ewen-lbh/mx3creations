@@ -27,6 +27,7 @@ export default {
         contents = require(`!raw-loader!@/static/icons/${this.icon}.svg`)
           .default
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error(error)
         return ''
       }
