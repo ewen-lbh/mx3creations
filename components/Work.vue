@@ -227,6 +227,8 @@ section.links
 h1
   font-size 7em
   line-height: 0.7
+  font-family Work Sans
+  margin-bottom: 0.125em
 .collection .name
   font-size 2em
 
@@ -234,7 +236,7 @@ section.date
   font-size 1.2em
   font-weight bold
   opacity 0.5
-  mix-blend-mode overlay
+  // mix-blend-mode overlay
 
 section.collection
   .name
@@ -242,7 +244,7 @@ section.collection
   .name, .link
     font-weight bold
     opacity: 0.5
-    mix-blend-mode overlay
+    // mix-blend-mode overlay
 
 section.tags
   li
