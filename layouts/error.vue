@@ -14,6 +14,7 @@ import BtnOutline from '~/components/BtnOutline.vue'
 
 export default {
   components: { BtnOutline },
+  // eslint-disable-next-line vue/require-prop-types
   props: ['error']
 }
 </script>

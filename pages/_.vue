@@ -65,3 +65,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+#page
+  flex-grow 1
+</style>

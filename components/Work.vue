@@ -1,62 +1,56 @@
 <template lang="pug">
 .--work
-  section(fullwidth).title
-    h1
-      span.work-name {{ name }}
-      nuxt-link.collection-name(
-        v-if="collection"
-        :to="'/' + collection.id"
-      ) Collection {{ collection.name }}
-  section.links
-    ul: li(v-for="(link, i) in links" :key="i")
+  .explain
+    section.title
+      h1 {{ name }}
+      
+    section.collection(v-if="collection")
+      nuxt-link.name(:to="'/' + collection.id")
+        | Collection {{ collection.name }}
+      .description(
+        v-if="collection.description"
+        v-html="collection.description"
+      )
+      nuxt-link.link(:to="'/' + collection.id")
+        Iconed(icon="arrow-right") Voir toutes les créations dans {{ collection.name }}
+        
+  
+    section.date(v-if="year")
+      p {{ creationDateString }}
+
+    section.description(v-html="description" v-if="description")
+    
+  .details
+    section.tags(v-if="tags.length")
+      h2 Catégories
+      ul: li(v-for="(tag, i) in tags" :key="i")
+        span.octothorpe #
+        nuxt-link(:to="`/tagged/${tag}`") {{ $t(`tags.singular.${tag}`) }}
+
+    section.made-with(v-if="using.length")
+      h2 Fait avec...
+      TechnologiesList(
+        :technologies="using"
+        :get-url="(tech) => `/made-with/${tech}`"
+      )
+
+  .see
+    section.youtube(v-if="youtube.playlist || youtube.video")
+      YouTube(v-if="youtube.video" :id="youtube.video")
+      YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
+    
+    section.image
+      client-only: progressive-img(
+          v-if="front"
+          :src="workFrontSrc"
+          importance="high"
+          :placeholder="workPlaceholderSrc"
+          :aspect-ratio="size.aspect_ratio"
+        )
+
+    section.links: ul
+      li(v-for="(link, i) in links" :key="i")
         BtnOutline(:href="link.url").btn {{ $t(link.name) }}
-  section.collection-description(v-if="collection && collection.description")
-    h2 À propos de la collection
-    .description(v-html="collection.description")
-  section.collection(v-if="collection")
-    nuxt-link.collection-link(:to="'/' + collection.id")
-      Iconed(icon="arrow-right") Œuvres de la collection
-  section.description(v-html="description")
-  section.date(v-if="year")
-    //- TODO: link to /made-in/:year
-    template(v-if="wip")
-      span Commencé en
-      span.year {{ year }}
-      //- TODO: link to /work-in-progress
-      span.wip (projet en cours)
-    template(v-else)
-      template(v-if="yearDiff > 1")
-        span Créé il y a
-        span.year {{ yearDiff }}
-        span ans
-      template(v-else-if="yearDiff === 1")
-        span Créé l'année dernière
-      template(v-else)
-        span Créé cette année
-    span(v-if="wip") (projet en cours)
-  section.youtube(v-if="youtube.playlist || youtube.video")
-    YouTube(v-if="youtube.video" :id="youtube.video")
-    YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
-  section.image
-    progressive-img(
-      v-if="front"
-      :src="workFrontSrc"
-      importance="high"
-      :placeholder="workPlaceholderSrc"
-      :aspect-ratio="size.aspect_ratio"
-    )
-    p.no-images(v-else-if="!youtube.playlist && !youtube.video") Pas d'images :/
-  section.tags(v-if="tags.length")
-    h2 Catégories
-    ul: li(v-for="(tag, i) in tags" :key="i")
-      span.octothorpe #
-      nuxt-link(:to="`/tagged/${tag}`") {{ $t(`tags.singular.${tag}`) }}
-  section.using(v-if="using.length")
-    h2 Fait avec...
-    TechnologiesList(
-      :technologies="using"
-      :get-url="(tech) => `/made-with/${tech}`"
-    )
 </template>
 
 <script>
@@ -153,6 +147,14 @@ export default {
     yearDiff() {
       if (!this.year) return null
       return new Date().getFullYear() - this.year
+    },
+
+    creationDateString() {
+      if (this.wip) return `Commencé en ${this.year} (en cours)`
+      if (this.yearDiff === 0) return `Créé cette anée`
+      if (this.yearDiff === 1) return `Créé l'année dernière`
+      if (this.yearDiff > 1) return `Créé il y a ${this.yearDiff} ans`
+      return ''
     }
   },
   mounted() {
@@ -170,12 +172,79 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+//
+// Variables
+//
+
+area(area)
+  .{area}
+    grid-area area
+
+//
+// Layout
+//
+
+.--work
+  // Layout
+  area(explain); area(details); area(see)
+  display grid
+  grid-template-areas: 'explain see' 'details see'
+  grid-template-columns 1.5fr 1fr
+
+  // Width
+  width 100%
+
+  // Spacing
+  grid-gap 2em
+  margin 0 1em
+
+h1
+  text-align left
+
+section.collection
+  &
+    margin-bottom 3em
+  .description, .link
+    padding-left 3em
+
+section.description
+  margin-bottom 3em
+  max-width 600px
+
+section.youtube
+  margin-bottom 2em
+
+section.links
+  text-align center
+
+//
+// Typography
+//
+
+h1
+  font-size 7em
+  line-height: 0.7
+.collection .name
+  font-size 2em
+
+section.date
+  font-size 1.2em
+  font-weight bold
+  opacity 0.5
+  mix-blend-mode overlay
+
+section.collection
+  .name
+    text-transform uppercase
+  .name, .link
+    font-weight bold
+    opacity: 0.5
+    mix-blend-mode overlay
+
 section.tags
-  ul
-    text-align center
   li
     display inline-block
-    font-size 2em
+    font-size 1.2em
     line-height: 1.5
   li:not(:last-child)
     margin-right 1em
@@ -186,80 +255,20 @@ section.tags
   a:hover
     opacity: 0.25
 
-section h2
-  text-align: center
-  font-weight: normal
-  font-size: 2.5em
-  opacity: 0.25
-
-h1
-  display flex
-  flex-direction column
-  align-items center
-h1 .work-name
-  font-size: 13vmin
-  line-height: 0.8
-  font-family: Work Sans
-h1 .collection-name
-  font-size: 3vmin
-  opacity: 0.5
-  text-transform uppercase
-  transition opacity 0.25s ease
-  &:hover
-    opacity: 0.25
-
-section.date
-  margin-top: 1.5em
-  margin-bottom: 1.5em
-  font-size: 1.5em
-  display flex
-  align-items center
-  justify-content center
-  span:not(.year)
-    opacity: 0.5
-    font-weight bold
-  span:not(:last-child)
-    margin-right 1rem
-  .year
-    font-size: 1.75em
-
-.no-images
-  background-color: rgba(0, 0, 0, 0.0625)
-  padding: 20em 5em
-  text-align: center
+//
+// Reactions
+//
 
 section.collection
-  display: flex
-  justify-content: center
-
-.collection-link
-  text-align: center
-  font-size: 1.2em
-  margin-top 1em
-  margin-bottom: 2em
-  font-style: italic
-  font-weight: bold
-  opacity: 0.5
-  transition: opacity 0.25s ease
-
-  &:hover
+  a:hover
     opacity: 1
 
-.links ul
-  display: flex
-  justify-content: center
-  margin-bottom: 2em
-  margin-top: 0
+//
+// Responsive layout
+//
 
-section.youtube
-  margin-bottom 3em
-  margin-top 3em
-  display flex
-  align-items center
-  flex-direction column
-
-section.using
-  .--technologies-list
-    display flex
-    justify-content center
+@media (max-width: 820px)
+  .--work
+    grid-template-areas 'explain' 'see' 'details'
+    grid-template-columns 1fr
 </style>
