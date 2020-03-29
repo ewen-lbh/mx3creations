@@ -40,13 +40,13 @@
       YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
     
     section.image
-      progressive-img(
-        v-if="front"
-        :src="workFrontSrc"
-        importance="high"
-        :placeholder="workPlaceholderSrc"
-        :aspect-ratio="size.aspect_ratio"
-      )
+      client-only: progressive-img(
+          v-if="front"
+          :src="workFrontSrc"
+          importance="high"
+          :placeholder="workPlaceholderSrc"
+          :aspect-ratio="size.aspect_ratio"
+        )
 
     section.links: ul
       li(v-for="(link, i) in links" :key="i")

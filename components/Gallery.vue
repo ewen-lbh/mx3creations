@@ -10,7 +10,7 @@
         .video-indicator(v-if="isWorkAVideo(work)" :style="getWorkColors(work, true)")
           Iconed(icon="play" :color="getWorkColors(work, true).color") Vidéo
         .image(v-if="getWorkFrontSrc(work)")
-          progressive-background(
+          client-only: progressive-background(
             :src="getWorkFrontSrc(work)"
             :placeholder="getWorkFrontThumbSrc(work)"
             aspect-ratio="1"
