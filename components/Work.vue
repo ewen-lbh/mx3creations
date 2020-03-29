@@ -198,6 +198,9 @@ area(area)
   grid-gap 2em
   margin 0 1em
 
+section
+  margin-left 0
+
 h1
   text-align left
 
