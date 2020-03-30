@@ -93,7 +93,6 @@ gap = 1em
   display grid
   grid-template-columns 'repeat(%s, minmax(%s, 1fr))' % (items-count min-item-size)
   grid-gap gap
-  margin 4%
 
 .video-indicator
   position absolute

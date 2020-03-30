@@ -196,7 +196,6 @@ area(area)
 
   // Spacing
   grid-gap 2em
-  margin 0 1em
 
 section
   margin-left 0
@@ -209,6 +208,8 @@ section.collection
     margin-bottom 3em
   .description, .link
     padding-left 3em
+  .link
+    display inline-block // Prevents overflow on mobile
 
 section.description
   margin-bottom 3em
@@ -220,17 +221,21 @@ section.youtube
 section.links
   text-align center
 
+section.tags
+li
+  display inline-block
+
 //
 // Typography
 //
 
 h1
-  font-size 7em
+  font-size unquote("max(10vmin, 4em)")
   line-height: 0.7
   font-family Work Sans
   margin-bottom: 0.125em
 .collection .name
-  font-size 2em
+  font-size unquote("max(5vmin, 1.5em)")
 
 section.date
   font-size 1.2em
@@ -248,7 +253,6 @@ section.collection
 
 section.tags
   li
-    display inline-block
     font-size 1.2em
     line-height: 1.5
   li:not(:last-child)
@@ -259,6 +263,17 @@ section.tags
     transition opacity 0.25 ease
   a:hover
     opacity: 0.25
+
+//
+// Misc
+//
+
+section.image /deep/
+  & .progressive-image
+    overflow visible // Fix, if set to hidden the bottom border is not visible.
+  & img
+    border 1px solid var(--text)
+    box-sizing border-box
 
 //
 // Reactions
