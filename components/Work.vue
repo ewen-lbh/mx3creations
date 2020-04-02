@@ -1,12 +1,15 @@
 <template lang="pug">
 .--work
-  .explain
-    section.title
+  .titles
+    section.title(fullwidth)
       h1 {{ name }}
-      
-    section.collection(v-if="collection")
+    section.collection(v-if="collection" fullwidth)
       nuxt-link.name(:to="'/' + collection.id")
         | Collection {{ collection.name }}
+  .explain
+      
+    section.collection(v-if="collection")
+      h2 À propos de la collection
       .description(
         v-if="collection.description"
         v-html="collection.description"
@@ -14,7 +17,7 @@
       nuxt-link.link(:to="'/' + collection.id")
         Iconed(icon="arrow-right") Voir toutes les créations dans {{ collection.name }}
         
-  
+    h2(v-if="collection && description") À propos de "{{ name }}"
     section.date(v-if="year")
       p {{ creationDateString }}
 
@@ -186,9 +189,9 @@ area(area)
 
 .--work
   // Layout
-  area(explain); area(details); area(see)
+  area(titles); area(explain); area(details); area(see)
   display grid
-  grid-template-areas: 'explain see' 'details see'
+  grid-template-areas: 'titles titles' 'explain see' 'details see'
   grid-template-columns 1.5fr 1fr
 
   // Width
@@ -199,9 +202,6 @@ area(area)
 
 section
   margin-left 0
-
-h1
-  text-align left
 
 section.collection
   &
@@ -220,6 +220,12 @@ section.youtube
 
 section.links
   text-align center
+
+.titles
+  text-align center
+  width 100%
+  section
+    margin: 0
 
 section.tags
 li
@@ -291,6 +297,6 @@ section.collection
 
 @media (max-width: 820px)
   .--work
-    grid-template-areas 'explain' 'see' 'details'
+    grid-template-areas 'titles' 'explain' 'see' 'details'
     grid-template-columns 1fr
 </style>
