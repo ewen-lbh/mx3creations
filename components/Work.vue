@@ -230,12 +230,14 @@ li
 //
 
 h1
-  font-size unquote("max(10vmin, 4em)")
+  font-size clamp(4em, 7vw, 6em)
   line-height: 0.7
   font-family Work Sans
   margin-bottom: 0.125em
 .collection .name
-  font-size unquote("max(5vmin, 1.5em)")
+  font-size clamp(1.5em, 5vw, 2.5em)
+h1, .collection .name
+  hyphens auto
 
 section.date
   font-size 1.2em
