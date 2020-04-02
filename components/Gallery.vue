@@ -16,7 +16,7 @@
             aspect-ratio="1"
             :style="{backgroundColor: work.color || 'black'}"
           )
-        .titles(:style="getWorkColors(work)")
+        .titles(:style="getWorkColors(work)"): .wrapper
           h4(v-if="work.collection") {{ work.collection.name }}
           h3 {{ work.name }}
 </template>
@@ -117,40 +117,46 @@ article
   z-index: 0
   object-fit cover
   height 100%
+  border 1px solid var(--text)
+  box-sizing border-box
 
 .titles
   padding 2em 1em
   position absolute
   z-index: 10
-  top 100%
+  top: 0
+  opacity: 0
   left 0
   right: 0
   bottom: 0
-  display flex
-  justify-self center
-  align-items center
-  flex-direction column
-  transition all 0.25s ease
+  transition all 0.2s ease-in
+  .wrapper
+    overflow hidden
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    height 100%
+    width 100%
   h3, h4
-    // text-overflow ellipsis
-    word-wrap break-word
-    word-break break-all
+    text-overflow ellipsis
     hyphens auto
   h3
     font-family Work Sans
-    font-size 3em
+    font-size 2.5em
     margin 0
     text-align center
     font-weight normal
     line-height: 0.8
-
+    text-align left
   h4
     text-align center
-    font-size 1.5em
+    font-size 1.2em
     text-transform uppercase
     font-weight bold
     opacity: 0.5
     margin: 0
+    text-align left
 
 //
 // Reactions
@@ -161,6 +167,7 @@ article:not(.has-image)
     top 0
 
 article.has-image:hover
+article:not(.has-image)
   .titles
-    top 50%
+    opacity: 1
 </style>
