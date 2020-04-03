@@ -1,7 +1,11 @@
 <template lang="pug">
 main
-  h1 Me contacter
-  section: form(name="contact" data-netlify="true" method="POST")
+  template(v-if="$route.query.sent")
+    h1 Merci !
+    p Je vous répondrais le plus vite possible
+  template(v-else)
+    h1 Me contacter
+  section: form(name="contact" data-netlify="true" method="POST" action="/contact?sent")
     p: label 
       | Votre e-mail
       input(type="email" name="email")
