@@ -7,7 +7,7 @@ main
       input(type="email" name="email")
     p: label
       | Votre message
-      textarea(rows="20" cols="40")
+      textarea(rows="20" cols="40" name="message")
     
     p: BtnOutline(type="submit") Envoyer
 </template>
