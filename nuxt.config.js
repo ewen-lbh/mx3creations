@@ -129,7 +129,8 @@ export default {
                 ...redirectsRoutes,
                 ...workAndCollectionsRoutes,
                 ...madeWithRoutes,
-                ...taggedRoutes
+                ...taggedRoutes,
+                '/contact?sent'
               ]
             })
         })
