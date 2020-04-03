@@ -1,11 +1,11 @@
 <template lang="pug">
 main
-  template(v-if="$route.query.sent")
+  template(v-if="$route.params.status == 'sent'")
     h1 Merci !
-    p Je vous répondrais le plus vite possible
+    p.ill-answer-asap Je vous répondrais le plus vite possible
   template(v-else)
     h1 Me contacter
-  section: form(name="contact" data-netlify="true" method="POST" action="/contact?sent")
+  section: form(name="contact" data-netlify="true" method="POST" action="/contact/sent")
     p: label 
       | Votre e-mail
       input(type="email" name="email")
@@ -38,4 +38,7 @@ form
     text-align center
   p, label, input, textarea
     width 100%
+
+.ill-answer-asap
+  text-align center
 </style>

@@ -130,7 +130,8 @@ export default {
                 ...workAndCollectionsRoutes,
                 ...madeWithRoutes,
                 ...taggedRoutes,
-                '/contact?sent'
+                'contact/',
+                'contact/sent'
               ]
             })
         })
