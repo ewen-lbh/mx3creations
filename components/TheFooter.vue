@@ -4,8 +4,6 @@
       svg(v-html="svgLogoContents")
       span ewen-lbh
     p
-      | En cours de développement
-      br
       | Fait avec ❤ par Ewen Le Bihan, aka Mx3
       br
       | Fièrement #[em non] propulsé par WordPress
