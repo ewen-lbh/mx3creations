@@ -86,7 +86,7 @@ class WorkImage:
                 parsed.append(cls(file, label))
                     
         elif typ is dict:
-            for file, label in images:
+            for file, label in images.items():
                 parsed.append(cls(file, label))
         return parsed
         
