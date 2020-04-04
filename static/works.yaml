@@ -1,6 +1,7 @@
 - name: You Gotta Think Outside the Box
   using: [illustrator, photoshop]
   tags: [poster]
+  collection: science-is-beautiful
   description: >
     Ce poster que j'ai conçu pour une utilisation personnelle (décoration de ma chambre)
     représente un echaînement de constructions mathématiques indéfinies, la division par
@@ -81,8 +82,8 @@
   tags: [typography, illustration]
   description: >
     J'ai toujours été fasciné par les symboles. En lisant la documentation du langage
-    de _typesetting_ mathématique _LaTeX_, je suis tombé sur la liste des
-    divers symboles fournis par _LaTeX_.
+    de _typesetting_ mathématique _latex_, je suis tombé sur la liste des
+    divers symboles fournis par _latex_.
 
     J'ai ensuite assemblé tout ces symboles en une suite d'équations, en utilisant les opérateurs
     de relation au milieu et en combinant lettres latines, grecques, cyrilliques et hébraïque,
@@ -210,7 +211,7 @@
     L'application communique avec la base de données de schoolsyst
     en utilisation [l'api de schoolsyst](/schoolsyst/api)
 
-    J'ai commencé par établir un [design de l'interface](https://www.figma.com/file/iV4hy5rBAFLkV0Goxn8Zmo/schoolsyst-v2?node-id=0%3A1),
+    J'ai commencé par établir un [design de l'interface](/schoolsyst/design),
     puis j'ai développé l'application.
 
 - name: API
@@ -246,7 +247,7 @@
     Il y a aussi de la gestion de traitement d'images, car je génère dynamiquement
     des miniatures pour les prises de cours, et du traitement de documents,
     pour proposer un téléchargement des notes en PDF, Micosoft Word, OpenOffice
-    Document, LaTeX, etc.
+    Document, latex, etc.
 
     J'ai acheté une instance _Public Cloud_ chez OVH, et est configuré
     tout le serveur moi-même, depuis l'installation du logiciel de serveur Web,
@@ -272,9 +273,6 @@
     Pour présenter schoolsyst, il fallait réaliser un site de présentation.
     Ce site manque encore d'améliorations, il est pour le moment rudimentaire et 
     uniquement en français.
-    
-    Je suis en train de faire un redesign de ce site, dont le prototype est disponible
-    en ligne [sur Figma](https://www.figma.com/proto/0sKuNZGfu8d9qSB5IJGOim/schoolsyst-presentation-website-v2?node-id=1%3A2&scaling=scale-down-width)
 
 - name: Identité visuelle
   collection: schoolsyst
@@ -410,7 +408,7 @@
     Pour la troisième année consécutive, je réalise l'affiche du Forum des métiers
     du collège d'Alzon-Vestric.
     Après avoir été déçu de mon affiche de l'année dernière, j'ai voulu
-    revenir à ce que j'avais fait pour ma [première affiche du forum des métiers](/forum-des-metiers-dalzon/2017)
+    revenir à ce que j'avais fait pour ma [première affiche du forum des métiers](/forum-des-metiers-dalzon-vestric/2017)
 
 - name: Annonce du site web
   collection: acf
@@ -829,3 +827,182 @@
     - photoshop
   year: 2020
   month: 02
+
+- name: Diapositives pour l'oral du bac de Russe
+  id: diapositives-oral-bac-russe
+  collection: null
+  description: >
+    Pour mon oral du bac en Russe, j'ai réalisé des images pour accompagner mon texte.
+    
+    La thématique de mon oral est "Idée de progrès", et je parle principalement des progrès
+    dans la conquête spatiale de la Russie pendant la guerre froide, _холодная война_.
+    
+    Le choix de cette police, avec cette taille plutôt conséquente m'a permis d'exprimer
+    mon intérêt pour la graphie des caractères de l'alphabet cyrillique.
+    Le fait de mettre le texte en contour permet d'améliorer la visibilité de l'image malgré la taille du texte.
+  tags:
+    - graphism
+    - typography
+  using:
+    - photoshop
+
+- name: Condensé de terminale — maths
+  collection: condenses
+  tags:
+    - book
+  best: yes
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de maths de Terminale
+  
+- name: Condensé de terminale — physique
+  collection: condenses
+  tags:
+    - book
+  best: yes
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de physique de Terminale
+  
+- name: Condensé de première — maths
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de maths de première
+  
+- name: Condensé de première — physique
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de physique de première
+  
+- name: Condensé de terminale — SI
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de sciences de l'ingénieur de Terminale
+  
+- name: Livre de "tout"
+  collection: null
+  tags:
+    - book
+  using:
+    - latex
+  best: yes
+  wip: yes
+  description: > 
+    Comparablement au doute cartésien de Descartes, mes révisions en classe de Terminale S m’ont conduit à
+    redéfinir rigoureusement toutes mes connaissances dans les différentes matières scientifiques, dans le but de
+    poser des connaissances solides.
+    
+    Ce livre devrait contenir absoluement tout ce que je sais, et être compréhensible par un individu n’ayant
+    absoluement aucune connaissance, excepté la langue fran¸caise. Le contenu de chaque partie est pensé pour
+    assumer et faire référence à des concepts uniquement vus dans des parties précédentes : ainsi, rien n’est
+    assumé et tout est défini.
+    
+    Le livre est aussi pensé pour être évolutif : au cours de mes années d’étude, je reviendrait sur certains
+    chapitres et en ajouterait de nouveaux au fur et à mesure que j’apprends de nouveaux concepts.
+    Ce livre n’a cependant pas pour objectif de permettre la maîtrise des sujets abordés, puisque – sinon
+    quelques exemples – il est exempt d’exercices d’entraînement, essentiels à la maîtrise d’une notion.
+    Dans la partie Mathématiques, certains concepts étant compliqués à définir rigoureusement – particulièrement
+    au début – ils sont expliqués par des phrases, sans aucune expression mathématique (puisque celles-ci n’ont
+    pas encore était définies).
+
+- name: Impasse du lien social
+  collection: acf
+  description: >
+    Pour la psychanalyse il n’existe pas de lien social sans symptôme. Elle considère la dualité pulsionnelle originaire au fondement de la civilisation. Pas de collectif, pas de politique sans logique inconsciente qui les sous-tend. 
+    Autrement dit, pas de collectif, pas de politique sans langage. Dès lors, une seule boussole oriente la psychanalyse : celle du langage et de la subjectivité qui en découle dans sa dimension singulière ouvrant sur une éthique du sujet, c’est-à-dire de son désir qui ne manque pas de lui échapper et tour à tour, de faire symptômes dans le lien social. 
+    À l’ère du déterminisme dominant des neurosciences dans notre vie quotidienne, familiale ou sociale, comme dans les domaines de la médecine et de la santé mentale, de l’éducation et de l’enseignement, les sujets sont soumis à un réglage préétabli de leurs choix ou conduites. 
+    Ce prêt-à-porter bon pour tous n’est pas sans produire des sujets déboussolés et de « nouveaux » symptômes émergent comme l’expression contemporaine du mal-être.
+
+    Qu’en est-il de la subjectivité moderne et quelle réponse apporter
+    
+    - quand les embrouilles du sujet et le malentendu propre au lien social deviennent indéchiffrables ou ne trouvent, comme seule réponse, qu’un discours tyrannique et donc mortifiant pour le sujet
+    - quand les modes de jouissance se pluralisent et que la singularité du désir disparaît au profit d’une offre - toujours plus renouvelée et démultipliée - d’objets qui marchandisent les désirs et entravent la liberté du sujet ?
+    - quand l’école veut soigner (diffusion de protocoles de santé visant à mesurer les conduites inadaptées, les risques de déviances, la rééducation de tous les troubles « dys... »), quand l’école veut dépister au lieu de transmettre un savoir ?
+    - quand l’hôpital veut éduquer ( éducation thérapeutique dans les protocoles de soin, ....) au lieu de soigner en étant à l’écoute de chaque patient dans une clinique médicale et non sociale?
+    - quand l’errance sociale est traitée comme un délit ou une inadaptation au « vivre ensemble »?
+
+    L’utilité de la psychanalyse et son enjeu se posent ici dans sa dimension politique et éthique en réponse aux tentatives d’assassinat du sujet aux prises avec le social.
+    Le XXIème siècle nous confronte plus que jamais à un devoir de rendre compte de nos choix et de nos actions en les éclairant de la part prise de la dimension subjective qui les sous-tend.
+    En s’orientant du réel qui s’impose au sujet dans sa rencontre avec le social, la psychanalyse offre une chance au sujet d’en cerner la mesure et de traiter l’impasse en déchiffrant ce qui se présente pour lui, sous la figure de l’impuissance, de l’étrange, ou de l’exclusion.
+    La mutation subjective produite ainsi par l’analyse ouvre la voie à un nouveau savoir sur soi, un savoir y faire avec son symptôme. La psychanalyse dans son discours et sa pratique s’intéresse aux conditions d’émergence d’un désir de savoir en faveur de l’invention de nouveaux liens sociaux.
+    Ce colloque se propose de répondre de l’utilité de la psychanalyse dans les champs de la santé mentale, du social, de l’éducatif et de l’enseignement... parce qu’un psychanalyste parie toujours sur l’invention du sujet dans la singularité de son discours et de ses trouvailles pour savoir y faire avec les embrouilles de son existence.
+
+    — Le comité de la délégation ACF-VD
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 11
+
+- name: De l'une à l'autre
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 06
+
+- name: Choses de finesse en psychanalyse
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 12
+
+- name: Une femme est une femme
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 03
+  
+- name: 2018
+  collection: forum-des-metiers-dalzon-vestric
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2018
+  month: 01
+
+- name: 2017
+  collection: forum-des-metiers-dalzon-vestric
+  year: 2017
+  month: 01
+  tags:
+    - poster
+  using:
+    - photoshop
+  description: >
+    J'ai voulu représenter les différents domaines de métiers, en faisant
+    une accumulation d'objets représentants des domaines variés.
+

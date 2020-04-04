@@ -2,6 +2,8 @@
   name: schoolsyst
   links:
     Site de présentation: https://www.schoolsyst.com
+    Organisation GitHub: https://github.com/schoolsyst
+    Compte Twitter: https://twitter.com/schoolsyst
      
   description: >
     <details>
@@ -112,28 +114,11 @@
   description: >
     Mon nom d'artiste, sous lequel je publie la plupart de mes travaux
 
-- id: lorem
-  name: Lorem Ipsum
+- id: condenses
+  name: Condensés
+  links:
+    Lire: https://github.com/ewen-lbh/school-stuff/tree/master/fiches/
   description: >
-    <details>
-    # Sed Cadmus caelum amor quae
-
-    ## Et potuit inclitus re inque frondentis Echionides
-
-    <summary>
-    Lorem markdownum Gigantas certe. Est sine sciret atque; saepe esse cannis
-    **plura mittentis**, hiems? Deus luctantia cono trepidare heros; regimen similes
-    velut Ilion simulacra mihi sollicitatque adeunt venenifero!
-    </summary>
-    
-    - Aethere beatos litorei et clamor altis
-    - Quas agnosse tecta
-    - Da nec
-    - Iungimus medullas Circe
-    - Tela abit
-    - Animis tritumque deinde proles orandus flammas quia
-
-    Ungues regale in post litore dixit Abantiades lenire meis Anaxarete! Et sed
-    *diri*, bis crura relictis marmora. Ante sine vident: natum quae sunt oculi
-    frequentes adunca habuissem animum. Superi Ciconumque quoque.
-    </details>
+    Depuis l'année dernière, j'ai décidé de compiler tout les cours de chaque année des matières scientifiques
+    en un document, en ne laissant que l'essentiel. C'était aussi avec l'écriture de ces condensés que j'ai appris
+    le language LaTeX
