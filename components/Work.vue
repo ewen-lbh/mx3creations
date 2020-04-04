@@ -6,8 +6,8 @@
     section.collection(v-if="collection" fullwidth)
       nuxt-link.name(:to="'/' + collection.id")
         | Collection {{ collection.name }}
+    
   .explain
-      
     section.collection(v-if="collection")
       h2 À propos de la collection
       .description(
@@ -42,18 +42,44 @@
       YouTube(v-if="youtube.video" :id="youtube.video")
       YouTube(v-if="youtube.playlist" :id="youtube.playlist" playlist)
     
-    section.image
-      client-only: progressive-img(
-          v-if="front"
-          :src="workFrontSrc"
-          importance="high"
-          :placeholder="workPlaceholderSrc"
-          :aspect-ratio="size.aspect_ratio"
-        )
+    section.image(v-if="!layImagesHorizontally")
+      template(v-if="!images.length")
+        client-only: progressive-img(
+            v-if="front"
+            :src="workFrontSrc"
+            importance="high"
+            :placeholder="workPlaceholderSrc"
+            :aspect-ratio="size.aspect_ratio"
+          )
+      template(v-else): ul
+        li(v-if="front")
+          figure
+            client-only: progressive-img(
+              :src="workFrontSrc"
+              importance="high"
+              :placeholder="workPlaceholderSrc"
+              :aspect-ratio="size.aspect_ratio"
+            )
+            figcaption Image principale
+        li(v-for="image in images")
+          figure
+            client-only: progressive-img(
+              :src="`https://static.ewen.works/works/${full_id}/${image.file}`"
+            )
+            figcaption {{ image.label }}
 
     section.links: ul
       li(v-for="(link, i) in links" :key="i")
         BtnOutline(:href="link.url").btn {{ $t(link.name) }}
+  
+  .multiple-images-horizontal(v-if="layImagesHorizontally")
+    h2 Autres images
+    ul: li(v-for="image in images")
+      figure
+        client-only: progressive-img(
+          :src="`https://static.ewen.works/works/${full_id}/${image.file}`"
+        )
+        figcaption {{ image.label }}
 </template>
 
 <script>
@@ -124,6 +150,16 @@ export default {
         playlist: null,
         video: null
       })
+    },
+    images: {
+      type: Object,
+      default: () => []
+    },
+    // Comes from the database (Python convention == snake_case)
+    // eslint-disable-next-line vue/prop-name-casing
+    full_id: {
+      type: String,
+      required: true
     }
   },
   computed: {
@@ -158,6 +194,10 @@ export default {
       if (this.yearDiff === 1) return `Créé l'année dernière`
       if (this.yearDiff > 1) return `Créé il y a ${this.yearDiff} ans`
       return ''
+    },
+
+    layImagesHorizontally() {
+      return this.images.length >= 3
     }
   },
   mounted() {
@@ -189,9 +229,9 @@ area(area)
 
 .--work
   // Layout
-  area(titles); area(explain); area(details); area(see)
+  area(titles); area(multiple-images-horizontal); area(explain); area(details); area(see)
   display grid
-  grid-template-areas: 'titles titles' 'explain see' 'details see'
+  grid-template-areas: 'titles titles' 'explain see' 'details see' 'multiple-images-horizontal multiple-images-horizontal'
   grid-template-columns 1.5fr 1fr
 
   // Width
@@ -225,10 +265,16 @@ section.links
   section
     margin: 0
 
-section.tags
-li
+section.tags li
   display inline-block
 
+.multiple-images-horizontal
+  ul
+    display grid
+    max-width: 100%
+    grid-template-columns repeat(3, 1fr)
+  li img
+    width 100%
 //
 // Typography
 //
@@ -300,7 +346,7 @@ section.collection
 
 @media (max-width: 820px)
   .--work
-    grid-template-areas 'titles' 'explain' 'see' 'details'
+    grid-template-areas 'titles' 'explain' 'see' 'multiple-images-horizontal' 'details'
     grid-template-columns 1fr
   @supports not (font-size: clamp(1, 1, 1))
     .titles
@@ -308,4 +354,6 @@ section.collection
         font-size 3em
       .collection .name
         font-size 1.2em
+  .multiple-images-horizontal ul
+    grid-template-columns 1fr
 </style>
