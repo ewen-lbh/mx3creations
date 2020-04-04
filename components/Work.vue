@@ -276,7 +276,8 @@ section.tags
 
 section.image /deep/
   & .progressive-image
-    overflow visible // Fix, if set to hidden the bottom border is not visible.
+    // overflow visible // Fix, if set to hidden the bottom border is not visible.
+    // If set to visible, the blurred image spills out.
   & img
     border 1px solid var(--text)
     box-sizing border-box
