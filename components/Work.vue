@@ -206,8 +206,6 @@ section
 section.collection
   &
     margin-bottom 3em
-  .description, .link
-    padding-left 3em
   .link
     display inline-block // Prevents overflow on mobile
 
