@@ -327,6 +327,7 @@ class Database:
     def find_collection(self, **pred: dict) -> Collection:
         key, value = list(pred.items())[0]
         matching = [w for w in self.collections if getattr(w, key) == value]
+        #TODO #33(@ewen-lbh): list all missing collections @ the end
         if not len(matching):
             raise CollectionNotFound(
                 f"No collection with {key}={value!r} in the database"
