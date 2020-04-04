@@ -235,11 +235,15 @@ li
 
 h1
   font-size clamp(4em, 7vw, 6em)
+  @supports not (font-size: clamp(1, 1, 1))
+    font-size 5em
   line-height: 0.7
   font-family Work Sans
   margin-bottom: 0.125em
 .collection .name
   font-size clamp(1.5em, 5vw, 2.5em)
+  @supports not (font-size: clamp(1, 1, 1))
+    font-size 2em
 h1, .collection .name
   hyphens auto
 
@@ -298,4 +302,10 @@ section.collection
   .--work
     grid-template-areas 'titles' 'explain' 'see' 'details'
     grid-template-columns 1fr
+  @supports not (font-size: clamp(1, 1, 1))
+    .titles
+      h1
+        font-size 3em
+      .collection .name
+        font-size 1.2em
 </style>
