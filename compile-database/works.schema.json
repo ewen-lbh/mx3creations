@@ -103,7 +103,7 @@
         "additionalProperties": true,
         "additionalItems": true,
         "items": {
-          "required": ["file", "label"],
+          "required": ["file"],
           "properties": {
             "file": {
               "$id": "#/items/properties/images/file",
@@ -113,7 +113,7 @@
             "label": {
               "$id": "#/items/properties/images/label",
               "title": "Label",
-              "description": "An legend to give to the file. Will also be used for the `alt` attribute",
+              "description": "An legend to give to the file. Will also be used for the `alt` attribute. Defaults to the file's name (w/o the extension)",
               "type": ["string", "number"]
             }
           }
