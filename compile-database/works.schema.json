@@ -95,6 +95,30 @@
         "description": "The work's main color. Determined from the `front` image when omitted.",
         "title": "Color"
       },
+      "images": {
+        "$id": "#/items/properties/images",
+        "description": "Additionnal images. When using an object, `key` is the `file` and `value` is the `label`",
+        "title": "Images",
+        "type": ["array", "object"],
+        "additionalProperties": true,
+        "additionalItems": true,
+        "items": {
+          "required": ["file", "label"],
+          "properties": {
+            "file": {
+              "$id": "#/items/properties/images/file",
+              "title": "File",
+              "type": "string"
+            },
+            "label": {
+              "$id": "#/items/properties/images/label",
+              "title": "Label",
+              "description": "An legend to give to the file. Will also be used for the `alt` attribute",
+              "type": ["string", "number"]
+            }
+          }
+        }
+      },
       "links": {
         "$id": "#/items/properties/links",
         "type": ["array", "object", "string"],
