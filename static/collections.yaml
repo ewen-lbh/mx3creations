@@ -2,14 +2,19 @@
   name: schoolsyst
   links:
     Site de présentation: https://www.schoolsyst.com
+    Organisation GitHub: https://github.com/schoolsyst
+    Compte Twitter: https://twitter.com/schoolsyst
      
   description: >
+    <details>
+    <summary>
     Au collège, j'ai fait mes quatres années en classe iPad. J'ai grandement
     apprécié l'avantage en terme d'organisation.
     Mais il manquait quelque chose.
     Un système centralisé, accessible depuis partout, où je pourrait renseigner
     mes devoirs, obtenir des statistiques sur mes notes, prendre mes cours,
     réviser et voir mon emploi du temps.
+    </summary>
 
     J'ai donc créé schoolsyst, une application web, qui remplit ce besoin.
     J'ai commencé ce projet pendant l'été 2019, en utilisant Django et Python,
@@ -25,13 +30,14 @@
     schoolsyst est mon projet le plus conséquent à ce jour, et sa création
     m'a permis d'apprendre beaucoup de choses:
 
-    - créer une application web avec vue et nuxt
-    - créer un API REST avec django-rest-framework
-    - configurer le logiciel de serveur Web nginx
-    - décrire une base de données avec des diagrammes de classe via PlantUML
-    - designer une interface avec Figma
+    * créer une application web avec vue et nuxt
+    * créer un API REST avec django-rest-framework
+    * configurer le logiciel de serveur Web nginx
+    * décrire une base de données avec des diagrammes de classe via PlantUML
+    * designer une interface avec Figma
 
     Ce projet est loin d'être terminé, sa première version beta est sortie le 02/02/2020.
+    </details>
 
 - id: science-is-beautiful
   name: Science is Beautiful
@@ -66,3 +72,53 @@
     Ces dessins sont des enchevêtrements de flux d'idée,
     je dessine ce qui me passe par la tête, sans plus n'y réfléchir.
 
+- id: flat-fruits
+  name: Flat Fruits
+  description: >
+    Une série d'illustrations de fruits en flat design réalisé sur mon iPad pendant le collège
+
+- id: acf
+  name: Association de la Cause Freudienne
+  description: >
+    Je réalise souvent des affiches et autres supports de communication pour cette association 
+    de psychologues et psychanalystes. 
+
+- id: music
+  name: Musique
+  description: >
+    Je crée de la musique électronique depuis mes 7 ans.
+
+- id: humanr
+  name: humanR
+  description: >
+    En classe de seconde, on nous a demandé de réaliser une campagne de publicité pour une organisation 
+    se battant pour les droits de l'Homme. J'ai choisi de parler des horribles conditions de travail 
+    qu'impliquent certains métiers, notamment conçernant les chaînes de productions d'objets de consommation, 
+    sur lesquelles les marques n'hésitent pas à ajouter des marges de prix toujours plus importantes.
+
+    J'ai réalisé trois affiches ainsi que le logo d'une organisation fictive, "humanR", écriture stylisée 
+    de l'adjectif comparitif anglais "humaner", signifiant "plus humain". En vérité, c'est un ajectif long 
+    qui serait correctement traduit par "More human", mais cette écriture permet un logotype plus court et impactant.
+
+    J'ai représenté chaque produit de consommation en haut, sur fond blanc, le contrastant avec le bas de 
+    l'image représentant les conditions de travail liées à l'objet au-dessus: l'objet, mis en lumière, 
+    et les conditions de travail, dans l'obscurité.
+
+- id: les-harobases
+  name: Les Harobases
+  description: >
+    Une chaîne de court-métrages et plus généralement de vidéos que nous réalisons mon frère et moi.
+
+- id: mx3
+  name: Mx3
+  description: >
+    Mon nom d'artiste, sous lequel je publie la plupart de mes travaux
+
+- id: condenses
+  name: Condensés
+  links:
+    Lire: https://github.com/ewen-lbh/school-stuff/tree/master/fiches/
+  description: >
+    Depuis l'année dernière, j'ai décidé de compiler tout les cours de chaque année des matières scientifiques
+    en un document, en ne laissant que l'essentiel. C'était aussi avec l'écriture de ces condensés que j'ai appris
+    le language LaTeX

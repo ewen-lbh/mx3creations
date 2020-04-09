@@ -1,6 +1,7 @@
 <template lang="pug">
 main
   h1 {{ name }}
+  section.links: Links(:links="links")
   section.description(v-html="description")
   h2 Projets dans cette collection
   Gallery(:works="ofCollection(id)")
@@ -8,10 +9,11 @@ main
 
 <script>
 import { mapGetters } from 'vuex'
+import Links from '~/components/Links.vue'
 import Gallery from '~/components/Gallery.vue'
 
 export default {
-  components: { Gallery },
+  components: { Gallery, Links },
   props: {
     name: {
       type: String,
@@ -47,4 +49,7 @@ h2
   line-height: 0.8
   font-family Work Sans
   text-align center
+
+.--links
+  justify-content center
 </style>

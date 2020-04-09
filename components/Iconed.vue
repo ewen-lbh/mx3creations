@@ -27,12 +27,13 @@ export default {
         contents = require(`!raw-loader!@/static/icons/${this.icon}.svg`)
           .default
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.error(error)
         return ''
       }
       contents = contents.replace(
         '<svg',
-        '<svg style="height: 100%; width: 100%; fill: var(--fill) !important;" '
+        '<svg style="height: 100%; fill: var(--fill) !important;" '
       )
       return contents
     }
@@ -49,6 +50,6 @@ export default {
   transform: scaleX(-1)
 
 .--iconed
-  display: flex
+  display: inline-flex
   align-items: center
 </style>

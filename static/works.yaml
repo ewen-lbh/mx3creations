@@ -1,6 +1,7 @@
 - name: You Gotta Think Outside the Box
   using: [illustrator, photoshop]
   tags: [poster]
+  collection: science-is-beautiful
   description: >
     Ce poster que j'ai conçu pour une utilisation personnelle (décoration de ma chambre)
     représente un echaînement de constructions mathématiques indéfinies, la division par
@@ -30,22 +31,29 @@
     arroché au fond du laboratoire de physique. Après plusieurs recherches, je n'est pas trouvé
     un tableau suffisamment "beau" à mon goût, et j'ai donc décidé de créé le mien.
 
-- name: makisushi (まきすし)
+- name: makisushi
+  color: rgb(255, 255, 255)
   id: makisushi
   using: [illustrator, photoshop]
   tags: [illustration, typography]
+  best: yes
+  links:
+    Acheter en T-Shirt: https://www.redbubble.com/fr/shop/p/43234485.WFLAH
   description: >
     J'ai eu l'idée de réaliser mon propre T-Shirt peu de temps après avoir découvert le site
     RedBubble, qui permet de vendre et acheter des œuvres sur n'importe quel support, dont
     notamment des t-shirts.
-    
+
     J'ai d'abord réalisé une illustration assez minimaliste puis est ajouté de la texture
     aux morceaux de poisson et d'avocat.
-
+    
+    Même si "makisushi" s'écrit normalement en japonais 「巻き寿司」, j'ai choisi d'utiliser 
+    uniquement des hiraganas (「まきすし」), car ces caractères sont plus minimalistes graphiquement.
+   
 - name: One over X
   collection: science-is-beautiful
   using: [illustrator]
-  tags: []
+  tags: [illustration]
   description: >
     Dans ma série de recherche sur la beauté des fonctions mathématiques,
     le caractère asymptotique de la fonction inverse, 1/x, m'a beaucoup plus,
@@ -53,34 +61,37 @@
     représentative. C'est aussi une manière magnifique d'approcher le problème de la division
     par zéro, que l'on peut à la fois "égaler" à +∞ ou à -∞ lors d'une approche par 
     itérations de plus en plus rapprochées.
-    
+
     Dans cette illustration, l'épaisseur d'un trait est image de la valeur absolue de
     l'inverse du nombre, avec la barre rouge l'origine du "repère" utilisé.
 
-- name: Flat fruits
-  front: watermelon
+- name: Watermelon
+  collection: flat-fruits
+  best: yes
   using: [assembly]
   tags: [illustration]
+  links:
+    Site de fonds d'écrans: http://simpledesktops.com/browse/desktops/2018/dec/15/watermelon/
   description: >
-    Une série d'illustrations de fruits en flat design réalisé sur mon iPad pendant
-    le collège
+    Une pastèque.
 
 - name: Poésie Mathématique
   collection: science-is-beautiful
+  best: yes
   using: [latex]
-  tags: [typography]
+  tags: [typography, illustration]
   description: >
     J'ai toujours été fasciné par les symboles. En lisant la documentation du langage
-    de _typesetting_ mathématique _LaTeX_, je suis tombé sur la liste des
-    divers symboles fournis par _LaTeX_.
-    
+    de _typesetting_ mathématique _latex_, je suis tombé sur la liste des
+    divers symboles fournis par _latex_.
+
     J'ai ensuite assemblé tout ces symboles en une suite d'équations, en utilisant les opérateurs
     de relation au milieu et en combinant lettres latines, grecques, cyrilliques et hébraïque,
     nombres et autres opérateurs pour constituer les membres de chaque (in)équation.
 
 - name: l'Alphabet des Formes
   collection: shapes
-  using: [papier, illustrator]
+  using: [illustrator]
   tags: [iconography]
   description: >
     Combien de formes différentes peut on créer ?
@@ -88,13 +99,13 @@
     rotation, duplication, translation, homotéthie ou combinaison ?
     Quelles seraient ces formes élémentaires, à partie desquelles l'ont pourrait
     revenir à toutes les lettres de l'alphabet ?
-    
+
     Ces nombreux questionnements sur l'étude des formes m'ont mené à m'atteler à une tâche
     qui semble interminable&colon; lister toutes les formes suffisamment différentes les unes des autres.
-    
+
     Même si cette liste est certainement incomplète, elle n'est pas terminée, et je tiens à 
     y rajouter encore d'autres
-    
+
     Ce dessin est aussi partiellement inspiré par "Planetarische Folklore" de Vassily Vasarelly&colon;
     cette liste pourrait être utilisé comme une sorte d'alphabet des formes.
 
@@ -106,7 +117,7 @@
     disponibles [ici](https://drive.google.com/open?id=13IG-II9eDRi7XMrE9GppJOR1c2Vz9ONo).
 
 - name: Abstrakitten
-  using: [papier, photoshop]
+  using: [photoshop]
   tags: [typography]
   description: >
     Fasciné par les alphabets, j'ai souvent créé des polices d'écritures fictives dans
@@ -124,26 +135,33 @@
     sur les services de restauration rapide. J'ai réalisé la quasi-totalité du dossier,
     et c'était une occasion pour moi d'apprendre à me servir du logiciel de PAO Adobe InDesign.
 
-- name: humanR
+- name: Apple
+  collection: humanr
   using: [photoshop]
   tags: [poster]
   year: 2018
   description: >
-    En classe de seconde, on nous a demandé de réaliser une campagne de publicité pour
-    une organisation se battant pour les droits de l'Homme. J'ai choisi de parler des
-    horribles conditions de travail qu'impliquent certains métiers, notamment conçernant
-    les chaînes de productions d'objets de consommation, sur lesquelles les marques 
-    n'hésitent pas à ajouter des marges de prix toujours plus importantes.
-    
-    J'ai réalisé trois affiches ainsi que le logo d'une organisation fictive, "humanR",
-    écriture stylisée de l'adjectif comparitif anglais "humaner", signifiant "plus hufront".
-    En vérité, c'est un ajectif long qui serait correctement traduit par "More human", mais
-    cette écriture permet un logotype plus court et impactant.
-    
-    J'ai représenté chaque produit de consommation en haut, sur fond blanc, le contrastant
-    avec le bas de l'image représentant les conditions de travail liées à l'objet au-dessus:
-    l'objet, mis en lumière, et les conditions de travail, dans l'obscurité.
-    
+    Cette affiche dénonce les politiques d'Apple conçernant les conditions de travail
+    des ouvriers des usines chinoises Foxconn, principal fournisseur d'Apple.
+
+- name: Levis
+  collection: humanr
+  using: [photoshop]
+  tags: [poster]
+  year: 2018
+  description: >
+    Cette affiche dénonce les conditions de travail d'ouvriers blanchissant
+    les jeans de Levis.
+
+- name: Nike
+  collection: humanr
+  using: [photoshop]
+  tags: [poster]
+  year: 2018
+  description: >
+    Cette affiche dénonce les conditions de travail des ouvriers manufacturant
+    les chaussures de Nike.
+
 - name: Manufact
   using: [after effects]
   tags: [motion design]
@@ -151,24 +169,26 @@
   description: >
     En classe de troisième, nous avons réalisé, en groupes et dans le cadre de 
     l'enseignement de technologie, une lampe en respectant un cahier des charges donné.
-    
+
     On nous a également demandé de présenter notre produit par un diaporama.
     J'ai réalisé cette vidéo sur After Effects et j'ai créé le logo de "Lumin Corp." pour
     l'occasion.
-    
-- name: innovation
+
+- name: Innovation
   using: [after effects]
   tags: [motion design]
   year: 2019
+  color: rgb(20, 20, 20)
   description: >
     En classe de première, en cours d'Anglais, on nous a demandé de réaliser une vidéo
     sur l'innovation. J'ai décidé de parler du World Wide Web, inventé par Tim Berners-Lee,
     et qui est sans doute l'une des inventions les plus importantes de l'histoire de l'humanité.
-    
+
 - name: Eating Kills
   using: [photoshop]
   tags: [poster, compositing]
   year: 2019
+  best: yes
   description: >
     J'ai réalisé cette affiche pour une amie qui souhaitait présenter les dangers de la consommation de viande.
 
@@ -181,25 +201,27 @@
   using: [nuxt, vue, javascript, pug, stylus, html, sass, css]
   links:
     website: https://app.schoolsyst.com
-    repository: https://gituhb.com/schoolsyst/frontend
+    repository: https://github.com/schoolsyst/frontend
   description: >
     L'application web de _schoolsyst_ contient l'interface et
     tout ce avec quoi l'utilisateur interagit.
 
     Cette application web est réalisée avec le _framework_
-    nuxt, qui permet la création d'application web.
+    nuxt.
     L'application communique avec la base de données de schoolsyst
     en utilisation [l'api de schoolsyst](/schoolsyst/api)
 
     J'ai commencé par établir un [design de l'interface](/schoolsyst/design),
     puis j'ai développé l'application.
 
-- name: API REST
+- name: API
   year: 2020
   collection: schoolsyst
   id: api
   tags: [web, api]
-  using: [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
+  best: yes
+  using:
+    [python, django, django-rest-framework, nginx, ovh, postgresql, plantuml]
   links:
     website: https://api.schoolsyst.com
     repository: https://github.com/schoolsyst/backend
@@ -225,7 +247,7 @@
     Il y a aussi de la gestion de traitement d'images, car je génère dynamiquement
     des miniatures pour les prises de cours, et du traitement de documents,
     pour proposer un téléchargement des notes en PDF, Micosoft Word, OpenOffice
-    Document, LaTeX, etc.
+    Document, latex, etc.
 
     J'ai acheté une instance _Public Cloud_ chez OVH, et est configuré
     tout le serveur moi-même, depuis l'installation du logiciel de serveur Web,
@@ -233,11 +255,14 @@
 
     Il y a aussi un système pour gérer l'envoi d'emails, servant à la réinitialisation
     de mot de passe et à la confirmation lors de la création d'un compte.
+    
+    _Image: exemple de réponse JSON fournie par l'API_
 
-- name: Site de présentation
+- name: Présentation
+  id: site-de-presentation
   collection: schoolsyst
   best: yes
-  using: [pug, stylus, coffeescript, html, css, js]
+  using: [pug, stylus, coffeescript, html, css, javascript]
   tags: [web, site]
   year: 2020
   links:
@@ -260,18 +285,19 @@
     schoolsyst avait besoin d'une identité visuelle, c'est-à-dire d'un logo,
     de bannières pour les réseaux sociaux, et cætera.
     Le logo de schoolsyst est une fusion entre deux éléments.
-    <ul>
-    <li> Une feuille, un élément omniprésent dans le système éducatif classique, 
+    
+    - Une feuille, un élément omniprésent dans le système éducatif classique, 
     mais un concept qui se conserve dans le domaine informatique, 
     la métaphore de la feuille de papier étant celle utilisée pour représenter des fichiers.
-    <li> Un symbole "%", représentant les statistiques et les nombreuses
+    
+    - Un symbole "%", représentant les statistiques et les nombreuses
     données -- emploi du temps, notes,... que schoolsyst traite à votre place.
 
 - name: fsorg
   collection: null
   best: yes
   using: [python]
-  tags: [cli, automation]
+  tags: [program, cli, automation]
   year: 2018
   wip: no
   links:
@@ -287,25 +313,41 @@
   collection: null
   best: yes
   using: [python, lark]
-  tags: [cli, langage]
+  tags: [program, cli, language]
   year: 2020
   wip: yes
   links:
     repository: https://github.com/ewen-lbh/pychemin
-    learn_more: https://ewen-lbh.github.io/pychemin
+    learn more: https://ewen-lbh.github.io/hyperis
     install: https://pypi.org/project/pychemin
-  description: >
+  description: |
     PyChemin est un langage de description d'aventure textuelles interactives.
     Ce projet m'a permis de découvrir le processus de création d'un langage
     informatique interpreté, avec la description formelle de la grammaire,
     le _lexing_, le _parsing_, et l'interprétation d'arbres
     de syntaxe abstraits (AST).
     Ce projet est aussi mon projet d'ISN de Terminale.
+    
+    Le résultat que vous voyez ci-après a été obtenu avec le code suivant:
+    
+    ```
+    === PyChemin ===
+    PyChemin est un langage de description d'aventure textuelles interactives. Ce projet m'a permis de découvrir le processus de création d'un langage informatique interpreté, avec la description formelle de la grammaire, le _lexing_, le _parsing_, et l'interprétation d'arbres de syntaxe abstraits (AST). Ce projet est aussi mon projet d'ISN de Terminale.
+    [PyChemin] Bonjour, je suis un langage
+    [Hyperis] Et moi, je suis un jeu vidéo qui utilise ce langage.
+    
+    --- Statut du projet ---
+    [EwenLeBihan] Bonjour, je suis le créateur de PyChemin!
+    [PyChemin] Salut papa!
+    [EwenLeBihan] Ce projet est encore en bêta, mais vous pouvez l'utiliser assez facilement!
+    [Hyperis] Ouais, moi j'ai juste eu à taper "pip install pychemin" dans mon terminal et hop! il était là!
+    PyChemin se déplace très vite, en effet.
+    ```
 
 - name: Hyperis
   best: no
   using: [python, pychemin]
-  tags: [cli, game]
+  tags: [program, cli, game]
   year: 2020
   front: teaser
   wip: yes
@@ -318,9 +360,10 @@
 
 - name: creations
   collection: null
-  best: no
-  using: [typescript, oclif]
-  tags: [cli, automation]
+  front: logo
+  best: yes
+  using: [typescript, oclif, illustrator]
+  tags: [program, cli, automation, visual identity, logo]
   year: 2020
   wip: yes
   links:
@@ -331,38 +374,33 @@
     pour créer, ouvrir, publier, versionner, archiver, lister et plus généralement
     gérer des projets, que ce soit de la musique, de la programmation, du graphisme
     ou tout autre type de projet.
+    
     J'ai toujours beaucoup de projets sur lesquels je travaille en même temps et,
     surtout quand il s'agit de programmation, le temps passé à mettre en place, lancer
     et démarrer des projets me semblait trop long.
+    
     J'ai donc créé ce programme, et c'est également mon premier "gros" programme
     en ligne de commande, avec plus de 10 commandes différentes, des fichiers de 
     configuration, et cætera.
 
-- name: Logo
-  collection: creations
-  best: yes
-  using: [illustrator]
-  tags: [visual-identity]
-  year: 2020
-  wip: no
-  description: >
-    Le logo de creations
-  
 - name: 2020
   collection: forum-des-metiers-dalzon-vestric
   best: yes
+  year: 2020
   using: [photoshop]
   tags: [poster]
+  # TODO: description: pochette: ~5 iterations
   description: >
     Pour la quatrième année consécutive, je réalise l'affiche du Forum des métiers
     du collège d'Alzon-Vestric.
     Cette fois-ci, j'ai voulu proposer un design assez minimaliste, toujours
     avec cette idée de représenter la diversité des métiers.
     Je me suis inspiré des "carrés de textures" présents dans ma 
-    [pochette pour mon album Serial](/works/serial/cover-art).
+    [pochette pour mon album Serial](/music/serial).
 
 - name: 2019
   collection: forum-des-metiers-dalzon-vestric
+  year: 2019
   best: no
   using: [photoshop]
   tags: [poster]
@@ -370,4 +408,601 @@
     Pour la troisième année consécutive, je réalise l'affiche du Forum des métiers
     du collège d'Alzon-Vestric.
     Après avoir été déçu de mon affiche de l'année dernière, j'ai voulu
-    revenir à ce que j'avais fait pour ma [première affiche du forum des métiers](/works/forum-des-metiers-dalzon/2017)
+    revenir à ce que j'avais fait pour ma [première affiche du forum des métiers](/forum-des-metiers-dalzon-vestric/2017)
+
+- name: Annonce du site web
+  collection: acf
+  best: no
+  description: >
+    L'ACF-VD avait besoin de communiquer la création de leur site web,
+    j'ai donc réalisé cette carte pour qu'elle puisse être facilement
+    distribuée lors d'interventions de l'association.
+  year: 2019
+  tags: [card, graphism]
+
+- name: Actualité des cartels 2019
+  collection: acf
+  front: 1
+  year: 2019
+  tags:
+    - poster
+  using:
+    - photoshop
+
+- name: Conférence d'Éric Zuliani
+  collection: acf
+  year: 2020
+  best: yes
+  using:
+    - photoshop
+  tags:
+    - poster
+
+- name: Feelings
+  collection: inklings
+  # best: yes
+  tags:
+    - drawing
+    - illustration
+
+- name: Astralchitecture
+  collection: inklings
+  best: yes
+  tags:
+    - drawing
+    - illustration
+
+- name: Somewhere
+  collection: inklings
+  tags:
+    - drawing
+    - illustration
+
+- name: Space-Time portals
+  collection: les-harobases
+  tags:
+    - motion design
+    - intro
+  using:
+    - after effects
+    - premiere pro
+  youtube:
+    playlist: PLgGGwDOODRcgdhWyBCU6IHcM8Fp5yIkLP
+  year: 2017
+  best: yes
+
+- name: Logo
+  collection: les-harobases
+  tags:
+    - visual identity
+    - logo
+  using:
+    - photoshop
+
+- name: Intro cinématique
+  collection: mx3
+  best: yes
+  tags:
+    - motion design
+  using:
+    - after effects
+
+- name: Intro cinématique
+  collection: les-harobases
+  best: yes
+  tags:
+    - motion design
+  using:
+    - after effects
+
+- name: Eyes
+  collection: inklings
+  best: yes
+  tags:
+    - illustration
+    - drawing
+
+- name: Conférence de Laurent Dupont
+  collection: acf
+  tags:
+    - poster
+  using:
+    - photoshop
+
+- name: Pear
+  collection: flat-fruits
+  year: 2017
+  tags:
+    - illustration
+  using:
+    - assembly
+
+- name: Chocolate bar
+  collection: flat-fruits
+  links:
+    Site de fonds d'écrans: http://simpledesktops.com/browse/desktops/2018/dec/15/chocolate-bar/
+  year: 2017
+  tags:
+    - illustration
+  using:
+    - assembly
+
+- name: Lemon
+  collection: flat-fruits
+  year: 2017
+  tags:
+    - illustration
+  using:
+    - assembly
+
+- name: Orange
+  collection: flat-fruits
+  year: 2017
+  tags:
+    - illustration
+  using:
+    - assembly
+
+- name: Strawberry
+  collection: flat-fruits
+  year: 2017
+  tags:
+    - illustration
+  using:
+    - assembly
+
+- name: Ink Bottle
+  collection: null
+  links:
+    Site de fonds d'écrans: http://simpledesktops.com/browse/desktops/2016/dec/01/ink-bottle/
+  year: 2016
+  description: >
+    Au départ réalisé pour mon EP [Ink](/music/ink-ep), j'ai soumis
+    cette illustration sur le site de fonds d'écrans [simpledesktops](https://simpledesktops.com),
+    qui a été acceptée.
+  tags:
+    - cover art
+    - illustration
+  using:
+    - assembly
+
+- name: Le rêve éclair(e)
+  collection: acf
+  tags:
+    - poster
+  using:
+    - photoshop
+
+- name: Neptune
+  collection: music
+  using:
+    - fl studio
+  best: yes
+  year: 2019
+  # color: rgb(67,111,253)
+  color: rgb(120,160,253)
+  tags:
+    - music
+    - cover art
+  description: >
+    Cet album représente différents aspects de notre étrange et infini univers.
+    
+    La plupart des mélodies capturent ce sentiment de l'humain face aux mystères 
+    résidant dans l'immense espace, un espace dans lequel nous sommes tous piégés à l'infini.
+  youtube:
+    playlist: PLl3OrLj4CmfO1yUNHIqJELaKUfpWfMYTp
+
+- name: Malwr
+  collection: music
+  using:
+    - fl studio
+  year: 2017
+  tags:
+    - music
+    - cover art
+
+- name: Serial
+  collection: music
+  using:
+    - fl studio
+  color: rgb(255,255,255)
+  year: 2018
+  best: yes
+  tags:
+    - music
+    - cover art
+  youtube:
+    playlist: PLl3OrLj4CmfP-tMBU4QPhlWvVwyC_jlwz
+  # TODO: redo this description
+  description: >
+    Mon nouvel album. Je travaille dessus depuis l'été 2017. J'ai également fait les visuels, avec des textures de [textures.com](https://www.textures.com/)
+
+- name: Ink EP
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2017
+  youtube:
+    playlist: PLl3OrLj4CmfMHRO61_Loyni3DVwqb6vFw
+
+- name: Trentemøller - Miss You (Remix)
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2018
+  youtube:
+    video: Ur0JCKLtU5I
+
+- name: C418 - Aria Math (Remix)
+  # TODO: la pochette, fond = œuvre de César (compressions) étirée sur les bords
+  collection: music
+  using:
+    - fl studio
+    - photoshop
+  tags:
+    - music
+    - cover art
+  year: 2018
+  youtube:
+    video: OTYTzwuEF4U
+
+- name: Nihon EP
+  collection: music
+  color: rgb(155,116,140)
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2017
+  youtube:
+    playlist: PLl3OrLj4CmfOEdnDrQyTcmywjmyHWFQ_q
+
+- name: Corrupted
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2017
+  youtube:
+    playlist: PLl3OrLj4CmfPGyyvV-wrOPu1N_8Ymi3ug
+
+- name: Yaron Herman - Legs To Run (Remix)
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2018
+  youtube:
+    video: Tcb4J86h4cM
+
+- name: Stranger Things Remixes
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2018
+  description: >
+    J'ai remixé deux morceaux de la série Netflix à succès "Stranger Things", créés par Michael Stein et Kile Dixon.
+  youtube:
+    playlist: PLl3OrLj4CmfPW91sOTN34_86-mzjE4QzX
+
+- name: ELO - Mr. Blue Sky (Remix)
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2017
+  description: >
+    J'ai remixé ce morceau de Electric Light Orchestra après avoir vu
+    Les Gardiens de la Galaxie au cinéma, car j'ai apprecié la mélodie.
+  youtube:
+    video: aL_xzrY-EDA
+  
+- name: Circular
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+    - motion design
+  year: 2018
+  youtube:
+    video: oVnJSaiLWRE
+
+- name: Interstellar
+  # TODO: description: video: utilisation du trou noir pour le visualizer
+  # TODO: description: pochette: Inters\ntellar aulieu de inter\nstellar pour garder symmétrie
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2018
+  youtube:
+    video: Vjo6Gj-BTZQ
+
+- name: Morph
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2017
+  youtube:
+    video: tVoym8EV_QI
+
+- name: Tesseract
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+    - motion design
+  color: rgb(0,0,0)
+  year: 2017
+  # TODO: description: parler de l'expérimentation avec ZGameEditor sur fl studio
+  youtube:
+    video: _wpLlvgj-7U
+
+- name: Codelines
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2016
+  youtube:
+    video: ZtkJwJVnMg0
+  
+- name: work
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2018
+  description: >
+    Ce nouvel album a été composé pendant longtemps, et certains morceaux sont de très
+    bonnes idées qui avait été abandonnées avant leur aboutissement.
+    
+    La pochette utilise une photo tirée de l'excellent site [textures.com](http://www.textures.com/).
+    Les fenêtres se répètent à l'infini, représentant cette impression de cycle sans fin dans la vie quotidienne où les jours se confondent.
+  youtube:
+    playlist: PLl3OrLj4CmfO-Ybm4Qks-YcmQnFtA1o2I
+
+- name: deadmau5 - Unspecial Effects (Remix)
+  collection: music
+  using:
+    - fl studio
+  tags:
+    - music
+    - cover art
+  year: 2019
+  youtube:
+    video: 1A0_ZwQhXj4
+
+- name: Patterns
+  # TODO: description: pochette: c'est parti d'un dessin
+  collection: music
+  using:
+    - fl studio
+  color: rgb(255,255,255)
+  tags:
+    - music
+    - cover art
+  year: 2019
+  best: yes
+  youtube:
+    playlist: PLl3OrLj4CmfOt_27VTNfsqI_BC3MqU7ws
+
+- name: Fête des couleurs
+  collection: null
+  description: >
+    J'ai réalisé cette affiche pour un évènement organisé par le Secours Populaire.
+  tags:
+    - poster
+    - graphism
+  using:
+    - photoshop
+  year: 2020
+  month: 02
+
+- name: Diapositives pour l'oral du bac de Russe
+  id: diapositives-oral-bac-russe
+  collection: null
+  description: >
+    Pour mon oral du bac en Russe, j'ai réalisé des images pour accompagner mon texte.
+    
+    La thématique de mon oral est "Idée de progrès", et je parle principalement des progrès
+    dans la conquête spatiale de la Russie pendant la guerre froide, _холодная война_.
+    
+    Le choix de cette police, avec cette taille plutôt conséquente m'a permis d'exprimer
+    mon intérêt pour la graphie des caractères de l'alphabet cyrillique.
+    Le fait de mettre le texte en contour permet d'améliorer la visibilité de l'image malgré la taille du texte.
+  tags:
+    - graphism
+    - typography
+  using:
+    - photoshop
+
+- name: Condensé de terminale — maths
+  collection: condenses
+  tags:
+    - book
+  best: yes
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de maths de Terminale
+  
+- name: Condensé de terminale — physique
+  collection: condenses
+  tags:
+    - book
+  best: yes
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de physique de Terminale
+  
+- name: Condensé de première — maths
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de maths de première
+  
+- name: Condensé de première — physique
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de physique de première
+  
+- name: Condensé de terminale — SI
+  collection: condenses
+  tags:
+    - book
+  using:
+    - latex
+  wip: yes
+  description: >
+    Un résumé de mes cours de sciences de l'ingénieur de Terminale
+  
+- name: Livre de "tout"
+  collection: null
+  tags:
+    - book
+  using:
+    - latex
+  best: yes
+  wip: yes
+  description: > 
+    Comparablement au doute cartésien de Descartes, mes révisions en classe de Terminale S m’ont conduit à
+    redéfinir rigoureusement toutes mes connaissances dans les différentes matières scientifiques, dans le but de
+    poser des connaissances solides.
+    
+    Ce livre devrait contenir absoluement tout ce que je sais, et être compréhensible par un individu n’ayant
+    absoluement aucune connaissance, excepté la langue fran¸caise. Le contenu de chaque partie est pensé pour
+    assumer et faire référence à des concepts uniquement vus dans des parties précédentes : ainsi, rien n’est
+    assumé et tout est défini.
+    
+    Le livre est aussi pensé pour être évolutif : au cours de mes années d’étude, je reviendrait sur certains
+    chapitres et en ajouterait de nouveaux au fur et à mesure que j’apprends de nouveaux concepts.
+    Ce livre n’a cependant pas pour objectif de permettre la maîtrise des sujets abordés, puisque – sinon
+    quelques exemples – il est exempt d’exercices d’entraînement, essentiels à la maîtrise d’une notion.
+    Dans la partie Mathématiques, certains concepts étant compliqués à définir rigoureusement – particulièrement
+    au début – ils sont expliqués par des phrases, sans aucune expression mathématique (puisque celles-ci n’ont
+    pas encore était définies).
+
+- name: Impasse du lien social
+  collection: acf
+  description: >
+    Pour la psychanalyse il n’existe pas de lien social sans symptôme. Elle considère la dualité pulsionnelle originaire au fondement de la civilisation. Pas de collectif, pas de politique sans logique inconsciente qui les sous-tend. 
+    Autrement dit, pas de collectif, pas de politique sans langage. Dès lors, une seule boussole oriente la psychanalyse : celle du langage et de la subjectivité qui en découle dans sa dimension singulière ouvrant sur une éthique du sujet, c’est-à-dire de son désir qui ne manque pas de lui échapper et tour à tour, de faire symptômes dans le lien social. 
+    À l’ère du déterminisme dominant des neurosciences dans notre vie quotidienne, familiale ou sociale, comme dans les domaines de la médecine et de la santé mentale, de l’éducation et de l’enseignement, les sujets sont soumis à un réglage préétabli de leurs choix ou conduites. 
+    Ce prêt-à-porter bon pour tous n’est pas sans produire des sujets déboussolés et de « nouveaux » symptômes émergent comme l’expression contemporaine du mal-être.
+
+    Qu’en est-il de la subjectivité moderne et quelle réponse apporter
+    
+    - quand les embrouilles du sujet et le malentendu propre au lien social deviennent indéchiffrables ou ne trouvent, comme seule réponse, qu’un discours tyrannique et donc mortifiant pour le sujet
+    - quand les modes de jouissance se pluralisent et que la singularité du désir disparaît au profit d’une offre - toujours plus renouvelée et démultipliée - d’objets qui marchandisent les désirs et entravent la liberté du sujet ?
+    - quand l’école veut soigner (diffusion de protocoles de santé visant à mesurer les conduites inadaptées, les risques de déviances, la rééducation de tous les troubles « dys... »), quand l’école veut dépister au lieu de transmettre un savoir ?
+    - quand l’hôpital veut éduquer ( éducation thérapeutique dans les protocoles de soin, ....) au lieu de soigner en étant à l’écoute de chaque patient dans une clinique médicale et non sociale?
+    - quand l’errance sociale est traitée comme un délit ou une inadaptation au « vivre ensemble »?
+
+    L’utilité de la psychanalyse et son enjeu se posent ici dans sa dimension politique et éthique en réponse aux tentatives d’assassinat du sujet aux prises avec le social.
+    Le XXIème siècle nous confronte plus que jamais à un devoir de rendre compte de nos choix et de nos actions en les éclairant de la part prise de la dimension subjective qui les sous-tend.
+    En s’orientant du réel qui s’impose au sujet dans sa rencontre avec le social, la psychanalyse offre une chance au sujet d’en cerner la mesure et de traiter l’impasse en déchiffrant ce qui se présente pour lui, sous la figure de l’impuissance, de l’étrange, ou de l’exclusion.
+    La mutation subjective produite ainsi par l’analyse ouvre la voie à un nouveau savoir sur soi, un savoir y faire avec son symptôme. La psychanalyse dans son discours et sa pratique s’intéresse aux conditions d’émergence d’un désir de savoir en faveur de l’invention de nouveaux liens sociaux.
+    Ce colloque se propose de répondre de l’utilité de la psychanalyse dans les champs de la santé mentale, du social, de l’éducatif et de l’enseignement... parce qu’un psychanalyste parie toujours sur l’invention du sujet dans la singularité de son discours et de ses trouvailles pour savoir y faire avec les embrouilles de son existence.
+
+    — Le comité de la délégation ACF-VD
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 11
+
+- name: De l'une à l'autre
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 06
+
+- name: Choses de finesse en psychanalyse
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 12
+
+- name: Une femme est une femme
+  collection: acf
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2019
+  month: 03
+  
+- name: 2018
+  collection: forum-des-metiers-dalzon-vestric
+  #TODO: description
+  tags:
+    - poster
+  using:
+    - photoshop
+  year: 2018
+  month: 01
+
+- name: 2017
+  collection: forum-des-metiers-dalzon-vestric
+  year: 2017
+  month: 01
+  tags:
+    - poster
+  using:
+    - photoshop
+  description: >
+    J'ai voulu représenter les différents domaines de métiers, en faisant
+    une accumulation d'objets représentants des domaines variés.
+

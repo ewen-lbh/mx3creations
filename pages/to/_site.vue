@@ -18,8 +18,6 @@ export default {
   components: { BtnOutline },
   fetch({ route, redirect }) {
     const site = route.params.site
-    console.log(`Searching for '${site}' in:`)
-    console.log(sites)
     if (Object.keys(sites).includes(site)) {
       redirect(301, sites[site])
     } else {

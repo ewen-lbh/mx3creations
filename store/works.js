@@ -11,7 +11,12 @@ export const mutations = {
 }
 
 export const getters = {
-  all: ({ works }) => [...works].sort(firstBy('year', -1).thenBy('id')),
+  all: ({ works }) =>
+    [...works].sort(
+      firstBy('year', -1)
+        .thenBy('month', -1)
+        .thenBy('id')
+    ),
   bestOf: () => (works) => works.filter((w) => w.best),
   best: (_, { all, bestOf }) => bestOf(all),
   byID: (_, { all }) => (id) => all.find((w) => w.id === id),
@@ -49,6 +54,7 @@ export const actions = {
         commit('POSTLOAD')
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error)
     }
   }

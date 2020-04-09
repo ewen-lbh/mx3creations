@@ -1,9 +1,9 @@
 <template lang="pug">
   footer
-    h2 ewen.works
+    h2
+      svg(v-html="svgLogoContents")
+      span ewen-lbh
     p
-      | En cours de développement
-      br
       | Fait avec ❤ par Ewen Le Bihan, aka Mx3
       br
       | Fièrement #[em non] propulsé par WordPress
@@ -27,6 +27,10 @@
           Iconed(icon="spotify" color="var(--prim)") Spotify
         li: a(href="https://www.deezer.com/fr/artist/12928429")
           Iconed(icon="deezer" color="var(--prim)") Deezer
+    p 
+      | ∀ work ∈ works
+      br
+      | work ∈ ewen ⇒ work ∈ creative ∩ digital
 </template>
 
 <script>
@@ -39,7 +43,8 @@ export default {
     return {
       sites: Object.entries(
         require('static/sites.json')
-      ).map(([name, url]) => ({ name, url }))
+      ).map(([name, url]) => ({ name, url })),
+      svgLogoContents: require(`!raw-loader!@/static/logo.svg`).default
     }
   }
 }
@@ -47,44 +52,60 @@ export default {
 
 <style lang="stylus" scoped>
 footer
-  display flex
-  background var(--text)
-  color var(--prim)
-  padding 20px
+  display: flex
+  background: var(--text)
+  color: var(--prim)
+  padding: 20px
   padding-top: 40px
-  border-top 1px solid var(--prim)
-  text-align center
-  flex-direction column
-  justify-content center
+  border-top: 1px solid var(--prim)
+  text-align: center
+  flex-direction: column
+  justify-content: center
+
 h2
-  font-family Work Sans
-  font-size 7.5vmin
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: Work Sans
+  font-size: 7.5vmin
   margin: 0
+  --fill: var(--prim)
+
+h2 svg
+  width: 8vmin
+  margin-right: 2vmin
+
 .columns
-  display grid
-  max-width 1000px
-  width 100%
-  margin 0 auto
-  grid-gap 2em
-  grid-template-columns 1fr 1fr 1fr
-  @media (max-width 1000px)
-    grid-template-columns 1fr 1fr
-  @media (max-width 500px)
-    grid-template-columns 1fr
+  display: grid
+  max-width: 1000px
+  width: 100%
+  margin: 0 auto
+  grid-gap: 2em
+  grid-template-columns: 1fr 1fr 1fr
+
+  @media (max-width: 1000px)
+    grid-template-columns: 1fr 1fr
+
+  @media (max-width: 500px)
+    grid-template-columns: 1fr
+
 .columns ul
-  text-align left
+  text-align: left
+
 .columns li
-  margin-bottom .5em
+  margin-bottom: 0.5em
   font-size: 1.4em
+
 .columns a:hover
-  opacity .75
+  opacity: 0.75
+
 h3
-  font-family Work Sans
+  font-family: Work Sans
   opacity: 0.5
-  font-weight normal
-  border-bottom 2px solid var(--prim)
+  font-weight: normal
+  border-bottom: 2px solid var(--prim)
   padding-bottom: 7px
 
 .social a
-  text-transform capitalize
+  text-transform: capitalize
 </style>

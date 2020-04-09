@@ -13,6 +13,7 @@ Files & directories options
 --rate=<ms>            Sets the refresh rate for the watch option. [default: 1000]
 --regen-thumbs         Regenerate thumbnails even if they already exist.
 --regen-colors         Recalculate colors even if they already exist.
+-o, --output=<file>    The output file. Defaults to --works with the extension changed to .json
 
 Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
@@ -23,6 +24,7 @@ from docopt import docopt
 from PIL import Image
 import pastel
 import yaml
+import subprocess
 
 import json
 from logger import Logger
@@ -30,7 +32,6 @@ from slugify import slugify
 from time import time, sleep
 from markdown2 import Markdown
 import pdf2image
-import moviepy
 
 markdown = Markdown()
 from watchdog.observers import Observer
@@ -326,6 +327,7 @@ class Database:
     def find_collection(self, **pred: dict) -> Collection:
         key, value = list(pred.items())[0]
         matching = [w for w in self.collections if getattr(w, key) == value]
+        #TODO #33(@ewen-lbh): list all missing collections @ the end
         if not len(matching):
             raise CollectionNotFound(
                 f"No collection with {key}={value!r} in the database"
@@ -442,19 +444,16 @@ def doit(args, log):
                     path_disp.replace(".png", ".mp4"),
                 )
                 try:
-                    clip = (
-                        moviepy.editor.VideoFileClip(video_path)
-                        .subclip((0, 0), (0, 5))
-                        .resize(0.3)
-                    )
-                    clip.write_gif(path.replace(".png", ".gif"))
+                    gif_path = path.replace(".png", ".gif")
+                    subprocess.run(['./gifcurry-linux-6.0.0.0/bin/gifcurry_cli', f'-i={video_path}', f'-o={gif_path}', '-s 0','-e 5'], capture_output=True)
                     database.edit(
                         work.full_id, front=work.front.replace(".png", ".gif")
                     )
-                except Exception:
+                except Exception as error:
+                    from pprint import pformat
                     log.error(
-                        "An error occured during the conversion of {0} to a GIF",
-                        path_disp.replace(".png", ".mp4"),
+                        "An error occured during the conversion of {0} to a GIF: {1}",
+                        path_disp.replace(".png", ".mp4"), pformat(error)
                     )
                     database.edit(work.full_id, front=None)
             else:
@@ -514,7 +513,7 @@ def doit(args, log):
     # I/O
     #
     # Write to .json
-    works_output_path = args["--works"].replace(".yaml", ".json")
+    works_output_path = args['--output'] or args["--works"].replace(".yaml", ".json")
     database.save(to=works_output_path)
     log.info(
         "\n    Saved works file to {0} in {1}\n",
