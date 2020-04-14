@@ -15,16 +15,11 @@
         li: nuxt-link(:to="localePath('/')") {{ $t('works') }}
         li: nuxt-link(:to="localePath('/about')") {{ $t('about') }}
         li: nuxt-link(:to="localePath('/contact')") {{ $t('contact') }}
-        li: nuxt-link(:to="localePath('/legal')") {{ $t('legal') }}
         li: nuxt-link(:to="localePath('/credits')") {{ $t('credits') }}
       ul.social
-        h3 Sur les réseaux
+        h3 Suivez-moi
         li(v-for="site in sites")
           a(:href="site.url"): Iconed(:icon="site.name" color="var(--prim)") {{ $t(site.name) }}
-      ul.music
-        h3 Ma musique
-        li: a(href="https://open.spotify.com/artist/6tUc6r8aNeiiT1mElcnMx9?si=b5fFKalkTq-WskCj45Xpsg")
-          Iconed(icon="spotify" color="var(--prim)") Spotify
     p
       | ∀ work ∈ works
       br
@@ -79,7 +74,7 @@ h2 svg
   width: 100%
   margin: 0 auto
   grid-gap: 2em
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr
 
   @media (max-width: 1000px)
     grid-template-columns: 1fr 1fr
