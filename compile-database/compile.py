@@ -19,6 +19,7 @@ Miscellaneous options
 --verbose=<level>      The verbosity level, 0 to quiet [default: 2]
 """
 import os, shutil
+from os.path import splitext
 from typing import List, Dict, Optional, Union
 from docopt import docopt
 from PIL import Image
@@ -52,6 +53,43 @@ def get_dominant_color(filepath: str) -> str:
     thief = ColorThief(filepath)
     return thief.get_color(quality=1)
 
+
+class WorkImage:
+    def __init__(self, file: str, label: Optional[str] = None) -> None:
+        self.file = file
+        self.label = label
+    
+    def as_dict(self) -> dict:
+        return {
+            'label': self.label,
+            'file': self.file
+        }
+    
+    @staticmethod
+    def compute_label(filename: str) -> str:
+        return splitext(filename)[0].replace('-', ' ').title()
+    
+    @classmethod
+    def get_from_parsed_yaml(cls, images: Union[List[str], List[dict], dict]) -> 'List[WorkImage]':
+        typ = type(images)
+        parsed = []
+        if typ is list:
+            for image in images:
+                if type(image) is str:
+                    file = image
+                    label = cls.compute_label(image)
+                elif type(image) is dict:
+                    file = image['file']
+                    label = image.get('label', cls.compute_label(file))
+                else:
+                    raise TypeError("Images must be one of List[str], List[dict], dict")
+                parsed.append(cls(file, label))
+                    
+        elif typ is dict:
+            for file, label in images.items():
+                parsed.append(cls(file, label))
+        return parsed
+        
 
 class Link:
     def __init__(self, name: str, url: str, id: str):
@@ -166,6 +204,7 @@ class Work:
         using: List[str] = [],
         wip: Optional[bool] = None,
         tags: List[str] = [],
+        images: Union[List[str], List[dict], dict] = [],
         youtube: YoutubeProperties = YoutubeProperties(),
         **other_attributes: dict,
     ):
@@ -185,6 +224,7 @@ class Work:
         self.size = size
         self.wip = wip or False
         self.links = Link.get_from_parsed_yaml(links)
+        self.images = WorkImage.get_from_parsed_yaml(images)
         self.color = color
         self.youtube = youtube
         for attrname, value in other_attributes.items():
@@ -219,7 +259,8 @@ class Work:
             },
             "wip": self.wip,
             "color": self.color,
-            "youtube": self.youtube.as_dict()
+            "youtube": self.youtube.as_dict(),
+            "images": [im.as_dict() for im in self.images]
         }
 
 
