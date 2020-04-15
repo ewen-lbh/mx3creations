@@ -275,6 +275,12 @@ section.tags li
     grid-template-columns repeat(3, 1fr)
   li img
     width 100%
+
+section.image
+  figure
+    margin 0
+    margin-bottom 1.2em
+
 //
 // Typography
 //
