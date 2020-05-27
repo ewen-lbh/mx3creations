@@ -5,6 +5,8 @@
     .page-container
       nuxt#page
     TheFooter#footer
+    script(async defer src="https://scripts.simpleanalyticscdn.com/latest.js")
+    noscript: img(src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="")
 </template>
 
 <script>
