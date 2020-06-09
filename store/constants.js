@@ -29,7 +29,10 @@ export const state = () => ({
     pychemin: 'https://ewen.works/pychemin',
     typescript: 'https://www.typescriptlang.org/',
     oclif: 'https://oclif.io/',
-    'fl studio': 'https://www.image-line.com/flstudio/'
+    'fl studio': 'https://www.image-line.com/flstudio/',
+    netlify: 'https://netlify.com',
+    livescript: 'https://livescript.net',
+    figma: 'https://figma.com'
   },
   tags: [
     'illustration',
