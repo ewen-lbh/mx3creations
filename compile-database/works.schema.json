@@ -128,7 +128,39 @@
           "$id": "#/items/properties/using/items",
           "type": ["string", "number"],
           "default": "",
-          "examples": ["illustrator", "photoshop"]
+          "enum": [
+            "pug",
+            "premiere pro",
+            "photoshop",
+            "sass",
+            "css",
+            "django",
+            "pychemin",
+            "typescript",
+            "nuxt",
+            "django-rest-framework",
+            "assembly",
+            "indesign",
+            "gimp",
+            "javascript",
+            "after effects",
+            "postgresql",
+            "oclif",
+            "plantuml",
+            "illustrator",
+            "stylus",
+            "python",
+            "nginx",
+            "fl studio",
+            "ovh",
+            "lark",
+            "coffeescript",
+            "vue",
+            "html",
+            "latex",
+            "livescript",
+            "netlify"
+          ]
         }
       },
       "tags": {
@@ -143,7 +175,34 @@
           "title": "Tag",
           "description": "A tag",
           "default": "",
-          "examples": ["poster"]
+          "examples": ["poster"],
+          "enum": [
+            "card",
+            "cover art",
+            "game",
+            "graphism",
+            "poster",
+            "automation",
+            "web",
+            "intro",
+            "music",
+            "app",
+            "book",
+            "api",
+            "program",
+            "cli",
+            "motion design",
+            "compositing",
+            "visual identity",
+            "banner",
+            "illustration",
+            "logo",
+            "typography",
+            "drawing",
+            "iconography",
+            "site",
+            "language"
+          ]
         }
       },
       "description": {
@@ -168,7 +227,8 @@
             "$id": "#/items/properties/youtube/video",
             "type": "string",
             "title": "YouTube video ID",
-            "description": "The YouTube video ID. (ONLY the ID)"
+            "description": "The YouTube video ID. (ONLY the ID)",
+            "pattern": "^[a-zA-Z0-9_-]{11}$"
           }
         }
       }
