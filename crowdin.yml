@@ -1,0 +1,3 @@
+files:
+  - source: /lang/fr-FR.js
+    translation: /lang/%locale%.js
