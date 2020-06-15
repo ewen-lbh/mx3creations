@@ -17,7 +17,7 @@
       nuxt-link.link(:to="'/' + collection.id")
         Iconed(icon="arrow-right") {{ $t('See all creations in %collection%').replace(/%collection%/g, collection.name) }}
 
-    h2(v-if="collection && description") {{ $t('About "%name%"').replace(/%name%/g, collection.name) }}
+    h2(v-if="collection && description") {{ $t('About "%name%"').replace(/%name%/g, name) }}
     section.date(v-if="year")
       p {{ creationDateString }}
 
