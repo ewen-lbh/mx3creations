@@ -2,17 +2,17 @@
 main
   h1 {{ $t('myCreations') }}
   section.intro
-    p Hey! Je suis Ewen Le Bihan, j'ai 16 ans et je m'intéresse à tout ce qui est à la fois créatif et numérique.
+    p {{ $t('indexPage.intro') }}
     BtnOutline(href="/about") {{ $t('learnMore') }}
   section(
     v-for="firstTag in workSections"
     :class="firstTag"
   )
-    h2 
+    h2
       | {{ $t('tags.plural.'+firstTag) }}
       nuxt-link(:to="`/tagged/${firstTag}`")
-        Iconed(icon="arrow-right") Voir tout
-    
+        Iconed(icon="arrow-right") {{ $t('See all') }}
+
     Gallery(:works="bestOf(ofFirstTag(firstTag))" :id="firstTag")
 </template>
 

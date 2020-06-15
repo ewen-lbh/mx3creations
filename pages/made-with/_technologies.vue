@@ -1,14 +1,14 @@
 <template lang="pug">
 main
   template(v-if="technologies.length === 1")
-    h1 
-      | Créations réalisées avec 
+    h1
+      | {{$t('madeWithPage.heading')}}
       a(
         :href="usingHrefs[technologies[0]]"
         target="_blank"
       ) {{ $t(technologies[0]) }}
   template(v-else)
-    h1 Créations réalisées avec...
+    h1 {{$t('madeWithPage.heading').replace(/ $/, '…')}}
     TechnologiesList(
       :technologies="technologies"
       :get-url="(tech) => usingHrefs[tech]"
@@ -43,7 +43,9 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  font-size: max(5vmin, 3rem)
+  font-family Work Sans
+  font-size max(10vmin, 2rem)
+  margin-bottom .25em
   text-align: center
   margin: 0
   a

@@ -1,44 +1,25 @@
 <template lang="pug">
 main
-  h1 Qui suis-je?
+  h1(v-html="$t('aboutPage.whoami')")
   section
-    p.intro
-      | Je suis depuis toujours intéressé par la création, le numérique et le
-      | langage. Cette curiosité m'a conduit à approfondir en autodidacte plusieurs domaines
-      | qui m'intéresse.
+    p.intro(v-html="$t('aboutPage.intro')")
   section
-    h2 Artistique
-    p
-      | Dessin à l'école des beaux-arts de Nîmes, ateliers de peinture, de
-      | sculpture. Depuis mes 7 ans, je compose de la musique électronique,
-      | j'ai suivi des cours de piano et de DJ et participé à une masterclass
-      | de production musicale. Pendant mes années de collège, j'ai réalisé de
-      | nombreuses affiches et logos en utilisant divers logiciels (3D, motion
-      | design, graphisme&mldr;)
+    h2(v-html="$t('aboutPage.artistic.heading')")
+    p(v-html="$t('aboutPage.artistic.text')")
   section
-    h2 Numérique
-    p
-      | J'ai appris à programmer dans différents langages informatiques: HTML,
-      | Python et JavaScript, ce qui m'a permis de créer 
-      a(href='https://mx3creations.com') mon site 
-      | et, actuellement, 
-      a(href='https://www.schoolsyst.com/') une application web pour étudiants
-      | . J'ai aussi pour projet la création de plusieurs langages de
-      | programmation.
-    p
-      | Tout mes projets de programmation sont visibles par tous sur 
-      a(href='https://github.com/ewen-lbh') mon profil GitHub
-      | : tout mes
-      |       projets sont dits "Open Source".
+    h2(v-html="$t('aboutPage.digital.heading')")
+    div(v-html="$t('aboutPage.digital.text')")
   section
-    h2 Linguistique
-    p
-      | L'anglais étant indispensable à la lecture de documentations, j'ai approfondi cette langue (TOEIC Bridge: 176/180), conversé par mail avec un américain pour réaliser un logo. Je suis aussi fasciné depuis l'enfance par l'écriture: le cyrillique (d'où mon choix de LV3, le russe), le grec (cours particuliers) et les #[em hiraganas] et #[em katakanas] (japonais en autodidacte).
+    h2(v-html="$t('aboutPage.linguistic.heading')")
+    p(v-html="$t('aboutPage.linguistic.text')")
   section
-    h2 Scientifique
-    p
-      | Le langage mathématique m'intéresse tout autant: il m'arrive d'appréhender des concepts complexes mathématiques en naviguant sur wikipédia anglais ou en regardant des vidéos de chaînes YouTube telles que "3Blue1Brown" ou "Numerphile"
+    h2(v-html="$t('aboutPage.scientific.heading')")
+    p(v-html="$t('aboutPage.scientific.text')")
 </template>
+
+<script>
+export default {}
+</script>
 
 <style lang="stylus" scoped>
 main
@@ -46,14 +27,17 @@ main
 
 main /deep/
   & h1, & h2
-    font-family Work Sans
+    font-family: Work Sans
+
   & h1
-    font-size 10vmin
+    font-size: 10vmin
+
   & h2
-    font-size 5vmin
+    font-size: 5vmin
     margin-top: 0.5em
     margin-bottom: 0
+
   & p
     margin-top: 0
-    text-align justify
+    text-align: justify
 </style>

@@ -1,12 +1,12 @@
 <template lang="pug">
 main
-  h1 Me contacter
+  h1 {{$t('contactPage.heading')}}
   dl
-    dt Par mail
+    dt {{$t('contactPage.byEmail')}}
     dd: a(href="mailto:ewen.lebihan7@gmail.com") ewen.lebihan7@gmail.com
-    
-    dt Par twitter
-    dd Envoyez un message privé à #[a(href="httpss://ewen.works/to/twitter") @ewen_lbh]
+
+    dt {{$t('contactPage.byTwitter')}}
+    dd(v-html="$t('contactPage.sendDMTo')")
 </template>
 
 <style lang="stylus" scoped>

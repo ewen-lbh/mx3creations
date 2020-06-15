@@ -3,21 +3,18 @@
     h2
       svg(v-html="svgLogoContents")
       span ewen-lbh
+    p(v-html="$t('footer.madeBy')")
     p
-      | Fait avec ❤ par Ewen Le Bihan, aka Mx3
-      br
-      | Fièrement #[em non] propulsé par WordPress
-      br
-      BtnOutline(inverted small href="https://github.com/ewen-lbh/mx3creations" target="_blank") Code source
+      BtnOutline(inverted small href="https://github.com/ewen-lbh/mx3creations" target="_blank") {{$t('Source code')}}
     .columns
       ul.links
-        h3 Liens
+        h3 {{$t('Links')}}
         li: nuxt-link(:to="localePath('/')") {{ $t('works') }}
         li: nuxt-link(:to="localePath('/about')") {{ $t('about') }}
         li: nuxt-link(:to="localePath('/contact')") {{ $t('contact') }}
         li: nuxt-link(:to="localePath('/credits')") {{ $t('credits') }}
       ul.social
-        h3 Suivez-moi
+        h3 {{$t('Follow me')}}
         li(v-for="site in sites")
           a(:href="site.url"): Iconed(:icon="site.name" color="var(--prim)") {{ $t(site.name) }}
     p

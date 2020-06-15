@@ -168,8 +168,9 @@ export default {
    ** See https://nuxt-community.github.io/nuxt-i18n/
    */
   i18n: {
+    strategy: 'no_prefix',
     locales: [
-      // { code: 'en', file: 'en-US.js' },
+      { code: 'en', file: 'en-US.js' },
       { code: 'fr', file: 'fr-FR.js' }
     ],
     defaultLocale: 'fr',

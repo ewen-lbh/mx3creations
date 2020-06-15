@@ -3,7 +3,7 @@ main
   h1 {{ name }}
   section.links: Links(:links="links")
   section.description(v-html="description")
-  h2 Projets dans cette collection
+  h2 {{$t('Projects in this collection')}}
   Gallery(:works="ofCollection(id)")
 </template>
 

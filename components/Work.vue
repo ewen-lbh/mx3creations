@@ -5,33 +5,33 @@
       h1 {{ name }}
     section.collection(v-if="collection" fullwidth)
       nuxt-link.name(:to="'/' + collection.id")
-        | Collection {{ collection.name }}
+        | Collection "{{ collection.name }}"
   .explain
-      
+
     section.collection(v-if="collection")
-      h2 À propos de la collection
+      h2 {{ $t('About the collection') }}
       .description(
         v-if="collection.description"
         v-html="collection.description"
       )
       nuxt-link.link(:to="'/' + collection.id")
-        Iconed(icon="arrow-right") Voir toutes les créations dans {{ collection.name }}
-        
-    h2(v-if="collection && description") À propos de "{{ name }}"
+        Iconed(icon="arrow-right") {{ $t('See all creations in %collection%').replace(/%collection%/g, collection.name) }}
+
+    h2(v-if="collection && description") {{ $t('About "%name%"').replace(/%name%/g, collection.name) }}
     section.date(v-if="year")
       p {{ creationDateString }}
 
     section.description(v-html="description" v-if="description")
-    
+
   .details
     section.tags(v-if="tags.length")
-      h2 Catégories
+      h2 {{$t('Categories')}}
       ul: li(v-for="(tag, i) in tags" :key="i")
         span.octothorpe #
         nuxt-link(:to="`/tagged/${tag}`") {{ $t(`tags.singular.${tag}`) }}
 
     section.made-with(v-if="using.length")
-      h2 Fait avec...
+      h2 {{$t('Made with')}}
       TechnologiesList(
         :technologies="using"
         :get-url="(tech) => `/made-with/${tech}`"
@@ -153,10 +153,15 @@ export default {
     },
 
     creationDateString() {
-      if (this.wip) return `Commencé en ${this.year} (en cours)`
-      if (this.yearDiff === 0) return `Créé cette anée`
-      if (this.yearDiff === 1) return `Créé l'année dernière`
-      if (this.yearDiff > 1) return `Créé il y a ${this.yearDiff} ans`
+      if (this.wip)
+        return this.$t('creationDate.wip').replace(/%year%/g, this.year)
+      if (this.yearDiff === 0) return this.$t('creationDate.thisYear')
+      if (this.yearDiff === 1) return this.$t('creationDate.lastYear')
+      if (this.yearDiff > 1)
+        return this.$t('creationDate.other').replace(
+          /%yearDiff%/g,
+          this.yearDiff
+        )
       return ''
     }
   },
