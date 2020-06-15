@@ -21,6 +21,7 @@
     NavItem.switch-menu.center(@click="switchMenu") {{ $t(switchMenuText) }}
     // Right
     NavItem.right(to="/contact") {{ $t('contact') }}
+    NavItem(@click="switchLocale") {{ localeSwitchText }}
 </template>
 
 <script>
@@ -33,12 +34,22 @@ export default {
   data() {
     return {
       scrolled: false,
-      opened: false
+      opened: false,
+      otherLocale: this.$i18n.locale === 'fr' ? 'en' : 'fr'
     }
   },
   computed: {
     switchMenuText() {
       return this.opened ? 'closeMenu' : 'openMenu'
+    },
+    localeSwitchText() {
+      switch (this.otherLocale) {
+        case 'fr':
+          return 'En Français'
+        case 'en':
+          return 'In English'
+      }
+      return null
     },
     backURL() {
       const path = this.$route.path.replace('fr/', '')
@@ -85,6 +96,11 @@ export default {
       } else {
         document.body.style.overflow = 'auto'
       }
+    },
+    switchLocale() {
+      const oldLocale = this.$i18n.locale
+      this.$i18n.setLocale(this.otherLocale)
+      this.otherLocale = oldLocale
     },
     goBack() {
       history.go(-1)
