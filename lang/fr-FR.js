@@ -124,7 +124,7 @@ export default {
     },
     linguistic: {
       heading: 'Linguistique',
-      text: `L'anglais étant indispensable à la lecture de documentations, j'ai approfondi cette langue (TOEIC Bridge: 176/180), conversé par mail avec un américain pour réaliser un logo. Je suis aussi fasciné depuis l'enfance par l'écriture: le cyrillique (d'où mon choix de LV3, le russe), le grec (cours particuliers) et les <em>hiraganas</em> et <em>katakanas</em> (japonais en autodidacte).`
+      text: `L'anglais étant indispensable à la lecture de documentations, j'ai approfondi cette langue (<abbr title="Test of English for International Communication">TOEIC</abbr>: <abbr title="96%, 19.2">950/990</abbr>), conversé par mail avec un américain pour réaliser un logo. Je suis aussi fasciné depuis l'enfance par l'écriture: le cyrillique (d'où mon choix de LV3, le russe), le grec (cours particuliers) et les <em>hiraganas</em> et <em>katakanas</em> (japonais en autodidacte).`
     },
     scientific: {
       heading: 'Scientifique',
